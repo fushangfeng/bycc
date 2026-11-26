@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+enum Enum_SimState
+{
+	Enum_INITIALIZED  =0;  //初始化完成，待开始
+	Enum_INFERING     =1;  //推演中
+	Enum_COMPLETE     =2; //推演结束
+	Enum_PAUSEING     =3; //推演暂停
+	Enum_LOADING      =255;  //加载中
+}
+
+enum Enum_CompletionReason
+{
+	Enum_cNONE  			  =0;  //未知结束
+	Enum_cEND_TIME_REACHED    =1;  //仿真到达结束时间
+	Enum_cRESET     		  =2; //仿真被重置
+	Enum_cTERMINATE     	  =3; //收到终止命令
+	Enum_cOTHER     		  =4; //未知结束
+}
+
+//仿真状态
+enum Enum_SimStateCtrl
+{
+    Enum_Start_1 = 0; // 开始
+    Enum_Pause_2 = 1; // 暂停
+	Enum_Resume_3 = 2; // 继续
+    Enum_Reset_4 = 3; // 重置（回到仿真初始状态，暂停状态）
+    Enum_Stop_5  = 4; // 结束
+}

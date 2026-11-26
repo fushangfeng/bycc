@@ -1,0 +1,196 @@
+// [START declaration]
+
+/*
+*
+*   File: ai.proto
+*	Author: VR.HusenYan
+*	data: 2024/11/14
+*	brief:最新定义的交互proto报文，客户端单次请求整包数据发送，以及控制接口等报文
+*/
+//**************************************************************************/
+
+syntax = "proto3";
+
+package AI;
+
+import 	 "SimuModelDataOut.proto";
+import   "EOCM.proto";
+
+/***************************EWX报文-start*******************************/
+
+//////整包数据结构定义
+message DATA
+{
+	repeated sRADAR_PARA           radarParam 			=1; 	//雷达状态报/雷达参数
+	repeated sRADAR_RANGE          radarRange 			=2; 	//雷达TC参数(范围)
+	repeated sRadar_DetectInfo     radarDetectInfo 		=3;		//雷达TC结果
+	repeated sPLAT_PARA            platPara 			=4;		//目标数据
+	repeated sRECON_AREA           reconArea 			=5;     //TC定位区域信息
+	repeated sRECON_Get_PARA       reconGetPara         =6;		//雷达ZC基本参数
+	repeated sRECON_RADARPARA	   reconRadarPara 		=7;		//雷达ZC辐射源工作特征参数
+	repeated sJAM_Get_PARA		   jamGetPara 			=8;		//GR机输出基本参数报
+	repeated sJAM_PARA             jamPara 				=9;		//GR机GR交互基本参数报
+	repeated sRADAR_IMAGE_AREA	    radarImageArea      =10;    //shr雷达成像信息
+	repeated sRadar_DetectInfoTrack  readrDetectInfoTrack =11;  //航迹TC结果
+	repeated sCOMRECON_GET_PARA       comReconpara           =12;   //通信对抗ZC设备信息输出参数
+	repeated sCOM_PARA            comPara                =13;   //通信辐射源参数
+	repeated sCOMMDETECTPARA       comMdetectPara        =14;   //通信对抗侦查结果
+	repeated sCOMMJAMPARA             comMjampara        =15;   //通信GR参数
+    repeated INFAREDSENSOR_PARA       infaredsensensorpara    =16;      //!红外雷达状态参数
+	repeated INFAREDSENSOR_WARNRESULT   infaredsensensorwarnresult =17;  //红外传感器 结果参数
+	repeated HRFLASER_PARA             hpflaserPara=18;               //!高重频激光GR
+	repeated HPLASER_PARA              hpllaserPara=19;               //!大功率激光GR输出参数
+	repeated sKCG_Get_PARA			kcgGetPara=20; //可重构装备状态
+	repeated sYJ_OUTDATA           yjOutData=21; //UHF频谱数据
+	repeated sKCG_UHF_Set_PARA		kcgUHFSetPara=22;	//UHF初始化数据
+	repeated sKCG_L_Set_PARA 		kcgLSetPara=23;		//L初始化数据
+	repeated sKCG_XKu_Set_PARA		kcgXKuSetPara=24;	//XKu初始化数据
+}
+
+//仿真环境数据
+message METADATA
+{
+	double 					REAL_TIME   			=1;    //时间戳(仿真世界的年月日，由仿真脚本设置)
+	double 					SIM_TIME    			=2;	   //仿真时间
+	double 					SIM_RATE   		   		=3;    //仿真倍速
+	Enum_SimState 			SIM_STATE 			    =4;    //当前仿真状态
+	Enum_CompletionReason   SIM_COMPLETE_REASON     =5;    //仿真完成的原因
+}
+
+//裁决数据包
+message JUDGEMENTDATA
+{
+	repeated RJAMJUDGE rjamJudge  = 1;
+	repeated FIREJUDGE fireJudge = 2;
+	repeated INTERCEPTIONJUDGE interceptionJudge = 3;
+}
+
+//GR裁决
+message RJAMJUDGE
+{
+	int32 JammerID = 1; //GRid
+	int32 RadarID = 2;	//被GR设备id
+	bool bJam = 3;		//是否被GR
+}
+
+//毁伤裁决
+message FIREJUDGE
+{
+	int32 PlatID = 1; //发弹平台ID
+	int32 FirePlatID = 2; //导弹平台ID
+	repeated int32 bFiredPlatID = 3; //被毁伤的平台ID
+	bool bFire = 4;//引爆状态
+}
+
+//拦截裁决
+message INTERCEPTIONJUDGE
+{
+    float BlockPercent = 1;//拦截成功率
+    int32 MissleSum = 2;//武器总发射数量
+    int32 SucceedBlockedNum = 3;//被成功拦截的数量
+    int32 BlockerMissleUsedNum = 4;//拦截的使用量
+}
+
+//决策情况数据包
+message ACTSITUDATA
+{
+	string modelType     =1;              //  平台类型
+	repeated string actionSitu       =3;    //  1、PlanePlat：PlatID、PlatAutoDodge（飞机规避使能）、PlatAutoFireCtl（飞机打弹使能控制）；2、编队：PlatID、FormationLeaderID
+}
+
+//平台搭载导弹状态数据
+message MISSLE_PARA 
+{
+  repeated MISSLEPARENT_PARA    missleParent= 1;
+}
+
+message MISSLEPARENT_PARA
+{
+  bytes sRID = 1;// sRID
+  int32 PlatID = 2;// PlatID
+  bytes EquipmentName = 3;// EquipmentName
+  bytes EquipmentType = 4;// EquipmentType
+  enumDefine.Enum_ATT ATT = 5;// ATT
+  float fTime = 6;// fTime
+  repeated MISSLEPARA_INNER MissleParaInner = 7;//导弹参数
+}
+
+message MISSLEPARA_INNER{
+    bytes MissileType = 2;//导弹型号
+    int32 MissleNum = 3; //剩余导弹数量
+}
+
+/***************************EWX报文-end*******************************/
+
+
+/***************************智能体报文-start*******************************/
+message COMMAND_EXECUTE_STATUS
+{
+	int32 STATUS    =1;    //执行情况，0为失败，否则为成功
+}
+
+message Action
+{
+    string modelType     =1;              //  平台类型
+	string actionName    =2;              //  动作名称
+	string actionDescription       =3;    //  动作描述，包含参数和参数值
+}
+
+message Actions
+{
+	repeated Action actions    =1;              //  动作
+}
+
+message SimCtrlCMD
+{
+	Enum_SimStateCtrl CMD    =1; //控制指令
+}
+
+message SimRate
+{
+	double rate               =1; //要设置的仿真倍速
+}
+
+message SimtimePiece
+{
+	double timeInterval = 1; //一段时间，单位:S
+}
+
+/////客户端的请求报文
+message REQUEST_STATES
+{
+	string site 	  =1; //台位信息(简单做个标识，无实际作用)
+}
+
+////服务端的整包数据回执
+message REPLY_STATES
+{
+	int32		name =1;
+	METADATA metaData   =2; //仿真环境数据包
+	DATA 	 data       =3; //仿真数据包
+	JUDGEMENTDATA judgementdata =4; //裁决数据包
+	ACTSITUDATA actsitudata =5; //决策情况数据包
+	MISSLE_PARA missleParent= 6; //平台导弹数据包
+}
+
+/***************************智能体报文-end*******************************/
+
+////////////////////////////////////////////////////////////////////
+//服务端与客户端交互接口定义
+
+service AI_Service{
+	rpc GetSimStates(REQUEST_STATES)
+		returns(REPLY_STATES);
+		
+	rpc TakeAction(Actions)
+		returns (COMMAND_EXECUTE_STATUS);
+		
+	rpc SimControl(SimCtrlCMD)
+		returns (COMMAND_EXECUTE_STATUS);
+
+	rpc SetSimRate(SimRate)
+		returns (COMMAND_EXECUTE_STATUS);
+
+	rpc StepPieceTime(SimtimePiece)
+		returns (COMMAND_EXECUTE_STATUS);
+}

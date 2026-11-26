@@ -1,0 +1,603 @@
+syntax = "proto3";
+import public "SimuMetadata.proto";
+package enumDefine;
+// option java_package = "com.cetc29.situationserver.pojo.outer.model.enumdefine";
+
+// 平台类型
+enum Enum_PlatType {
+  Enum_PlatType_0 = 0;// 未知
+  Enum_PlatType_1 = 1;// 地面固定
+  Enum_PlatType_2 = 2;// 地面移动
+  Enum_PlatType_3 = 3;// 舰艇
+  Enum_PlatType_4 = 4;// 潜艇
+  Enum_PlatType_5 = 5;// 常规导弹
+  Enum_PlatType_6 = 6;// 飞机
+  Enum_PlatType_7 = 7;// 直升机
+  Enum_PlatType_8 = 8;// 无人机
+  Enum_PlatType_9 = 9;// 卫星
+  Enum_PlatType_10 = 10;// 气球
+  Enum_PlatType_11 = 11;// 地面车辆
+  Enum_PlatType_12 = 12;// 便携,背负
+  Enum_PlatType_13 = 13;// 飞船
+  Enum_PlatType_14 = 14;// 浮标
+  Enum_PlatType_15 = 15;// 飞艇
+  Enum_PlatType_16 = 16;// 高超音速或弹道导弹
+  Enum_PlatType_17 = 17;// 预留
+  Enum_PlatType_255 = 255;// 无效值
+}
+
+// 敌我属性
+enum Enum_ATT {
+  Enum_ATT_0 = 0;// 无报告
+  Enum_ATT_1 = 1;// 我方
+  Enum_ATT_2 = 2;// 敌方
+  Enum_ATT_3 = 3;// 友方
+  Enum_ATT_4 = 4;// 中立
+  Enum_ATT_5 = 5;// 敌方盟国
+  Enum_ATT_6 = 6;// 敌方友邦
+  Enum_ATT_7 = 7;// 不明
+  Enum_ATT_8 = 8;// 预留0
+  Enum_ATT_9 = 9;// 预留1
+  Enum_ATT_10 = 10;// 预留2
+  Enum_ATT_255 = 255;// 无效值
+}
+
+// 调制样式
+enum Enum_CMD {
+  Enum_CMD_0 = 0;// 未知
+  Enum_CMD_1 = 1;// 载波CW
+  Enum_CMD_2 = 2;// 下边带LSB
+  Enum_CMD_3 = 3;// 上边带USB
+  Enum_CMD_4 = 4;// 幅度调制AM
+  Enum_CMD_5 = 5;// 频率调制FM
+  Enum_CMD_6 = 6;// 独立边带ISB
+  Enum_CMD_7 = 7;// 宽带频率调制WFM
+  Enum_CMD_8 = 8;// 移频键控FSK
+  Enum_CMD_9 = 9;// 幅度键控ASK
+  Enum_CMD_10 = 10;// 最小频移键控MSK
+  Enum_CMD_11 = 11;// 二相键控BPSK
+  Enum_CMD_12 = 12;// 四相键控QPSK
+  Enum_CMD_13 = 13;// 残留边带VSB
+  Enum_CMD_14 = 14;// 噪声
+  Enum_CMD_15 = 15;// 双边带DSB
+  Enum_CMD_16 = 16;// 窄带调频NFM
+  Enum_CMD_17 = 17;// 相位调制PSK
+  Enum_CMD_18 = 18;// QAM
+  Enum_CMD_19 = 19;// APSK
+  Enum_CMD_20 = 20;// 2FSK
+  Enum_CMD_21 = 21;// 4FSK
+  Enum_CMD_22 = 22;// 8FSK
+  Enum_CMD_23 = 23;// 16FSK
+  Enum_CMD_24 = 24;// 2ASK
+  Enum_CMD_25 = 25;// 4ASK
+  Enum_CMD_26 = 26;// 8PSK
+  Enum_CMD_27 = 27;// 16PSK
+  Enum_CMD_28 = 28;// 16QAM
+  Enum_CMD_29 = 29;// 32QAM
+  Enum_CMD_30 = 30;// 64QAM
+  Enum_CMD_31 = 31;// 128QAM
+  Enum_CMD_32 = 32;// 256QAM
+  Enum_CMD_33 = 33;// 512QAM
+  Enum_CMD_34 = 34;// 16APSK
+  Enum_CMD_35 = 35;// 32APSK
+  Enum_CMD_36 = 36;// FMStereo
+  Enum_CMD_37 = 37;// OQPSK
+  Enum_CMD_38 = 38;// GMSK
+  Enum_CMD_39 = 39;// OFDM
+  Enum_CMD_40 = 40;// 差分相移键控DPSK
+  Enum_CMD_41 = 41;// 二进制差分相移键控2DPSK
+  Enum_CMD_42 = 42;// 脉位调制PPM
+  Enum_CMD_43 = 43;// 脉冲编码调制PCM
+  Enum_CMD_44 = 44;// 脉宽调制PDM
+  Enum_CMD_45 = 45;// 脉幅调制PAM
+  Enum_CMD_46 = 46;// GMSK/FM
+  Enum_CMD_47 = 47;// 预留
+  Enum_CMD_48 = 48;// 预留
+  Enum_CMD_255 = 255;// 无效值
+}
+
+// 通信信号样式
+enum Enum_SignalType {
+  Enum_SignalType_0 = 0;// 未知
+  Enum_SignalType_1 = 1;// 常规定频信号
+  Enum_SignalType_2 = 2;// 常规跳频信号
+  Enum_SignalType_3 = 3;// 自适应信号
+  Enum_SignalType_4 = 4;// JTIDS信号
+  Enum_SignalType_5 = 5;// 数据链
+  Enum_SignalType_6 = 6;// IFF
+  Enum_SignalType_7 = 7;// 导航信号
+  Enum_SignalType_8 = 8;// ALE
+  Enum_SignalType_9 = 9;// 预留1
+  Enum_SignalType_10 = 10;// 预留2
+  Enum_SignalType_11 = 11;// 预留3
+  Enum_SignalType_255 = 255;// 无效值
+  Enum_SignalType_1001 = 1001;// 模拟定频
+  Enum_SignalType_1002 = 1002;// 数字定频
+  Enum_SignalType_5001 = 5001;// Link-11
+  Enum_SignalType_5002 = 5002;// Link-11A
+  Enum_SignalType_5003 = 5003;// Link-11B
+  Enum_SignalType_5004 = 5004;// Link-4
+  Enum_SignalType_5005 = 5005;// Link-4A
+  Enum_SignalType_5006 = 5006;// Link-4B
+  Enum_SignalType_5007 = 5007;// Link-10
+  Enum_SignalType_5008 = 5008;// Link-14
+  Enum_SignalType_5009 = 5009;// Link-16
+  Enum_SignalType_5010 = 5010;// MIDS
+  Enum_SignalType_5011 = 5011;// Link-22
+  Enum_SignalType_5012 = 5012;// ASN-150
+  Enum_SignalType_5013 = 5013;// 预留1
+  Enum_SignalType_5014 = 5014;// 预留2
+  Enum_SignalType_6001 = 6001;// MARKV
+  Enum_SignalType_6002 = 6002;// MARKVII
+  Enum_SignalType_6003 = 6003;// S模式
+  Enum_SignalType_6004 = 6004;// AC模式
+  Enum_SignalType_6005 = 6005;// 预留1
+  Enum_SignalType_6006 = 6006;// 预留2
+  Enum_SignalType_7001 = 7001;// TACAN
+  Enum_SignalType_7002 = 7002;// AIS
+  Enum_SignalType_7003 = 7003;// ACARS
+  Enum_SignalType_7004 = 7004;// ADS-B
+  Enum_SignalType_7005 = 7005;// 预留1
+  Enum_SignalType_7006 = 7006;// 预留2
+  Enum_SignalType_7007 = 7007;// 预留3
+}
+
+// Enum_SignalworkMode
+enum Enum_SignalworkMode {
+  Enum_SignalworkMode_0 = 0;// Enum_SignalworkMode_0
+  Enum_SignalworkMode_1 = 1;// Enum_SignalworkMode_1
+  Enum_SignalworkMode_2 = 2;// Enum_SignalworkMode_2
+  Enum_SignalworkMode_3 = 3;// Enum_SignalworkMode_3
+  Enum_SignalworkMode_4 = 4;// Enum_SignalworkMode_4
+  Enum_SignalworkMode_5 = 5;// Enum_SignalworkMode_5
+  Enum_SignalworkMode_6 = 6;// Enum_SignalworkMode_6
+  Enum_SignalworkMode_7 = 7;// Enum_SignalworkMode_7
+  Enum_SignalworkMode_8 = 8;// Enum_SignalworkMode_8
+  Enum_SignalworkMode_9 = 9;// Enum_SignalworkMode_9
+}
+
+// 工作状态
+enum Enum_WorkState {
+  Enum_WorkState_0 = 0;// 关机
+  Enum_WorkState_1 = 1;// 开机
+  Enum_WorkState_2 = 2;// GR
+  Enum_WorkState_3 = 3;// 搜索
+  Enum_WorkState_4 = 4;// ZC
+  Enum_WorkState_5 = 5;// 跟踪
+  Enum_WorkState_6 = 6;// 静默
+  Enum_WorkState_7 = 7;// 预留
+  Enum_WorkState_8 = 8;// 预留
+  Enum_WorkState_9 = 9;// 预留
+  Enum_WorkState_255 = 255;// 无效值
+}
+
+// 生存状态
+enum Enum_SurvivalState {
+  Enum_SurvivalState_0 = 0;// 正常
+  Enum_SurvivalState_1 = 1;// 被摧毁
+  Enum_SurvivalState_2 = 2;// 未知
+  Enum_SurvivalState_3 = 3;// 受扰
+  Enum_SurvivalState_255 = 255;// 无效值
+}
+
+// Enum_InfoType
+enum Enum_InfoType {
+  Enum_InfoType_0 = 0;// Enum_InfoType_0
+  Enum_InfoType_1 = 1;// Enum_InfoType_1
+  Enum_InfoType_2 = 2;// Enum_InfoType_2
+  Enum_InfoType_3 = 3;// Enum_InfoType_3
+  Enum_InfoType_4 = 4;// Enum_InfoType_4
+  Enum_InfoType_5 = 5;// Enum_InfoType_5
+  Enum_InfoType_6 = 6;// Enum_InfoType_6
+  Enum_InfoType_7 = 7;// Enum_InfoType_7
+  Enum_InfoType_8 = 8;// Enum_InfoType_8
+  Enum_InfoType_9 = 9;// Enum_InfoType_9
+  Enum_InfoType_10 = 10;// Enum_InfoType_10
+  Enum_InfoType_11 = 11;// Enum_InfoType_11
+  Enum_InfoType_12 = 12;// Enum_InfoType_12
+  Enum_InfoType_13 = 13;// Enum_InfoType_13
+  Enum_InfoType_14 = 14;// Enum_InfoType_14
+  Enum_InfoType_15 = 15;// Enum_InfoType_15
+  Enum_InfoType_16 = 16;// Enum_InfoType_16
+  Enum_InfoType_255 = 255;// Enum_InfoType_255
+}
+
+// Enum_WaveTransType
+enum Enum_WaveTransType {
+  Enum_WaveTransType_0 = 0;// Enum_WaveTransType_0
+  Enum_WaveTransType_1 = 1;// Enum_WaveTransType_1
+  Enum_WaveTransType_2 = 2;// Enum_WaveTransType_2
+  Enum_WaveTransType_3 = 3;// Enum_WaveTransType_3
+  Enum_WaveTransType_4 = 4;// Enum_WaveTransType_4
+  Enum_WaveTransType_5 = 5;// Enum_WaveTransType_5
+  Enum_WaveTransType_6 = 6;// Enum_WaveTransType_6
+  Enum_WaveTransType_255 = 255;// Enum_WaveTransType_255
+}
+
+// 关键点类型
+enum Enum_KeyPtType {
+  Enum_KeyPt_Other = 0;// 其它类型关键点
+  Enum_KeyPt_On = 1;// 加电准备
+  Enum_KeyPt_ESM = 2;// 转到仅ZC模式    所有GR设备均关辐射
+  Enum_KeyPt_ESMForWard = 201;// 前向ZC（特指机载前后向GR装备）
+  Enum_KeyPt_ESMBack = 202;// 后向ZC（特指机载前后向GR装备）
+  Enum_KeyPt_ESMLeft = 203;// 左向ZC（特指机载左右向GR装备）
+  Enum_KeyPt_ESMRight = 204;// 右向ZC（特指机载左右向GR装备）
+  Enum_KeyPt_ESMALL = 205;// 全向ZC（特指机载前后向GR装备）
+  Enum_KeyPt_ECM = 3;// 转到ZC+GR模式  所有GR设备均开辐射（930不含此模式）
+  Enum_KeyPt_ECMForWard = 301;// 前向GR（特指机载前后向GR装备）
+  Enum_KeyPt_ECMBack = 302;// 后向GR（特指机载前后向GR装备）
+  Enum_KeyPt_ECMLeft = 303;// 左向GR（特指机载左右向GR装备）
+  Enum_KeyPt_ECMRight = 304;// 右向GR（特指机载左右向GR装备）
+  Enum_KeyPt_ECMALL = 305;// 全向GR（特指机载GR装备）
+  Enum_KeyPt_ECMMODE1 = 306;// S关C开XKu前开XKu后开          //后向关前左开前右开	  // @Properties(description=后向关前左开前右开（自卫）)
+  Enum_KeyPt_ECMMODE2 = 307;// S开C关XKu前开XKu后开 		  //后向开前左关前右开	  // @Properties(description=后向开前左关前右开（自卫）)
+  Enum_KeyPt_ECMMODE3 = 308;// S开C开XKu前关XKu后开 		  //后向开前左开前右关	  // @Properties(description=后向开前左开前右关（自卫）)
+  Enum_KeyPt_ECMMODE4 = 309;// S开C开XKu前开XKu后关 		  //后向开前左关前右关	  // @Properties(description=后向开前左关前右关（自卫）)
+  Enum_KeyPt_ECMMODE5 = 310;// S关C关XKu前开XKu后开 		  //后向关前左关前右开	  // @Properties(description=后向关前左关前右开（自卫）)
+  Enum_KeyPt_ECMMODE6 = 311;// S关C开XKu前关XKu后开 		  //后向关前左开前右关	  // @Properties(description=后向关前左开前右关（自卫）)
+  Enum_KeyPt_ECMMODE7 = 312;// S关C开XKu前开XKu后关                                  // @Properties(description=后向开前左开前右开（自卫）) 
+  Enum_KeyPt_ECMMODE8 = 313;// S开C关XKu前关XKu后开                                  // @Properties(description=普通外挂支援GR)
+  Enum_KeyPt_ECMMODE9 = 314;// S开C关XKu前开XKu后关 
+  Enum_KeyPt_ECMMODE10 = 315;// S开C开XKu前关XKu后关 
+  Enum_KeyPt_ECMMODE11 = 316;// S关C关XKu前关XKu后开 
+  Enum_KeyPt_ECMMODE12 = 317;// S关C关XKu前开XKu后关 
+  Enum_KeyPt_ECMMODE13 = 318;// S关C开XKu前关XKu后关 
+  Enum_KeyPt_ECMMODE14 = 319;// S开C关XKu前关XKu后关 
+  Enum_KeyPt_HPECM = 320;// HPECM模式，其它GR关闭
+  Enum_KeyPt_Off = 4;// 关机关键点（面向所有装备）
+  Enum_KeyPt_NoUse = 5;// 无效值
+}
+
+// Enum_SignalState
+enum Enum_SignalState {
+  Enum_SignalState_0 = 0;// Enum_SignalState_0
+  Enum_SignalState_1 = 1;// Enum_SignalState_1
+  Enum_SignalState_2 = 2;// Enum_SignalState_2
+  Enum_SignalState_3 = 3;// Enum_SignalState_3
+  Enum_SignalState_4 = 4;// Enum_SignalState_4
+  Enum_SignalState_5 = 5;// Enum_SignalState_5
+  Enum_SignalState_6 = 6;// Enum_SignalState_6
+  Enum_SignalState_255 = 255;// Enum_SignalState_255
+}
+
+// 天线类型
+enum Enum_AntennaType {
+  Enum_AntennaType_0 = 0;// 天波-对数周期天线
+  Enum_AntennaType_1 = 1;// 天波-倒V天线
+  Enum_AntennaType_2 = 2;// 天波-宽带偶极天线
+  Enum_AntennaType_3 = 3;// 地波-伞锥天线
+  Enum_AntennaType_4 = 4;// 地波-半菱天线
+  Enum_AntennaType_5 = 5;// 地波-单级天线
+  Enum_AntennaType_6 = 6;// 地波-λ天线
+  Enum_AntennaType_7 = 7;// 地波-垂直极化对周天线
+  Enum_AntennaType_8 = 8;// 扩展用
+  Enum_AntennaType_9 = 9;// 扩展用
+  Enum_AntennaType_255 = 255;// 无效值
+}
+
+// Enum_CJamType
+enum Enum_CJamType {
+  Enum_CJamType_0 = 0;// Enum_CJamType_0
+  Enum_CJamType_1 = 1;// Enum_CJamType_1
+  Enum_CJamType_2 = 2;// Enum_CJamType_2
+  Enum_CJamType_3 = 3;// Enum_CJamType_3
+  Enum_CJamType_4 = 4;// Enum_CJamType_4
+  Enum_CJamType_5 = 5;// Enum_CJamType_5
+  Enum_CJamType_6 = 6;// Enum_CJamType_6
+  Enum_CJamType_7 = 7;// Enum_CJamType_7
+  Enum_CJamType_8 = 8;// Enum_CJamType_8
+  Enum_CJamType_9 = 9;// Enum_CJamType_9
+  Enum_CJamType_10 = 10;// Enum_CJamType_10
+  Enum_CJamType_11 = 11;// Enum_CJamType_11
+  Enum_CJamType_12 = 12;// Enum_CJamType_12
+  Enum_CJamType_13 = 13;// Enum_CJamType_13
+  Enum_CJamType_255 = 255;// Enum_CJamType_255
+}
+
+// 航迹点类型
+enum Enum_FlyPosType {
+  Enum_Out = 0;// 出航
+  Enum_Cruise = 1;// 巡航
+  Enum_Back = 2;// 返航
+  Enum_FlyPosType_UnKnown = 3;// 未知
+  Enum_FlyPosType_NoUse = 255;// 无效值
+}
+
+// 来源类型
+enum Enum_EquipSrc {
+  Enum_EquipSrc_0 = 0;// 本地
+  Enum_EquipSrc_1 = 1;// 航空兵
+  Enum_EquipSrc_2 = 2;// 地防
+  Enum_EquipSrc_3 = 3;// 电抗
+  Enum_EquipSrc_4 = 4;// 雷达
+  Enum_EquipSrc_5 = 5;// 预留1
+  Enum_EquipSrc_6 = 6;// 预留2
+  Enum_EquipSrc_255 = 255;// 无效值
+}
+
+// 飞机类型
+enum Enum_AircraftSort {
+  Enum_AircraftSort_0 = 0;// 歼击机
+  Enum_AircraftSort_1 = 1;// 强击机
+  Enum_AircraftSort_2 = 2;// 轰炸机
+  Enum_AircraftSort_3 = 3;// 舰载机
+  Enum_AircraftSort_4 = 4;// 预警机
+  Enum_AircraftSort_5 = 5;// 电子战飞机
+  Enum_AircraftSort_6 = 6;// 无人机载欺骗平台
+  Enum_AircraftSort_7 = 7;// 未知
+  Enum_AircraftSort_8 = 8;// 预留
+  Enum_AircraftSort_9 = 9;// 预留
+  Enum_AircraftSort_10 = 10;// 预留
+  Enum_AircraftSort_11 = 11;// 预留
+  Enum_AircraftSort_20 = 20;// 导弹
+}
+
+// Enum_KcgTaskType_UHF
+enum Enum_KcgTaskType_UHF {
+  Enum_KcgTaskType_UHF_0 = 0;// Enum_KcgTaskType_UHF_0
+  Enum_KcgTaskType_UHF_1 = 1;// Enum_KcgTaskType_UHF_1
+  Enum_KcgTaskType_UHF_2 = 2;// Enum_KcgTaskType_UHF_2
+  Enum_KcgTaskType_UHF_3 = 3;// Enum_KcgTaskType_UHF_3
+  Enum_KcgTaskType_UHF_4 = 4;// Enum_KcgTaskType_UHF_4
+  Enum_KcgTaskType_UHF_5 = 5;// Enum_KcgTaskType_UHF_5
+  Enum_KcgTaskType_UHF_6 = 6;// Enum_KcgTaskType_UHF_6
+  Enum_KcgTaskType_UHF_7 = 7;// Enum_KcgTaskType_UHF_7
+  Enum_KcgTaskType_UHF_8 = 8;// Enum_KcgTaskType_UHF_8
+  Enum_KcgTaskType_UHF_9 = 9;// Enum_KcgTaskType_UHF_9
+  Enum_KcgTaskType_UHF_10 = 10;// Enum_KcgTaskType_UHF_10
+  Enum_KcgTaskType_UHF_11 = 11;// Enum_KcgTaskType_UHF_11
+}
+
+// Enum_KcgTaskType_L
+enum Enum_KcgTaskType_L {
+  Enum_KcgTaskType_L_0 = 0;// Enum_KcgTaskType_L_0
+  Enum_KcgTaskType_L_1 = 101;// Enum_KcgTaskType_L_1
+  Enum_KcgTaskType_L_2 = 102;// Enum_KcgTaskType_L_2
+  Enum_KcgTaskType_L_3 = 103;// Enum_KcgTaskType_L_3
+  Enum_KcgTaskType_L_4 = 104;// Enum_KcgTaskType_L_4
+  Enum_KcgTaskType_L_5 = 105;// Enum_KcgTaskType_L_5
+  Enum_KcgTaskType_L_6 = 106;// Enum_KcgTaskType_L_6
+  Enum_KcgTaskType_L_7 = 107;// Enum_KcgTaskType_L_7
+}
+
+// Enum_KcgTaskType_XKu
+enum Enum_KcgTaskType_XKu {
+  Enum_KcgTaskType_XKu_0 = 0;// Enum_KcgTaskType_XKu_0
+  Enum_KcgTaskType_XKu_1 = 201;// Enum_KcgTaskType_XKu_1
+  Enum_KcgTaskType_XKu_2 = 202;// Enum_KcgTaskType_XKu_2
+  Enum_KcgTaskType_XKu_3 = 203;// Enum_KcgTaskType_XKu_3
+  Enum_KcgTaskType_XKu_4 = 204;// Enum_KcgTaskType_XKu_4
+  Enum_KcgTaskType_XKu_5 = 205;// Enum_KcgTaskType_XKu_5
+  Enum_KcgTaskType_XKu_6 = 206;// Enum_KcgTaskType_XKu_6
+}
+
+// Enum_RadarWorkMode
+enum Enum_RadarWorkMode {
+  Enum_RadarWorkMode_0 = 0;// VS
+  Enum_RadarWorkMode_1 = 1;// RWR
+  Enum_RadarWorkMode_2 = 2;// VSR
+  Enum_RadarWorkMode_3 = 3;// STT(不能作为起始工作模式)
+  Enum_RadarWorkMode_4 = 4;// 普查模式，SAR专用
+  Enum_RadarWorkMode_5 = 5;// 详查模式一，SAR专用
+  Enum_RadarWorkMode_6 = 6;// 详查模式二，SAR专用
+  Enum_RadarWorkMode_7 = 7;// 聚束模式，SAR专用
+  Enum_RadarWorkMode_8 = 8;// GMTI
+  Enum_RadarWorkMode_9 = 9;// 红外
+  Enum_RadarWorkMode_10 = 10;// 可见光
+  Enum_RadarWorkMode_11 = 11;// 对空模式
+  Enum_RadarWorkMode_12 = 12;// 对海模式
+  Enum_RadarWorkMode_13 = 13;// 对地模式
+  Enum_RadarWorkMode_14 = 14;// 对天模式
+  Enum_RadarWorkMode_15 = 15;// 预留
+  Enum_RadarWorkMode_16 = 16;// 预留
+}
+
+// Enum_RadarWorkType
+enum Enum_RadarWorkType {
+  Enum_RadarWorkType_0 = 0;// Enum_RadarWorkType_0
+  Enum_RadarWorkType_1 = 1;// Enum_RadarWorkType_1
+  Enum_RadarWorkType_2 = 2;// Enum_RadarWorkType_2
+  Enum_RadarWorkType_3 = 3;// Enum_RadarWorkType_3
+  Enum_RadarWorkType_4 = 4;// Enum_RadarWorkType_4
+  Enum_RadarWorkType_255 = 255;// Enum_RadarWorkType_255
+}
+
+// Enum_RadarSort
+enum Enum_RadarSort {
+  Enum_RadarSort_0 = 0;// Enum_RadarSort_0
+  Enum_RadarSort_1 = 1;// Enum_RadarSort_1
+  Enum_RadarSort_2 = 2;// Enum_RadarSort_2
+  Enum_RadarSort_3 = 3;// Enum_RadarSort_3
+  Enum_RadarSort_4 = 4;// Enum_RadarSort_4
+  Enum_RadarSort_5 = 5;// Enum_RadarSort_5
+  Enum_RadarSort_6 = 6;// Enum_RadarSort_6
+  Enum_RadarSort_255 = 255;// Enum_RadarSort_255
+}
+
+// Enum_PCM
+enum Enum_PCM {
+  Enum_PCM_0 = 0;// Enum_PCM_0
+  Enum_PCM_1 = 1;// Enum_PCM_1
+  Enum_PCM_2 = 2;// Enum_PCM_2
+  Enum_PCM_3 = 3;// Enum_PCM_3
+  Enum_PCM_4 = 4;// Enum_PCM_4
+  Enum_PCM_5 = 5;// Enum_PCM_5
+  Enum_PCM_6 = 6;// Enum_PCM_6
+  Enum_PCM_7 = 7;// Enum_PCM_7
+  Enum_PCM_255 = 255;// Enum_PCM_255
+}
+
+// Enum_RFT
+enum Enum_RFT {
+  Enum_RFT_0 = 0;// Enum_RFT_0
+  Enum_RFT_1 = 1;// Enum_RFT_1
+  Enum_RFT_2 = 2;// Enum_RFT_2
+  Enum_RFT_3 = 3;// Enum_RFT_3
+  Enum_RFT_4 = 4;// Enum_RFT_4
+  Enum_RFT_5 = 5;// Enum_RFT_5
+  Enum_RFT_6 = 6;// Enum_RFT_6
+  Enum_RFT_7 = 7;// Enum_RFT_7
+  Enum_RFT_8 = 8;// Enum_RFT_8
+  Enum_RFT_9 = 9;// Enum_RFT_9
+  Enum_RFT_10 = 10;// Enum_RFT_10
+  Enum_RFT_11 = 11;// Enum_RFT_11
+  Enum_RFT_12 = 12;// Enum_RFT_12
+  Enum_RFT_255 = 255;// Enum_RFT_255
+}
+
+// Enum_PRIT
+enum Enum_PRIT {
+  Enum_PRIT_0 = 0;// Enum_PRIT_0
+  Enum_PRIT_1 = 1;// Enum_PRIT_1
+  Enum_PRIT_2 = 2;// Enum_PRIT_2
+  Enum_PRIT_3 = 3;// Enum_PRIT_3
+  Enum_PRIT_4 = 4;// Enum_PRIT_4
+  Enum_PRIT_5 = 5;// Enum_PRIT_5
+  Enum_PRIT_6 = 6;// Enum_PRIT_6
+  Enum_PRIT_7 = 7;// Enum_PRIT_7
+  Enum_PRIT_8 = 8;// Enum_PRIT_8
+  Enum_PRIT_255 = 255;// Enum_PRIT_255
+}
+
+// Enum_POT
+enum Enum_POT {
+  Enum_POT_0 = 0;// Enum_POT_0
+  Enum_POT_1 = 1;// Enum_POT_1
+  Enum_POT_2 = 2;// Enum_POT_2
+  Enum_POT_3 = 3;// Enum_POT_3
+  Enum_POT_4 = 4;// Enum_POT_4
+  Enum_POT_5 = 5;// Enum_POT_5
+  Enum_POT_6 = 6;// Enum_POT_6
+  Enum_POT_7 = 7;// Enum_POT_7
+  Enum_POT_8 = 8;// Enum_POT_8
+  Enum_POT_9 = 9;// Enum_POT_9
+  Enum_POT_255 = 255;// Enum_POT_255
+}
+
+// Enum_RecMode
+enum Enum_RecMode {
+  Enum_RecMode_0 = 0;// Enum_RecMode_0
+  Enum_RecMode_1 = 1;// Enum_RecMode_1
+  Enum_RecMode_2 = 2;// Enum_RecMode_2
+  Enum_RecMode_3 = 3;// Enum_RecMode_3
+  Enum_RecMode_4 = 4;// Enum_RecMode_4
+  Enum_RecMode_5 = 5;// Enum_RecMode_5
+  Enum_RecMode_6 = 6;// Enum_RecMode_6
+}
+
+// Enum_RegionSort
+enum Enum_RegionSort {
+  Enum_RegionSort_0 = 0;// Enum_RegionSort_0
+  Enum_RegionSort_1 = 1;// Enum_RegionSort_1
+  Enum_RegionSort_2 = 2;// Enum_RegionSort_2
+  Enum_RegionSort_3 = 3;// Enum_RegionSort_3
+  Enum_RegionSort_4 = 4;// Enum_RegionSort_4
+  Enum_RegionSort_5 = 5;// Enum_RegionSort_5
+  Enum_RegionSort_6 = 6;// Enum_RegionSort_6
+  Enum_RegionSort_7 = 7;// Enum_RegionSort_7
+  Enum_RegionSort_8 = 8;// Enum_RegionSort_8
+  Enum_RegionSort_9 = 9;// Enum_RegionSort_9
+  Enum_RegionSort_10 = 10;// Enum_RegionSort_10
+  Enum_RegionSort_11 = 11;// Enum_RegionSort_11
+  Enum_RegionSort_12 = 12;// Enum_RegionSort_12
+  Enum_RegionSort_13 = 13;// Enum_RegionSort_13
+  Enum_RegionSort_14 = 14;// Enum_RegionSort_14
+  Enum_RegionSort_15 = 15;// Enum_RegionSort_15
+  Enum_RegionSort_16 = 16;// Enum_RegionSort_16
+  Enum_RegionSort_17 = 17;// Enum_RegionSort_17
+  Enum_RegionSort_18 = 18;// Enum_RegionSort_18
+  Enum_RegionSort_19 = 19;// Enum_RegionSort_19
+  Enum_RegionSort_20 = 20;// Enum_RegionSort_20
+  Enum_RegionSort_21 = 21;// Enum_RegionSort_21
+  Enum_RegionSort_22 = 22;// Enum_RegionSort_22
+  Enum_RegionSort_23 = 23;// Enum_RegionSort_23
+  Enum_RegionSort_24 = 24;// Enum_RegionSort_24
+  Enum_RegionSort_25 = 25;// Enum_RegionSort_25
+  Enum_RegionSort_26 = 26;// Enum_RegionSort_26
+  Enum_RegionSort_27 = 27;// Enum_RegionSort_27
+  Enum_RegionSort_28 = 28;// Enum_RegionSort_28
+  Enum_RegionSort_29 = 29;// Enum_RegionSort_29
+  Enum_RegionSort_255 = 255;// Enum_RegionSort_255
+}
+
+// Enum_RegionType
+enum Enum_RegionType {
+  Enum_RegionType_0 = 0;// Enum_RegionType_0
+  Enum_RegionType_1 = 1;// Enum_RegionType_1
+  Enum_RegionType_2 = 2;// Enum_RegionType_2
+  Enum_RegionType_3 = 3;// Enum_RegionType_3
+  Enum_RegionType_4 = 4;// Enum_RegionType_4
+  Enum_RegionType_5 = 5;// Enum_RegionType_5
+  Enum_RegionType_6 = 6;// Enum_RegionType_6
+  Enum_RegionType_7 = 7;// Enum_RegionType_7
+  Enum_RegionType_8 = 8;// Enum_RegionType_8
+  Enum_RegionType_255 = 255;// Enum_RegionType_255
+}
+
+// Enum_JamMode
+enum Enum_JamMode {
+  Enum_JamMode_0 = 0;// Enum_JamMode_0
+  Enum_JamMode_1 = 1;// Enum_JamMode_1
+  Enum_JamMode_2 = 2;// Enum_JamMode_2
+  Enum_JamMode_3 = 3;// Enum_JamMode_3
+  Enum_JamMode_4 = 4;// Enum_JamMode_4
+  Enum_JamMode_5 = 5;// Enum_JamMode_5
+  Enum_JamMode_6 = 6;// Enum_JamMode_6
+  Enum_JamMode_7 = 7;// Enum_JamMode_7
+  Enum_JamMode_8 = 8;// Enum_JamMode_8
+  Enum_JamMode_9 = 9;// Enum_JamMode_9
+  Enum_JamMode_255 = 255;// Enum_JamMode_255
+}
+
+// Enum_RJamType
+enum Enum_RJamType {
+  Enum_RJamType_0 = 0;// Enum_RJamType_0
+  Enum_RJamType_1 = 1;// Enum_RJamType_1
+  Enum_RJamType_2 = 2;// Enum_RJamType_2
+  Enum_RJamType_3 = 3;// Enum_RJamType_3
+  Enum_RJamType_4 = 4;// Enum_RJamType_4
+  Enum_RJamType_5 = 5;// Enum_RJamType_5
+  Enum_RJamType_255 = 255;// Enum_RJamType_255
+}
+
+// Enum_TaskType
+enum Enum_TaskType {
+  Enum_TaskType_0 = 0;// Enum_TaskType_0
+  Enum_TaskType_1 = 1;// Enum_TaskType_1
+  Enum_TaskType_2 = 2;// Enum_TaskType_2
+  Enum_TaskType_3 = 3;// Enum_TaskType_3
+  Enum_TaskType_255 = 255;// Enum_TaskType_255
+}
+
+// 作战模式
+enum Enum_WorkMode {
+  Enum_WorkMode_0 = 0;// 受控
+  Enum_WorkMode_1 = 1;// 自主
+  Enum_WorkMode_2 = 2;// 未知
+  Enum_WorkMode_3 = 3;// 预留
+  Enum_WorkMode_255 = 255;// 无效值
+}
+
+// Enum_RadarJamDirCtrl
+enum Enum_RadarJamDirCtrl {
+  Enum_RadarJamDirCtrl_0 = 0;// Enum_RadarJamDirCtrl_0
+  Enum_RadarJamDirCtrl_1 = 1;// Enum_RadarJamDirCtrl_1
+  Enum_RadarJamDirCtrl_2 = 2;// Enum_RadarJamDirCtrl_2
+  Enum_RadarJamDirCtrl_3 = 3;// Enum_RadarJamDirCtrl_3
+  Enum_RadarJamDirCtrl_4 = 4;// Enum_RadarJamDirCtrl_4
+}
+
+// Enum_DirCtrl
+enum Enum_DirCtrl {
+  Enum_DirCtrl_0 = 0;// Enum_DirCtrl_0
+  Enum_DirCtrl_1 = 1;// Enum_DirCtrl_1
+  Enum_DirCtrl_2 = 2;// Enum_DirCtrl_2
+  Enum_DirCtrl_3 = 3;// Enum_DirCtrl_3
+  Enum_DirCtrl_4 = 4;// Enum_DirCtrl_4
+  Enum_DirCtrl_5 = 5;// Enum_DirCtrl_5
+  Enum_DirCtrl_6 = 6;// Enum_DirCtrl_6
+  Enum_DirCtrl_7 = 7;// Enum_DirCtrl_7
+  Enum_DirCtrl_8 = 8;// Enum_DirCtrl_8
+}
+

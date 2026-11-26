@@ -1,0 +1,4333 @@
+syntax = "proto3";
+package AI;
+// package com.cetc29.situationserver.pojo.outer.model;
+import public "EnumDefine.proto";
+
+// sCOM_SET_PARA
+message sCOM_SET_PARA {
+  bytes sRID = 1;// sRID
+  int32 ComID = 2;// ComID
+  int32 PlatID = 3;// PlatID
+  bytes EquipmentName = 4;// EquipmentName
+  bytes EquipmentType = 5;// EquipmentType
+  enumDefine.Enum_PlatType PlatType = 6;// PlatType
+  enumDefine.Enum_ATT ATT = 7;// ATT
+  float LON = 8;// LON
+  float LAT = 9;// LAT
+  float Height = 10;// Height
+  float StartRF = 11;// StartRF
+  float EndRF = 12;// EndRF
+  int32 FreqNo = 13;// FreqNo
+  repeated float FreqSet = 14;// FreqSet
+  int32 hopRate = 15;// hopRate
+  float Bandwidth = 16;// 通信信号带宽
+  enumDefine.Enum_CMD CMD = 17;// 通信信号调制样式
+  enumDefine.Enum_SignalType SignalType = 18;// 信号类型
+  enumDefine.Enum_SignalworkMode workMode = 19;// workMode
+  enumDefine.Enum_WorkState WorkState = 20;// 工作状态
+  bool bCenterFlag = 21;// 收发中心站标记
+  float ComAreaHeight = 22;// 畅通区高度
+  bool bNetCenter = 23;// 网络节点中心标记，是否为网络中心；仅数据链有效
+  int32 iHour = 24;// iHour
+  float fCalcStartAz = 25;// 起始方位角
+  float fCalcEndAz = 26;// 终止方位角
+  int32 iRelationRadioNo = 27;// RelationRadioID关联电台ID个数
+  repeated int32 pRelationRadioID = 28;// RelationRadioID关联电台ID
+}
+
+// sCOM_SET_PARA
+message _ModelBus_sCOM_SET_PARA {
+  bytes sRID = 1;// sRID
+  int32 ComID = 2;// ComID
+  int32 PlatID = 3;// PlatID
+  bytes EquipmentName = 4;// EquipmentName
+  bytes EquipmentType = 5;// EquipmentType
+  enumDefine.Enum_PlatType PlatType = 6;// PlatType
+  enumDefine.Enum_ATT ATT = 7;// ATT
+  float LON = 8;// LON
+  float LAT = 9;// LAT
+  float Height = 10;// Height
+  float StartRF = 11;// StartRF
+  float EndRF = 12;// EndRF
+  int32 FreqNo = 13;// FreqNo
+  repeated float FreqSet = 14;// FreqSet
+  int32 hopRate = 15;// hopRate
+  float Bandwidth = 16;// 通信信号带宽
+  enumDefine.Enum_CMD CMD = 17;// 通信信号调制样式
+  enumDefine.Enum_SignalType SignalType = 18;// 信号类型
+  enumDefine.Enum_SignalworkMode workMode = 19;// workMode
+  enumDefine.Enum_WorkState WorkState = 20;// 工作状态
+  bool bCenterFlag = 21;// 收发中心站标记
+  float ComAreaHeight = 22;// 畅通区高度
+  bool bNetCenter = 23;// 网络节点中心标记，是否为网络中心；仅数据链有效
+  int32 iHour = 24;// iHour
+  float fCalcStartAz = 25;// 起始方位角
+  float fCalcEndAz = 26;// 终止方位角
+  int32 iRelationRadioNo = 27;// RelationRadioID关联电台ID个数
+  repeated int32 pRelationRadioID = 28;// RelationRadioID关联电台ID
+}
+
+// 多频点信号参数
+message MultiPntSigPara {
+  float fJamRF = 1;// GR中心频率
+  float fJamRFBandWth = 2;// GR带宽
+}
+
+// sCOM_PARA
+message sCOM_PARA {
+  bytes sRID = 1;// sRID
+  int32 ComID = 2;// ComID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  bytes EquipmentName = 5;// EquipmentName
+  bytes EquipmentType = 6;// EquipmentType
+  enumDefine.Enum_PlatType PlatType = 7;// PlatType
+  enumDefine.Enum_ATT ATT = 8;// ATT
+  enumDefine.Enum_SurvivalState SurvivalState = 9;// SurvivalState
+  enumDefine.Enum_WorkState WorkState = 10;// WorkState
+  float LON = 11;// LON
+  float LAT = 12;// LAT
+  float Height = 13;// Height
+  enumDefine.Enum_CMD CMD = 14;// CMD
+  float Power = 15;// Power
+  enumDefine.Enum_InfoType InfoType = 16;// InfoType
+  enumDefine.Enum_SignalType SignalType = 17;// SignalType
+  float StartRF = 18;// StartRF
+  float EndRF = 19;// EndRF
+  int32 FreqNo = 20;// FreqNo
+  repeated MultiPntSigPara FreqSet = 21;// FreqSet
+  int32 MaxHopRate = 22;// MaxHopRate
+  int32 MinHopRate = 23;// MinHopRate
+  float DutyRatio = 24;// DutyRatio
+  float fContinueTime = 25;// fContinueTime
+  bool bNetCenter = 26;// bNetCenter
+  enumDefine.Enum_WaveTransType WaveTransType = 27;// WaveTransType
+}
+
+// sCOM_PARA
+message _ModelBus_sCOM_PARA {
+  bytes sRID = 1;// sRID
+  int32 ComID = 2;// ComID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  bytes EquipmentName = 5;// EquipmentName
+  bytes EquipmentType = 6;// EquipmentType
+  enumDefine.Enum_PlatType PlatType = 7;// PlatType
+  enumDefine.Enum_ATT ATT = 8;// ATT
+  enumDefine.Enum_SurvivalState SurvivalState = 9;// SurvivalState
+  enumDefine.Enum_WorkState WorkState = 10;// WorkState
+  float LON = 11;// LON
+  float LAT = 12;// LAT
+  float Height = 13;// Height
+  enumDefine.Enum_CMD CMD = 14;// CMD
+  float Power = 15;// Power
+  enumDefine.Enum_InfoType InfoType = 16;// InfoType
+  enumDefine.Enum_SignalType SignalType = 17;// SignalType
+  float StartRF = 18;// StartRF
+  float EndRF = 19;// EndRF
+  int32 FreqNo = 20;// FreqNo
+  repeated MultiPntSigPara FreqSet = 21;// FreqSet
+  int32 MaxHopRate = 22;// MaxHopRate
+  int32 MinHopRate = 23;// MinHopRate
+  float DutyRatio = 24;// DutyRatio
+  float fContinueTime = 25;// fContinueTime
+  bool bNetCenter = 26;// bNetCenter
+  enumDefine.Enum_WaveTransType WaveTransType = 27;// WaveTransType
+}
+
+// sRelaRadioPara
+message sRelaRadioPara {
+  int32 RelationRadioID = 1;// RelationRadioID
+  float RelationRadioLON = 2;// RelationRadioLON
+  float RelationRadioLAT = 3;// RelationRadioLAT
+  float RelationRadioHeight = 4;// RelationRadioHeight
+  float isr = 5;// isr
+  float errorRate = 6;// errorRate
+}
+
+// sRelaRadioPara
+message _ModelBus_sRelaRadioPara {
+  int32 RelationRadioID = 1;// RelationRadioID
+  float RelationRadioLON = 2;// RelationRadioLON
+  float RelationRadioLAT = 3;// RelationRadioLAT
+  float RelationRadioHeight = 4;// RelationRadioHeight
+  float isr = 5;// isr
+  float errorRate = 6;// errorRate
+}
+
+// sComState
+message sComState {
+  bytes sRID = 1;// sRID
+  int32 ComID = 2;// ComID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  bytes EquipmentName = 5;// EquipmentName
+  bytes EquipmentType = 6;// EquipmentType
+  int32 RelationRadioNo = 7;// RelationRadioNo
+  repeated sRelaRadioPara pRelationRadioPara = 8;// pRelationRadioPara
+}
+
+// sComState
+message _ModelBus_sComState {
+  bytes sRID = 1;// sRID
+  int32 ComID = 2;// ComID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  bytes EquipmentName = 5;// EquipmentName
+  bytes EquipmentType = 6;// EquipmentType
+  int32 RelationRadioNo = 7;// RelationRadioNo
+  repeated sRelaRadioPara pRelationRadioPara = 8;// pRelationRadioPara
+}
+
+// CComArea
+message CComArea {
+  float LON1 = 1;// LON1
+  float LAT1 = 2;// LAT1
+  float LON2 = 3;// LON2
+  float LAT2 = 4;// LAT2
+  float LON3 = 5;// LON3
+  float LAT3 = 6;// LAT3
+  float LON4 = 7;// LON4
+  float LAT4 = 8;// LAT4
+}
+
+// CComArea
+message _ModelBus_CComArea {
+  float LON1 = 1;// LON1
+  float LAT1 = 2;// LAT1
+  float LON2 = 3;// LON2
+  float LAT2 = 4;// LAT2
+  float LON3 = 5;// LON3
+  float LAT3 = 6;// LAT3
+  float LON4 = 7;// LON4
+  float LAT4 = 8;// LAT4
+}
+
+// CommUnblockedArea
+message CommUnblockedArea {
+  bytes sRID = 1;// sRID
+  int32 ComID = 2;// ComID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  bytes EquipmentName = 5;// EquipmentName
+  bytes EquipmentType = 6;// EquipmentType
+  bool bCenterFlag = 7;// bCenterFlag
+  int32 PtNum = 8;// PtNum
+  repeated CComArea pComArea = 9;// pComArea
+  float Height = 10;// Height
+}
+
+// CommUnblockedArea
+message _ModelBus_CommUnblockedArea {
+  bytes sRID = 1;// sRID
+  int32 ComID = 2;// ComID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  bytes EquipmentName = 5;// EquipmentName
+  bytes EquipmentType = 6;// EquipmentType
+  bool bCenterFlag = 7;// bCenterFlag
+  int32 PtNum = 8;// PtNum
+  repeated CComArea pComArea = 9;// pComArea
+  float Height = 10;// Height
+}
+
+// 关键点
+message sKeyPoint {
+  int32 iTime = 1;// 关键点时间
+  enumDefine.Enum_KeyPtType KeyPtType = 2;// 关键点类型
+}
+
+// sCOMRECON_SET_PARA
+message sCOMRECON_SET_PARA {
+  bytes sRID = 1;// 仿真id
+  int32 ReconID = 2;// 装备ID号
+  int32 PlatID = 3;// PlatID
+  bytes EquipmentName = 4;// EquipmentName
+  bytes EquipmentType = 5;// EquipmentType
+  enumDefine.Enum_ATT ATT = 6;// 敌我属性
+  enumDefine.Enum_WorkState WorkState = 7;// 工作属性
+  float fLon = 8;// 经度
+  float fLat = 9;// 纬度
+  float fHeight = 10;// 高度
+  int32 iHour = 11;// iHour
+  float fStartAZ = 12;// fStartAZ
+  float fEndAZ = 13;// fEndAZ
+  float fAntAngAZ = 14;// fAntAngAZ
+  float fAntAngEL = 15;// fAntAngEL
+  float fStartEL = 16;// fStartEL
+  float fEndEL = 17;// fEndEL
+  float fStartRF = 18;// fStartRF
+  float fEndRF = 19;// fEndRF
+  int32 RngCalcID = 20;// RngCalcID
+  int32 iKeyPtNum = 21;// 关键点个数
+  repeated sKeyPoint pKeyPt = 22;// 关键点列表
+  int32 iCoopStationNum = 23;// iCoopStationNum
+  repeated int32 lCoopStationID = 24;// lCoopStationID
+}
+
+// sCOMRECON_SET_PARA
+message _ModelBus_sCOMRECON_SET_PARA {
+  bytes sRID = 1;// 仿真id
+  int32 ReconID = 2;// 装备ID号
+  int32 PlatID = 3;// PlatID
+  bytes EquipmentName = 4;// EquipmentName
+  bytes EquipmentType = 5;// EquipmentType
+  enumDefine.Enum_ATT ATT = 6;// 敌我属性
+  enumDefine.Enum_WorkState WorkState = 7;// 工作属性
+  float fLon = 8;// 经度
+  float fLat = 9;// 纬度
+  float fHeight = 10;// 高度
+  int32 iHour = 11;// iHour
+  float fStartAZ = 12;// fStartAZ
+  float fEndAZ = 13;// fEndAZ
+  float fAntAngAZ = 14;// fAntAngAZ
+  float fAntAngEL = 15;// fAntAngEL
+  float fStartEL = 16;// fStartEL
+  float fEndEL = 17;// fEndEL
+  float fStartRF = 18;// fStartRF
+  float fEndRF = 19;// fEndRF
+  int32 RngCalcID = 20;// RngCalcID
+  int32 iKeyPtNum = 21;// 关键点个数
+  repeated sKeyPoint pKeyPt = 22;// 关键点列表
+  int32 iCoopStationNum = 23;// iCoopStationNum
+  repeated int32 lCoopStationID = 24;// lCoopStationID
+}
+
+// sCOMRECON_GET_PARA
+message sCOMRECON_GET_PARA {
+  bytes sRID = 1;// sRID
+  int32 ReconID = 2;// ReconID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  enumDefine.Enum_ATT ATT = 5;// ATT
+  bytes EquipmentName = 6;// EquipmentName
+  bytes EquipmentType = 7;// EquipmentType
+  float fLon = 8;// fLon
+  float fLat = 9;// fLat
+  float fHeight = 10;// fHeight
+  float StartAZ = 11;// StartAZ
+  float EndAZ = 12;// EndAZ
+  float fStartEL = 13;// fStartEL
+  float fEndEL = 14;// fEndEL
+  float StartRF = 15;// StartRF
+  float EndRF = 16;// EndRF
+  enumDefine.Enum_SurvivalState SurvivalState = 17;// SurvivalState
+  enumDefine.Enum_WorkState WorkState = 18;// WorkState
+  int32 WorkMode = 19;// WorkMode
+}
+
+// sCOMRECON_GET_PARA
+message _ModelBus_sCOMRECON_PARA {
+  bytes sRID = 1;// sRID
+  int32 ReconID = 2;// ReconID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  enumDefine.Enum_ATT ATT = 5;// ATT
+  bytes EquipmentName = 6;// EquipmentName
+  bytes EquipmentType = 7;// EquipmentType
+  float fLon = 8;// fLon
+  float fLat = 9;// fLat
+  float fHeight = 10;// fHeight
+  float StartAZ = 11;// StartAZ
+  float EndAZ = 12;// EndAZ
+  float fStartEL = 13;// fStartEL
+  float fEndEL = 14;// fEndEL
+  float StartRF = 15;// StartRF
+  float EndRF = 16;// EndRF
+  enumDefine.Enum_SurvivalState SurvivalState = 17;// SurvivalState
+  enumDefine.Enum_WorkState WorkState = 18;// WorkState
+  int32 WorkMode = 19;// WorkMode
+}
+
+// ZC/GR能力区域
+message sRECON_POWERPOINT {
+  float fStartAZ = 1;// 起始方位角
+  float fEndAZ = 2;// 终止方位角
+  float fMaxDis = 3;// 最大作用距离
+  float fMinDis = 4;// 最小作用距离
+  float fStartEL = 5;// 起始俯仰角
+  float fEndEL = 6;// 终止俯仰角
+}
+
+// COMMRECON_AREA
+message COMMRECON_AREA {
+  bytes sRID = 1;// sRID
+  int32 ReconID = 2;// ReconID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 TrgID = 5;// TrgID
+  int32 PtNum = 6;// PtNum
+  repeated sRECON_POWERPOINT pComReconArea = 7;// pComReconArea
+  float TargetHeight = 8;// TargetHeight
+}
+
+// COMMRECON_AREA
+message _ModelBus_COMMRECON_AREA {
+  bytes sRID = 1;// sRID
+  int32 ReconID = 2;// ReconID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 TrgID = 5;// TrgID
+  int32 PtNum = 6;// PtNum
+  repeated sRECON_POWERPOINT pComReconArea = 7;// pComReconArea
+  float TargetHeight = 8;// TargetHeight
+}
+
+// CommTrgPara
+message CommTrgPara {
+  int32 TrgID = 1;// TrgID
+  float Bandwidth = 2;// Bandwidth
+  enumDefine.Enum_CMD CMD = 3;// CMD
+  enumDefine.Enum_SignalType SignalType = 4;// SignalType
+  enumDefine.Enum_InfoType InfoType = 5;// InfoType
+  float StartRF = 6;// StartRF
+  float EndRF = 7;// EndRF
+  double Duration = 8;// Duration
+  float fLon = 9;// fLon
+  float fLat = 10;// fLat
+  int32 iHopRate = 11;// iHopRate
+  int32 iNetID = 12;// iNetID
+  int32 FreqNo = 13;// FreqNo
+  repeated MultiPntSigPara FreqSet = 14;// FreqSet
+  float AZ = 15;// AZ
+  float EL = 16;// EL
+  float DIS = 17;// DIS
+  enumDefine.Enum_SignalState SignalState = 18;// SignalState
+  float fAZError = 19;// fAZError
+  float fELError = 20;// fELError
+  float fLocDisError = 21;// fLocDisError
+  float fCaptureProb = 22;// fCaptureProb
+}
+
+// CommTrgPara
+message _ModelBus_CommTrgPara {
+  int32 TrgID = 1;// TrgID
+  float Bandwidth = 2;// Bandwidth
+  enumDefine.Enum_CMD CMD = 3;// CMD
+  enumDefine.Enum_SignalType SignalType = 4;// SignalType
+  enumDefine.Enum_InfoType InfoType = 5;// InfoType
+  float StartRF = 6;// StartRF
+  float EndRF = 7;// EndRF
+  double Duration = 8;// Duration
+  float fLon = 9;// fLon
+  float fLat = 10;// fLat
+  int32 iHopRate = 11;// iHopRate
+  int32 iNetID = 12;// iNetID
+  int32 FreqNo = 13;// FreqNo
+  repeated MultiPntSigPara FreqSet = 14;// FreqSet
+  float AZ = 15;// AZ
+  float EL = 16;// EL
+  float DIS = 17;// DIS
+  enumDefine.Enum_SignalState SignalState = 18;// SignalState
+  float fAZError = 19;// fAZError
+  float fELError = 20;// fELError
+  float fLocDisError = 21;// fLocDisError
+  float fCaptureProb = 22;// fCaptureProb
+}
+
+// sCOMMDETECTPARA
+message sCOMMDETECTPARA {
+  bytes sRID = 1;// sRID
+  int32 ReconID = 2;// ReconID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  bytes EquipmentName = 5;// EquipmentName
+  bytes EquipmentType = 6;// EquipmentType
+  int32 nTrgNum = 7;// nTrgNum
+  repeated CommTrgPara TrgPara = 8;// TrgPara
+}
+
+// sCOMMDETECTPARA
+message _ModelBus_sCOMMDETECTPARA {
+  bytes sRID = 1;// sRID
+  int32 ReconID = 2;// ReconID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  bytes EquipmentName = 5;// EquipmentName
+  bytes EquipmentType = 6;// EquipmentType
+  int32 nTrgNum = 7;// nTrgNum
+  repeated CommTrgPara TrgPara = 8;// TrgPara
+}
+
+// 保护频率信息
+message ProtectRF {
+  float fStartRF = 1;// 频率下限
+  float fEndRF = 2;// 频率上限
+}
+
+// sCOMJAM_SET_PARA
+message sCOMJAM_SET_PARA {
+  bytes sRID = 1;// sRID
+  int32 JammerID = 2;// JammerID
+  int32 PlatID = 3;// PlatID
+  bytes EquipmentName = 4;// EquipmentName
+  bytes EquipmentType = 5;// EquipmentType
+  enumDefine.Enum_PlatType PlatType = 6;// 搭载平台类型
+  enumDefine.Enum_ATT ATT = 7;// 敌我属性
+  float fLon = 8;// 经度
+  float fLat = 9;// 纬度
+  float fHeight = 10;// 高度
+  enumDefine.Enum_WorkState WorkState = 11;// 工作状态
+  float StartRF = 12;// 起始频率	
+  float EndRF = 13;// 终止频率
+  int32 FreqNo = 14;// FreqNo
+  repeated float FreqSet = 15;// FreqSet
+  int32 iProtectRFNum = 16;// iProtectRFNum
+  repeated ProtectRF pProtectRFInfo = 17;// pProtectRFInfo
+  float JamPointAZ = 18;// JamPointAZ
+  float JamPointEL = 19;// JamPointEL
+  enumDefine.Enum_AntennaType AntennaType = 20;// 仅对短波设备有效，天线类型
+  int32 iHour = 21;// iHour
+  bool bForbidJam = 22;// bForbidJam
+  int32 iKeyPtNum = 23;// iKeyPtNum
+  repeated sKeyPoint pKeyPt = 24;// 关键点列表
+  int32 iJamComTrgNum = 25;// iJamComTrgNum
+  repeated int32 pJamComTrgID = 26;// pJamComTrgID
+}
+
+// sCOMJAM_SET_PARA
+message _ModelBus_sCOMJAM_SET_PARA {
+  bytes sRID = 1;// sRID
+  int32 JammerID = 2;// JammerID
+  int32 PlatID = 3;// PlatID
+  bytes EquipmentName = 4;// EquipmentName
+  bytes EquipmentType = 5;// EquipmentType
+  enumDefine.Enum_PlatType PlatType = 6;// 搭载平台类型
+  enumDefine.Enum_ATT ATT = 7;// 敌我属性
+  float fLon = 8;// 经度
+  float fLat = 9;// 纬度
+  float fHeight = 10;// 高度
+  enumDefine.Enum_WorkState WorkState = 11;// 工作状态
+  float StartRF = 12;// 起始频率	
+  float EndRF = 13;// 终止频率
+  int32 FreqNo = 14;// FreqNo
+  repeated float FreqSet = 15;// FreqSet
+  int32 iProtectRFNum = 16;// iProtectRFNum
+  repeated ProtectRF pProtectRFInfo = 17;// pProtectRFInfo
+  float JamPointAZ = 18;// JamPointAZ
+  float JamPointEL = 19;// JamPointEL
+  enumDefine.Enum_AntennaType AntennaType = 20;// 仅对短波设备有效，天线类型
+  int32 iHour = 21;// iHour
+  bool bForbidJam = 22;// bForbidJam
+  int32 iKeyPtNum = 23;// iKeyPtNum
+  repeated sKeyPoint pKeyPt = 24;// 关键点列表
+  int32 iJamComTrgNum = 25;// iJamComTrgNum
+  repeated int32 pJamComTrgID = 26;// pJamComTrgID
+}
+
+// GR波束
+message sJAM_POINT {
+  float JamPointAZ = 1;// GR波束方位指向
+  float JamPointEL = 2;// GR波束俯仰指向
+  float HBeamWidth = 3;// GR天线水平波束宽度
+  float VBeamWidth = 4;// GR天线垂直波束宽度
+  float BeamDis = 5;// 波束长度
+  int32 nJamTrgNum = 6;// 真实GR目标数
+  repeated int32 JamTrgID = 7;// GR的目标ID
+}
+
+// sCOMJAM_GET_PARA
+message sCOMJAM_GET_PARA {
+  bytes sRID = 1;// sRID
+  int32 JammerID = 2;// JammerID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  bytes EquipmentName = 5;// EquipmentName
+  bytes EquipmentType = 6;// EquipmentType
+  enumDefine.Enum_ATT ATT = 7;// ATT
+  enumDefine.Enum_WorkState WorkState = 8;// WorkState
+  enumDefine.Enum_SurvivalState SurvivalState = 9;// SurvivalState
+  float fLon = 10;// fLon
+  float fLat = 11;// fLat
+  float fHeight = 12;// fHeight
+  int32 JamPointAmount = 13;// JamPointAmount
+  repeated sJAM_POINT JamPointVar = 14;// JamPointVar
+  int32 FreqNo = 15;// FreqNo
+  repeated float FreqSet = 16;// FreqSet
+}
+
+// sCOMJAM_GET_PARA
+message _ModelBus_sCOMJAM_PARA {
+  bytes sRID = 1;// sRID
+  int32 JammerID = 2;// JammerID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  bytes EquipmentName = 5;// EquipmentName
+  bytes EquipmentType = 6;// EquipmentType
+  enumDefine.Enum_ATT ATT = 7;// ATT
+  enumDefine.Enum_WorkState WorkState = 8;// WorkState
+  enumDefine.Enum_SurvivalState SurvivalState = 9;// SurvivalState
+  float fLon = 10;// fLon
+  float fLat = 11;// fLat
+  float fHeight = 12;// fHeight
+  int32 JamPointAmount = 13;// JamPointAmount
+  repeated sJAM_POINT JamPointVar = 14;// JamPointVar
+  int32 FreqNo = 15;// FreqNo
+  repeated float FreqSet = 16;// FreqSet
+}
+
+// COMMJAMRARA_INNER
+message COMMJAMRARA_INNER {
+  int32 ReceiveID = 1;// ReceiveID
+  enumDefine.Enum_CJamType CJamType = 2;// CJamType
+  enumDefine.Enum_CMD CMD = 3;// CMD
+  float Power = 4;// Power
+  float StartRF = 5;// StartRF
+  float EndRF = 6;// EndRF
+  float CjamFreInterval = 7;// CjamFreInterval
+  float CjamLinearTime = 8;// CjamLinearTime
+  float fContinueTime = 9;// fContinueTime
+  float CJamBandWidth = 10;// CJamBandWidth
+  float JamPointAZ = 11;// JamPointAZ
+  float JamPointEL = 12;// JamPointEL
+  float fBeamWidth = 13;// fBeamWidth
+  float fBeamPitchWidth = 14;// fBeamPitchWidth
+}
+
+// COMMJAMRARA_INNER
+message _ModelBus_sCOMMJAMRARA_INNER {
+  int32 ReceiveID = 1;// ReceiveID
+  enumDefine.Enum_CJamType CJamType = 2;// CJamType
+  enumDefine.Enum_CMD CMD = 3;// CMD
+  float Power = 4;// Power
+  float StartRF = 5;// StartRF
+  float EndRF = 6;// EndRF
+  float CjamFreInterval = 7;// CjamFreInterval
+  float CjamLinearTime = 8;// CjamLinearTime
+  float fContinueTime = 9;// fContinueTime
+  float CJamBandWidth = 10;// CJamBandWidth
+  float JamPointAZ = 11;// JamPointAZ
+  float JamPointEL = 12;// JamPointEL
+  float fBeamWidth = 13;// fBeamWidth
+  float fBeamPitchWidth = 14;// fBeamPitchWidth
+}
+
+// sCOMMJAMPARA
+message sCOMMJAMPARA {
+  bytes sRID = 1;// sRID
+  int32 JammerID = 2;// JammerID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  enumDefine.Enum_ATT ATT = 5;// ATT
+  bytes EquipmentName = 6;// EquipmentName
+  bytes EquipmentType = 7;// EquipmentType
+  enumDefine.Enum_PlatType PlatType = 8;// PlatType
+  float fLon = 9;// fLon
+  float fLat = 10;// fLat
+  float fHeight = 11;// fHeight
+  enumDefine.Enum_AntennaType AntennaType = 12;// AntennaType
+  int32 nAntDotNum = 13;// nAntDotNum
+  repeated float AntData = 14;// AntData
+  int32 nJamNum = 15;// nJamNum
+  repeated COMMJAMRARA_INNER JamPara = 16;// JamPara
+}
+
+// sCOMMJAMPARA
+message _ModelBus_sCOMMJAMPARA {
+  bytes sRID = 1;// sRID
+  int32 JammerID = 2;// JammerID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  enumDefine.Enum_ATT ATT = 5;// ATT
+  bytes EquipmentName = 6;// EquipmentName
+  bytes EquipmentType = 7;// EquipmentType
+  enumDefine.Enum_PlatType PlatType = 8;// PlatType
+  float fLon = 9;// fLon
+  float fLat = 10;// fLat
+  float fHeight = 11;// fHeight
+  enumDefine.Enum_AntennaType AntennaType = 12;// AntennaType
+  int32 nAntDotNum = 13;// nAntDotNum
+  repeated float AntData = 14;// AntData
+  int32 nJamNum = 15;// nJamNum
+  repeated COMMJAMRARA_INNER JamPara = 16;// JamPara
+}
+
+// 时间
+message sTIME {
+  int32 iYear = 1;// 年
+  int32 iMon = 2;// 月
+  int32 iDay = 3;// 日
+  int32 iHour = 4;// 时
+  int32 iMin = 5;// 分
+  int32 iSec = 6;// 秒
+  int32 iMilsec = 7;// iMilsec
+}
+
+// RADIOJAM_SET_PARA
+message RADIOJAM_SET_PARA {
+  bytes sRID = 1;// 仿真id
+  int32 JammerID = 2;// 装备id
+  enumDefine.Enum_PlatType PlatType = 3;// 搭载平台类型
+  float fLon = 4;// 经度
+  float fLat = 5;// 纬度
+  float fHeight = 6;// 高度
+  float StartRF = 7;// 起始频率	
+  float EndRF = 8;// 终止频率	
+  float JamPointAZ = 9;// GR波束方位指向(地面装备)/GR飞机航向
+  float JamPointEL = 10;// GR波束方位指向(地面装备)/GR飞机俯仰(预留)
+  enumDefine.Enum_AntennaType AntennaType = 11;// 仅对短波设备有效，天线类型
+  sTIME StartTime = 12;// 仅短波设备有效，动态推演时表示仿真开始时间，静态计算时表示该次计算对应的时间
+  float fStdTrgHeight = 13;// 典型ZC高度
+}
+
+// RADIOJAM_SET_PARA
+message _ModelBus_RADIOJAM_SET_PARA {
+  bytes sRID = 1;// 仿真id
+  int32 JammerID = 2;// 装备id
+  enumDefine.Enum_PlatType PlatType = 3;// 搭载平台类型
+  float fLon = 4;// 经度
+  float fLat = 5;// 纬度
+  float fHeight = 6;// 高度
+  float StartRF = 7;// 起始频率	
+  float EndRF = 8;// 终止频率	
+  float JamPointAZ = 9;// GR波束方位指向(地面装备)/GR飞机航向
+  float JamPointEL = 10;// GR波束方位指向(地面装备)/GR飞机俯仰(预留)
+  enumDefine.Enum_AntennaType AntennaType = 11;// 仅对短波设备有效，天线类型
+  sTIME StartTime = 12;// 仅短波设备有效，动态推演时表示仿真开始时间，静态计算时表示该次计算对应的时间
+  float fStdTrgHeight = 13;// 典型ZC高度
+}
+
+// RADIO_PARA
+message RADIO_PARA {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  float LON = 3;// LON
+  float LAT = 4;// LAT
+  float Height = 5;// Height
+  enumDefine.Enum_CMD CMD = 6;// CMD
+  enumDefine.Enum_InfoType InfoType = 7;// InfoType
+  enumDefine.Enum_SignalType SignalType = 8;// SignalType
+  float Power = 9;// Power
+  float Bandwidth = 10;// Bandwidth
+  float StartRF = 11;// StartRF
+  float EndRF = 12;// EndRF
+  bool bCenterFlag = 13;// bCenterFlag
+  enumDefine.Enum_PlatType PlatType = 14;// PlatType
+  enumDefine.Enum_WaveTransType WaveTransType = 15;// WaveTransType
+}
+
+// RADIO_PARA
+message _ModelBus_RADIO_PARA {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  float LON = 3;// LON
+  float LAT = 4;// LAT
+  float Height = 5;// Height
+  enumDefine.Enum_CMD CMD = 6;// CMD
+  enumDefine.Enum_InfoType InfoType = 7;// InfoType
+  enumDefine.Enum_SignalType SignalType = 8;// SignalType
+  float Power = 9;// Power
+  float Bandwidth = 10;// Bandwidth
+  float StartRF = 11;// StartRF
+  float EndRF = 12;// EndRF
+  bool bCenterFlag = 13;// bCenterFlag
+  enumDefine.Enum_PlatType PlatType = 14;// PlatType
+  enumDefine.Enum_WaveTransType WaveTransType = 15;// WaveTransType
+}
+
+// 输出
+message COMMJAMPARA {
+  bytes sRID = 1;// sRID
+  int32 JammerID = 2;// JammerID
+  float fLon = 3;// fLon
+  float fLat = 4;// fLat
+  float fHeight = 5;// fHeight
+  float JamPointAZ = 6;// JamPointAZ
+  float JamPointEL = 7;// JamPointEL
+  float fAzBeamWidth = 8;// fAzBeamWidth
+  float fElBeamWidth = 9;// fElBeamWidth
+  enumDefine.Enum_AntennaType AntennaType = 10;// AntennaType
+  enumDefine.Enum_PlatType PlatType = 11;// PlatType
+  int32 nAntDotNum = 12;// nAntDotNum
+  repeated float AntData = 13;// AntData
+  int32 nJamNum = 14;// nJamNum
+  repeated COMMJAMRARA_INNER JamPara = 15;// JamPara
+}
+
+// 输出
+message _ModelBus_COMMJAMPARA {
+  bytes sRID = 1;// sRID
+  int32 JammerID = 2;// JammerID
+  float fLon = 3;// fLon
+  float fLat = 4;// fLat
+  float fHeight = 5;// fHeight
+  float JamPointAZ = 6;// JamPointAZ
+  float JamPointEL = 7;// JamPointEL
+  float fAzBeamWidth = 8;// fAzBeamWidth
+  float fElBeamWidth = 9;// fElBeamWidth
+  enumDefine.Enum_AntennaType AntennaType = 10;// AntennaType
+  enumDefine.Enum_PlatType PlatType = 11;// PlatType
+  int32 nAntDotNum = 12;// nAntDotNum
+  repeated float AntData = 13;// AntData
+  int32 nJamNum = 14;// nJamNum
+  repeated COMMJAMRARA_INNER JamPara = 15;// JamPara
+}
+
+// CommResult
+message CommResult {
+  int32 EquipID = 1;// EquipID
+  int32 TargetID = 2;// TargetID
+  bool bReconJamed = 3;// bReconJamed
+  bool bIsInFrequenceRange = 4;// bIsInFrequenceRange
+  bool bIsInAzVision = 5;// bIsInAzVision
+  bool bIsInELVision = 6;// bIsInELVision
+  bool bIsInLOS = 7;// bIsInLOS
+  bool bIsTerrainVisible = 8;// bIsTerrainVisible
+  bool bIsInSensity = 9;// bIsInSensity
+  bool bIsSignalRecognise = 10;// bIsSignalRecognise
+  bool bIsInMaxJamNum = 11;// bIsInMaxJamNum
+  float AZ = 12;// AZ
+  float EL = 13;// EL
+  float DIS = 14;// DIS
+  float ReconMaxRange = 15;// ReconMaxRange
+  float DOAError = 16;// DOAError
+  float LocationError = 17;// LocationError
+  float CaptureProb = 18;// CaptureProb
+}
+
+// CommResult
+message _ModelBus_CommResult {
+  int32 EquipID = 1;// EquipID
+  int32 TargetID = 2;// TargetID
+  bool bReconJamed = 3;// bReconJamed
+  bool bIsInFrequenceRange = 4;// bIsInFrequenceRange
+  bool bIsInAzVision = 5;// bIsInAzVision
+  bool bIsInELVision = 6;// bIsInELVision
+  bool bIsInLOS = 7;// bIsInLOS
+  bool bIsTerrainVisible = 8;// bIsTerrainVisible
+  bool bIsInSensity = 9;// bIsInSensity
+  bool bIsSignalRecognise = 10;// bIsSignalRecognise
+  bool bIsInMaxJamNum = 11;// bIsInMaxJamNum
+  float AZ = 12;// AZ
+  float EL = 13;// EL
+  float DIS = 14;// DIS
+  float ReconMaxRange = 15;// ReconMaxRange
+  float DOAError = 16;// DOAError
+  float LocationError = 17;// LocationError
+  float CaptureProb = 18;// CaptureProb
+}
+
+// aCOMMRECON_RESULT
+message aCOMMRECON_RESULT {
+  bytes sRID = 1;// sRID
+  int32 EquipID = 2;// EquipID
+  int32 nResultNum = 3;// nResultNum
+  repeated CommResult pCommResult = 4;// pCommResult
+}
+
+// aCOMMRECON_RESULT
+message _ModelBus_aCOMMRECON_RESULT {
+  bytes sRID = 1;// sRID
+  int32 EquipID = 2;// EquipID
+  int32 nResultNum = 3;// nResultNum
+  repeated CommResult pCommResult = 4;// pCommResult
+}
+
+// RelationRadioPara
+message RelationRadioPara {
+  int32 RelationRadioID = 1;// RelationRadioID
+  float RelationRadioLON = 2;// RelationRadio经度	
+  float RelationRadioLAT = 3;// RelationRadio纬度	
+  float RelationRadioHeight = 4;// RelationRadio高度
+}
+
+// RADIO_SET_PARA
+message RADIO_SET_PARA {
+  bytes sRID = 1;// 仿真id
+  int32 RadioID = 2;// 目标id
+  float LON = 3;// 经度
+  float LAT = 4;// 纬度
+  float Height = 5;// 高度
+  float StartRF = 6;// 起始频率
+  float EndRF = 7;// 终止频率
+  float Bandwidth = 8;// 通信信号带宽
+  enumDefine.Enum_CMD CMD = 9;// 通信信号调制样式
+  enumDefine.Enum_SignalType SignalType = 10;// 信号类型
+  enumDefine.Enum_PlatType PlatType = 11;// PlatType
+  bool bCenterFlag = 12;// 收发中心站标记
+  float ComAreaHeight = 13;// 畅通区高度
+  sTIME StartTime = 14;// 仅短波设备有效，动态推演时表示仿真开始时间,静态计算时表示该次计算对应的时间
+  float fCalcStartAz = 15;// 起始方位角
+  float fCalcEndAz = 16;// 终止方位角
+  int32 RelationRadioNum = 17;// RelationRadioNum
+  repeated RelationRadioPara pRelationRadioInfo = 18;// pRelationRadioInfo
+}
+
+// RADIO_SET_PARA
+message _ModelBus_RADIO_SET_PARA {
+  bytes sRID = 1;// 仿真id
+  int32 RadioID = 2;// 目标id
+  float LON = 3;// 经度
+  float LAT = 4;// 纬度
+  float Height = 5;// 高度
+  float StartRF = 6;// 起始频率
+  float EndRF = 7;// 终止频率
+  float Bandwidth = 8;// 通信信号带宽
+  enumDefine.Enum_CMD CMD = 9;// 通信信号调制样式
+  enumDefine.Enum_SignalType SignalType = 10;// 信号类型
+  enumDefine.Enum_PlatType PlatType = 11;// PlatType
+  bool bCenterFlag = 12;// 收发中心站标记
+  float ComAreaHeight = 13;// 畅通区高度
+  sTIME StartTime = 14;// 仅短波设备有效，动态推演时表示仿真开始时间,静态计算时表示该次计算对应的时间
+  float fCalcStartAz = 15;// 起始方位角
+  float fCalcEndAz = 16;// 终止方位角
+  int32 RelationRadioNum = 17;// RelationRadioNum
+  repeated RelationRadioPara pRelationRadioInfo = 18;// pRelationRadioInfo
+}
+
+// aCOMMRECON_RESULT
+message aCOMMJAM_RESULT {
+  bytes sRID = 1;// sRID
+  int32 EquipID = 2;// EquipID
+  int32 nResultNum = 3;// nResultNum
+  repeated CommResult pCommResult = 4;// pCommResult
+}
+
+// 平台RCS参数
+message RCS_PARA {
+  float fAz = 1;// 雷达相对于平台正向的角度(平台RCS个数大于1时有效
+  float fRCS = 2;// 该角度对应的RCS
+}
+
+// 平台RCS参数
+message _ModelBus_RCS_PARA {
+  float fAz = 1;// 雷达相对于平台正向的角度(平台RCS个数大于1时有效
+  float fRCS = 2;// 该角度对应的RCS
+}
+
+// 平台参数结构体定义
+message sPLAT_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 PlatID = 2;// 仿真平台ID号
+  bytes EquipmentName = 3;// 装备名称
+  bytes EquipmentType = 4;// 装备类型
+  enumDefine.Enum_ATT ATT = 5;// 敌我属性
+  float fTime = 6;// 时间
+  float fLon = 7;// 经度
+  float fLat = 8;// 纬度
+  float fHeight = 9;// 高度
+  float fSpeed = 10;// 运动速度
+  float fDir = 11;// 运动方位角
+  float fPitch = 12;// 运动俯仰角
+  float fRoll = 13;// 横滚角度
+  int32 iActiveFlag = 14;// 活动标识(0-消失，1－活动)
+  int32 nRCSNum = 15;// RCS个数
+  repeated RCS_PARA RCSArray = 16;// 回波面积组
+  enumDefine.Enum_PlatType PlatType = 17;// PlatType
+}
+
+// 平台参数结构体定义
+message _ModelBus_sPLAT_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 PlatID = 2;// 仿真平台ID号
+  bytes EquipmentName = 3;// 装备名称
+  bytes EquipmentType = 4;// 装备类型
+  enumDefine.Enum_ATT ATT = 5;// 敌我属性
+  float fTime = 6;// 时间
+  float fLon = 7;// 经度
+  float fLat = 8;// 纬度
+  float fHeight = 9;// 高度
+  float fSpeed = 10;// 运动速度
+  float fDir = 11;// 运动方位角
+  float fPitch = 12;// 运动俯仰角
+  float fRoll = 13;// 横滚角度
+  int32 iActiveFlag = 14;// 活动标识(0-消失，1－活动)
+  int32 nRCSNum = 15;// RCS个数
+  repeated RCS_PARA RCSArray = 16;// 回波面积组
+  enumDefine.Enum_PlatType PlatType = 17;// PlatType
+}
+
+// eIMPORT_EVENT_REPORT
+message eIMPORT_EVENT_REPORT {
+  bytes sRID = 1;// sRID
+  int32 SendID = 2;// SendID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 ReceiveID = 5;// ReceiveID
+  bytes StrImportReport = 6;// StrImportReport
+}
+
+// eIMPORT_EVENT_REPORT
+message _ModelBus_sIMPORT_EVENT_REPORT {
+  bytes sRID = 1;// sRID
+  int32 SendID = 2;// SendID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 ReceiveID = 5;// ReceiveID
+  bytes StrImportReport = 6;// StrImportReport
+}
+
+// 保护频率信息
+message _ModelBus_ProtectRF {
+  float fStartRF = 1;// 频率下限
+  float fEndRF = 2;// 频率上限
+}
+
+// ZC/GR能力区域
+message sJAM_POWERPOINT {
+  float fStartAZ = 1;// 起始方位角
+  float fEndAZ = 2;// 终止方位角
+  float fMaxDis = 3;// 最大作用距离
+  float fMinDis = 4;// 最小作用距离
+  float fStartEL = 5;// 起始俯仰角
+  float fEndEL = 6;// 终止俯仰角
+}
+
+// ZC/GR能力区域
+message _ModelBus_sJAM_POWERPOINT {
+  float fStartAZ = 1;// 起始方位角
+  float fEndAZ = 2;// 终止方位角
+  float fMaxDis = 3;// 最大作用距离
+  float fMinDis = 4;// 最小作用距离
+  float fStartEL = 5;// 起始俯仰角
+  float fEndEL = 6;// 终止俯仰角
+}
+
+// 关键点
+message _ModelBus_sKeyPoint {
+  int32 iTime = 1;// 关键点时间
+  enumDefine.Enum_KeyPtType KeyPtType = 2;// 关键点类型
+}
+
+// GR波束
+message _ModelBus_sJAM_POINT {
+  float JamPointAZ = 1;// GR波束方位指向
+  float JamPointEL = 2;// GR波束俯仰指向
+  float HBeamWidth = 3;// GR天线水平波束宽度
+  float VBeamWidth = 4;// GR天线垂直波束宽度
+  float BeamDis = 5;// 波束长度
+  int32 nJamTrgNum = 6;// 真实GR目标数
+  repeated int32 JamTrgID = 7;// GR的目标ID
+}
+
+// 多频点信号参数
+message _ModelBus_MultiPntSigPara {
+  float fJamRF = 1;// GR中心频率
+  float fJamRFBandWth = 2;// GR带宽
+}
+
+// 二维位置
+message sPON_AGG {
+  float LON = 1;// 经度
+  float LAT = 2;// 维度
+}
+
+// 二维位置
+message _ModelBus_sPON_AGG {
+  float LON = 1;// 经度
+  float LAT = 2;// 维度
+}
+
+// Properties(description
+message sPON_AREA {
+  float LON = 1;// Properties(description
+  float LAT = 2;// Properties(description
+  float Height = 3;// Properties(description
+}
+
+// Properties(description
+message _ModelBus_sPON_AREA {
+  float LON = 1;// Properties(description
+  float LAT = 2;// Properties(description
+  float Height = 3;// Properties(description
+}
+
+// 平台航迹结构体
+message sPLAT_TRACK_DATA {
+  float fLon = 1;// 经度
+  float fLat = 2;// 纬度
+  float fHeight = 3;// 高度
+  float fSpeed = 4;// 运动速度
+  float fReachTime = 5;// 到达时间
+  float fDir = 6;// 运动方位角
+  float fPitch = 7;// 运动俯仰角
+  enumDefine.Enum_FlyPosType FlyPosType = 8;// 航路点类型
+}
+
+// 平台航迹结构体
+message _ModelBus_sPLAT_TRACK_DATA {
+  float fLon = 1;// 经度
+  float fLat = 2;// 纬度
+  float fHeight = 3;// 高度
+  float fSpeed = 4;// 运动速度
+  float fReachTime = 5;// 到达时间
+  float fDir = 6;// 运动方位角
+  float fPitch = 7;// 运动俯仰角
+  enumDefine.Enum_FlyPosType FlyPosType = 8;// 航路点类型
+}
+
+// 平台
+message sPLAT_Set_PARA {
+  bytes sRID = 1;// 仿真id
+  int32 PlatID = 2;// 平台id
+  bytes EquipmentName = 3;// 平台名称
+  bytes EquipmentType = 4;// 平台类型
+  float fStartTime = 5;// 平台运动初始时间
+  enumDefine.Enum_ATT ATT = 6;// 敌我属性
+  enumDefine.Enum_EquipSrc SRCType = 7;// 来源
+  enumDefine.Enum_AircraftSort AircraftSort = 8;// 飞机类别
+  int32 TrackNum = 9;// 航迹点个数
+  repeated sPLAT_TRACK_DATA TrackData = 10;// 航迹点列表
+  int32 nRCSNum = 11;// RCS个数
+  repeated RCS_PARA RCSArray = 12;// RCS列表
+}
+
+// 平台
+message _ModelBus_KdPlat {
+  bytes sRID = 1;// 仿真id
+  int32 PlatID = 2;// 平台id
+  bytes EquipmentName = 3;// 平台名称
+  bytes EquipmentType = 4;// 平台类型
+  float fStartTime = 5;// 平台运动初始时间
+  enumDefine.Enum_ATT ATT = 6;// 敌我属性
+  enumDefine.Enum_EquipSrc SRCType = 7;// 来源
+  enumDefine.Enum_AircraftSort AircraftSort = 8;// 飞机类别
+  int32 TrackNum = 9;// 航迹点个数
+  repeated sPLAT_TRACK_DATA TrackData = 10;// 航迹点列表
+  int32 nRCSNum = 11;// RCS个数
+  repeated RCS_PARA RCSArray = 12;// RCS列表
+}
+
+// 平台交互信息
+message aPLAT_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 平台ID
+  float LON = 3;// 经度
+  float LAT = 4;// 纬度
+  float Height = 5;// 高度
+  float fSpeed = 6;// 运动速度
+  float fDir = 7;// 运动方位角
+  int32 nRCSNum = 8;// RCS个数
+  repeated RCS_PARA RCSArray = 9;// 回波面积组
+  float Radius = 10;// 半径
+}
+
+// 平台交互信息
+message _ModelBus_aPLAT_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 平台ID
+  float LON = 3;// 经度
+  float LAT = 4;// 纬度
+  float Height = 5;// 高度
+  float fSpeed = 6;// 运动速度
+  float fDir = 7;// 运动方位角
+  int32 nRCSNum = 8;// RCS个数
+  repeated RCS_PARA RCSArray = 9;// 回波面积组
+  float Radius = 10;// 半径
+}
+
+// 时间
+message _ModelBus_sTIME {
+  int32 iYear = 1;// 年
+  int32 iMon = 2;// 月
+  int32 iDay = 3;// 日
+  int32 iHour = 4;// 时
+  int32 iMin = 5;// 分
+  int32 iSec = 6;// 秒
+  int32 iMilsec = 7;// iMilsec
+}
+
+// 输出
+message sJAM_JAMRANGE {
+  bytes sRID = 1;// sRID
+  int32 JammerID = 2;// JammerID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 TargetID = 5;// TargetID
+  float fCenterLon = 6;// fCenterLon
+  float fCenterLat = 7;// fCenterLat
+  float fCenterHeight = 8;// fCenterHeight
+  int32 nJamRangeNum = 9;// nJamRangeNum
+  repeated sJAM_POWERPOINT PowerRange = 10;// PowerRange
+}
+
+// 输出
+message _ModelBus_sJAM_JAMRANGE {
+  bytes sRID = 1;// sRID
+  int32 JammerID = 2;// JammerID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 TargetID = 5;// TargetID
+  float fCenterLon = 6;// fCenterLon
+  float fCenterLat = 7;// fCenterLat
+  float fCenterHeight = 8;// fCenterHeight
+  int32 nJamRangeNum = 9;// nJamRangeNum
+  repeated sJAM_POWERPOINT PowerRange = 10;// PowerRange
+}
+
+// sTypical_Sig
+message sTypical_Sig {
+  double before = 1;// before
+  double after = 2;// after
+  double left = 3;// left
+  double right = 4;// right
+  double pitch = 5;// pitch
+  double pitch2 = 6;// pitch2
+}
+
+// sTypical_Sig
+message _ModelBus_sTypical_Signature {
+  double before = 1;// before
+  double after = 2;// after
+  double left = 3;// left
+  double right = 4;// right
+  double pitch = 5;// pitch
+  double pitch2 = 6;// pitch2
+}
+
+// MAP类特征数据
+message sMap_Sig {
+  int32 iKeyNum = 1;// key值数量
+  repeated float pKeyValue = 2;// key值
+  int32 iSigNum = 3;// 特性值数量
+  repeated float pSigValue = 4;// 特性值
+}
+
+// MAP类特征数据
+message _ModelBus_sMap_Signature {
+  int32 iKeyNum = 1;// key值数量
+  repeated float pKeyValue = 2;// key值
+  int32 iSigNum = 3;// 特性值数量
+  repeated float pSigValue = 4;// 特性值
+}
+
+// sSignature
+message sSignature {
+  int32 iMode = 1;// iMode
+  float fValue = 2;// fValue
+  sTypical_Sig TypcValue = 3;// TypcValue
+  sMap_Sig MapValue = 4;// MapValue
+}
+
+// sSignature
+message _ModelBus_sSignature {
+  int32 iMode = 1;// iMode
+  float fValue = 2;// fValue
+  sTypical_Sig TypcValue = 3;// TypcValue
+  sMap_Sig MapValue = 4;// MapValue
+}
+
+// sPLAT_Signature
+message sPLAT_Signature {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  float fTime = 3;// fTime
+  sSignature RCS = 4;// RCS
+  sSignature InfraSig = 5;// InfraSig
+  sSignature OpticRefSig = 6;// OpticRefSig
+  sSignature AcousticSig = 7;// AcousticSig
+}
+
+// sPLAT_Signature
+message _ModelBus_sPLAT_Signature {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  float fTime = 3;// fTime
+  sSignature RCS = 4;// RCS
+  sSignature InfraSig = 5;// InfraSig
+  sSignature OpticRefSig = 6;// OpticRefSig
+  sSignature AcousticSig = 7;// AcousticSig
+}
+
+// SpaceRange
+message SpaceRange {
+  float fStartAZ = 1;// 水平起始方向
+  float fEndAZ = 2;// 水平终止方向
+  float fStartEL = 3;// 俯仰起始方向
+  float fEndEL = 4;// 俯仰终止方向
+}
+
+// SpaceRange
+message _ModelBus_SpaceRange {
+  float fStartAZ = 1;// 水平起始方向
+  float fEndAZ = 2;// 水平终止方向
+  float fStartEL = 3;// 俯仰起始方向
+  float fEndEL = 4;// 俯仰终止方向
+}
+
+// ZC/GR能力区域
+message sCOVER_RANGE {
+  float fStartAZ = 1;// 起始方位角
+  float fEndAZ = 2;// 终止方位角
+  float fMaxDis = 3;// 最大作用距离
+  float fMinDis = 4;// 最小作用距离
+  float fStartEL = 5;// 起始俯仰角
+  float fEndEL = 6;// 终止俯仰角
+}
+
+// 输出
+message sEQUIP_POWER_AREA {
+  bytes sRID = 1;// sRID
+  int32 JammerID = 2;// JammerID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 TargetID = 5;// TargetID
+  float fCenterLon = 6;// fCenterLon
+  float fCenterLat = 7;// fCenterLat
+  float fCenterHeight = 8;// fCenterHeight
+  int32 nJamRangeNum = 9;// nJamRangeNum
+  repeated sJAM_POWERPOINT PowerRange = 10;// PowerRange
+}
+
+// sKCG_UHF_Set_PARA
+message sKCG_UHF_Set_PARA {
+  bytes sRID = 1;// 仿真id
+  int32 EquipID = 2;// GR设备id
+  int32 PlatID = 3;// 搭载平台id
+  bytes EquipmentName = 4;// 装备名称
+  bytes EquipmentType = 5;// EquipmentType
+  enumDefine.Enum_ATT ATT = 6;// 敌我属性
+  enumDefine.Enum_WorkState WorkState = 7;// 工作属性
+  float fLon = 8;// 经度
+  float fLat = 9;// 纬度
+  float fHeight = 10;// 高度
+  int32 nCoopNodeCount = 11;// 下级/协同节点个数
+  repeated int32 pCoopNodeID = 12;// 下级/协同节点ID列表
+  int32 iKeyPtNum = 13;// 关键点个数
+  repeated sKeyPoint pKeyPt = 14;// 关键点列表
+  enumDefine.Enum_KcgTaskType_UHF KcgTaskType = 15;// KcgTaskType
+  float fStartAZ = 16;// fStartAZ
+  float fEndAZ = 17;// fEndAZ
+  float fStartEL = 18;// fStartEL
+  float fEndEL = 19;// fEndEL
+  float fAntAngAZ = 20;// fAntAngAZ
+  float fAntAngEL = 21;// fAntAngEL
+  float fStartRF = 22;// fStartRF
+  float fEndRF = 23;// fEndRF
+  int32 iProtectRFNum = 24;// iProtectRFNum
+  repeated ProtectRF pProtectRFInfo = 25;// pProtectRFInfo
+  float fSRCS = 26;// 标称目标雷达截面积
+  float fSHeight = 27;// 标称目标高度
+  int32 StdRCSPlatID = 28;// 标称RCS平台ID
+  int32 RngCalcID = 29;// RngCalcID
+  int32 iJamRdTrgNum = 30;// iJamRdTrgNum
+  repeated int32 pJamRdTrgID = 31;// pJamRdTrgID
+  int32 iJamComTrgNum = 32;// iJamComTrgNum
+  repeated int32 pJamComTrgID = 33;// pJamComTrgID
+}
+
+// sKCG_UHF_Set_PARA
+message _ModelBus_sKCG_UHF_Set_PARA {
+  bytes sRID = 1;// 仿真id
+  int32 EquipID = 2;// GR设备id
+  int32 PlatID = 3;// 搭载平台id
+  bytes EquipmentName = 4;// 装备名称
+  bytes EquipmentType = 5;// EquipmentType
+  enumDefine.Enum_ATT ATT = 6;// 敌我属性
+  enumDefine.Enum_WorkState WorkState = 7;// 工作属性
+  float fLon = 8;// 经度
+  float fLat = 9;// 纬度
+  float fHeight = 10;// 高度
+  int32 nCoopNodeCount = 11;// 下级/协同节点个数
+  repeated int32 pCoopNodeID = 12;// 下级/协同节点ID列表
+  int32 iKeyPtNum = 13;// 关键点个数
+  repeated sKeyPoint pKeyPt = 14;// 关键点列表
+  enumDefine.Enum_KcgTaskType_UHF KcgTaskType = 15;// KcgTaskType
+  float fStartAZ = 16;// fStartAZ
+  float fEndAZ = 17;// fEndAZ
+  float fStartEL = 18;// fStartEL
+  float fEndEL = 19;// fEndEL
+  float fAntAngAZ = 20;// fAntAngAZ
+  float fAntAngEL = 21;// fAntAngEL
+  float fStartRF = 22;// fStartRF
+  float fEndRF = 23;// fEndRF
+  int32 iProtectRFNum = 24;// iProtectRFNum
+  repeated ProtectRF pProtectRFInfo = 25;// pProtectRFInfo
+  float fSRCS = 26;// 标称目标雷达截面积
+  float fSHeight = 27;// 标称目标高度
+  int32 StdRCSPlatID = 28;// 标称RCS平台ID
+  int32 RngCalcID = 29;// RngCalcID
+  int32 iJamRdTrgNum = 30;// iJamRdTrgNum
+  repeated int32 pJamRdTrgID = 31;// pJamRdTrgID
+  int32 iJamComTrgNum = 32;// iJamComTrgNum
+  repeated int32 pJamComTrgID = 33;// pJamComTrgID
+}
+
+// sKCG_L_Set_PARA
+message sKCG_L_Set_PARA {
+  bytes sRID = 1;// 仿真id
+  int32 EquipID = 2;// GR设备id
+  int32 PlatID = 3;// 搭载平台id
+  bytes EquipmentName = 4;// 装备名称
+  bytes EquipmentType = 5;// EquipmentType
+  enumDefine.Enum_ATT ATT = 6;// 敌我属性
+  enumDefine.Enum_WorkState WorkState = 7;// 工作属性
+  float fLon = 8;// 经度
+  float fLat = 9;// 纬度
+  float fHeight = 10;// 高度
+  int32 nCoopNodeCount = 11;// 下级/协同节点个数
+  repeated int32 pCoopNodeID = 12;// 下级/协同节点ID列表
+  int32 iKeyPtNum = 13;// 关键点个数
+  repeated sKeyPoint pKeyPt = 14;// 关键点列表
+  enumDefine.Enum_KcgTaskType_L KcgTaskType = 15;// KcgTaskType
+  float fStartAZ = 16;// 控守起始方位
+  float fEndAZ = 17;// 控守终止方位
+  float fStartEL = 18;// fStartEL
+  float fEndEL = 19;// fEndEL
+  float fAntAngAZ = 20;// fAntAngAZ
+  float fAntAngEL = 21;// fAntAngEL
+  float fStartRF = 22;// fStartRF
+  float fEndRF = 23;// fEndRF
+  int32 iProtectRFNum = 24;// iProtectRFNum
+  repeated ProtectRF pProtectRFInfo = 25;// pProtectRFInfo
+  float fSRCS = 26;// 标称目标雷达截面积
+  float fSHeight = 27;// 标称目标高度
+  int32 StdRCSPlatID = 28;// 标称RCS平台ID
+  int32 RngCalcID = 29;// 计算侦/干范围的雷达ID
+  int32 iJamRdTrgNum = 30;// iJamRdTrgNum
+  repeated int32 pJamRdTrgID = 31;// pJamRdTrgID
+  int32 iJamComTrgNum = 32;// iJamComTrgNum
+  repeated int32 pJamComTrgID = 33;// pJamComTrgID
+}
+
+// sKCG_L_Set_PARA
+message _ModelBus_sKCG_L_Set_PARA {
+  bytes sRID = 1;// 仿真id
+  int32 EquipID = 2;// GR设备id
+  int32 PlatID = 3;// 搭载平台id
+  bytes EquipmentName = 4;// 装备名称
+  bytes EquipmentType = 5;// EquipmentType
+  enumDefine.Enum_ATT ATT = 6;// 敌我属性
+  enumDefine.Enum_WorkState WorkState = 7;// 工作属性
+  float fLon = 8;// 经度
+  float fLat = 9;// 纬度
+  float fHeight = 10;// 高度
+  int32 nCoopNodeCount = 11;// 下级/协同节点个数
+  repeated int32 pCoopNodeID = 12;// 下级/协同节点ID列表
+  int32 iKeyPtNum = 13;// 关键点个数
+  repeated sKeyPoint pKeyPt = 14;// 关键点列表
+  enumDefine.Enum_KcgTaskType_L KcgTaskType = 15;// KcgTaskType
+  float fStartAZ = 16;// 控守起始方位
+  float fEndAZ = 17;// 控守终止方位
+  float fStartEL = 18;// fStartEL
+  float fEndEL = 19;// fEndEL
+  float fAntAngAZ = 20;// fAntAngAZ
+  float fAntAngEL = 21;// fAntAngEL
+  float fStartRF = 22;// fStartRF
+  float fEndRF = 23;// fEndRF
+  int32 iProtectRFNum = 24;// iProtectRFNum
+  repeated ProtectRF pProtectRFInfo = 25;// pProtectRFInfo
+  float fSRCS = 26;// 标称目标雷达截面积
+  float fSHeight = 27;// 标称目标高度
+  int32 StdRCSPlatID = 28;// 标称RCS平台ID
+  int32 RngCalcID = 29;// 计算侦/干范围的雷达ID
+  int32 iJamRdTrgNum = 30;// iJamRdTrgNum
+  repeated int32 pJamRdTrgID = 31;// pJamRdTrgID
+  int32 iJamComTrgNum = 32;// iJamComTrgNum
+  repeated int32 pJamComTrgID = 33;// pJamComTrgID
+}
+
+// sKCG_XKu_Set_PARA
+message sKCG_XKu_Set_PARA {
+  bytes sRID = 1;// 仿真id
+  int32 EquipID = 2;// GR设备id
+  int32 PlatID = 3;// 搭载平台id
+  bytes EquipmentName = 4;// 装备名称
+  bytes EquipmentType = 5;// EquipmentType
+  enumDefine.Enum_ATT ATT = 6;// 敌我属性
+  enumDefine.Enum_WorkState WorkState = 7;// 工作属性
+  float fLon = 8;// 经度
+  float fLat = 9;// 纬度
+  float fHeight = 10;// 高度
+  int32 nCoopNodeCount = 11;// 下级/协同节点个数
+  repeated int32 pCoopNodeID = 12;// 下级/协同节点ID列表
+  int32 iKeyPtNum = 13;// 关键点个数
+  repeated sKeyPoint pKeyPt = 14;// 关键点列表
+  enumDefine.Enum_KcgTaskType_XKu KcgTaskType_XKu = 15;// KcgTaskType_XKu
+  float fStartAZ = 16;// 控守起始方位
+  float fEndAZ = 17;// 控守终止方位
+  float fStartEL = 18;// fStartEL
+  float fEndEL = 19;// fEndEL
+  float fAntAngAZ = 20;// fAntAngAZ
+  float fAntAngEL = 21;// fAntAngEL
+  float fStartRF = 22;// fStartRF
+  float fEndRF = 23;// fEndRF
+  int32 iProtectRFNum = 24;// iProtectRFNum
+  repeated ProtectRF pProtectRFInfo = 25;// pProtectRFInfo
+  int32 RngCalcID = 26;// 计算侦/干范围的雷达ID
+  int32 iJamRdTrgNum = 27;// 需对抗的雷达个数
+  repeated int32 pJamRdTrgID = 28;// 需对抗的雷达列表
+  bytes cSatPara = 29;// 卫星两行星历信息
+}
+
+// sKCG_XKu_Set_PARA
+message _ModelBus_sKCG_XKu_Set_PARA {
+  bytes sRID = 1;// 仿真id
+  int32 EquipID = 2;// GR设备id
+  int32 PlatID = 3;// 搭载平台id
+  bytes EquipmentName = 4;// 装备名称
+  bytes EquipmentType = 5;// EquipmentType
+  enumDefine.Enum_ATT ATT = 6;// 敌我属性
+  enumDefine.Enum_WorkState WorkState = 7;// 工作属性
+  float fLon = 8;// 经度
+  float fLat = 9;// 纬度
+  float fHeight = 10;// 高度
+  int32 nCoopNodeCount = 11;// 下级/协同节点个数
+  repeated int32 pCoopNodeID = 12;// 下级/协同节点ID列表
+  int32 iKeyPtNum = 13;// 关键点个数
+  repeated sKeyPoint pKeyPt = 14;// 关键点列表
+  enumDefine.Enum_KcgTaskType_XKu KcgTaskType_XKu = 15;// KcgTaskType_XKu
+  float fStartAZ = 16;// 控守起始方位
+  float fEndAZ = 17;// 控守终止方位
+  float fStartEL = 18;// fStartEL
+  float fEndEL = 19;// fEndEL
+  float fAntAngAZ = 20;// fAntAngAZ
+  float fAntAngEL = 21;// fAntAngEL
+  float fStartRF = 22;// fStartRF
+  float fEndRF = 23;// fEndRF
+  int32 iProtectRFNum = 24;// iProtectRFNum
+  repeated ProtectRF pProtectRFInfo = 25;// pProtectRFInfo
+  int32 RngCalcID = 26;// 计算侦/干范围的雷达ID
+  int32 iJamRdTrgNum = 27;// 需对抗的雷达个数
+  repeated int32 pJamRdTrgID = 28;// 需对抗的雷达列表
+  bytes cSatPara = 29;// 卫星两行星历信息
+}
+
+// sKCG_Get_PARA
+message sKCG_Get_PARA {
+  bytes sRID = 1;// sRID
+  int32 EquipID = 2;// EquipID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 WorkModeSet = 5;// WorkModeSet
+  int32 SubModeSet_SubProMode = 6;// SubModeSet_SubProMode
+  int32 CurrRunMode_SubWorkMode = 7;// CurrRunMode_SubWorkMode
+  int32 CurrRunSubMode = 8;// CurrRunSubMode
+  int32 FramePeriod = 9;// FramePeriod
+  float fRJRatio = 10;// fRJRatio
+}
+
+// sKCG_Get_PARA
+message _ModelBus_sKCG_Get_PARA {
+  bytes sRID = 1;// sRID
+  int32 EquipID = 2;// EquipID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 WorkModeSet = 5;// WorkModeSet
+  int32 SubModeSet_SubProMode = 6;// SubModeSet_SubProMode
+  int32 CurrRunMode_SubWorkMode = 7;// CurrRunMode_SubWorkMode
+  int32 CurrRunSubMode = 8;// CurrRunSubMode
+  int32 FramePeriod = 9;// FramePeriod
+  float fRJRatio = 10;// fRJRatio
+}
+
+// sRADAR_Set_PARA
+message sRADAR_Set_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 RadarID = 2;// 雷达ID
+  int32 PlatID = 3;// 搭载平台ID
+  float fLon = 4;// 经度
+  float fLat = 5;// 纬度
+  float fHeight = 6;// 高度
+  bytes EquipmentName = 7;// 装备名称
+  bytes EquipmentType = 8;// 装备型号
+  enumDefine.Enum_ATT ATT = 9;// 敌我属性
+  enumDefine.Enum_WorkState WorkState = 10;// 工作状态
+  float fSRCS = 11;// 标称目标雷达截面积
+  float fSHeight = 12;// 标称目标高度
+  int32 StdRCSPlatID = 13;// 指定标称RCS平台ID
+  float fAntAngle = 14;// 天线方位法向
+  float fElAngle = 15;// 天线俯仰法向
+  enumDefine.Enum_RadarWorkMode RadarWorkMode = 16;// 雷达工作模式
+  float fStartAZ = 17;// fStartAZ
+  float fEndAZ = 18;// fEndAZ
+  enumDefine.Enum_RadarWorkType RadarWorkType = 19;// RadarWorkType
+  bool bAntiJamEnble = 20;// bAntiJamEnble
+  int32 iAntiJamLevel = 21;// iAntiJamLevel
+  int32 iTrgNum = 22;// iTrgNum
+  repeated int32 lTrgVal = 23;// lTrgVal
+  int32 RelaRadarID = 24;// RelaRadarID
+}
+
+// sRADAR_Set_PARA
+message _ModelBus_sRADAR_Set_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 RadarID = 2;// 雷达ID
+  int32 PlatID = 3;// 搭载平台ID
+  float fLon = 4;// 经度
+  float fLat = 5;// 纬度
+  float fHeight = 6;// 高度
+  bytes EquipmentName = 7;// 装备名称
+  bytes EquipmentType = 8;// 装备型号
+  enumDefine.Enum_ATT ATT = 9;// 敌我属性
+  enumDefine.Enum_WorkState WorkState = 10;// 工作状态
+  float fSRCS = 11;// 标称目标雷达截面积
+  float fSHeight = 12;// 标称目标高度
+  int32 StdRCSPlatID = 13;// 指定标称RCS平台ID
+  float fAntAngle = 14;// 天线方位法向
+  float fElAngle = 15;// 天线俯仰法向
+  enumDefine.Enum_RadarWorkMode RadarWorkMode = 16;// 雷达工作模式
+  float fStartAZ = 17;// fStartAZ
+  float fEndAZ = 18;// fEndAZ
+  enumDefine.Enum_RadarWorkType RadarWorkType = 19;// RadarWorkType
+  bool bAntiJamEnble = 20;// bAntiJamEnble
+  int32 iAntiJamLevel = 21;// iAntiJamLevel
+  int32 iTrgNum = 22;// iTrgNum
+  repeated int32 lTrgVal = 23;// lTrgVal
+  int32 RelaRadarID = 24;// RelaRadarID
+}
+
+// sSatSAR_Set_PARA
+message sSatSAR_Set_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 RadarID = 2;// 雷达ID
+  int32 PlatID = 3;// 搭载平台ID
+  float fLon = 4;// 经度
+  float fLat = 5;// 纬度
+  float fHeight = 6;// 高度
+  bytes EquipmentName = 7;// 装备名称
+  bytes EquipmentType = 8;// 装备型号
+  enumDefine.Enum_ATT ATT = 9;// 敌我属性
+  enumDefine.Enum_WorkState WorkState = 10;// 工作状态
+  float fSRCS = 11;// 标称目标雷达截面积
+  float fSHeight = 12;// 标称目标高度
+  int32 StdRCSPlatID = 13;// 指定标称RCS平台ID
+  enumDefine.Enum_RadarWorkMode RadarWorkMode = 14;// 雷达工作模式
+  float fTaskLength = 15;// fTaskLength
+  float fTaskWidth = 16;// fTaskWidth
+  float fTaskAngle = 17;// fTaskAngle
+  float fCenterPLon = 18;// fCenterPLon
+  float fCenterPLat = 19;// fCenterPLat
+  bytes cTwoline = 20;// cTwoline
+}
+
+// sSatSAR_Set_PARA
+message _ModelBus_sSatSAR_Set_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 RadarID = 2;// 雷达ID
+  int32 PlatID = 3;// 搭载平台ID
+  float fLon = 4;// 经度
+  float fLat = 5;// 纬度
+  float fHeight = 6;// 高度
+  bytes EquipmentName = 7;// 装备名称
+  bytes EquipmentType = 8;// 装备型号
+  enumDefine.Enum_ATT ATT = 9;// 敌我属性
+  enumDefine.Enum_WorkState WorkState = 10;// 工作状态
+  float fSRCS = 11;// 标称目标雷达截面积
+  float fSHeight = 12;// 标称目标高度
+  int32 StdRCSPlatID = 13;// 指定标称RCS平台ID
+  enumDefine.Enum_RadarWorkMode RadarWorkMode = 14;// 雷达工作模式
+  float fTaskLength = 15;// fTaskLength
+  float fTaskWidth = 16;// fTaskWidth
+  float fTaskAngle = 17;// fTaskAngle
+  float fCenterPLon = 18;// fCenterPLon
+  float fCenterPLat = 19;// fCenterPLat
+  bytes cTwoline = 20;// cTwoline
+}
+
+// sRADAR_PARA
+message sRADAR_PARA {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  bytes EquipmentName = 5;// EquipmentName
+  bytes EquipmentType = 6;// EquipmentType
+  enumDefine.Enum_PlatType ePlatType = 7;// ePlatType
+  enumDefine.Enum_ATT ATT = 8;// ATT
+  enumDefine.Enum_WorkState WorkState = 9;// WorkState
+  enumDefine.Enum_SurvivalState SurvivalState = 10;// SurvivalState
+  enumDefine.Enum_RadarSort eRadarSort = 11;// eRadarSort
+  enumDefine.Enum_RadarWorkMode eRadarWorkMode = 12;// eRadarWorkMode
+  float fLon = 13;// fLon
+  float fLat = 14;// fLat
+  float fHeight = 15;// fHeight
+  float fRF = 16;// fRF
+  float fRFMax = 17;// fRFMax
+  float fRFMin = 18;// fRFMin
+  float fPt = 19;// fPt
+  float fLt = 20;// fLt
+  float fGt = 21;// fGt
+  float fAzBeamWidth = 22;// fAzBeamWidth
+  float fElBeamWidth = 23;// fElBeamWidth
+  float AntAZ = 24;// AntAZ
+  float AntEl = 25;// AntEl
+  float fAziMax = 26;// fAziMax
+  float fAziMin = 27;// fAziMin
+  float fElMax = 28;// fElMax
+  float fElMin = 29;// fElMin
+  float ScanCycle = 30;// ScanCycle
+  enumDefine.Enum_PCM PCM = 31;// PCM
+  enumDefine.Enum_RFT RFT = 32;// RFT
+  float PRI = 33;// PRI
+  enumDefine.Enum_PRIT PRIT = 34;// PRIT
+  float PW = 35;// PW
+  float RBand = 36;// RBand
+  enumDefine.Enum_POT POT = 37;// POT
+  float fSlmGt = 38;// fSlmGt
+  float fSL1Gt = 39;// fSL1Gt
+  float fSL1BeamWidth = 40;// fSL1BeamWidth
+  int32 nJamLevel = 41;// nJamLevel
+}
+
+// sRADAR_PARA
+message _ModelBus_sRADAR_PARA {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  bytes EquipmentName = 5;// EquipmentName
+  bytes EquipmentType = 6;// EquipmentType
+  enumDefine.Enum_PlatType ePlatType = 7;// ePlatType
+  enumDefine.Enum_ATT ATT = 8;// ATT
+  enumDefine.Enum_WorkState WorkState = 9;// WorkState
+  enumDefine.Enum_SurvivalState SurvivalState = 10;// SurvivalState
+  enumDefine.Enum_RadarSort eRadarSort = 11;// eRadarSort
+  enumDefine.Enum_RadarWorkMode eRadarWorkMode = 12;// eRadarWorkMode
+  float fLon = 13;// fLon
+  float fLat = 14;// fLat
+  float fHeight = 15;// fHeight
+  float fRF = 16;// fRF
+  float fRFMax = 17;// fRFMax
+  float fRFMin = 18;// fRFMin
+  float fPt = 19;// fPt
+  float fLt = 20;// fLt
+  float fGt = 21;// fGt
+  float fAzBeamWidth = 22;// fAzBeamWidth
+  float fElBeamWidth = 23;// fElBeamWidth
+  float AntAZ = 24;// AntAZ
+  float AntEl = 25;// AntEl
+  float fAziMax = 26;// fAziMax
+  float fAziMin = 27;// fAziMin
+  float fElMax = 28;// fElMax
+  float fElMin = 29;// fElMin
+  float ScanCycle = 30;// ScanCycle
+  enumDefine.Enum_PCM PCM = 31;// PCM
+  enumDefine.Enum_RFT RFT = 32;// RFT
+  float PRI = 33;// PRI
+  enumDefine.Enum_PRIT PRIT = 34;// PRIT
+  float PW = 35;// PW
+  float RBand = 36;// RBand
+  enumDefine.Enum_POT POT = 37;// POT
+  float fSlmGt = 38;// fSlmGt
+  float fSL1Gt = 39;// fSL1Gt
+  float fSL1BeamWidth = 40;// fSL1BeamWidth
+  int32 nJamLevel = 41;// nJamLevel
+}
+
+// sRectZone
+message sRectZone {
+  float fLon = 1;// fLon
+  float fLat = 2;// fLat
+}
+
+// sRectZone
+message _ModelBus_sRectZone {
+  float fLon = 1;// fLon
+  float fLat = 2;// fLat
+}
+
+// sRADAR_RANGE
+message sRADAR_RANGE {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 TargetID = 5;// TargetID
+  int32 nRangeSort = 6;// nRangeSort
+  int32 iDetectZoneNum = 7;// iDetectZoneNum
+  repeated sRectZone ZonePoint = 8;// ZonePoint
+  float fTrgHeight = 9;// fTrgHeight
+  float fSHeight = 10;// fSHeight
+  float fRangeJamRatio = 11;// fRangeJamRatio
+}
+
+// sRADAR_RANGE
+message _ModelBus_sRADAR_RANGE {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 TargetID = 5;// TargetID
+  int32 nRangeSort = 6;// nRangeSort
+  int32 iDetectZoneNum = 7;// iDetectZoneNum
+  repeated sRectZone ZonePoint = 8;// ZonePoint
+  float fTrgHeight = 9;// fTrgHeight
+  float fSHeight = 10;// fSHeight
+  float fRangeJamRatio = 11;// fRangeJamRatio
+}
+
+// sRadarDetectPlat
+message sRadarDetectPlat {
+  int32 PlatID = 1;// PlatID
+  float fTime = 2;// fTime
+  enumDefine.Enum_PlatType ePlatType = 3;// ePlatType
+  enumDefine.Enum_ATT ATT = 4;// ATT
+  float fLon = 5;// fLon
+  float fLat = 6;// fLat
+  float fHeight = 7;// fHeight
+  float fAZError = 8;// fAZError
+  float fELError = 9;// fELError
+  float fDisError = 10;// fDisError
+  float fSNR = 11;// fSNR 信噪比，dB add202509
+}
+
+// sRadarDetectPlat
+message _ModelBus_sRADARDETECTPLAT {
+  int32 PlatID = 1;// PlatID
+  float fTime = 2;// fTime
+  enumDefine.Enum_PlatType ePlatType = 3;// ePlatType
+  enumDefine.Enum_ATT ATT = 4;// ATT
+  float fLon = 5;// fLon
+  float fLat = 6;// fLat
+  float fHeight = 7;// fHeight
+  float fAZError = 8;// fAZError
+  float fELError = 9;// fELError
+  float fDisError = 10;// fDisError
+  float fSNR = 11;// fSNR
+}
+
+// sRadar_DetectInfo
+message sRadar_DetectInfo {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  enumDefine.Enum_RadarSort eRadarSort = 5;// eRadarSort
+  int32 iTargetNum = 6;// iTargetNum
+  repeated sRadarDetectPlat RadarDetectPlat = 7;// RadarDetectPlat
+}
+
+// sRadar_DetectInfo
+message _ModelBus_sRADAR_DETECTINFO {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  enumDefine.Enum_RadarSort eRadarSort = 5;// eRadarSort
+  int32 iTargetNum = 6;// iTargetNum
+  repeated sRadarDetectPlat RadarDetectPlat = 7;// RadarDetectPlat
+}
+
+// sIMAGE_ZONE
+message sIMAGE_ZONE {
+  float fImageDefinition = 1;// fImageDefinition
+  int32 iPtNum = 2;// iPtNum
+  repeated sRectZone ZonePoint = 3;// ZonePoint
+}
+
+// sIMAGE_ZONE
+message _ModelBus_sIMAGE_ZONE {
+  float fImageDefinition = 1;// fImageDefinition
+  int32 iPtNum = 2;// iPtNum
+  repeated sRectZone ZonePoint = 3;// ZonePoint
+}
+
+// sRADAR_IMAGE_AREA
+message sRADAR_IMAGE_AREA {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 iImageZoneNum = 5;// iImageZoneNum
+  repeated sIMAGE_ZONE ImageZone = 6;// ImageZone
+}
+
+// sRADAR_IMAGE_AREA
+message _ModelBus_sRADAR_IMAGE_AREA {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 iImageZoneNum = 5;// iImageZoneNum
+  repeated sIMAGE_ZONE ImageZone = 6;// ImageZone
+}
+
+// sRadarDetectPlatTrack
+message sRadarDetectPlatTrack {
+  int32 PlatID = 1;// PlatID
+  float fTime = 2;// fTime
+  enumDefine.Enum_PlatType ePlatType = 3;// ePlatType
+  enumDefine.Enum_ATT ATT = 4;// ATT
+  int32 nTrackNum = 5;// nTrackNum
+  enumDefine.Enum_SignalState eTrkState = 6;// eTrkState
+  enumDefine.Enum_RadarWorkType eTasMode = 7;// eTasMode
+  float fLon = 8;// fLon
+  float fLat = 9;// fLat
+  float fHeight = 10;// fHeight
+  float fTrgDis = 11;// fTrgDis
+  float fTrgAz = 12;// fTrgAz
+  float fTrgEl = 13;// fTrgEl
+  float fSpeed = 14;// fSpeed
+  float fDir = 15;// fDir
+  float fMovPitch = 16;// fMovPitch
+  float fAZError = 17;// fAZError
+  float fELError = 18;// fELError
+  float fDisError = 19;// fDisError
+  //add202509
+  float fSpeedError = 20;// 测速误差 米/秒（m/s） 根据雷达实际能力报，无该功能的可不填
+  float fTrackQuality = 21;// 航迹质量，[0,100],值越高质量越好 
+  float fSNR = 22;// 信噪比，dB
+}
+
+// sRadarDetectPlatTrack
+message _ModelBus_sRADARDETECTPLATTRACK {
+  int32 PlatID = 1;// PlatID
+  float fTime = 2;// fTime
+  enumDefine.Enum_PlatType ePlatType = 3;// ePlatType
+  enumDefine.Enum_ATT ATT = 4;// ATT
+  int32 nTrackNum = 5;// nTrackNum
+  enumDefine.Enum_SignalState eTrkState = 6;// eTrkState
+  enumDefine.Enum_RadarWorkType eTasMode = 7;// eTasMode
+  float fLon = 8;// fLon
+  float fLat = 9;// fLat
+  float fHeight = 10;// fHeight
+  float fTrgDis = 11;// fTrgDis
+  float fTrgAz = 12;// fTrgAz
+  float fTrgEl = 13;// fTrgEl
+  float fSpeed = 14;// fSpeed
+  float fDir = 15;// fDir
+  float fMovPitch = 16;// fMovPitch
+  float fAZError = 17;// fAZError
+  float fELError = 18;// fELError
+  float fDisError = 19;// fDisError
+  float fSpeedError = 20;// fSpeedError
+  float fTrackQuality = 21;// fTrackQuality
+  float fSNR = 22;// fSNR
+}
+
+// sRadar_DetectInfoTrack
+message sRadar_DetectInfoTrack {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  enumDefine.Enum_RadarSort eRadarSort = 5;// eRadarSort
+  int32 iTargetNum = 6;// iTargetNum
+  repeated sRadarDetectPlatTrack RadarDetectPlatTrack = 7;// RadarDetectPlatTrack
+}
+
+// sRadar_DetectInfoTrack
+message _ModelBus_sRADAR_DETECTINFOTRACK {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  enumDefine.Enum_RadarSort eRadarSort = 5;// eRadarSort
+  int32 iTargetNum = 6;// iTargetNum
+  repeated sRadarDetectPlatTrack RadarDetectPlatTrack = 7;// RadarDetectPlatTrack
+}
+
+// sRadarCPIPara
+message sRadarCPIPara {
+  int32 iCPIiPulseNum = 1;// iCPIiPulseNum
+  repeated int32 iPulseNum = 2;// iPulseNum
+  int32 iCPIdRFNum = 3;// iCPIdRFNum
+  repeated float dRF = 4;// dRF
+  int32 iCPIdPRINum = 5;// iCPIdPRINum
+  repeated float dPRI = 6;// dPRI
+  int32 iCPIdPWNum = 7;// iCPIdPWNum
+  repeated float dPW = 8;// dPW
+  int32 iCPIBWNum = 9;// iCPIBWNum
+  repeated float BW = 10;// BW
+}
+
+// sRadarCPIPara
+message _ModelBus_sRadarCPIPara {
+  int32 iCPIiPulseNum = 1;// iCPIiPulseNum
+  repeated int32 iPulseNum = 2;// iPulseNum
+  int32 iCPIdRFNum = 3;// iCPIdRFNum
+  repeated float dRF = 4;// dRF
+  int32 iCPIdPRINum = 5;// iCPIdPRINum
+  repeated float dPRI = 6;// dPRI
+  int32 iCPIdPWNum = 7;// iCPIdPWNum
+  repeated float dPW = 8;// dPW
+  int32 iCPIBWNum = 9;// iCPIBWNum
+  repeated float BW = 10;// BW
+}
+
+// sRADAR_SCAN
+message sRADAR_SCAN {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  enumDefine.Enum_ATT ATT = 5;// ATT
+  int32 iAntAZNum = 6;// iAntAZNum
+  repeated float lAntAZ = 7;// lAntAZ
+  int32 iAntElNum = 8;// iAntElNum
+  repeated float lAntEl = 9;// lAntEl
+  int32 iStepZoneNum = 10;// iStepZoneNum
+  repeated sRectZone StepZonePoint = 11;// StepZonePoint
+  bool bAntPatsUpdate = 12;// bAntPatsUpdate
+  int32 iAGNum = 13;// iAGNum
+  repeated float fAntennaG = 14;// fAntennaG
+  float BW = 15;// BW
+  bool bCPIUpdate = 16;// bCPIUpdate
+  sRadarCPIPara RadarCPIPara = 17;// RadarCPIPara
+  int32 iPNum = 18;// iPNum
+  repeated float RadarDetectP = 19;// RadarDetectP
+}
+
+// sRADAR_SCAN
+message _ModelBus_sRADAR_SCAN {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  enumDefine.Enum_ATT ATT = 5;// ATT
+  int32 iAntAZNum = 6;// iAntAZNum
+  repeated float lAntAZ = 7;// lAntAZ
+  int32 iAntElNum = 8;// iAntElNum
+  repeated float lAntEl = 9;// lAntEl
+  int32 iStepZoneNum = 10;// iStepZoneNum
+  repeated sRectZone StepZonePoint = 11;// StepZonePoint
+  bool bAntPatsUpdate = 12;// bAntPatsUpdate
+  int32 iAGNum = 13;// iAGNum
+  repeated float fAntennaG = 14;// fAntennaG
+  float BW = 15;// BW
+  bool bCPIUpdate = 16;// bCPIUpdate
+  sRadarCPIPara RadarCPIPara = 17;// RadarCPIPara
+  int32 iPNum = 18;// iPNum
+  repeated float RadarDetectP = 19;// RadarDetectP
+}
+
+// sHideCoverRange
+message sHideCoverRange {
+  float fStartAZ = 1;// 控守水平起始方向
+  float fEndAZ = 2;// 控守水平终止方向
+  float fStartEL = 3;// 控守垂直起始方向
+  float fEndEL = 4;// 控守垂直终止方向
+}
+
+// sHideCoverRange
+message _ModelBus_sCoverRange {
+  float fStartAZ = 1;// 控守水平起始方向
+  float fEndAZ = 2;// 控守水平终止方向
+  float fStartEL = 3;// 控守垂直起始方向
+  float fEndEL = 4;// 控守垂直终止方向
+}
+
+// sRECON_Set_PARA
+message sRECON_Set_PARA {
+  bytes sRID = 1;// sRID
+  int32 ReconID = 2;// ReconID
+  int32 PlatID = 3;// PlatID
+  bytes EquipmentName = 4;// EquipmentName
+  bytes EquipmentType = 5;// EquipmentType
+  enumDefine.Enum_ATT ATT = 6;// 敌我属性
+  enumDefine.Enum_WorkState WorkState = 7;// 工作状态
+  enumDefine.Enum_RecMode RecMode = 8;// RecMode
+  float fLon = 9;// 经度
+  float fLat = 10;// 纬度
+  float fHeight = 11;// 高度
+  float fStartAZ = 12;// fStartAZ
+  float fEndAZ = 13;// fEndAZ
+  float fStartEL = 14;// fStartEL
+  float fEndEL = 15;// fEndEL
+  float fStartRF = 16;// fStartRF
+  float fEndRF = 17;// fEndRF
+  float fAtnCentAZ = 18;// fAtnCentAZ
+  int32 RngCalcID = 19;// RngCalcID
+  int32 nSlaveNodeCount = 20;// nSlaveNodeCount
+  repeated int32 pSlaveNode = 21;// pSlaveNode
+  int32 iKeyPtNum = 22;// iKeyPtNum
+  repeated sKeyPoint pKeyPt = 23;// pKeyPt
+  float fOperatorAbility = 24;// 操作员水平0~1
+  float fEnviorAdaptability = 25;// 环境适应性
+  int32 nHideRangeNum = 26;// 遮蔽角个数
+  repeated sHideCoverRange pHideRangeData = 27;// 遮蔽角列表
+}
+
+// sRECON_Set_PARA
+message _ModelBus_sRECON_Set_PARA {
+  bytes sRID = 1;// sRID
+  int32 ReconID = 2;// ReconID
+  int32 PlatID = 3;// PlatID
+  bytes EquipmentName = 4;// EquipmentName
+  bytes EquipmentType = 5;// EquipmentType
+  enumDefine.Enum_ATT ATT = 6;// 敌我属性
+  enumDefine.Enum_WorkState WorkState = 7;// 工作状态
+  enumDefine.Enum_RecMode RecMode = 8;// RecMode
+  float fLon = 9;// 经度
+  float fLat = 10;// 纬度
+  float fHeight = 11;// 高度
+  float fStartAZ = 12;// fStartAZ
+  float fEndAZ = 13;// fEndAZ
+  float fStartEL = 14;// fStartEL
+  float fEndEL = 15;// fEndEL
+  float fStartRF = 16;// fStartRF
+  float fEndRF = 17;// fEndRF
+  float fAtnCentAZ = 18;// fAtnCentAZ
+  int32 RngCalcID = 19;// RngCalcID
+  int32 nSlaveNodeCount = 20;// nSlaveNodeCount
+  repeated int32 pSlaveNode = 21;// pSlaveNode
+  int32 iKeyPtNum = 22;// iKeyPtNum
+  repeated sKeyPoint pKeyPt = 23;// pKeyPt
+  float fOperatorAbility = 24;// 操作员水平0~1
+  float fEnviorAdaptability = 25;// 环境适应性
+  int32 nHideRangeNum = 26;// 遮蔽角个数
+  repeated sHideCoverRange pHideRangeData = 27;// 遮蔽角列表
+}
+
+// sRECON_Get_PARA
+message sRECON_Get_PARA {
+  bytes sRID = 1;// sRID
+  int32 ReconID = 2;// ReconID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  enumDefine.Enum_ATT ATT = 5;// ATT
+  bytes EquipmentName = 6;// EquipmentName
+  bytes EquipmentType = 7;// EquipmentType
+  float fLon = 8;// fLon
+  float fLat = 9;// fLat
+  float fHeight = 10;// fHeight
+  float StartAZ = 11;// StartAZ
+  float EndAZ = 12;// EndAZ
+  float fStartEL = 13;// fStartEL
+  float fEndEL = 14;// fEndEL
+  float StartRF = 15;// StartRF
+  float EndRF = 16;// EndRF
+  enumDefine.Enum_SurvivalState SurvivalState = 17;// SurvivalState
+  enumDefine.Enum_WorkState WorkState = 18;// WorkState
+  int32 WorkMode = 19;// WorkMode
+}
+
+// sRECON_Get_PARA
+message _ModelBus_sRECON_Get_PARA {
+  bytes sRID = 1;// sRID
+  int32 ReconID = 2;// ReconID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  enumDefine.Enum_ATT ATT = 5;// ATT
+  bytes EquipmentName = 6;// EquipmentName
+  bytes EquipmentType = 7;// EquipmentType
+  float fLon = 8;// fLon
+  float fLat = 9;// fLat
+  float fHeight = 10;// fHeight
+  float StartAZ = 11;// StartAZ
+  float EndAZ = 12;// EndAZ
+  float fStartEL = 13;// fStartEL
+  float fEndEL = 14;// fEndEL
+  float StartRF = 15;// StartRF
+  float EndRF = 16;// EndRF
+  enumDefine.Enum_SurvivalState SurvivalState = 17;// SurvivalState
+  enumDefine.Enum_WorkState WorkState = 18;// WorkState
+  int32 WorkMode = 19;// WorkMode
+}
+
+// ReconSysRange
+message ReconSysRange {
+  float minFre = 1;// minFre
+  float maxFre = 2;// maxFre
+  int32 iRangeNum = 3;// iRangeNum
+  repeated SpaceRange pRange = 4;// pRange
+}
+
+// ReconSysRange
+message _ModelBus_ReconSysRange {
+  float minFre = 1;// minFre
+  float maxFre = 2;// maxFre
+  int32 iRangeNum = 3;// iRangeNum
+  repeated SpaceRange pRange = 4;// pRange
+}
+
+// ReconSysData
+message ReconSysData {
+  bytes sSysName = 1;// sSysName
+  int32 iDSNum = 2;// iDSNum
+  repeated ReconSysRange pDSRange = 3;// pDSRange
+}
+
+// ReconSysData
+message _ModelBus_ReconSysData {
+  bytes sSysName = 1;// sSysName
+  int32 iDSNum = 2;// iDSNum
+  repeated ReconSysRange pDSRange = 3;// pDSRange
+}
+
+// sMultiSysRECON_Get_PARA
+message sMultiSysRECON_Get_PARA {
+  bytes sRID = 1;// sRID
+  int32 DeviceID = 2;// DeviceID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  enumDefine.Enum_ATT ATT = 5;// ATT
+  bytes EquipmentName = 6;// EquipmentName
+  bytes EquipmentType = 7;// EquipmentType
+  float fLon = 8;// fLon
+  float fLat = 9;// fLat
+  float fHeight = 10;// fHeight
+  enumDefine.Enum_SurvivalState SurvivalState = 11;// SurvivalState
+  enumDefine.Enum_WorkState WorkState = 12;// WorkState
+  int32 iWorkSysNum = 13;// iWorkSysNum
+  repeated ReconSysData pReconSysData = 14;// pReconSysData
+}
+
+// sMultiSysRECON_Get_PARA
+message _ModelBus_sMultiSysRECON_Get_PARA {
+  bytes sRID = 1;// sRID
+  int32 DeviceID = 2;// DeviceID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  enumDefine.Enum_ATT ATT = 5;// ATT
+  bytes EquipmentName = 6;// EquipmentName
+  bytes EquipmentType = 7;// EquipmentType
+  float fLon = 8;// fLon
+  float fLat = 9;// fLat
+  float fHeight = 10;// fHeight
+  enumDefine.Enum_SurvivalState SurvivalState = 11;// SurvivalState
+  enumDefine.Enum_WorkState WorkState = 12;// WorkState
+  int32 iWorkSysNum = 13;// iWorkSysNum
+  repeated ReconSysData pReconSysData = 14;// pReconSysData
+}
+
+// sRECON_AREA
+message sRECON_AREA {
+  bytes sRID = 1;// sRID
+  int32 ReconID = 2;// ReconID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  enumDefine.Enum_RegionSort RegionSort = 5;// RegionSort
+  float fHeight = 6;// fHeight
+  enumDefine.Enum_RegionType RegionType = 7;// RegionType
+  int32 PtNum = 8;// PtNum
+  repeated sPON_AGG PonAggData = 9;// PonAggData
+  int32 TargetID = 10;// TargetID
+  float fCenterLon = 11;// fCenterLon
+  float fCenterLat = 12;// fCenterLat
+  float fCenterHeight = 13;// fCenterHeight
+  int32 nRangeNum = 14;// nRangeNum
+  repeated sRECON_POWERPOINT PowerRange = 15;// PowerRange
+}
+
+// sRECON_AREA
+message _ModelBus_sRECON_AREA {
+  bytes sRID = 1;// sRID
+  int32 ReconID = 2;// ReconID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  enumDefine.Enum_RegionSort RegionSort = 5;// RegionSort
+  float fHeight = 6;// fHeight
+  enumDefine.Enum_RegionType RegionType = 7;// RegionType
+  int32 PtNum = 8;// PtNum
+  repeated sPON_AGG PonAggData = 9;// PonAggData
+  int32 TargetID = 10;// TargetID
+  float fCenterLon = 11;// fCenterLon
+  float fCenterLat = 12;// fCenterLat
+  float fCenterHeight = 13;// fCenterHeight
+  int32 nRangeNum = 14;// nRangeNum
+  repeated sRECON_POWERPOINT PowerRange = 15;// PowerRange
+}
+
+// sReconLocateResult
+message sReconLocateResult {
+  int32 ReconID = 1;// ReconID
+  int32 TargetID = 2;// TargetID
+  int32 ESMType = 3;// ESMType
+  bool bLocateSucceed = 4;// bLocateSucceed
+  float fRealTargetLon = 5;// fRealTargetLon
+  float fRealTargetLat = 6;// fRealTargetLat
+  float fRealTargetHeight = 7;// fRealTargetHeight
+  float fTargetLon = 8;// fTargetLon
+  float fTargetLat = 9;// fTargetLat
+  float fTargetHeight = 10;// fTargetHeight
+  bool bEEPValid = 11;// bEEPValid
+  float X = 12;// X
+  float Y = 13;// Y
+  float A = 14;// A
+  float B = 15;// B
+  float theta = 16;// theta
+  float Prob = 17;// Prob
+  float CEP = 18;// CEP
+}
+
+// sReconLocateResult
+message _ModelBus_sReconLocateResult {
+  int32 ReconID = 1;// ReconID
+  int32 TargetID = 2;// TargetID
+  int32 ESMType = 3;// ESMType
+  bool bLocateSucceed = 4;// bLocateSucceed
+  float fRealTargetLon = 5;// fRealTargetLon
+  float fRealTargetLat = 6;// fRealTargetLat
+  float fRealTargetHeight = 7;// fRealTargetHeight
+  float fTargetLon = 8;// fTargetLon
+  float fTargetLat = 9;// fTargetLat
+  float fTargetHeight = 10;// fTargetHeight
+  bool bEEPValid = 11;// bEEPValid
+  float X = 12;// X
+  float Y = 13;// Y
+  float A = 14;// A
+  float B = 15;// B
+  float theta = 16;// theta
+  float Prob = 17;// Prob
+  float CEP = 18;// CEP
+}
+
+// sReconPerfo
+message sReconPerfo {
+  int32 ReconID = 1;// ReconID
+  int32 TargetID = 2;// TargetID
+  bool bDOA = 3;// bDOA
+  float DOAError = 4;// DOAError
+  bool bDTOA = 5;// bDTOA
+  float DTOAError = 6;// DTOAError
+  bool bDFOA = 7;// bDFOA
+  float DFOAError = 8;// DFOAError
+}
+
+// sReconPerfo
+message _ModelBus_sReconPerfo {
+  int32 ReconID = 1;// ReconID
+  int32 TargetID = 2;// TargetID
+  bool bDOA = 3;// bDOA
+  float DOAError = 4;// DOAError
+  bool bDTOA = 5;// bDTOA
+  float DTOAError = 6;// DTOAError
+  bool bDFOA = 7;// bDFOA
+  float DFOAError = 8;// DFOAError
+}
+
+// 对单个目标的ZC结果
+message sReconResult {
+  int32 ReconID = 1;// ZC设备ID
+  int32 TargetID = 2;// 雷达ID
+  int32 ESMType = 3;// 接收机类型，RWR/ESM/HGESM，或者是接收机类型
+  bool bReconed = 4;// 是否ZC到
+  bool bIsInFrequenceRange = 5;// 是否满足频段要求
+  bool bIsInAzVision = 6;// 是否满足方位视场
+  bool bIsInELVision = 7;// 是否满足俯仰视场，bUseOTH为false时有效
+  bool bIsInLOS = 8;// 是否满足视距视场，bUseOTH为false时有效
+  bool bIsTerrainVisible = 9;// 是否满足地形通视
+  bool bIsInSensity = 10;// 是否满足灵敏度要求
+  bool bIsInParaMeasRng = 11;// 是否满足参数测量范围要求 add202509
+  bool bIsSignalRecognise = 12;// 信号能否识别
+  float AZ = 13;// 目标方位
+  float EL = 14;// 目标俯仰
+  float DIS = 15;// 目标距离，display
+  float ReconMaxRange = 16;// 对目标最大ZC距离，display
+  float DOAError = 17;// 侧向误差，ZC到有效
+  float LocationError = 18;// 定位误差，有定位功能且ZC到有效
+  float CaptureProb = 19;// 截获概率(0~1)，本截获概率仅指方位搜索时对脉冲雷达信号的截获概率
+  float fVisDist = 20;// 视距距离， display
+  bool bUseOTH = 21;// 是否是超视距计算
+  float fDectProb = 22;// 检测概率(bUseOTH为true时有效
+  float fOTHDistMin = 23;// 超视距近界(bUseOTH为true时有效)
+  int32 iRFNum = 24;// 载频个数
+  repeated float pRF = 25;// 载频
+  enumDefine.Enum_RFT RFT = 26;// 载频类型
+  int32 iPRINum = 27;// 重复间隔个数
+  repeated float pPRI = 28;// 重复间隔
+  enumDefine.Enum_PRIT PRIT = 29;// 重复间隔类型
+  int32 iPWNum = 30;// 脉宽个数
+  repeated float pPW = 31;// 脉宽
+  int32 equipTotalNum = 32;// ZC性能参数个数
+  repeated sReconPerfo pEquipPerfo = 33;// ZC性能参数
+  bool bLocate = 34;// 定位能力
+  sReconLocateResult LocateResult = 35;// 定位结果
+  //add202509
+  float fBandWidth = 36;// fBandWidth
+  float fSNR = 37;// fSNR
+  int32 CapNum = 38;// CapNum
+}
+
+// 对单个目标的ZC结果
+message _ModelBus_sReconResult {
+  int32 ReconID = 1;// ZC设备ID
+  int32 TargetID = 2;// 雷达ID
+  int32 ESMType = 3;// 接收机类型，RWR/ESM/HGESM，或者是接收机类型
+  bool bReconed = 4;// 是否ZC到
+  bool bIsInFrequenceRange = 5;// 是否满足频段要求
+  bool bIsInAzVision = 6;// 是否满足方位视场
+  bool bIsInELVision = 7;// 是否满足俯仰视场，bUseOTH为false时有效
+  bool bIsInLOS = 8;// 是否满足视距视场，bUseOTH为false时有效
+  bool bIsTerrainVisible = 9;// 是否满足地形通视
+  bool bIsInSensity = 10;// 是否满足灵敏度要求
+  bool bIsInParaMeasRng = 11;// 是否满足参数测量范围要求
+  bool bIsSignalRecognise = 12;// 信号能否识别
+  float AZ = 13;// 目标方位
+  float EL = 14;// 目标俯仰
+  float DIS = 15;// 目标距离，display
+  float ReconMaxRange = 16;// 对目标最大ZC距离，display
+  float DOAError = 17;// 侧向误差，ZC到有效
+  float LocationError = 18;// 定位误差，有定位功能且ZC到有效
+  float CaptureProb = 19;// 截获概率(0~1)，本截获概率仅指方位搜索时对脉冲雷达信号的截获概率
+  float fVisDist = 20;// 视距距离， display
+  bool bUseOTH = 21;// 是否是超视距计算
+  float fDectProb = 22;// 检测概率(bUseOTH为true时有效
+  float fOTHDistMin = 23;// 超视距近界(bUseOTH为true时有效)
+  int32 iRFNum = 24;// 载频个数
+  repeated float pRF = 25;// 载频
+  enumDefine.Enum_RFT RFT = 26;// 载频类型
+  int32 iPRINum = 27;// 重复间隔个数
+  repeated float pPRI = 28;// 重复间隔
+  enumDefine.Enum_PRIT PRIT = 29;// 重复间隔类型
+  int32 iPWNum = 30;// 脉宽个数
+  repeated float pPW = 31;// 脉宽
+  int32 equipTotalNum = 32;// ZC性能参数个数
+  repeated sReconPerfo pEquipPerfo = 33;// ZC性能参数
+  bool bLocate = 34;// 定位能力
+  sReconLocateResult LocateResult = 35;// 定位结果
+  float fBandWidth = 36;// fBandWidth
+  float fSNR = 37;// fSNR
+  int32 CapNum = 38;// CapNum
+}
+
+// sRECON_DETECTRADAR
+message sRECON_DETECTRADAR {
+  int32 ReconID = 1;// ReconID
+  int32 RadarID = 2;// RadarID
+  int32 RadarPlatID = 3;// RadarPlatID
+  enumDefine.Enum_ATT ATT = 4;// ATT
+  enumDefine.Enum_PlatType PlatType = 5;// PlatType
+  int32 DangerClass = 6;// DangerClass
+  enumDefine.Enum_SignalState SignalState = 7;// SignalState
+  sReconResult ReconResult = 8;// ReconResult
+}
+
+// sRECON_DETECTRADAR
+message _ModelBus_sRECON_DETECTRADAR {
+  int32 ReconID = 1;// ReconID
+  int32 RadarID = 2;// RadarID
+  int32 RadarPlatID = 3;// RadarPlatID
+  enumDefine.Enum_ATT ATT = 4;// ATT
+  enumDefine.Enum_PlatType PlatType = 5;// PlatType
+  int32 DangerClass = 6;// DangerClass
+  enumDefine.Enum_SignalState SignalState = 7;// SignalState
+  sReconResult ReconResult = 8;// ReconResult
+}
+
+// sRECON_RADARPARA
+message sRECON_RADARPARA {
+  bytes sRID = 1;// sRID
+  int32 ReconID = 2;// ReconID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  bool bmaster = 5;// bmaster
+  int32 RadarNum = 6;// RadarNum
+  repeated sRECON_DETECTRADAR ReconRadarPara = 7;// ReconRadarPara
+}
+
+// sRECON_RADARPARA
+message _ModelBus_sRECON_RADARPARA {
+  bytes sRID = 1;// sRID
+  int32 ReconID = 2;// ReconID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  bool bmaster = 5;// bmaster
+  int32 RadarNum = 6;// RadarNum
+  repeated sRECON_DETECTRADAR ReconRadarPara = 7;// ReconRadarPara
+}
+
+// 雷达GR装备初始化参数
+message sJAM_Set_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 JammerID = 2;// GR设备ID
+  int32 PlatID = 3;// 搭载平台ID
+  bytes EquipmentName = 4;// 装备名称
+  bytes EquipmentType = 5;// 装备型号
+  enumDefine.Enum_ATT ATT = 6;// 敌我属性
+  enumDefine.Enum_WorkState WorkState = 7;// 工作状态
+  float fLon = 8;// 经度
+  float fLat = 9;// 纬度
+  float fHeight = 10;// 高度
+  float fStartAZ = 11;// @Properties(description
+  float fEndAZ = 12;// @Properties(description
+  float fAtnCentAZ = 13;// 扫描中心指向
+  float fStartRF = 14;// 起始频率
+  float fEndRF = 15;// 终止频率
+  int32 iProtectRFNum = 16;// 保护频段个数
+  repeated ProtectRF pProtectRFInfo = 17;// 保护频段信息
+  int32 JamWorkMode = 18;// GR模式不同装备根据自身特点自定义数值及含义
+  int32 iTrgNum = 19;// 被对抗的雷达个数
+  repeated int32 lTrgVal = 20;// 被对抗的雷达列表
+  int32 iCenterPoint = 21;// @Properties(description
+  repeated sPON_AREA pCenterPoint = 22;// 中心区域点列表
+  int32 iKeyPtNum = 23;// 关键点个数
+  repeated sKeyPoint pKeyPt = 24;// 关键点列表
+}
+
+// 雷达GR装备初始化参数
+message _ModelBus_sJAM_Set_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 JammerID = 2;// GR设备ID
+  int32 PlatID = 3;// 搭载平台ID
+  bytes EquipmentName = 4;// 装备名称
+  bytes EquipmentType = 5;// 装备型号
+  enumDefine.Enum_ATT ATT = 6;// 敌我属性
+  enumDefine.Enum_WorkState WorkState = 7;// 工作状态
+  float fLon = 8;// 经度
+  float fLat = 9;// 纬度
+  float fHeight = 10;// 高度
+  float fStartAZ = 11;// @Properties(description
+  float fEndAZ = 12;// @Properties(description
+  float fAtnCentAZ = 13;// 扫描中心指向
+  float fStartRF = 14;// 起始频率
+  float fEndRF = 15;// 终止频率
+  int32 iProtectRFNum = 16;// 保护频段个数
+  repeated ProtectRF pProtectRFInfo = 17;// 保护频段信息
+  int32 JamWorkMode = 18;// GR模式不同装备根据自身特点自定义数值及含义
+  int32 iTrgNum = 19;// 被对抗的雷达个数
+  repeated int32 lTrgVal = 20;// 被对抗的雷达列表
+  int32 iCenterPoint = 21;// @Properties(description
+  repeated sPON_AREA pCenterPoint = 22;// 中心区域点列表
+  int32 iKeyPtNum = 23;// 关键点个数
+  repeated sKeyPoint pKeyPt = 24;// 关键点列表
+}
+
+// 雷达GR装备状态报
+message sJAM_Get_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 JammerID = 2;// GR设备ID
+  int32 PlatID = 3;// 搭载平台ID
+  float fTime = 4;// 推演时间
+  bytes EquipmentName = 5;// 装备名称
+  bytes EquipmentType = 6;// 装备型号
+  enumDefine.Enum_ATT ATT = 7;// 敌我属性
+  enumDefine.Enum_WorkState WorkState = 8;// 工作状态
+  enumDefine.Enum_SurvivalState SurvivalState = 9;// 生存状态
+  float fLon = 10;// 经度
+  float fLat = 11;// 纬度
+  float fHeight = 12;// 高度，
+  int32 JamPointAmount = 13;// GR波束个数
+  repeated sJAM_POINT JamPointVar = 14;// GR波束值
+  int32 iTrgNum = 15;// 对抗目标个数
+  repeated int32 lTrgVal = 16;// 对抗目标ID
+  int32 iJamedTrgNum = 17;// 被GR的目标个数
+  repeated int32 lJamedTrgVal = 18;// 被GR的目标ID
+}
+
+// 雷达GR装备状态报
+message _ModelBus_sJAM_Get_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 JammerID = 2;// GR设备ID
+  int32 PlatID = 3;// 搭载平台ID
+  float fTime = 4;// 推演时间
+  bytes EquipmentName = 5;// 装备名称
+  bytes EquipmentType = 6;// 装备型号
+  enumDefine.Enum_ATT ATT = 7;// 敌我属性
+  enumDefine.Enum_WorkState WorkState = 8;// 工作状态
+  enumDefine.Enum_SurvivalState SurvivalState = 9;// 生存状态
+  float fLon = 10;// 经度
+  float fLat = 11;// 纬度
+  float fHeight = 12;// 高度，
+  int32 JamPointAmount = 13;// GR波束个数
+  repeated sJAM_POINT JamPointVar = 14;// GR波束值
+  int32 iTrgNum = 15;// 对抗目标个数
+  repeated int32 lTrgVal = 16;// 对抗目标ID
+  int32 iJamedTrgNum = 17;// 被GR的目标个数
+  repeated int32 lJamedTrgVal = 18;// 被GR的目标ID
+}
+
+// 瞄准式GR信息
+message SAnswerJamInfo {
+  enumDefine.Enum_JamMode JamMode = 1;// GR样式(精瞄频/梳妆谱)
+  int32 iJamRFNum = 2;// 频点个数
+  repeated MultiPntSigPara pCenterFreq = 3;// 频点信息
+  float fAsSpeedFreq = 4;// 速度拖引频率
+  float fSpeed = 5;// 拖引速度(备用)
+  float fAccelerate = 6;// 拖引加速度(备用)
+  float fDelay = 7;// GR信息延迟(备用)
+}
+
+// 瞄准式GR信息
+message _ModelBus_SAnswerJamInfo {
+  enumDefine.Enum_JamMode JamMode = 1;// GR样式(精瞄频/梳妆谱)
+  int32 iJamRFNum = 2;// 频点个数
+  repeated MultiPntSigPara pCenterFreq = 3;// 频点信息
+  float fAsSpeedFreq = 4;// 速度拖引频率
+  float fSpeed = 5;// 拖引速度(备用)
+  float fAccelerate = 6;// 拖引加速度(备用)
+  float fDelay = 7;// GR信息延迟(备用)
+}
+
+// 噪声GR信息
+message SNoiseJamInfo {
+  enumDefine.Enum_CMD eNoiseSignalStyle = 1;// 噪声信号调制样式
+  float fRF = 2;// GR中心频率
+  float fJamSigBW = 3;// GR带宽
+  int32 DutyCycle = 4;// GR占空比(为负数时雷达模型应不考虑本因素)
+}
+
+// 拖引GR信息
+message SDragJamInfo {
+  float fRF = 1;// GR信号中心频点
+  float fDragDis = 2;// 拖引距离变量
+  float fDragVel = 3;// 拖引速度变量
+  float fDragDisDot = 4;// 距离拖引速度
+  float fDragVelDot = 5;// 距离拖引加速度
+}
+
+// 每个假目标GR的信息
+message SPerFalseJamInfo {
+  int32 iFalseTgtIndex = 1;// 假目标编号
+  float fCenterRF = 2;// 假目标中心频率
+  float fDelayInterv = 3;// 延时间隔
+  float fRFShiftInterv = 4;// 频偏间隔，display
+  float fAngleShiftInterv = 5;// 角度偏移间隔(0.01度的整数倍)，display
+}
+
+// 假目标GR信息，包含密集假目标和多假目标
+message SFalseJamInfo {
+  int32 FalseTgtType = 1;// 假目标类型(0-密假；1-多假)
+  int32 FalseTgtNum = 2;// 假目标数量
+  repeated SPerFalseJamInfo pPerFalseJamInfo = 3;// 每个假目标GR的信息
+}
+
+// 假目标GR信息，包含密集假目标和多假目标
+message _ModelBus_SFalseJamInfo {
+  int32 FalseTgtType = 1;// 假目标类型(0-密假；1-多假)
+  int32 FalseTgtNum = 2;// 假目标数量
+  repeated SPerFalseJamInfo pPerFalseJamInfo = 3;// 每个假目标GR的信息
+}
+
+// 雷达GR参数
+message sJAM_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 JammerID = 2;// GR设备ID
+  int32 PlatID = 3;// 搭载平台ID
+  float fTime = 4;// 推演时间
+  int32 RadarID = 5;// 雷达ID(GR目标对象)
+  bytes EquipmentName = 6;// 装备名称
+  bytes EquipmentType = 7;// 装备型号
+  enumDefine.Enum_ATT ATT = 8;// 敌我属性
+  float fLon = 9;// 经度
+  float fLat = 10;// 纬度
+  float fHeight = 11;// 高度
+  enumDefine.Enum_POT eAntPolarType = 12;// GR信号极化方式
+  float fPower = 13;// GR发射机功率
+  float fGt = 14;// GR机天线主瓣增益
+  float fSLGain = 15;// GR机天线平均旁瓣增益
+  float fLoss = 16;// GR机综合发射损失
+  float JamPointAZ = 17;// GR波束方位指向
+  float JamPointEL = 18;// GR波束俯仰指向
+  float fBeamWidth = 19;// GR天线波束方位宽度
+  float fBeamPitchWidth = 20;// GR天线波束俯仰宽度
+  bool bAnswerJammed = 21;// 瞄准式GR标识（含精瞄频和梳状谱）
+  repeated SAnswerJamInfo pAnswerJamInfo = 22;// 瞄准式GR信息
+  bool bNoiseJammed = 23;// 宽带噪声GR标识
+  repeated SNoiseJamInfo pNoiseJamInfo = 24;// 宽带噪声GR信息
+  bool bDecoyJammed = 25;// 拖引GR标识
+  repeated SDragJamInfo pDragJamInfo = 26;// 拖引GR信息;
+  bool bFalseJammed = 27;// 多假目标GR标识
+  repeated SFalseJamInfo pFalseJamInfo = 28;// 多假目标GR信息
+  bool bCrossEyeJammed = 29;// 交叉眼GR标识
+  bool bCrossPolarJammed = 30;// 交叉极化GR标识
+  bool bBaitJammed = 31;// 诱饵GR标识
+}
+
+// 雷达GR参数
+message _ModelBus_sJAM_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 JammerID = 2;// GR设备ID
+  int32 PlatID = 3;// 搭载平台ID
+  float fTime = 4;// 推演时间
+  int32 RadarID = 5;// 雷达ID(GR目标对象)
+  bytes EquipmentName = 6;// 装备名称
+  bytes EquipmentType = 7;// 装备型号
+  enumDefine.Enum_ATT ATT = 8;// 敌我属性
+  float fLon = 9;// 经度
+  float fLat = 10;// 纬度
+  float fHeight = 11;// 高度
+  enumDefine.Enum_POT eAntPolarType = 12;// GR信号极化方式
+  float fPower = 13;// GR发射机功率
+  float fGt = 14;// GR机天线主瓣增益
+  float fSLGain = 15;// GR机天线平均旁瓣增益
+  float fLoss = 16;// GR机综合发射损失
+  float JamPointAZ = 17;// GR波束方位指向
+  float JamPointEL = 18;// GR波束俯仰指向
+  float fBeamWidth = 19;// GR天线波束方位宽度
+  float fBeamPitchWidth = 20;// GR天线波束俯仰宽度
+  bool bAnswerJammed = 21;// 瞄准式GR标识（含精瞄频和梳状谱）
+  repeated SAnswerJamInfo pAnswerJamInfo = 22;// 瞄准式GR信息
+  bool bNoiseJammed = 23;// 宽带噪声GR标识
+  repeated SNoiseJamInfo pNoiseJamInfo = 24;// 宽带噪声GR信息
+  bool bDecoyJammed = 25;// 拖引GR标识
+  repeated SDragJamInfo pDragJamInfo = 26;// 拖引GR信息;
+  bool bFalseJammed = 27;// 多假目标GR标识
+  repeated SFalseJamInfo pFalseJamInfo = 28;// 多假目标GR信息
+  bool bCrossEyeJammed = 29;// 交叉眼GR标识
+  bool bCrossPolarJammed = 30;// 交叉极化GR标识
+  bool bBaitJammed = 31;// 诱饵GR标识
+}
+
+// 输出
+message sJAM_Set_TARGET {
+  bytes sRID = 1;// 身份字符串
+  int32 JammerID = 2;// GR机ID
+  int32 iTrgNum = 3;// 对抗目标个数
+  repeated int32 lTrgVal = 4;// 对抗目标ID
+}
+
+// 输出
+message _ModelBus_sJAM_Set_TARGET {
+  bytes sRID = 1;// 身份字符串
+  int32 JammerID = 2;// GR机ID
+  int32 iTrgNum = 3;// 对抗目标个数
+  repeated int32 lTrgVal = 4;// 对抗目标ID
+}
+
+// 单点雷达TC距离
+message RADAR_DistNode {
+  double DetectDist = 1;// 雷达TC距离
+  float Prob = 2;// TC概率
+}
+
+// 单点雷达TC距离
+message _ModelBus_RADAR_DistNode {
+  double DetectDist = 1;// 雷达TC距离
+  float Prob = 2;// TC概率
+}
+
+// 对某一目标的TC距离计算结果
+message DectDistRlt {
+  int32 TargetID = 1;// 目标ID
+  float fTrgHeight = 2;// 目标高度
+  int32 DetcDistNum = 3;// 距离数目
+  repeated RADAR_DistNode RadDetcDist = 4;// 雷达TC距离
+}
+
+// 对某一目标的TC距离计算结果
+message _ModelBus_DectDistRlt {
+  int32 TargetID = 1;// 目标ID
+  float fTrgHeight = 2;// 目标高度
+  int32 DetcDistNum = 3;// 距离数目
+  repeated RADAR_DistNode RadDetcDist = 4;// 雷达TC距离
+}
+
+// 输出
+message aRADAR_DIST {
+  bytes sRID = 1;// 身份字符串
+  int32 RadarID = 2;// 雷达ID
+  DectDistRlt DetectDistRlt = 3;// TC距离
+}
+
+// 输出
+message _ModelBus_aRADAR_DIST {
+  bytes sRID = 1;// 身份字符串
+  int32 RadarID = 2;// 雷达ID
+  DectDistRlt DetectDistRlt = 3;// TC距离
+}
+
+// 输出
+message sRADAR_DIST {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  DectDistRlt DectDist = 5;// DectDist
+}
+
+// 输出
+message _ModelBus_sRADAR_DIST {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  DectDistRlt DectDist = 5;// DectDist
+}
+
+// sPZone
+message sPZone {
+  float fAzi = 1;// fAzi
+  float fDis = 2;// fDis
+  float fIntensity = 3;// fIntensity
+}
+
+// sPZone
+message _ModelBus_sPZone {
+  float fAzi = 1;// fAzi
+  float fDis = 2;// fDis
+  float fIntensity = 3;// fIntensity
+}
+
+// 输出
+message sRADAR_P_RANGE {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 iZoneNum = 5;// iZoneNum
+  repeated sPZone ZonePoint = 6;// ZonePoint
+}
+
+// 输出
+message _ModelBus_sRADAR_P_RANGE {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 iZoneNum = 5;// iZoneNum
+  repeated sPZone ZonePoint = 6;// ZonePoint
+}
+
+// sRADAR_TARGET_VIEWRANGE
+message sRADAR_TARGET_VIEWRANGE {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 TargetID = 5;// TargetID
+  int32 iDetectZoneNum = 6;// iDetectZoneNum
+  repeated sRectZone ZonePoint = 7;// ZonePoint
+}
+
+// sRADAR_TARGET_VIEWRANGE
+message _ModelBus_sRADAR_TARGET_VIEWRANGE {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 TargetID = 5;// TargetID
+  int32 iDetectZoneNum = 6;// iDetectZoneNum
+  repeated sRectZone ZonePoint = 7;// ZonePoint
+}
+
+// sRadarNoneDetectPlat
+message sRadarNoneDetectPlat {
+  int32 PlatID = 1;// PlatID
+  float fLon = 2;// fLon
+  float fLat = 3;// fLat
+  float fHeight = 4;// fHeight
+  float fSpeed = 5;// fSpeed
+  float fAbilityDetectDis = 6;// fAbilityDetectDis
+}
+
+// sRadarNoneDetectPlat
+message _ModelBus_sRadarNoneDetectPlat {
+  int32 PlatID = 1;// PlatID
+  float fLon = 2;// fLon
+  float fLat = 3;// fLat
+  float fHeight = 4;// fHeight
+  float fSpeed = 5;// fSpeed
+  float fAbilityDetectDis = 6;// fAbilityDetectDis
+}
+
+// sRADAR_NONEDECTECTPLAT
+message sRADAR_NONEDECTECTPLAT {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 nNonePlatNum = 5;// nNonePlatNum
+  repeated sRadarNoneDetectPlat NoneDetectPlat = 6;// NoneDetectPlat
+}
+
+// sRADAR_NONEDECTECTPLAT
+message _ModelBus_sRADAR_NONEDECTECTPLAT {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 nNonePlatNum = 5;// nNonePlatNum
+  repeated sRadarNoneDetectPlat NoneDetectPlat = 6;// NoneDetectPlat
+}
+
+// 输出
+message aRADAR_RESULT {
+  bytes sRID = 1;// 身份字符串
+  int32 RadarID = 2;// 雷达ID
+  int32 TargetID = 3;// 目标ID
+  bool bDetected = 4;// 是否TC到
+  float Prob = 5;// TC概率0~1
+  float DetectError = 6;// TC误差
+  float DetectRangeMax = 7;// 雷达最大作用距离(不考虑GR)
+  bool bDecepJammed = 8;// 是否受欺骗GR
+}
+
+// 输出
+message _ModelBus_aRADAR_RESULT {
+  bytes sRID = 1;// 身份字符串
+  int32 RadarID = 2;// 雷达ID
+  int32 TargetID = 3;// 目标ID
+  bool bDetected = 4;// 是否TC到
+  float Prob = 5;// TC概率0~1
+  float DetectError = 6;// TC误差
+  float DetectRangeMax = 7;// 雷达最大作用距离(不考虑GR)
+  bool bDecepJammed = 8;// 是否受欺骗GR
+}
+
+// SingleDectRlt
+message SingleDectRlt {
+  int32 TargetID = 1;// TargetID
+  bool bDetected = 2;// bDetected
+  float Prob = 3;// Prob
+  float DetectError = 4;// DetectError
+  float DetectRangeMax = 5;// DetectRangeMax
+  bool bDecepJammed = 6;// bDecepJammed
+}
+
+// 输出
+message aRADAR_RESULTEX {
+  bytes sRID = 1;// 身份字符串
+  int32 RadarID = 2;// 雷达ID
+  int32 nRltNum = 3;// TC结果数目
+  repeated SingleDectRlt MultiDectRlt = 4;// TC结果
+}
+
+// 输出
+message _ModelBus_aRADAR_RESULTEX {
+  bytes sRID = 1;// 身份字符串
+  int32 RadarID = 2;// 雷达ID
+  int32 nRltNum = 3;// TC结果数目
+  repeated SingleDectRlt MultiDectRlt = 4;// TC结果
+}
+
+// GR计算结果
+message RJamCalcResult {
+  int32 TargetID = 1;// 目标ID
+  bool bCanJam = 2;// 是否能够GR
+  bool bCanRecon = 3;// 能否ZC到
+  bool bIsInJamRFRange = 4;// 是否满足频段要求
+  bool bIsInJamAzVision = 5;// 是否满足方位视场
+  bool bIsInJamELVision = 6;// 是否满足俯仰视场
+  bool bIsInJamRange = 7;// 是否在GR距离内
+  bool bIsInJamMaxNum = 8;// 是否在多目标GR能力内
+  float JamMaxRange = 9;// 对目标最大GR距离(满足频段要求时有效)
+  float JamMinRange = 10;// 对目标最小GR距离
+  int32 nPowerRangeNum = 11;// GR能力区域个数
+  repeated sJAM_POWERPOINT PowerRange = 12;// GR能力区域
+  enumDefine.Enum_RJamType RJamType = 13;// GR类型
+  float ERP = 14;// 等效辐射功率
+  float RF = 15;// GR中心频率
+  float RJamBandWidth = 16;// GR信号带宽
+  int32 FalseTrgNum = 17;// 假目标个数
+  sJAM_POINT JamPointVar = 18;// GR波束范围
+}
+
+// GR计算结果
+message _ModelBus_RJamCalcResult {
+  int32 TargetID = 1;// 目标ID
+  bool bCanJam = 2;// 是否能够GR
+  bool bCanRecon = 3;// 能否ZC到
+  bool bIsInJamRFRange = 4;// 是否满足频段要求
+  bool bIsInJamAzVision = 5;// 是否满足方位视场
+  bool bIsInJamELVision = 6;// 是否满足俯仰视场
+  bool bIsInJamRange = 7;// 是否在GR距离内
+  bool bIsInJamMaxNum = 8;// 是否在多目标GR能力内
+  float JamMaxRange = 9;// 对目标最大GR距离(满足频段要求时有效)
+  float JamMinRange = 10;// 对目标最小GR距离
+  int32 nPowerRangeNum = 11;// GR能力区域个数
+  repeated sJAM_POWERPOINT PowerRange = 12;// GR能力区域
+  enumDefine.Enum_RJamType RJamType = 13;// GR类型
+  float ERP = 14;// 等效辐射功率
+  float RF = 15;// GR中心频率
+  float RJamBandWidth = 16;// GR信号带宽
+  int32 FalseTrgNum = 17;// 假目标个数
+  sJAM_POINT JamPointVar = 18;// GR波束范围
+}
+
+// 输出
+message aJAM_RESULT {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// GR装备ID；
+  float LON = 3;// GR装备经度
+  float LAT = 4;// GR装备纬度
+  float Height = 5;// GR装备高度
+  int32 nResultNum = 6;// GR结论个数
+  repeated RJamCalcResult pJamResult = 7;// GR结论数据
+}
+
+// 输出
+message _ModelBus_aJAM_RESULT {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// GR装备ID；
+  float LON = 3;// GR装备经度
+  float LAT = 4;// GR装备纬度
+  float Height = 5;// GR装备高度
+  int32 nResultNum = 6;// GR结论个数
+  repeated RJamCalcResult pJamResult = 7;// GR结论数据
+}
+
+// 输出
+message aRECON_RESULT {
+  bytes sRID = 1;// 身份字符串
+  int32 ReconID = 2;// ZC/GR设备ID
+  int32 nResultNum = 3;// ZC结论个数
+  repeated sReconResult pReconResult = 4;// ZC结论数据
+}
+
+// 输出
+message _ModelBus_aRECON_RESULT {
+  bytes sRID = 1;// 身份字符串
+  int32 ReconID = 2;// ZC/GR设备ID
+  int32 nResultNum = 3;// ZC结论个数
+  repeated sReconResult pReconResult = 4;// ZC结论数据
+}
+
+// sTRACK_POINT
+message sTRACK_POINT {
+  enumDefine.Enum_FlyPosType FlyPosType = 1;// FlyPosType
+  float PlatformSpeed = 2;// PlatformSpeed
+  float LON = 3;// LON
+  float LAT = 4;// LAT
+  float Height = 5;// Height
+  float ReachTime = 6;// ReachTime
+  float Psia = 7;// Psia
+  float Slope = 8;// Slope
+  enumDefine.Enum_TaskType PointTaskType = 9;// PointTaskType
+  float DamageProbability = 10;// DamageProbability
+}
+
+// sTRACK_POINT
+message _ModelBus_sTRACK_POINT {
+  enumDefine.Enum_FlyPosType FlyPosType = 1;// FlyPosType
+  float PlatformSpeed = 2;// PlatformSpeed
+  float LON = 3;// LON
+  float LAT = 4;// LAT
+  float Height = 5;// Height
+  float ReachTime = 6;// ReachTime
+  float Psia = 7;// Psia
+  float Slope = 8;// Slope
+  enumDefine.Enum_TaskType PointTaskType = 9;// PointTaskType
+  float DamageProbability = 10;// DamageProbability
+}
+
+// sUAV_Set_PARA
+message sUAV_Set_PARA {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  int32 PlatID = 3;// PlatID
+  enumDefine.Enum_ATT ATT = 4;// ATT
+  bytes EquipmentName = 5;// EquipmentName
+  float fStartTime = 6;// fStartTime
+  float LON = 7;// LON
+  float LAT = 8;// LAT
+  float Height = 9;// Height
+  int32 TargetNum = 10;// TargetNum
+  repeated int32 TargetID = 11;// TargetID
+  int32 PosNum = 12;// PosNum
+  repeated sTRACK_POINT CombatTracklist = 13;// CombatTracklist
+}
+
+// sUAV_Set_PARA
+message _ModelBus_sUAV_Set_PARA {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  int32 PlatID = 3;// PlatID
+  enumDefine.Enum_ATT ATT = 4;// ATT
+  bytes EquipmentName = 5;// EquipmentName
+  float fStartTime = 6;// fStartTime
+  float LON = 7;// LON
+  float LAT = 8;// LAT
+  float Height = 9;// Height
+  int32 TargetNum = 10;// TargetNum
+  repeated int32 TargetID = 11;// TargetID
+  int32 PosNum = 12;// PosNum
+  repeated sTRACK_POINT CombatTracklist = 13;// CombatTracklist
+}
+
+// 输出
+message aUAVSkyway {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  int32 RadarID = 3;// RadarID
+  bool IsCourseOK = 4;// IsCourseOK
+  bool IsTimeOK = 5;// IsTimeOK
+}
+
+// 输出
+message _ModelBus_aUAVSkyway {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  int32 RadarID = 3;// RadarID
+  bool IsCourseOK = 4;// IsCourseOK
+  bool IsTimeOK = 5;// IsTimeOK
+}
+
+// 输出
+message sUAV_ATTRACK_PARA {
+  bytes sRID = 1;// sRID
+  int32 TargetID = 2;// TargetID
+  int32 UAVID = 3;// UAVID
+  float fTime = 4;// fTime
+  float KillProb = 5;// KillProb
+}
+
+// 输出
+message _ModelBus_sUAV_ATTRACK_PARA {
+  bytes sRID = 1;// sRID
+  int32 TargetID = 2;// TargetID
+  int32 UAVID = 3;// UAVID
+  float fTime = 4;// fTime
+  float KillProb = 5;// KillProb
+}
+
+// 输出
+message sUAV_ALAM_PARA {
+  bytes sRID = 1;// sRID
+  int32 TargetID = 2;// TargetID
+  int32 UAVID = 3;// UAVID
+  float fTime = 4;// fTime
+  bool IsLocked = 5;// IsLocked
+}
+
+// 输出
+message _ModelBus_sUAV_ALAM_PARA {
+  bytes sRID = 1;// sRID
+  int32 TargetID = 2;// TargetID
+  int32 UAVID = 3;// UAVID
+  float fTime = 4;// fTime
+  bool IsLocked = 5;// IsLocked
+}
+
+// aUAV_Set_Skyway
+message aUAV_Set_Skyway {
+  bytes sRID = 1;// sRID
+  bytes ID = 2;// ID
+  float RadarLON = 3;// RadarLON
+  float RadarLAT = 4;// RadarLAT
+  float RadarHeight = 5;// RadarHeight
+}
+
+// aUAV_Set_Skyway
+message _ModelBus_aUAV_Set_Skyway {
+  bytes sRID = 1;// sRID
+  bytes ID = 2;// ID
+  float RadarLON = 3;// RadarLON
+  float RadarLAT = 4;// RadarLAT
+  float RadarHeight = 5;// RadarHeight
+}
+
+// 雷达GR初始化信息
+message aJAM_Set_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 实体ID
+  float LON = 3;// 经度
+  float LAT = 4;// 纬度
+  float Height = 5;// 高度
+  int32 TargetNum = 6;// 目标数量
+  repeated int32 TargetID = 7;// 目标ID
+  int32 iCenterPoint = 8;// 中心区域点个数(目前仅对运八干有效)
+  repeated sPON_AREA pCenterPoint = 9;// 中心区域点
+  enumDefine.Enum_WorkMode WorkMode = 10;// 工作模式
+  int32 ESMMode = 11;// 无源ZC模式，0-告警RWR，1-3500:测距测向；其它：ESM，2-HGESM
+  int32 ECMMode = 12;// 有源GR模式，1-ECM，2-HPESM；
+  bool bJamTypeCtrl = 13;// 是否使用外部设置的GR样式，否则用模型默认值
+  enumDefine.Enum_RJamType eJamType = 14;// GR样式(bJamTypeCtrl为true时有效)
+  float Psia = 15;// 航向角或地面装备天线伺服中心指向
+  enumDefine.Enum_RadarJamDirCtrl eWorkDir = 16;// 工作方位指向（仅部分空中装备有效）
+  float StartAZ = 17;// 起始方位（度）
+  float EndAZ = 18;// 终止方位（度）
+  float RCS = 19;// 被保护目标RCS
+}
+
+// 雷达GR初始化信息
+message _ModelBus_aJAM_Set_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 实体ID
+  float LON = 3;// 经度
+  float LAT = 4;// 纬度
+  float Height = 5;// 高度
+  int32 TargetNum = 6;// 目标数量
+  repeated int32 TargetID = 7;// 目标ID
+  int32 iCenterPoint = 8;// 中心区域点个数(目前仅对运八干有效)
+  repeated sPON_AREA pCenterPoint = 9;// 中心区域点
+  enumDefine.Enum_WorkMode WorkMode = 10;// 工作模式
+  int32 ESMMode = 11;// 无源ZC模式，0-告警RWR，1-3500:测距测向；其它：ESM，2-HGESM
+  int32 ECMMode = 12;// 有源GR模式，1-ECM，2-HPESM；
+  bool bJamTypeCtrl = 13;// 是否使用外部设置的GR样式，否则用模型默认值
+  enumDefine.Enum_RJamType eJamType = 14;// GR样式(bJamTypeCtrl为true时有效)
+  float Psia = 15;// 航向角或地面装备天线伺服中心指向
+  enumDefine.Enum_RadarJamDirCtrl eWorkDir = 16;// 工作方位指向（仅部分空中装备有效）
+  float StartAZ = 17;// 起始方位（度）
+  float EndAZ = 18;// 终止方位（度）
+  float RCS = 19;// 被保护目标RCS
+}
+
+// 雷达初始化信息
+message aRADAR_Set_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 实体ID
+  float LON = 3;// 经度
+  float LAT = 4;// 纬度
+  float Height = 5;// 高度
+  float PointAZ = 6;// 雷达阵面方位指向（仅对相控阵雷达有效）
+  float Psia = 7;// 航向角（仅对空中雷达有效）
+  float fPd = 8;// 检测概率（0~1）
+  enumDefine.Enum_RadarWorkMode eWorkMode = 9;// 工作模式
+  enumDefine.Enum_DirCtrl eWorkDir = 10;// SAR波束方位
+  float fPitch = 11;// SAR搭载平台俯仰角（方位角复用fPsia）
+  float fRoll = 12;// SAR搭载平台横滚角
+  float fAzStep = 13;// 方位步长(步长数据只在计算三维TC包络时使用，建议在0~3之间)
+  float fElStep = 14;// 俯仰步长(步长数据只在计算三维TC包络时使用，建议在0~3之间)
+}
+
+// 雷达初始化信息
+message _ModelBus_aRADAR_Set_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 实体ID
+  float LON = 3;// 经度
+  float LAT = 4;// 纬度
+  float Height = 5;// 高度
+  float PointAZ = 6;// 雷达阵面方位指向（仅对相控阵雷达有效）
+  float Psia = 7;// 航向角（仅对空中雷达有效）
+  float fPd = 8;// 检测概率（0~1）
+  enumDefine.Enum_RadarWorkMode eWorkMode = 9;// 工作模式
+  enumDefine.Enum_DirCtrl eWorkDir = 10;// SAR波束方位
+  float fPitch = 11;// SAR搭载平台俯仰角（方位角复用fPsia）
+  float fRoll = 12;// SAR搭载平台横滚角
+  float fAzStep = 13;// 方位步长(步长数据只在计算三维TC包络时使用，建议在0~3之间)
+  float fElStep = 14;// 俯仰步长(步长数据只在计算三维TC包络时使用，建议在0~3之间)
+}
+
+// 雷达ZC设备初始化信息
+message aRECON_Set_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 实体ID
+  float LON = 3;// 经度
+  float LAT = 4;// 纬度
+  float Height = 5;// 高度
+  float Psia = 6;// 航向角（仅对空中ZC设备有效）/控守方位中心（9X9有效）
+  float StartAZ = 7;// 起始方位
+  float EndAZ = 8;// 终止方位
+  int32 WorkMode = 9;// 工作模式：0、1、2仅308B有效，3、4、5仅302A有效
+  bool bUseOTH = 10;// 是否计算超视距能力，true:是，false:否，通视距离
+  float fProb = 11;// fProb时间不超过的路径损耗(超视距时有效，0~1)
+  bool bUseRelatRecon = 12;// 是否采用相关检测（9X9有效），默认常规
+  float fOperatorAbility = 13;// 操作员水平(0~1)
+  float fEnviorAdaptability = 14;// 环境适应性(0~1)
+  int32 nHideRangeNum = 15;// 遮蔽角信息数量
+  repeated sHideCoverRange pHideRangeData = 16;// 遮蔽角信息
+}
+
+// 雷达ZC设备初始化信息
+message _ModelBus_aRECON_Set_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 实体ID
+  float LON = 3;// 经度
+  float LAT = 4;// 纬度
+  float Height = 5;// 高度
+  float Psia = 6;// 航向角（仅对空中ZC设备有效）/控守方位中心（9X9有效）
+  float StartAZ = 7;// 起始方位
+  float EndAZ = 8;// 终止方位
+  int32 WorkMode = 9;// 工作模式：0、1、2仅308B有效，3、4、5仅302A有效
+  bool bUseOTH = 10;// 是否计算超视距能力，true:是，false:否，通视距离
+  float fProb = 11;// fProb时间不超过的路径损耗(超视距时有效，0~1)
+  bool bUseRelatRecon = 12;// 是否采用相关检测（9X9有效），默认常规
+  float fOperatorAbility = 13;// 操作员水平(0~1)
+  float fEnviorAdaptability = 14;// 环境适应性(0~1)
+  int32 nHideRangeNum = 15;// 遮蔽角信息数量
+  repeated sHideCoverRange pHideRangeData = 16;// 遮蔽角信息
+}
+
+// 目标平台初始化信息
+message aPLAT_Set_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 实体ID
+  float LON = 3;// 经度
+  float LAT = 4;// 纬度
+  float Height = 5;// 高度
+  enumDefine.Enum_PlatType PlatType = 6;// 平台类型
+  float TargetRadius = 7;// 目标半径
+  int32 nRCSNum = 8;// RCS个数
+  repeated RCS_PARA RCSArray = 9;// 回波面积组(多RCS平台有效)
+}
+
+// 目标平台初始化信息
+message _ModelBus_aPLAT_Set_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 实体ID
+  float LON = 3;// 经度
+  float LAT = 4;// 纬度
+  float Height = 5;// 高度
+  enumDefine.Enum_PlatType PlatType = 6;// 平台类型
+  float TargetRadius = 7;// 目标半径
+  int32 nRCSNum = 8;// RCS个数
+  repeated RCS_PARA RCSArray = 9;// 回波面积组(多RCS平台有效)
+}
+
+// 雷达交互信息
+message aRADAR_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 实体ID
+  float LON = 3;// 经度
+  float LAT = 4;// 纬度
+  float Height = 5;// 高度
+  enumDefine.Enum_RFT RFT = 6;// 射频类型
+  int32 RFNum = 7;// 射频数量(0~64)
+  repeated float RF = 8;// @Properties(description=射频值, display=visible, unit=MHz
+  float PW = 9;// 脉冲宽度
+  float RBand = 10;// 接收机带宽
+  float Power = 11;// 功率
+  float Gt = 12;// 天线接收增益
+  float HBeamWidth = 13;// 水平波束宽度
+  float VBeamWidth = 14;// 垂直波束宽度
+  float StartAZ = 15;// 起始角
+  float EndAZ = 16;// 终止角
+  float ScanCycle = 17;// 天线扫描周期
+  float fGtSL1 = 18;// 天线第一旁瓣增益(相对值)
+  float fGtSLm = 19;// 天线平均旁瓣增益
+  enumDefine.Enum_RadarSort eRadarSort = 20;// 雷达功能用途
+  enumDefine.Enum_PlatType ePlatType = 21;// 搭载平台类型
+  bool bReconCalc = 22;// bReconCalc
+  bool bJamCalc = 23;// 重载构造函数
+}
+
+// 雷达交互信息
+message _ModelBus_aRADAR_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 实体ID
+  float LON = 3;// 经度
+  float LAT = 4;// 纬度
+  float Height = 5;// 高度
+  enumDefine.Enum_RFT RFT = 6;// 射频类型
+  int32 RFNum = 7;// 射频数量(0~64)
+  repeated float RF = 8;// @Properties(description=射频值, display=visible, unit=MHz
+  float PW = 9;// 脉冲宽度
+  float RBand = 10;// 接收机带宽
+  float Power = 11;// 功率
+  float Gt = 12;// 天线接收增益
+  float HBeamWidth = 13;// 水平波束宽度
+  float VBeamWidth = 14;// 垂直波束宽度
+  float StartAZ = 15;// 起始角
+  float EndAZ = 16;// 终止角
+  float ScanCycle = 17;// 天线扫描周期
+  float fGtSL1 = 18;// 天线第一旁瓣增益(相对值)
+  float fGtSLm = 19;// 天线平均旁瓣增益
+  enumDefine.Enum_RadarSort eRadarSort = 20;// 雷达功能用途
+  enumDefine.Enum_PlatType ePlatType = 21;// 搭载平台类型
+  bool bReconCalc = 22;// bReconCalc
+  bool bJamCalc = 23;// 重载构造函数
+}
+
+// GR交互信息
+message aJAM_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 实体ID
+  int32 RadarID = 3;// 目标雷达ID
+  float LON = 4;// 经度
+  float LAT = 5;// 纬度
+  float Height = 6;// 高度
+  enumDefine.Enum_POT eAntPolarType = 7;// GR信号极化方式
+  float fPower = 8;// GR发射机功率
+  float fGt = 9;// GR机天线主瓣增益
+  float fLoss = 10;// GR机综合发射损失
+  bool bAnswerJammed = 11;// 瞄准式GR标识（含精瞄频和梳状谱）
+  repeated SAnswerJamInfo pAnswerJamInfo = 12;// 瞄准式GR信息
+  bool bNoiseJammed = 13;// 宽带噪声GR标识
+  repeated SNoiseJamInfo pNoiseJamInfo = 14;// 宽带噪声GR信息
+  bool bDecoyJammed = 15;// 拖引GR标识
+  repeated SDragJamInfo pDragJamInfo = 16;// 拖引GR信息
+  bool bFalseJammed = 17;// 多假目标GR标识
+  repeated SFalseJamInfo pFalseJamInfo = 18;// 多假目标GR信息
+}
+
+// GR交互信息
+message _ModelBus_aJAM_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 实体ID
+  int32 RadarID = 3;// 目标雷达ID
+  float LON = 4;// 经度
+  float LAT = 5;// 纬度
+  float Height = 6;// 高度
+  enumDefine.Enum_POT eAntPolarType = 7;// GR信号极化方式
+  float fPower = 8;// GR发射机功率
+  float fGt = 9;// GR机天线主瓣增益
+  float fLoss = 10;// GR机综合发射损失
+  bool bAnswerJammed = 11;// 瞄准式GR标识（含精瞄频和梳状谱）
+  repeated SAnswerJamInfo pAnswerJamInfo = 12;// 瞄准式GR信息
+  bool bNoiseJammed = 13;// 宽带噪声GR标识
+  repeated SNoiseJamInfo pNoiseJamInfo = 14;// 宽带噪声GR信息
+  bool bDecoyJammed = 15;// 拖引GR标识
+  repeated SDragJamInfo pDragJamInfo = 16;// 拖引GR信息
+  bool bFalseJammed = 17;// 多假目标GR标识
+  repeated SFalseJamInfo pFalseJamInfo = 18;// 多假目标GR信息
+}
+
+// 输出
+message aRadarRange {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 雷达ID
+  int32 PlatID = 3;// 平台ID
+  enumDefine.Enum_RegionSort RegionSort = 4;// 区域类型
+  enumDefine.Enum_RegionType RegionType = 5;// 几何类型
+  float LON = 6;// 经度，单位：度
+  float LAT = 7;// 纬度，单位：度
+  float Height = 8;// 高度
+  int32 PtNum = 9;// 边界点个数
+  repeated sPON_AGG Position = 10;// 边界点
+  float fTrgHeight = 11;// TC目标高度
+  float fRangeJamRatio = 12;// 距离压制系数（噪声GR有效，GR方向上），0-1，0表示无压制，1表示全压制
+}
+
+// 输出
+message _ModelBus_aRadarRange {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 雷达ID
+  int32 PlatID = 3;// 平台ID
+  enumDefine.Enum_RegionSort RegionSort = 4;// 区域类型
+  enumDefine.Enum_RegionType RegionType = 5;// 几何类型
+  float LON = 6;// 经度，单位：度
+  float LAT = 7;// 纬度，单位：度
+  float Height = 8;// 高度
+  int32 PtNum = 9;// 边界点个数
+  repeated sPON_AGG Position = 10;// 边界点
+  float fTrgHeight = 11;// TC目标高度
+  float fRangeJamRatio = 12;// 距离压制系数（噪声GR有效，GR方向上），0-1，0表示无压制，1表示全压制
+}
+
+// 一个方位切面的包络信息  add 1228
+message OneAzPoly {
+  float fAz = 1;// 方位值，度
+  int32 nPosNum = 2;// 包络点数目
+  repeated sPON_AREA Position = 3;// 边界点，顺序：原点+各俯仰对应的包络点（俯仰从下界遍历至上届）
+}
+
+// 一个方位切面的包络信息  add 1228
+message _ModelBus_OneAzPoly {
+  float fAz = 1;// 方位值，度
+  int32 nPosNum = 2;// 包络点数目
+  repeated sPON_AREA Position = 3;// 边界点，顺序：原点+各俯仰对应的包络点（俯仰从下界遍历至上届）
+}
+
+// 输出
+message RadarRange3D {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 本模型实体ID
+  int32 PlatID = 3;// 搭载平台ID，推演计算时有效
+  float fTime = 4;// 推演计算时有效
+  int32 TrgID = 5;// 目标ID
+  float fLon = 6;// 雷达经度，单位：度
+  float fLat = 7;// 雷达纬度，单位：度
+  float fHeight = 8;// 雷达高度，米
+  int32 nAzNum = 9;// 方位面数目
+  repeated OneAzPoly Poly = 10;// 每个方位面的包络
+}
+
+// 输出
+message _ModelBus_RadarRange3D {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 本模型实体ID
+  int32 PlatID = 3;// 搭载平台ID，推演计算时有效
+  float fTime = 4;// 推演计算时有效
+  int32 TrgID = 5;// 目标ID
+  float fLon = 6;// 雷达经度，单位：度
+  float fLat = 7;// 雷达纬度，单位：度
+  float fHeight = 8;// 雷达高度，米
+  int32 nAzNum = 9;// 方位面数目
+  repeated OneAzPoly Poly = 10;// 每个方位面的包络
+}
+
+// aPD_REGION_POINT
+message aPD_REGION_POINT {
+  int32 ID = 1;// ID
+  sPON_AREA Position = 2;// Position
+  float RCS = 3;// RCS
+}
+
+// aPD_REGION_POINT
+message _ModelBus_aPD_REGION_POINT {
+  int32 ID = 1;// ID
+  sPON_AREA Position = 2;// Position
+  float RCS = 3;// RCS
+}
+
+// aPD_REGION
+message aPD_REGION {
+  bytes sRID = 1;// sRID
+  int32 PtNum = 2;// PtNum
+  repeated aPD_REGION_POINT RegionPoint = 3;// RegionPoint
+}
+
+// aPD_REGION
+message _ModelBus_aPD_REGION {
+  bytes sRID = 1;// sRID
+  int32 PtNum = 2;// PtNum
+  repeated aPD_REGION_POINT RegionPoint = 3;// RegionPoint
+}
+
+// POS_PT_PD
+message POS_PT_PD {
+  int32 ID = 1;// ID
+  sPON_AREA Position = 2;// Position
+  float Pd = 3;// Pd
+}
+
+// POS_PT_PD
+message _ModelBus_sPOS_PT_PD {
+  int32 ID = 1;// ID
+  sPON_AREA Position = 2;// Position
+  float Pd = 3;// Pd
+}
+
+// 输出
+message aRADAR_REGION_PD {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 TargetID = 3;// TargetID
+  int32 PtNum = 4;// PtNum
+  repeated POS_PT_PD PosPtPD = 5;// PosPtPD
+}
+
+// 输出
+message _ModelBus_aRADAR_REGION_PD {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 TargetID = 3;// TargetID
+  int32 PtNum = 4;// PtNum
+  repeated POS_PT_PD PosPtPD = 5;// PosPtPD
+}
+
+// 输出
+message aReconRange {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// GR机ID
+  int32 RadarID = 3;// 雷达ID
+  sReconResult ReconResult = 4;// ReconResult
+  enumDefine.Enum_RegionType RegionType = 5;// 几何类型
+  float Height = 6;// 高度
+  int32 PtNum = 7;// 所有边界点个数
+  repeated sPON_AGG Position = 8;// 边界点
+  int32 TargetID = 9;// 目标ID
+  float fCenterLon = 10;// 经度
+  float fCenterLat = 11;// 纬度
+  float fCenterHeight = 12;// 高度
+  int32 nRangeNum = 13;// ZC/GR能力区域个数
+  repeated sRECON_POWERPOINT PowerRange = 14;// ZC/GR能力区域
+  bool bUsePosRng = 15;// true：使用点迹（PtNum、Position）表征ZC范围，false：使用nRangeNum、PowerRange
+  bool bUseOTH = 16;// 是否是超视距计算
+  float fDectProb = 17;// 检测概率，超视距时有效
+}
+
+// 输出
+message _ModelBus_aReconRange {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// GR机ID
+  int32 RadarID = 3;// 雷达ID
+  sReconResult ReconResult = 4;// ReconResult
+  enumDefine.Enum_RegionType RegionType = 5;// 几何类型
+  float Height = 6;// 高度
+  int32 PtNum = 7;// 所有边界点个数
+  repeated sPON_AGG Position = 8;// 边界点
+  int32 TargetID = 9;// 目标ID
+  float fCenterLon = 10;// 经度
+  float fCenterLat = 11;// 纬度
+  float fCenterHeight = 12;// 高度
+  int32 nRangeNum = 13;// ZC/GR能力区域个数
+  repeated sRECON_POWERPOINT PowerRange = 14;// ZC/GR能力区域
+  bool bUsePosRng = 15;// true：使用点迹（PtNum、Position）表征ZC范围，false：使用nRangeNum、PowerRange
+  bool bUseOTH = 16;// 是否是超视距计算
+  float fDectProb = 17;// 检测概率，超视距时有效
+}
+
+// 输出
+message aDiscoverableArea {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  int32 RadarID = 3;// RadarID
+  enumDefine.Enum_RegionSort RegionSort = 4;// RegionSort
+  enumDefine.Enum_RegionType RegionType = 5;// RegionType
+  int32 PtNum = 6;// PtNum
+  repeated sPON_AGG Position = 7;// Position
+}
+
+// 输出
+message _ModelBus_aDiscoverableArea {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  int32 RadarID = 3;// RadarID
+  enumDefine.Enum_RegionSort RegionSort = 4;// RegionSort
+  enumDefine.Enum_RegionType RegionType = 5;// RegionType
+  int32 PtNum = 6;// PtNum
+  repeated sPON_AGG Position = 7;// Position
+}
+
+// 输出
+message aJamPointVar {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 实体ID
+  int32 JamPointAmount = 3;// GR波束数
+  repeated sJAM_POINT JamPointVar = 4;// GR波束信息
+}
+
+// 输出
+message _ModelBus_aJamPointVar {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 实体ID
+  int32 JamPointAmount = 3;// GR波束数
+  repeated sJAM_POINT JamPointVar = 4;// GR波束信息
+}
+
+// sRECON_DATAFUSIONRESULT
+message sRECON_DATAFUSIONRESULT {
+  int32 RadarID = 1;// RadarID
+  int32 RadarPlatID = 2;// RadarPlatID
+  enumDefine.Enum_ATT ATT = 3;// ATT
+  int32 PlatType = 4;// PlatType
+  int32 DangerClass = 5;// DangerClass
+  float RecogPro = 6;// RecogPro
+  int32 equipTotalNum = 7;// equipTotalNum
+  repeated sReconPerfo pEquipPerfo = 8;// pEquipPerfo
+  sReconLocateResult LocateResult = 9;// LocateResult
+}
+
+// sRECON_DATAFUSIONRESULT
+message _ModelBus_sRECON_DATAFUSIONRESULT {
+  int32 RadarID = 1;// RadarID
+  int32 RadarPlatID = 2;// RadarPlatID
+  enumDefine.Enum_ATT ATT = 3;// ATT
+  int32 PlatType = 4;// PlatType
+  int32 DangerClass = 5;// DangerClass
+  float RecogPro = 6;// RecogPro
+  int32 equipTotalNum = 7;// equipTotalNum
+  repeated sReconPerfo pEquipPerfo = 8;// pEquipPerfo
+  sReconLocateResult LocateResult = 9;// LocateResult
+}
+
+// 输出
+message sRECON_DATAFUSIONPARA {
+  bytes sRID = 1;// sRID
+  int32 ReconID = 2;// ReconID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 TaskID = 5;// TaskID
+  bool bMainNode = 6;// bMainNode
+  int32 iReconNum = 7;// iReconNum
+  repeated int32 pReconID = 8;// pReconID
+  int32 iTgtNum = 9;// iTgtNum
+  repeated sRECON_DATAFUSIONRESULT pRadarReconFusionResult = 10;// pRadarReconFusionResult
+}
+
+// 输出
+message _ModelBus_sRECON_DATAFUSIONPARA {
+  bytes sRID = 1;// sRID
+  int32 ReconID = 2;// ReconID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  int32 TaskID = 5;// TaskID
+  bool bMainNode = 6;// bMainNode
+  int32 iReconNum = 7;// iReconNum
+  repeated int32 pReconID = 8;// pReconID
+  int32 iTgtNum = 9;// iTgtNum
+  repeated sRECON_DATAFUSIONRESULT pRadarReconFusionResult = 10;// pRadarReconFusionResult
+}
+
+// 输出
+message aRADAR_IMAGE_AREA {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 iImageZoneNum = 3;// iImageZoneNum
+  repeated sIMAGE_ZONE ImageZone = 4;// ImageZone
+}
+
+// 输出
+message _ModelBus_aRADAR_IMAGE_AREA {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 iImageZoneNum = 3;// iImageZoneNum
+  repeated sIMAGE_ZONE ImageZone = 4;// ImageZone
+}
+
+// aUAV_Set_PARA
+message aUAV_Set_PARA {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  enumDefine.Enum_ATT ATT = 3;// ATT
+  bytes EquipmentName = 4;// EquipmentName
+  float LON = 5;// LON
+  float LAT = 6;// LAT
+  float Height = 7;// Height
+  int32 TargetNum = 8;// TargetNum
+  repeated int32 TargetID = 9;// TargetID
+  int32 PosNum = 10;// PosNum
+  repeated sTRACK_POINT CombatTracklist = 11;// CombatTracklist
+  int32 BombPointNum = 12;// BombPointNum
+}
+
+// aUAV_Set_PARA
+message _ModelBus_aUAV_Set_PARA {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  enumDefine.Enum_ATT ATT = 3;// ATT
+  bytes EquipmentName = 4;// EquipmentName
+  float LON = 5;// LON
+  float LAT = 6;// LAT
+  float Height = 7;// Height
+  int32 TargetNum = 8;// TargetNum
+  repeated int32 TargetID = 9;// TargetID
+  int32 PosNum = 10;// PosNum
+  repeated sTRACK_POINT CombatTracklist = 11;// CombatTracklist
+  int32 BombPointNum = 12;// BombPointNum
+}
+
+// 输出
+message aUAV_BombPos {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  int32 RadarID = 3;// RadarID
+  float RadarLON = 4;// RadarLON
+  float RadarLAT = 5;// RadarLAT
+  float RadarHeight = 6;// RadarHeight
+  int32 BombPointNum = 7;// BombPointNum
+  repeated sPON_AREA BombPointVar = 8;// BombPointVar
+  float AveLON = 9;// AveLON
+  float AveLAT = 10;// AveLAT
+  float AveHeight = 11;// AveHeight
+  float ErrorValue = 12;// ErrorValue
+}
+
+// 输出
+message _ModelBus_aUAV_BombPos {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  int32 RadarID = 3;// RadarID
+  float RadarLON = 4;// RadarLON
+  float RadarLAT = 5;// RadarLAT
+  float RadarHeight = 6;// RadarHeight
+  int32 BombPointNum = 7;// BombPointNum
+  repeated sPON_AREA BombPointVar = 8;// BombPointVar
+  float AveLON = 9;// AveLON
+  float AveLAT = 10;// AveLAT
+  float AveHeight = 11;// AveHeight
+  float ErrorValue = 12;// ErrorValue
+}
+
+// 输出
+message aUAV_KillProb {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  int32 RadarID = 3;// RadarID
+  bytes MID = 4;// MID
+  float fKillProb = 5;// fKillProb
+}
+
+// 输出
+message _ModelBus_aUAV_KillProb {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  int32 RadarID = 3;// RadarID
+  bytes MID = 4;// MID
+  float fKillProb = 5;// fKillProb
+}
+
+// RadarCfgPara
+message RadarCfgPara {
+  double fPt = 1;// fPt
+  double fGt = 2;// fGt
+  double fGtSL1 = 3;// fGtSL1
+  double fGtSLm = 4;// fGtSLm
+  double fAzBW = 5;// fAzBW
+  double fElBW = 6;// fElBW
+  double fBWSL1 = 7;// fBWSL1
+  int32 eScanType = 8;// eScanType
+  double fAzScanRate = 9;// fAzScanRate
+  double fSettleTime = 10;// fSettleTime
+  double fAziMax = 11;// fAziMax
+  double fAziMin = 12;// fAziMin
+  double fEleMax = 13;// fEleMax
+  double fEleMin = 14;// fEleMin
+  double fPw = 15;// fPw
+  double fBw = 16;// fBw
+  int32 ePRIT = 17;// ePRIT
+  double fPRI = 18;// fPRI
+  int32 eRFT = 19;// eRFT
+  int32 iRFNum = 20;// iRFNum
+  repeated float pfRF = 21;// pfRF
+  int32 iPulseNum = 22;// iPulseNum
+  int32 ePOT = 23;// ePOT
+  double fD0 = 24;// fD0
+  double fLt = 25;// fLt
+  double fLr = 26;// fLr
+  double fLs = 27;// fLs
+  double fFn = 28;// fFn
+  int32 eRadarSort = 29;// eRadarSort
+  int32 ePlatType = 30;// ePlatType
+}
+
+// RadarCfgPara
+message _ModelBus_RADAR_CFG_PARAM {
+  double fPt = 1;// fPt
+  double fGt = 2;// fGt
+  double fGtSL1 = 3;// fGtSL1
+  double fGtSLm = 4;// fGtSLm
+  double fAzBW = 5;// fAzBW
+  double fElBW = 6;// fElBW
+  double fBWSL1 = 7;// fBWSL1
+  int32 eScanType = 8;// eScanType
+  double fAzScanRate = 9;// fAzScanRate
+  double fSettleTime = 10;// fSettleTime
+  double fAziMax = 11;// fAziMax
+  double fAziMin = 12;// fAziMin
+  double fEleMax = 13;// fEleMax
+  double fEleMin = 14;// fEleMin
+  double fPw = 15;// fPw
+  double fBw = 16;// fBw
+  int32 ePRIT = 17;// ePRIT
+  double fPRI = 18;// fPRI
+  int32 eRFT = 19;// eRFT
+  int32 iRFNum = 20;// iRFNum
+  repeated float pfRF = 21;// pfRF
+  int32 iPulseNum = 22;// iPulseNum
+  int32 ePOT = 23;// ePOT
+  double fD0 = 24;// fD0
+  double fLt = 25;// fLt
+  double fLr = 26;// fLr
+  double fLs = 27;// fLs
+  double fFn = 28;// fFn
+  int32 eRadarSort = 29;// eRadarSort
+  int32 ePlatType = 30;// ePlatType
+}
+
+// aRadarCfgPara
+message aRadarCfgPara {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  RadarCfgPara CfgPara = 3;// CfgPara
+}
+
+// aRadarCfgPara
+message _ModelBus_aRadarCfgPara {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  RadarCfgPara CfgPara = 3;// CfgPara
+}
+
+// AntennaRFParam
+message AntennaRFParam {
+  float RF = 1;// RF
+  float Sensity = 2;// Sensity
+  float RelatSensity = 3;// RelatSensity
+}
+
+// CoverRange
+message CoverRange {
+  int32 Flag = 1;// Flag
+  float MaxAz = 2;// MaxAz
+  float MinAz = 3;// MinAz
+  float MaxEl = 4;// MaxEl
+  float MinEl = 5;// MinEl
+  float MaxDis = 6;// MaxDis
+  float MinDis = 7;// MinDis
+}
+
+// RadarScoutBandParam
+message RadarScoutBandParam {
+  float MaxRF = 1;// MaxRF
+  float MinRF = 2;// MinRF
+  float Sensity = 3;// Sensity
+  float Gr = 4;// Gr
+  float Lr = 5;// Lr
+  float HBeamWidth = 6;// HBeamWidth
+  float VBeamWidth = 7;// VBeamWidth
+  float MeasureAzPrecision = 8;// MeasureAzPrecision
+  float MeasureRFPrecision = 9;// MeasureRFPrecision
+  int32 Loc_mode = 10;// Loc_mode
+  int32 Doa_mode = 11;// Doa_mode
+  float MeacureDisPrecision = 12;// MeacureDisPrecision
+  float MeasureDTOAPrecision = 13;// MeasureDTOAPrecision
+  float MeasureDFOAPrecision = 14;// MeasureDFOAPrecision
+  float LocationPrecision = 15;// LocationPrecision
+  float MaxPW = 16;// MaxPW
+  float MinPW = 17;// MinPW
+  float MaxPRF = 18;// MaxPRF
+  float MinPRF = 19;// MinPRF
+  float MaxASP = 20;// MaxASP
+  float MinASP = 21;// MinASP
+  int32 bUseSingleSensity = 22;// bUseSingleSensity
+  int32 SensityNum = 23;// SensityNum
+  repeated AntennaRFParam SensityArr = 24;// SensityArr
+  int32 CoverRangeNum = 25;// CoverRangeNum
+  repeated CoverRange CRange = 26;// CRange
+  float SLGain = 27;// SLGain
+  float RelatSensity = 28;// RelatSensity
+  bool bOTHAbility = 29;// bOTHAbility
+  int32 RadarLOSNum = 30;// RadarLOSNum
+  repeated int32 RadarLOS = 31;// RadarLOS
+  bool bCalcRadarSlm = 32;// bCalcRadarSlm
+}
+
+// RadarReconCfgPara
+message RadarReconCfgPara {
+  int32 PlatType = 1;// PlatType
+  int32 ScanType = 2;// ScanType
+  float AzScanRate = 3;// AzScanRate
+  float PulseNum = 4;// PulseNum
+  int32 POT = 5;// POT
+  int32 ReconType = 6;// ReconType
+  int32 RFBandNum = 7;// RFBandNum
+  repeated RadarScoutBandParam ReconBandParam = 8;// ReconBandParam
+}
+
+// RadarReconCfgPara
+message _ModelBus_RadarReconCfgPara {
+  int32 PlatType = 1;// PlatType
+  int32 ScanType = 2;// ScanType
+  float AzScanRate = 3;// AzScanRate
+  float PulseNum = 4;// PulseNum
+  int32 POT = 5;// POT
+  int32 ReconType = 6;// ReconType
+  int32 RFBandNum = 7;// RFBandNum
+  repeated RadarScoutBandParam ReconBandParam = 8;// ReconBandParam
+}
+
+// aRadarReconCfgPara
+message aRadarReconCfgPara {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  RadarReconCfgPara CfgPara = 3;// CfgPara
+}
+
+// aRadarReconCfgPara
+message _ModelBus_aRadarReconCfgPara {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  RadarReconCfgPara CfgPara = 3;// CfgPara
+}
+
+// RadarJamBandPara
+message RadarJamBandPara {
+  float MaxRF = 1;// 工作频段上限
+  float MinRF = 2;// 工作频段下限
+  float HBeamWidth = 3;// 天线水平波束宽度
+  float VBeamWidth = 4;// 天线垂直波束宽度
+  float JamMaxRange = 5;// 最大GR距离
+  float JamMinRange = 6;// 最小GR距离
+  int32 JamMaxNum = 7;// GR最大目标数
+  int32 CoverRangeNum = 8;// 覆盖空域数目，地面系统一般为单一覆盖范围
+  repeated sCOVER_RANGE CRange = 9;// 覆盖空域
+}
+
+// RadarJamBandPara
+message _ModelBus_RadarJamBandPara {
+  float MaxRF = 1;// 工作频段上限
+  float MinRF = 2;// 工作频段下限
+  float HBeamWidth = 3;// 天线水平波束宽度
+  float VBeamWidth = 4;// 天线垂直波束宽度
+  float JamMaxRange = 5;// 最大GR距离
+  float JamMinRange = 6;// 最小GR距离
+  int32 JamMaxNum = 7;// GR最大目标数
+  int32 CoverRangeNum = 8;// 覆盖空域数目，地面系统一般为单一覆盖范围
+  repeated sCOVER_RANGE CRange = 9;// 覆盖空域
+}
+
+// RadarJamCfgPara
+message RadarJamCfgPara {
+  int32 ECMMode = 1;// ECMMode
+  int32 JamMax = 2;// JamMax
+  int32 RFBandNum = 3;// RFBandNum
+  int32 JamBandNum = 4;// JamBandNum
+  repeated RadarJamBandPara JamBandParam = 5;// JamBandParam
+}
+
+// RadarJamCfgPara
+message _ModelBus_RadarJamCfgPara {
+  int32 ECMMode = 1;// ECMMode
+  int32 JamMax = 2;// JamMax
+  int32 RFBandNum = 3;// RFBandNum
+  int32 JamBandNum = 4;// JamBandNum
+  repeated RadarJamBandPara JamBandParam = 5;// JamBandParam
+}
+
+// aRadarJamCfgPara
+message aRadarJamCfgPara {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  RadarJamCfgPara CfgPara = 3;// CfgPara
+}
+
+// aRadarJamCfgPara
+message _ModelBus_aRadarJamCfgPara {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  RadarJamCfgPara CfgPara = 3;// CfgPara
+}
+
+// 输出
+message aJAM_OUT_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 实体ID
+  int32 RadarID = 3;// 目标雷达ID
+  float LON = 4;// 经度
+  float LAT = 5;// 纬度
+  float Height = 6;// 高度
+  float ERP = 7;// 等效辐射功率
+  float fRFMin = 8;// 射频值
+  float fRFMax = 9;// 射频值
+}
+
+// 输出
+message _ModelBus_aJAM_OUT_PARA {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// 实体ID
+  int32 RadarID = 3;// 目标雷达ID
+  float LON = 4;// 经度
+  float LAT = 5;// 纬度
+  float Height = 6;// 高度
+  float ERP = 7;// 等效辐射功率
+  float fRFMin = 8;// 射频值
+  float fRFMax = 9;// 射频值
+}
+
+// sMissile_Detect_Rlt
+message sMissile_Detect_Rlt {
+  int32 iTrgID = 1;// iTrgID
+  bytes sTrgName = 2;// sTrgName
+  double dbTrgRCS = 3;// dbTrgRCS
+  double dbDist = 4;// dbDist
+}
+
+// sMissile_Detect_Rlt
+message _ModelBus_sMissile_Detect_Rlt {
+  int32 iTrgID = 1;// iTrgID
+  bytes sTrgName = 2;// sTrgName
+  double dbTrgRCS = 3;// dbTrgRCS
+  double dbDist = 4;// dbDist
+}
+
+// 输出
+message sMissile_Detect_Multi_Rlt {
+  bytes sRID = 1;// sRID
+  double dbSimuTime = 2;// dbSimuTime
+  int32 RadarID = 3;// RadarID
+  int32 TargetNum = 4;// TargetNum
+  repeated sMissile_Detect_Rlt TargetDectInfo = 5;// TargetDectInfo
+}
+
+// 输出
+message _ModelBus_sMissile_Detect_Multi_Rlt {
+  bytes sRID = 1;// sRID
+  double dbSimuTime = 2;// dbSimuTime
+  int32 RadarID = 3;// RadarID
+  int32 TargetNum = 4;// TargetNum
+  repeated sMissile_Detect_Rlt TargetDectInfo = 5;// TargetDectInfo
+}
+
+// sJamSrc
+message sJamSrc {
+  int32 nEquipID = 1;// nEquipID
+  bytes szEquipType = 2;// szEquipType
+}
+
+// sJamSrc
+message _ModelBus_JamSrc {
+  int32 nEquipID = 1;// nEquipID
+  bytes szEquipType = 2;// szEquipType
+}
+
+// 输出
+message aRadarJamed {
+  bytes sRID = 1;// sRID
+  int32 nEquipID = 2;// nEquipID
+  bytes szEquipType = 3;// szEquipType
+  float fStartJamedFreq = 4;// fStartJamedFreq
+  float fEndJamedFreq = 5;// fEndJamedFreq
+  int32 nJamSrcNum = 6;// nJamSrcNum
+  repeated sJamSrc pJamSrc = 7;// pJamSrc
+}
+
+// 输出
+message _ModelBus_EquipJamed {
+  bytes sRID = 1;// sRID
+  int32 nEquipID = 2;// nEquipID
+  bytes szEquipType = 3;// szEquipType
+  float fStartJamedFreq = 4;// fStartJamedFreq
+  float fEndJamedFreq = 5;// fEndJamedFreq
+  int32 nJamSrcNum = 6;// nJamSrcNum
+  repeated sJamSrc pJamSrc = 7;// pJamSrc
+}
+
+// sIFFJAM_Set_Para
+message sIFFJAM_Set_Para {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  int32 PlatID = 3;// PlatID
+  enumDefine.Enum_ATT ATT = 4;// ATT
+  bytes EquipmentName = 5;// EquipmentName
+  bytes EquipmentType = 6;// EquipmentType
+  float fSiteLon = 7;// fSiteLon
+  float fSiteLat = 8;// fSiteLat
+  float fHeight = 9;// fHeight
+  float fAntTurnStartAngle = 10;// fAntTurnStartAngle
+  float fAntTurnEndAngle = 11;// fAntTurnEndAngle
+  int32 iSignal_size = 12;// iSignal_size
+  float sWave_Direction = 13;// sWave_Direction
+  int32 iSiteState = 14;// iSiteState
+  int32 iAntWorkStyle = 15;// iAntWorkStyle
+  int32 iSiteWorkStyle = 16;// iSiteWorkStyle
+  int32 iSiteWorkMode = 17;// iSiteWorkMode
+}
+
+// sIFFJAM_Set_Para
+message _ModelBus_sIFFJAM_Set_Para {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  int32 PlatID = 3;// PlatID
+  enumDefine.Enum_ATT ATT = 4;// ATT
+  bytes EquipmentName = 5;// EquipmentName
+  bytes EquipmentType = 6;// EquipmentType
+  float fSiteLon = 7;// fSiteLon
+  float fSiteLat = 8;// fSiteLat
+  float fHeight = 9;// fHeight
+  float fAntTurnStartAngle = 10;// fAntTurnStartAngle
+  float fAntTurnEndAngle = 11;// fAntTurnEndAngle
+  int32 iSignal_size = 12;// iSignal_size
+  float sWave_Direction = 13;// sWave_Direction
+  int32 iSiteState = 14;// iSiteState
+  int32 iAntWorkStyle = 15;// iAntWorkStyle
+  int32 iSiteWorkStyle = 16;// iSiteWorkStyle
+  int32 iSiteWorkMode = 17;// iSiteWorkMode
+}
+
+// 输出
+message sIFFJAM_Get_Para {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  int32 PlatID = 3;// PlatID
+  enumDefine.Enum_ATT ATT = 4;// ATT
+  bytes EquipmentName = 5;// EquipmentName
+  bytes EquipmentType = 6;// EquipmentType
+  float fSiteLon = 7;// fSiteLon
+  float fSiteLat = 8;// fSiteLat
+  float fHeight = 9;// fHeight
+  float fAntTurnStartAngle = 10;// fAntTurnStartAngle
+  float fAntTurnEndAngle = 11;// fAntTurnEndAngle
+  int32 iSignal_size = 12;// iSignal_size
+  float sWave_Direction = 13;// sWave_Direction
+  int32 iSiteState = 14;// iSiteState
+  int32 iAntWorkStyle = 15;// iAntWorkStyle
+  int32 iSiteWorkStyle = 16;// iSiteWorkStyle
+  int32 iSiteWorkMode = 17;// iSiteWorkMode
+}
+
+// 输出
+message _ModelBus_sIFFJAM_Get_Para {
+  bytes sRID = 1;// sRID
+  int32 ID = 2;// ID
+  int32 PlatID = 3;// PlatID
+  enumDefine.Enum_ATT ATT = 4;// ATT
+  bytes EquipmentName = 5;// EquipmentName
+  bytes EquipmentType = 6;// EquipmentType
+  float fSiteLon = 7;// fSiteLon
+  float fSiteLat = 8;// fSiteLat
+  float fHeight = 9;// fHeight
+  float fAntTurnStartAngle = 10;// fAntTurnStartAngle
+  float fAntTurnEndAngle = 11;// fAntTurnEndAngle
+  int32 iSignal_size = 12;// iSignal_size
+  float sWave_Direction = 13;// sWave_Direction
+  int32 iSiteState = 14;// iSiteState
+  int32 iAntWorkStyle = 15;// iAntWorkStyle
+  int32 iSiteWorkStyle = 16;// iSiteWorkStyle
+  int32 iSiteWorkMode = 17;// iSiteWorkMode
+}
+
+// aIFFJAM_RESULT
+message aIFFJAM_RESULT {
+  bytes sRID = 1;// sRID
+  int32 TargetID = 2;// TargetID
+  bool beffect = 3;// beffect
+  float fRespProbability = 4;// fRespProbability
+}
+
+// aIFFJAM_RESULT
+message _ModelBus_aIFFJAM_RESULT {
+  bytes sRID = 1;// sRID
+  int32 TargetID = 2;// TargetID
+  bool beffect = 3;// beffect
+  float fRespProbability = 4;// fRespProbability
+}
+
+// 输出
+message sIFFJAM_RESULT {
+  bytes sRID = 1;// sRID
+  int32 JammerID = 2;// JammerID
+  int32 nResultNum = 3;// nResultNum
+  repeated aIFFJAM_RESULT pReconResult = 4;// pReconResult
+}
+
+// 输出
+message _ModelBus_sIFFJAM_RESULT {
+  bytes sRID = 1;// sRID
+  int32 JammerID = 2;// JammerID
+  int32 nResultNum = 3;// nResultNum
+  repeated aIFFJAM_RESULT pReconResult = 4;// pReconResult
+}
+
+// aIFFJAM_OBJECT
+message aIFFJAM_OBJECT {
+  bytes sRID = 1;// sRID
+  int32 PlatID = 2;// PlatID
+  float fLon = 3;// fLon
+  float fLat = 4;// fLat
+  float fHeight = 5;// fHeight
+  float fSpeed = 6;// fSpeed
+  float fDir = 7;// fDir
+  float fPitch = 8;// fPitch
+  int32 iWorkMode = 9;// iWorkMode
+}
+
+// aIFFJAM_OBJECT
+message _ModelBus_aIFFJAM_OBJECT {
+  bytes sRID = 1;// sRID
+  int32 PlatID = 2;// PlatID
+  float fLon = 3;// fLon
+  float fLat = 4;// fLat
+  float fHeight = 5;// fHeight
+  float fSpeed = 6;// fSpeed
+  float fDir = 7;// fDir
+  float fPitch = 8;// fPitch
+  int32 iWorkMode = 9;// iWorkMode
+}
+
+// sRECON_AREA
+message sRECON_POWER_AREA {
+  bytes sRID = 1;// sRID
+  int32 ReconID = 2;// ReconID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  enumDefine.Enum_RegionSort RegionSort = 5;// RegionSort
+  float fHeight = 6;// fHeight
+  enumDefine.Enum_RegionType RegionType = 7;// RegionType
+  int32 PtNum = 8;// PtNum
+  repeated sPON_AGG PonAggData = 9;// PonAggData
+  int32 TargetID = 10;// TargetID
+  float fCenterLon = 11;// fCenterLon
+  float fCenterLat = 12;// fCenterLat
+  float fCenterHeight = 13;// fCenterHeight
+  int32 nRangeNum = 14;// nRangeNum
+  repeated sRECON_POWERPOINT PowerRange = 15;// PowerRange
+}
+
+// 雷达GR参数
+message sJAM_PARA_INTERACTIVE {
+  bytes sRID = 1;// 身份字符串
+  int32 JammerID = 2;// GR设备ID
+  int32 PlatID = 3;// 搭载平台ID
+  float fTime = 4;// 推演时间
+  int32 RadarID = 5;// 雷达ID(GR目标对象)
+  bytes EquipmentName = 6;// 装备名称
+  bytes EquipmentType = 7;// 装备型号
+  enumDefine.Enum_ATT ATT = 8;// 敌我属性
+  float fLon = 9;// 经度
+  float fLat = 10;// 纬度
+  float fHeight = 11;// 高度
+  enumDefine.Enum_POT eAntPolarType = 12;// GR信号极化方式
+  float fPower = 13;// GR发射机功率
+  float fGt = 14;// GR机天线主瓣增益
+  float fSLGain = 15;// GR机天线平均旁瓣增益
+  float fLoss = 16;// GR机综合发射损失
+  float JamPointAZ = 17;// GR波束方位指向
+  float JamPointEL = 18;// GR波束俯仰指向
+  float fBeamWidth = 19;// GR天线波束方位宽度
+  float fBeamPitchWidth = 20;// GR天线波束俯仰宽度
+  bool bAnswerJammed = 21;// 瞄准式GR标识（含精瞄频和梳状谱）
+  repeated SAnswerJamInfo pAnswerJamInfo = 22;// 瞄准式GR信息
+  bool bNoiseJammed = 23;// 宽带噪声GR标识
+  repeated SNoiseJamInfo pNoiseJamInfo = 24;// 宽带噪声GR信息
+  bool bDecoyJammed = 25;// 拖引GR标识
+  repeated SDragJamInfo pDragJamInfo = 26;// 拖引GR信息;
+  bool bFalseJammed = 27;// 多假目标GR标识
+  repeated SFalseJamInfo pFalseJamInfo = 28;// 多假目标GR信息
+  bool bCrossEyeJammed = 29;// 交叉眼GR标识
+  bool bCrossPolarJammed = 30;// 交叉极化GR标识
+  bool bBaitJammed = 31;// 诱饵GR标识
+}
+
+// sRADAR_PARA
+message sRADAR_PARA_FC {
+  bytes sRID = 1;// sRID
+  int32 RadarID = 2;// RadarID
+  int32 PlatID = 3;// PlatID
+  float fTime = 4;// fTime
+  bytes EquipmentName = 5;// EquipmentName
+  bytes EquipmentType = 6;// EquipmentType
+  enumDefine.Enum_PlatType ePlatType = 7;// ePlatType
+  enumDefine.Enum_ATT ATT = 8;// ATT
+  enumDefine.Enum_WorkState WorkState = 9;// WorkState
+  enumDefine.Enum_SurvivalState SurvivalState = 10;// SurvivalState
+  enumDefine.Enum_RadarSort eRadarSort = 11;// eRadarSort
+  enumDefine.Enum_RadarWorkMode eRadarWorkMode = 12;// eRadarWorkMode
+  float fLon = 13;// fLon
+  float fLat = 14;// fLat
+  float fHeight = 15;// fHeight
+  float fRF = 16;// fRF
+  float fRFMax = 17;// fRFMax
+  float fRFMin = 18;// fRFMin
+  float fPt = 19;// fPt
+  float fLt = 20;// fLt
+  float fGt = 21;// fGt
+  float fAzBeamWidth = 22;// fAzBeamWidth
+  float fElBeamWidth = 23;// fElBeamWidth
+  float AntAZ = 24;// AntAZ
+  float AntEl = 25;// AntEl
+  float fAziMax = 26;// fAziMax
+  float fAziMin = 27;// fAziMin
+  float fElMax = 28;// fElMax
+  float fElMin = 29;// fElMin
+  float ScanCycle = 30;// ScanCycle
+  enumDefine.Enum_PCM PCM = 31;// PCM
+  enumDefine.Enum_RFT RFT = 32;// RFT
+  float PRI = 33;// PRI
+  enumDefine.Enum_PRIT PRIT = 34;// PRIT
+  float PW = 35;// PW
+  float RBand = 36;// RBand
+  enumDefine.Enum_POT POT = 37;// POT
+  float fSlmGt = 38;// fSlmGt
+  float fSL1Gt = 39;// fSL1Gt
+  float fSL1BeamWidth = 40;// fSL1BeamWidth
+  int32 nJamLevel = 41;// nJamLevel
+}
+
+// 输出
+message aReconRange3D {
+  bytes sRID = 1;// 身份字符串
+  int32 ID = 2;// GR机ID
+  int32 RadarID = 3;// 雷达ID
+  sReconResult ReconResult = 4;// ReconResult
+  enumDefine.Enum_RegionType RegionType = 5;// 几何类型
+  float Height = 6;// 高度
+  int32 PtNum = 7;// 所有边界点个数
+  repeated sPON_AGG Position = 8;// 边界点
+  int32 TargetID = 9;// 目标ID
+  float fCenterLon = 10;// 经度
+  float fCenterLat = 11;// 纬度
+  float fCenterHeight = 12;// 高度
+  int32 nRangeNum = 13;// ZC/GR能力区域个数
+  repeated sRECON_POWERPOINT PowerRange = 14;// ZC/GR能力区域
+  bool bUsePosRng = 15;// true：使用点迹（PtNum、Position）表征ZC范围，false：使用nRangeNum、PowerRange
+  bool bUseOTH = 16;// 是否是超视距计算
+  float fDectProb = 17;// 检测概率，超视距时有效
+}
+
+// sMNQ_OUTDATA
+message sMNQ_OUTDATA {
+  bytes sRID = 1;// sRID
+  int32 EquipID = 2;// EquipID
+  int32 EquipType = 3;// EquipType
+  int32 DataType = 4;// DataType
+  int32 nDataLen = 5;// nDataLen
+  bytes pData = 6;// pData
+}
+
+// sMNQ_OUTDATA
+message _ModelBus_sMNQ_OUTDATA {
+  bytes sRID = 1;// sRID
+  int32 EquipID = 2;// EquipID
+  int32 EquipType = 3;// EquipType
+  int32 DataType = 4;// DataType
+  int32 nDataLen = 5;// nDataLen
+  bytes pData = 6;// pData
+}
+
+// sYJ_CUSTOMDATA
+message sYJ_CUSTOMDATA {
+  int32 DataType = 1;// DataType
+  int32 nDataLen = 2;// nDataLen
+  bytes pData = 3;// pData
+}
+
+// sYJ_CUSTOMDATA
+message _ModelBus_sYJ_CUSTOMDATA {
+  int32 DataType = 1;// DataType
+  int32 nDataLen = 2;// nDataLen
+  bytes pData = 3;// pData
+}
+
+// sYJ_OUTDATA
+message sYJ_OUTDATA {
+  bytes sRID = 1;// sRID
+  int32 EquipID = 2;// EquipID
+  int32 EquipType = 3;// EquipType
+  int32 iNum = 4;// iNum
+  repeated sYJ_CUSTOMDATA pCustomData = 5;// pCustomData
+}
+
+// sYJ_OUTDATA
+message _ModelBus_sYJ_OUTDATA {
+  bytes sRID = 1;// sRID
+  int32 EquipID = 2;// EquipID
+  int32 EquipType = 3;// EquipType
+  int32 iNum = 4;// iNum
+  repeated sYJ_CUSTOMDATA pCustomData = 5;// pCustomData
+}
+

@@ -1,0 +1,94 @@
+syntax = "proto3";
+import "EnumDefine.proto";
+//!大功率激光GR输出参数
+
+enum Enum_WaveBand{
+      Enum_WaveBand_Unknown    =0;     //unknow
+      Enum_WaveBand_visual     =1;     // 380 - 760 nm
+      Enum_WaveBand_short      =2;    // 1 - 3 \mum
+      Enum_WaveBand_medium     =3;   // 3 - 5 \mum
+      Enum_WaveBand_long       =4; // 8 - 12 \mum
+      Enum_WaveBand_very_long  =5; // 15 - 30 \mum
+}
+
+message HPLASER_PARA{
+    bytes	sRID=1;
+    int32   EquipmentID=2;        //! 装备ID
+    bytes	EquipmentName=3;		//! @Properties(description=装备名称, alias=equipName)
+    bytes	EquipmentType=4;		//! 装备类型
+    int32	PlatID=5;				//! @Properties(description=平台id, alias=platformId, display=readonly)
+    float	fTime=6;			//时间 单位：秒（s）
+    enumDefine.Enum_ATT    ATT=7;		//! @Properties(description=敌我属性, alias=iff, display=readonly)
+    enumDefine.Enum_WorkState  WorkState=8;	//! @Properties(description=工作状态, defaultValue=1)
+    enumDefine.Enum_SurvivalState  SurvivalState=9;	//生存状态
+    double  JammerEL=10;           //!GR方位
+    double  JammerAZ=11;           //！GR俯仰
+    double  LaserAngleAZ=12;         //! 束散角az
+    double  LaserAngleEL=13;         //! 束散角el
+    double  Power=14;            //GR功率
+    Enum_WaveBand   waveBand=15;            //GR波段
+}
+
+//!高重频激光GR
+message  HRFLASER_PARA{
+    bytes	sRID=1;
+    int32   EquipmentID=2;        //! 装备ID
+    bytes	EquipmentName=3;		//! @Properties(description=装备名称, alias=equipName)
+    bytes	EquipmentType=4;		//! 装备类型
+    int32   PlatID=5;				//! @Properties(description=平台id, alias=platformId, display=readonly)
+    float	fTime=6;			//时间 单位：秒（s）
+    enumDefine.Enum_ATT	ATT=7;		//! @Properties(description=敌我属性, alias=iff, display=readonly)
+    enumDefine.Enum_WorkState  WorkState=8;	//! @Properties(description=工作状态, defaultValue=1)
+    enumDefine.Enum_SurvivalState	SurvivalState=9;	//生存状态
+    double  JammerEL=10;           //!GR方位
+    double  JammerAZ=11;           //！GR俯仰
+    double  LaserAngleAZ=12;         //! 束散角
+    double  LaserAngleEL=13;         //! 束散角
+    double  Power=14;            //GR功率
+    Enum_WaveBand   waveBand=15;            //GR波段
+	double  fPRI=16;            //脉冲重复周期
+}
+
+//红外传感器 告警目标参数
+message INFAREDSENSOR_WARNPLAT{
+
+ int32     PlatID=1;	
+ enumDefine.Enum_ATT  ATT=2;	
+ float     FirstTime=3;         
+ float     LatestTime=4;        
+ double    TargetAZ=5;          
+ double    TargetEL=6;          
+ double    TargetPower=7;       
+}
+
+//红外传感器 结果参数
+message INFAREDSENSOR_WARNRESULT{
+ 
+    bytes	sRID=1;
+    int32   EquipmentID=2;        //! 装备ID
+    bytes	EquipmentName=3;		//! @Properties(description=装备名称, alias=equipName)
+    bytes	EquipmentType=4;		//! 装备类型
+    int32	PlatID=5;				//! @Properties(description=平台id, alias=platformId, display=readonly)
+    float	fTime=6;			    //时间 单位：秒（s）
+    int32    warnNum=7;             //报警数
+    repeated INFAREDSENSOR_WARNPLAT infaredSensorWarnedPla=8;  //告警目标参数
+}
+
+//!红外雷达状态参数
+message INFAREDSENSOR_PARA{
+
+    bytes	sRID=1;	          
+    int32   EquipmentID=2;        //! 装备ID
+    bytes	EquipmentName=3;		//! @Properties(description=装备名称, alias=equipName)
+    bytes	EquipmentType=4;		//! 装备类型
+    int32	PlatID=5;				//! @Properties(description=平台id, alias=platformId, display=readonly)
+    float	fTime=6;			//时间 单位：秒（s）
+    enumDefine.Enum_ATT		ATT=7;		//! @Properties(description=敌我属性, alias=iff, display=readonly)
+    enumDefine.Enum_WorkState	WorkState=8;	//! @Properties(description=工作状态, defaultValue=1)
+    enumDefine.Enum_SurvivalState	SurvivalState=9;	//生存状态
+    float	fStartAZ=10;			//起始方位 [-1,360] 地面雷达有效若起、止空域均为负数，则采用内部默认最大扫描范围
+    float	fEndAZ=11;			    //终止方位 [-1,360] 地面雷达有效若起、止空域均为负数，则采用内部默认最大扫描范围
+    float   fStartEL=12;		//起始俯仰 [-90,90],100	地面装备有效 为100时用内部默认值
+    float   fEndEL=13;			//终止俯仰 [-90,90],100	地面装备有效 为100时用内部默认值
+    int32   waveband=14;          //工作波段  待定
+}
