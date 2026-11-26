@@ -1,0 +1,1121 @@
+{
+  "player_config": [
+    {
+      "player_type": "rl",
+      "player_name": "星际-baseline-selfplay",
+      "model_name": "星际-baseline-selfplay_model",
+      "is_train": "True",
+      "save_path": "E3SeNcD5tK",
+      "inputs": {},
+      "outputs": {
+        "out_name1": "",
+        "out_name2": ""
+      },
+      "scenario_adaption": {
+        "side": "1",
+        "enemy": [
+          "2"
+        ],
+        "troop_info": "[{\"name\":\"player1\",\"side\":\"1\",\"side_index\":\"1\",\"enemies\":[{\"name\":\"player2\",\"side\":\"2\"}],\"friends\":[{\"name\":\"player1\",\"side\":\"1\"}],\"forces\":[{\"name\":\"红方空中指挥所1\",\"id\":\"RFHQ\",\"type\":\"指挥所\",\"location\":\"22.10, 119.50\",\"forces\":[{\"name\":\"第1歼击旅\",\"id\":\"1RFB\",\"type\":\"空中部队\",\"location\":\"23.10, 119.50\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"战斗机\",\"entity\":{\"type\":\"J-10C\",\"num\":\"24\"}},{\"category\":\"弹药\",\"subcategory\":\"导弹\",\"entity\":{\"type\":\"空对空导弹\",\"num\":\"80\"}}],\"forces\":[]},{\"name\":\"第2空中联队\",\"id\":\"2RAW\",\"type\":\"空中部队\",\"location\":\"24.20, 129.60\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"轰炸机\",\"entity\":{\"type\":\"H-6K\",\"num\":\"10\"}},{\"category\":\"弹药\",\"subcategory\":\"炸弹\",\"entity\":{\"type\":\"精确制导炸弹\",\"num\":\"50\"}}],\"forces\":[]}],\"equipments\":[]},{\"name\":\"红方空中指挥所2\",\"id\":\"RFHQ1\",\"type\":\"指挥所\",\"location\":\"24.10, 119.50\",\"forces\":[{\"name\":\"第1歼击旅\",\"id\":\"1RFB1\",\"type\":\"空中部队\",\"location\":\"24.10, 115.50\",\"forces\":[{\"name\":\"歼击旅\",\"id\":\"1RFB11\",\"type\":\"空中部队\",\"location\":\"24.10, 123.50\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"战斗机\",\"entity\":{\"type\":\"J-10C\",\"num\":\"24\"}},{\"category\":\"弹药\",\"subcategory\":\"导弹\",\"entity\":{\"type\":\"空对空导弹\",\"num\":\"80\"}}],\"forces\":[]}],\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"战斗机\",\"entity\":{\"type\":\"J-10C\",\"num\":\"24\"}},{\"category\":\"弹药\",\"subcategory\":\"导弹\",\"entity\":{\"type\":\"空对空导弹\",\"num\":\"80\"}}]},{\"name\":\"第2空中联队\",\"id\":\"2RAW1\",\"type\":\"空中部队\",\"location\":\"19.20, 120.60\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"轰炸机\",\"entity\":{\"type\":\"H-6K\",\"num\":\"10\"}},{\"category\":\"弹药\",\"subcategory\":\"炸弹\",\"entity\":{\"type\":\"精确制导炸弹\",\"num\":\"50\"}}],\"forces\":[]}],\"equipments\":[]}]},{\"name\":\"player2\",\"side\":\"2\",\"side_index\":\"2\",\"enemies\":[{\"name\":\"player1\",\"side\":\"1\"}],\"friends\":[{\"name\":\"player2\",\"side\":\"2\"}],\"forces\":[{\"name\":\"蓝方空中指挥所\",\"id\":\"BFHQ\",\"type\":\"指挥所\",\"location\":\"25.10, 120.50\",\"forces\":[{\"name\":\"第1歼击旅\",\"id\":\"1BFB\",\"type\":\"空中部队\",\"location\":\"25.10, 120.50\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"战斗机\",\"entity\":{\"type\":\"F-16\",\"num\":\"30\"}},{\"category\":\"弹药\",\"subcategory\":\"导弹\",\"entity\":{\"type\":\"空对空导弹\",\"num\":\"100\"}}],\"forces\":[]},{\"name\":\"第2空中联队\",\"id\":\"2BAW\",\"type\":\"空中部队\",\"location\":\"25.20, 120.60\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"轰炸机\",\"entity\":{\"type\":\"B-52\",\"num\":\"8\"}},{\"category\":\"弹药\",\"subcategory\":\"炸弹\",\"entity\":{\"type\":\"精确制导炸弹\",\"num\":\"60\"}}],\"forces\":[]}],\"equipments\":[]},{\"name\":\"蓝方海面指挥所\",\"id\":\"BFHQ-b\",\"type\":\"指挥所\",\"location\":\"25.10, 120.50\",\"forces\":[{\"name\":\"第一舰队\",\"id\":\"1BFB-b\",\"type\":\"海面部队\",\"location\":\"25.10, 120.50\",\"equipments\":[{\"category\":\"核艇\",\"subcategory\":\"核潜艇\",\"entity\":{\"type\":\"B-16\",\"num\":\"100\"}}],\"forces\":[]}],\"equipments\":[]}]}]",
+        "scene_predefined_data": "{}",
+        "decision_interval": "{\"time\":4,\"unit\":\"秒\"}",
+        "runtime_period": "{\"unit\":\"秒\"}",
+        "auxiliary_rules": "",
+        "reward": [],
+        "statistics": []
+      },
+      "state": {
+        "全局态势": {
+          "features": [
+            "game_loop",
+            "player_id",
+            "minerals",
+            "vespene",
+            "food_cap",
+            "food_used",
+            "food_army",
+            "food_workers",
+            "idle_worker_count",
+            "army_count",
+            "warp_gate_count"
+          ],
+          "id": "3cba628f-ed1f-49da-8952-8e348be8a9ca",
+          "index_name": [
+            "CommonInfo"
+          ],
+          "type": "1D"
+        },
+        "小地图信息": {
+          "features": [
+            "buildable_map",
+            "pathable_map",
+            "player_id_map",
+            "player_relative_map",
+            "visibility_map"
+          ],
+          "id": "93a55aff-40d4-4488-8cc4-48d2f90186ab",
+          "index_name": [
+            "SpatialInfo"
+          ],
+          "type": "spatial"
+        },
+        "我方单位": {
+          "features": [
+            "id",
+            "alive",
+            "position",
+            "unit_type",
+            "unit_subtype",
+            "facing",
+            "radius",
+            "health_max",
+            "health"
+          ],
+          "id": "85854075-2071-4623-934a-aac16251fdca",
+          "index_name": [
+            "SC2EntityInfo"
+          ],
+          "max_num": 10,
+          "side": "Friendly",
+          "type": "2D"
+        },
+        "敌方单位": {
+          "features": [
+            "id",
+            "alive",
+            "position",
+            "unit_type",
+            "unit_subtype",
+            "facing",
+            "radius",
+            "health_max",
+            "health"
+          ],
+          "id": "fd98a122-a26e-4842-9b8e-5bf96007b64c",
+          "index_name": [
+            "SC2EntityInfo"
+          ],
+          "max_num": 10,
+          "side": "Enemy",
+          "type": "2D"
+        }
+      },
+      "network": {
+        "aggregators": {
+          "聚合器": {
+            "id": "aggregator",
+            "input": [
+              {
+                "name": "全局态势_encoder_output0"
+              },
+              {
+                "name": "我方单位_encoder_output0"
+              },
+              {
+                "name": "敌方单位_encoder_output0"
+              },
+              {
+                "name": "小地图信息_encoder_output0"
+              }
+            ],
+            "network": "lstm_aggregator",
+            "output": [
+              {
+                "name": "聚合器_output0"
+              }
+            ],
+            "params": {
+              "hidden_layer_sizes": [
+                512,
+                256
+              ],
+              "output_layer_neuron": 256,
+              "seq_len": 1,
+              "state_size": 256
+            },
+            "type": "aggregator"
+          }
+        },
+        "decoders": {
+          "坐标Xgroup1": {
+            "group": "group1",
+            "id": "78c265af-d1e2-457a-854c-6911ecb1821c",
+            "input": [
+              {
+                "name": "聚合器_output0"
+              }
+            ],
+            "network": "categorical_decoder",
+            "output": [
+              {
+                "name": "group1_坐标X_decoder_output0"
+              },
+              {
+                "name": "group1_坐标X_decoder_output0_embedding"
+              }
+            ],
+            "params": {
+              "hidden_layer_sizes": [
+                512,
+                256
+              ]
+            },
+            "type": "decoder"
+          },
+          "坐标Ygroup1": {
+            "group": "group1",
+            "id": "72da037b-ca70-4887-ba64-ab5ce640640f",
+            "input": [
+              {
+                "name": "聚合器_output0"
+              }
+            ],
+            "network": "categorical_decoder",
+            "output": [
+              {
+                "name": "group1_坐标Y_decoder_output0"
+              },
+              {
+                "name": "group1_坐标Y_decoder_output0_embedding"
+              }
+            ],
+            "params": {
+              "hidden_layer_sizes": [
+                512,
+                256
+              ]
+            },
+            "type": "decoder"
+          },
+          "我方单位group1": {
+            "group": "group1",
+            "id": "bf1a988d-01dd-494a-8ff0-b3f957f4fd39",
+            "input": [
+              {
+                "name": "聚合器_output0"
+              },
+              {
+                "name": "我方单位_encoder_output1"
+              }
+            ],
+            "network": "single_selective_decoder",
+            "output": [
+              {
+                "name": "group1_我方单位_decoder_output0"
+              },
+              {
+                "name": "group1_我方单位_decoder_output0_embedding"
+              }
+            ],
+            "params": {
+              "attention_size": 64,
+              "hidden_layer_sizes": [
+                512,
+                256
+              ]
+            },
+            "type": "decoder"
+          },
+          "敌方单位group1": {
+            "group": "group1",
+            "id": "edd48067-7ddd-417a-bfce-1d9dc406b71f",
+            "input": [
+              {
+                "name": "聚合器_output0"
+              },
+              {
+                "name": "敌方单位_encoder_output1"
+              }
+            ],
+            "network": "single_selective_decoder",
+            "output": [
+              {
+                "name": "group1_敌方单位_decoder_output0"
+              },
+              {
+                "name": "group1_敌方单位_decoder_output0_embedding"
+              }
+            ],
+            "params": {
+              "attention_size": 64,
+              "hidden_layer_sizes": [
+                512,
+                256
+              ]
+            },
+            "type": "decoder"
+          },
+          "谓语动作1group1": {
+            "group": "group1",
+            "id": "e12ce588-f9aa-4448-8088-030d4603dbfd",
+            "input": [
+              {
+                "name": "聚合器_output0"
+              }
+            ],
+            "network": "categorical_decoder",
+            "output": [
+              {
+                "name": "group1_谓语动作1_decoder_output0"
+              },
+              {
+                "name": "group1_谓语动作1_decoder_output0_embedding"
+              }
+            ],
+            "params": {
+              "hidden_layer_sizes": [
+                512,
+                256
+              ]
+            },
+            "type": "decoder"
+          }
+        },
+        "encoders": {
+          "全局态势": {
+            "id": "9e0b0b7f-5bca-4065-a7dd-4996e050c891",
+            "input": [
+              {
+                "name": "全局态势"
+              }
+            ],
+            "network": "common_encoder",
+            "output": [
+              {
+                "name": "全局态势_encoder_output0"
+              }
+            ],
+            "params": {
+              "hidden_layer_sizes": [
+                512,
+                256
+              ]
+            },
+            "type": "encoder"
+          },
+          "小地图信息": {
+            "id": "f7102114-cd81-4e65-8c80-1c46d27da9f7",
+            "input": [
+              {
+                "name": "小地图信息"
+              }
+            ],
+            "network": "spatial_encoder",
+            "output": [
+              {
+                "name": "小地图信息_encoder_output0"
+              }
+            ],
+            "params": {
+              "channel_dimension_transformation": 32,
+              "downsample": [],
+              "output_size": 64,
+              "resnet": false
+            },
+            "type": "encoder"
+          },
+          "我方单位": {
+            "id": "e9fcaf55-fe81-4e26-9956-708e8b842a71",
+            "input": [
+              {
+                "name": "我方单位"
+              }
+            ],
+            "network": "entity_encoder",
+            "output": [
+              {
+                "name": "我方单位_encoder_output0"
+              },
+              {
+                "name": "我方单位_encoder_output1"
+              }
+            ],
+            "params": {
+              "hidden_layer_sizes": [
+                512,
+                256
+              ]
+            },
+            "type": "encoder"
+          },
+          "敌方单位": {
+            "id": "2c0fe207-4094-4e56-b9bf-0e7eb16b6759",
+            "input": [
+              {
+                "name": "敌方单位"
+              }
+            ],
+            "network": "entity_encoder",
+            "output": [
+              {
+                "name": "敌方单位_encoder_output0"
+              },
+              {
+                "name": "敌方单位_encoder_output1"
+              }
+            ],
+            "params": {
+              "hidden_layer_sizes": [
+                512,
+                256
+              ]
+            },
+            "type": "encoder"
+          }
+        },
+        "value_function": {
+          "状态价值网络": {
+            "id": "value_function",
+            "input": [
+              {
+                "name": "聚合器_output0"
+              }
+            ],
+            "network": "value",
+            "params": {
+              "hidden_layer_sizes": [
+                64
+              ]
+            },
+            "type": "value_function"
+          }
+        }
+      },
+      "action": {
+        "group1": {
+          "坐标X": {
+            "action_category": "categorical",
+            "action_type": "parameter",
+            "category_num": 64,
+            "id": "0ba71b5e-ddd4-4fa6-8f6f-b59ae1da108b",
+            "input": [
+              {
+                "name": "group1_坐标X_decoder_output0"
+              }
+            ],
+            "reference_objects": [
+              "单位移动任务"
+            ]
+          },
+          "坐标Y": {
+            "action_category": "categorical",
+            "action_type": "parameter",
+            "category_num": 64,
+            "id": "70bc1cc1-825d-41ba-a236-3795cdcc6ba9",
+            "input": [
+              {
+                "name": "group1_坐标Y_decoder_output0"
+              }
+            ],
+            "reference_objects": [
+              "单位移动任务"
+            ]
+          },
+          "我方单位": {
+            "action_category": "single_selective",
+            "action_type": "subject",
+            "entity_selection": "我方单位",
+            "id": "033672bb-b021-415b-a2f3-43394f7bc593",
+            "input": [
+              {
+                "name": "group1_我方单位_decoder_output0"
+              }
+            ]
+          },
+          "敌方单位": {
+            "action_category": "single_selective",
+            "action_type": "object",
+            "entity_selection": "敌方单位",
+            "id": "d4857ee9-223c-4d53-b2fa-8c3d337506ba",
+            "input": [
+              {
+                "name": "group1_敌方单位_decoder_output0"
+              }
+            ]
+          },
+          "谓语动作1": {
+            "action_category": "categorical",
+            "action_type": "predicate",
+            "id": "072fe2da-8ea4-4d68-afac-20df6f098f3b",
+            "input": [
+              {
+                "name": "group1_谓语动作1_decoder_output0"
+              }
+            ],
+            "missions": [
+              {
+                "class": "UnitAttackMission",
+                "index_name": "",
+                "instance_name": "星际-baseline-selfpla_单位攻击任务_攻击",
+                "name": "单位攻击任务",
+                "params": [
+                  {
+                    "is_related": true,
+                    "param": "enemy_unit_index",
+                    "value": "敌方单位"
+                  },
+                  {
+                    "is_related": true,
+                    "param": "self_unit_index_list",
+                    "value": "我方单位"
+                  }
+                ],
+                "path": "unit_attack_mission.py",
+                "repository_url": "http://11.1.0.2:2180/sc2_modules/missions.git",
+                "type": "ground_mission"
+              },
+              {
+                "class": "UnitMoveMission",
+                "index_name": "",
+                "instance_name": "星际-baseline-selfpla_单位移动任务_移动",
+                "name": "单位移动任务",
+                "params": [
+                  {
+                    "is_related": true,
+                    "param": "pos_x",
+                    "value": "坐标X"
+                  },
+                  {
+                    "is_related": true,
+                    "param": "pos_y",
+                    "value": "坐标Y"
+                  },
+                  {
+                    "is_related": true,
+                    "param": "unit_index_list",
+                    "value": "我方单位"
+                  }
+                ],
+                "path": "unit_move_mission.py",
+                "repository_url": "http://11.1.0.2:2180/sc2_modules/missions.git",
+                "type": "ground_mission"
+              },
+              {
+                "class": "NoOpMission",
+                "index_name": "",
+                "instance_name": "星际-baseline-selfpla_空动作任务_空动作",
+                "name": "空动作任务",
+                "params": [],
+                "path": "no_op_mission.py",
+                "repository_url": "http://11.1.0.2:2180/sc2_modules/missions.git",
+                "type": "ground_mission"
+              }
+            ]
+          }
+        }
+      },
+      "reward": {},
+      "statistic": {},
+      "algo": {
+        "algo_type": "ppo",
+        "clip_param": 0.3,
+        "entropy_coef": 0.1,
+        "learning_rate": 0.0002,
+        "vf_clip_param": 10,
+        "vf_loss_coef": 1
+      },
+      "training_coef": {
+        "fragment_size": 1024,
+        "gamma": 1,
+        "lamb": 0.95,
+        "max_data_reuse": 1,
+        "replay_size": 1,
+        "sample_batch_size": 256,
+        "save_interval": 200
+      }
+    },
+    {
+      "player_type": "behavior_tree",
+      "player_name": "星际规则-baseline-sp",
+      "inputs": {
+        "input_1": {
+          "player_name": "星际-baseline-selfplay",
+          "source_name": "out_name1"
+        }
+      },
+      "outputs": {
+        "output_xxx": ""
+      },
+      "scenario_adaption": {
+        "side": "2",
+        "enemy": [
+          "1"
+        ],
+        "troop_info": "[{\"name\":\"player1\",\"side\":\"1\",\"side_index\":\"1\",\"enemies\":[{\"name\":\"player2\",\"side\":\"2\"}],\"friends\":[{\"name\":\"player1\",\"side\":\"1\"}],\"forces\":[{\"name\":\"红方空中指挥所1\",\"id\":\"RFHQ\",\"type\":\"指挥所\",\"location\":\"22.10, 119.50\",\"forces\":[{\"name\":\"第1歼击旅\",\"id\":\"1RFB\",\"type\":\"空中部队\",\"location\":\"23.10, 119.50\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"战斗机\",\"entity\":{\"type\":\"J-10C\",\"num\":\"24\"}},{\"category\":\"弹药\",\"subcategory\":\"导弹\",\"entity\":{\"type\":\"空对空导弹\",\"num\":\"80\"}}],\"forces\":[]},{\"name\":\"第2空中联队\",\"id\":\"2RAW\",\"type\":\"空中部队\",\"location\":\"24.20, 129.60\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"轰炸机\",\"entity\":{\"type\":\"H-6K\",\"num\":\"10\"}},{\"category\":\"弹药\",\"subcategory\":\"炸弹\",\"entity\":{\"type\":\"精确制导炸弹\",\"num\":\"50\"}}],\"forces\":[]}],\"equipments\":[]},{\"name\":\"红方空中指挥所2\",\"id\":\"RFHQ1\",\"type\":\"指挥所\",\"location\":\"24.10, 119.50\",\"forces\":[{\"name\":\"第1歼击旅\",\"id\":\"1RFB1\",\"type\":\"空中部队\",\"location\":\"24.10, 115.50\",\"forces\":[{\"name\":\"歼击旅\",\"id\":\"1RFB11\",\"type\":\"空中部队\",\"location\":\"24.10, 123.50\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"战斗机\",\"entity\":{\"type\":\"J-10C\",\"num\":\"24\"}},{\"category\":\"弹药\",\"subcategory\":\"导弹\",\"entity\":{\"type\":\"空对空导弹\",\"num\":\"80\"}}],\"forces\":[]}],\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"战斗机\",\"entity\":{\"type\":\"J-10C\",\"num\":\"24\"}},{\"category\":\"弹药\",\"subcategory\":\"导弹\",\"entity\":{\"type\":\"空对空导弹\",\"num\":\"80\"}}]},{\"name\":\"第2空中联队\",\"id\":\"2RAW1\",\"type\":\"空中部队\",\"location\":\"19.20, 120.60\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"轰炸机\",\"entity\":{\"type\":\"H-6K\",\"num\":\"10\"}},{\"category\":\"弹药\",\"subcategory\":\"炸弹\",\"entity\":{\"type\":\"精确制导炸弹\",\"num\":\"50\"}}],\"forces\":[]}],\"equipments\":[]}]},{\"name\":\"player2\",\"side\":\"2\",\"side_index\":\"2\",\"enemies\":[{\"name\":\"player1\",\"side\":\"1\"}],\"friends\":[{\"name\":\"player2\",\"side\":\"2\"}],\"forces\":[{\"name\":\"蓝方空中指挥所\",\"id\":\"BFHQ\",\"type\":\"指挥所\",\"location\":\"25.10, 120.50\",\"forces\":[{\"name\":\"第1歼击旅\",\"id\":\"1BFB\",\"type\":\"空中部队\",\"location\":\"25.10, 120.50\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"战斗机\",\"entity\":{\"type\":\"F-16\",\"num\":\"30\"}},{\"category\":\"弹药\",\"subcategory\":\"导弹\",\"entity\":{\"type\":\"空对空导弹\",\"num\":\"100\"}}],\"forces\":[]},{\"name\":\"第2空中联队\",\"id\":\"2BAW\",\"type\":\"空中部队\",\"location\":\"25.20, 120.60\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"轰炸机\",\"entity\":{\"type\":\"B-52\",\"num\":\"8\"}},{\"category\":\"弹药\",\"subcategory\":\"炸弹\",\"entity\":{\"type\":\"精确制导炸弹\",\"num\":\"60\"}}],\"forces\":[]}],\"equipments\":[]},{\"name\":\"蓝方海面指挥所\",\"id\":\"BFHQ-b\",\"type\":\"指挥所\",\"location\":\"25.10, 120.50\",\"forces\":[{\"name\":\"第一舰队\",\"id\":\"1BFB-b\",\"type\":\"海面部队\",\"location\":\"25.10, 120.50\",\"equipments\":[{\"category\":\"核艇\",\"subcategory\":\"核潜艇\",\"entity\":{\"type\":\"B-16\",\"num\":\"100\"}}],\"forces\":[]}],\"equipments\":[]}]}]",
+        "scene_predefined_data": "{}",
+        "decision_interval": "{\"time\":5,\"unit\":\"秒\"}",
+        "runtime_period": "{\"unit\":\"秒\"}",
+        "auxiliary_rules": "",
+        "reward": null,
+        "statistics": null
+      },
+      "nodes": {
+        "children": [
+          {
+            "data": {
+              "class": "RuleAction",
+              "description": "",
+              "id": 100,
+              "instance_name": "空规则节点_空",
+              "path": "rule_action.py",
+              "repository_url": "http://11.1.0.2:2180/sc2_modules/bt_actions.git"
+            },
+            "id": "978e8dc4-7fb1-4829-8100-4895bbee34f8",
+            "name": "空规则节点",
+            "position": {
+              "x": 495,
+              "y": 375
+            },
+            "type": "behavior"
+          }
+        ],
+        "data": {
+          "class": "",
+          "description": "同时执行多个子节点，失败/成功不影响后续节点执行",
+          "id": 3,
+          "path": "",
+          "repository_url": ""
+        },
+        "id": "316df01f-afe3-48c2-ba8f-fcb1af56efa4",
+        "name": "",
+        "position": {
+          "x": 540,
+          "y": 285
+        },
+        "type": "parallel"
+      }
+    },
+    {
+      "player_type": "rl",
+      "player_name": "星际-baseline-selfplay1",
+      "model_name": "星际-baseline-selfplay_model",
+      "is_train": "True",
+      "save_path": "E3SeNcD5tK",
+      "inputs": {
+        "input_a": {
+          "player_name": "星际-baseline-selfplay",
+          "source_name": "out_name2"
+        },
+        "input_b": {
+          "player_name": "星际规则-baseline-sp",
+          "source_name": "output_xxx"
+        }
+      },
+      "outputs": {
+        "out_name1": ""
+      },
+      "scenario_adaption": {
+        "side": "1",
+        "enemy": [
+          "2"
+        ],
+        "troop_info": "[{\"name\":\"player1\",\"side\":\"1\",\"side_index\":\"1\",\"enemies\":[{\"name\":\"player2\",\"side\":\"2\"}],\"friends\":[{\"name\":\"player1\",\"side\":\"1\"}],\"forces\":[{\"name\":\"红方空中指挥所1\",\"id\":\"RFHQ\",\"type\":\"指挥所\",\"location\":\"22.10, 119.50\",\"forces\":[{\"name\":\"第1歼击旅\",\"id\":\"1RFB\",\"type\":\"空中部队\",\"location\":\"23.10, 119.50\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"战斗机\",\"entity\":{\"type\":\"J-10C\",\"num\":\"24\"}},{\"category\":\"弹药\",\"subcategory\":\"导弹\",\"entity\":{\"type\":\"空对空导弹\",\"num\":\"80\"}}],\"forces\":[]},{\"name\":\"第2空中联队\",\"id\":\"2RAW\",\"type\":\"空中部队\",\"location\":\"24.20, 129.60\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"轰炸机\",\"entity\":{\"type\":\"H-6K\",\"num\":\"10\"}},{\"category\":\"弹药\",\"subcategory\":\"炸弹\",\"entity\":{\"type\":\"精确制导炸弹\",\"num\":\"50\"}}],\"forces\":[]}],\"equipments\":[]},{\"name\":\"红方空中指挥所2\",\"id\":\"RFHQ1\",\"type\":\"指挥所\",\"location\":\"24.10, 119.50\",\"forces\":[{\"name\":\"第1歼击旅\",\"id\":\"1RFB1\",\"type\":\"空中部队\",\"location\":\"24.10, 115.50\",\"forces\":[{\"name\":\"歼击旅\",\"id\":\"1RFB11\",\"type\":\"空中部队\",\"location\":\"24.10, 123.50\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"战斗机\",\"entity\":{\"type\":\"J-10C\",\"num\":\"24\"}},{\"category\":\"弹药\",\"subcategory\":\"导弹\",\"entity\":{\"type\":\"空对空导弹\",\"num\":\"80\"}}],\"forces\":[]}],\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"战斗机\",\"entity\":{\"type\":\"J-10C\",\"num\":\"24\"}},{\"category\":\"弹药\",\"subcategory\":\"导弹\",\"entity\":{\"type\":\"空对空导弹\",\"num\":\"80\"}}]},{\"name\":\"第2空中联队\",\"id\":\"2RAW1\",\"type\":\"空中部队\",\"location\":\"19.20, 120.60\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"轰炸机\",\"entity\":{\"type\":\"H-6K\",\"num\":\"10\"}},{\"category\":\"弹药\",\"subcategory\":\"炸弹\",\"entity\":{\"type\":\"精确制导炸弹\",\"num\":\"50\"}}],\"forces\":[]}],\"equipments\":[]}]},{\"name\":\"player2\",\"side\":\"2\",\"side_index\":\"2\",\"enemies\":[{\"name\":\"player1\",\"side\":\"1\"}],\"friends\":[{\"name\":\"player2\",\"side\":\"2\"}],\"forces\":[{\"name\":\"蓝方空中指挥所\",\"id\":\"BFHQ\",\"type\":\"指挥所\",\"location\":\"25.10, 120.50\",\"forces\":[{\"name\":\"第1歼击旅\",\"id\":\"1BFB\",\"type\":\"空中部队\",\"location\":\"25.10, 120.50\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"战斗机\",\"entity\":{\"type\":\"F-16\",\"num\":\"30\"}},{\"category\":\"弹药\",\"subcategory\":\"导弹\",\"entity\":{\"type\":\"空对空导弹\",\"num\":\"100\"}}],\"forces\":[]},{\"name\":\"第2空中联队\",\"id\":\"2BAW\",\"type\":\"空中部队\",\"location\":\"25.20, 120.60\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"轰炸机\",\"entity\":{\"type\":\"B-52\",\"num\":\"8\"}},{\"category\":\"弹药\",\"subcategory\":\"炸弹\",\"entity\":{\"type\":\"精确制导炸弹\",\"num\":\"60\"}}],\"forces\":[]}],\"equipments\":[]},{\"name\":\"蓝方海面指挥所\",\"id\":\"BFHQ-b\",\"type\":\"指挥所\",\"location\":\"25.10, 120.50\",\"forces\":[{\"name\":\"第一舰队\",\"id\":\"1BFB-b\",\"type\":\"海面部队\",\"location\":\"25.10, 120.50\",\"equipments\":[{\"category\":\"核艇\",\"subcategory\":\"核潜艇\",\"entity\":{\"type\":\"B-16\",\"num\":\"100\"}}],\"forces\":[]}],\"equipments\":[]}]}]",
+        "scene_predefined_data": "{}",
+        "decision_interval": "{\"time\":4,\"unit\":\"秒\"}",
+        "runtime_period": "{\"unit\":\"秒\"}",
+        "auxiliary_rules": "",
+        "reward": [],
+        "statistics": []
+      },
+      "state": {
+        "全局态势": {
+          "features": [
+            "game_loop",
+            "player_id",
+            "minerals",
+            "vespene",
+            "food_cap",
+            "food_used",
+            "food_army",
+            "food_workers",
+            "idle_worker_count",
+            "army_count",
+            "warp_gate_count"
+          ],
+          "id": "3cba628f-ed1f-49da-8952-8e348be8a9ca",
+          "index_name": [
+            "CommonInfo"
+          ],
+          "type": "1D"
+        },
+        "小地图信息": {
+          "features": [
+            "buildable_map",
+            "pathable_map",
+            "player_id_map",
+            "player_relative_map",
+            "visibility_map"
+          ],
+          "id": "93a55aff-40d4-4488-8cc4-48d2f90186ab",
+          "index_name": [
+            "SpatialInfo"
+          ],
+          "type": "spatial"
+        },
+        "我方单位": {
+          "features": [
+            "id",
+            "alive",
+            "position",
+            "unit_type",
+            "unit_subtype",
+            "facing",
+            "radius",
+            "health_max",
+            "health"
+          ],
+          "id": "85854075-2071-4623-934a-aac16251fdca",
+          "index_name": [
+            "SC2EntityInfo"
+          ],
+          "max_num": 10,
+          "side": "Friendly",
+          "type": "2D"
+        },
+        "敌方单位": {
+          "features": [
+            "id",
+            "alive",
+            "position",
+            "unit_type",
+            "unit_subtype",
+            "facing",
+            "radius",
+            "health_max",
+            "health"
+          ],
+          "id": "fd98a122-a26e-4842-9b8e-5bf96007b64c",
+          "index_name": [
+            "SC2EntityInfo"
+          ],
+          "max_num": 10,
+          "side": "Enemy",
+          "type": "2D"
+        }
+      },
+      "network": {
+        "aggregators": {
+          "聚合器": {
+            "id": "aggregator",
+            "input": [
+              {
+                "name": "全局态势_encoder_output0"
+              },
+              {
+                "name": "我方单位_encoder_output0"
+              },
+              {
+                "name": "敌方单位_encoder_output0"
+              },
+              {
+                "name": "小地图信息_encoder_output0"
+              }
+            ],
+            "network": "lstm_aggregator",
+            "output": [
+              {
+                "name": "聚合器_output0"
+              }
+            ],
+            "params": {
+              "hidden_layer_sizes": [
+                512,
+                256
+              ],
+              "output_layer_neuron": 256,
+              "seq_len": 1,
+              "state_size": 256
+            },
+            "type": "aggregator"
+          }
+        },
+        "decoders": {
+          "坐标Xgroup1": {
+            "group": "group1",
+            "id": "78c265af-d1e2-457a-854c-6911ecb1821c",
+            "input": [
+              {
+                "name": "聚合器_output0"
+              }
+            ],
+            "network": "categorical_decoder",
+            "output": [
+              {
+                "name": "group1_坐标X_decoder_output0"
+              },
+              {
+                "name": "group1_坐标X_decoder_output0_embedding"
+              }
+            ],
+            "params": {
+              "hidden_layer_sizes": [
+                512,
+                256
+              ]
+            },
+            "type": "decoder"
+          },
+          "坐标Ygroup1": {
+            "group": "group1",
+            "id": "72da037b-ca70-4887-ba64-ab5ce640640f",
+            "input": [
+              {
+                "name": "聚合器_output0"
+              }
+            ],
+            "network": "categorical_decoder",
+            "output": [
+              {
+                "name": "group1_坐标Y_decoder_output0"
+              },
+              {
+                "name": "group1_坐标Y_decoder_output0_embedding"
+              }
+            ],
+            "params": {
+              "hidden_layer_sizes": [
+                512,
+                256
+              ]
+            },
+            "type": "decoder"
+          },
+          "我方单位group1": {
+            "group": "group1",
+            "id": "bf1a988d-01dd-494a-8ff0-b3f957f4fd39",
+            "input": [
+              {
+                "name": "聚合器_output0"
+              },
+              {
+                "name": "我方单位_encoder_output1"
+              }
+            ],
+            "network": "single_selective_decoder",
+            "output": [
+              {
+                "name": "group1_我方单位_decoder_output0"
+              },
+              {
+                "name": "group1_我方单位_decoder_output0_embedding"
+              }
+            ],
+            "params": {
+              "attention_size": 64,
+              "hidden_layer_sizes": [
+                512,
+                256
+              ]
+            },
+            "type": "decoder"
+          },
+          "敌方单位group1": {
+            "group": "group1",
+            "id": "edd48067-7ddd-417a-bfce-1d9dc406b71f",
+            "input": [
+              {
+                "name": "聚合器_output0"
+              },
+              {
+                "name": "敌方单位_encoder_output1"
+              }
+            ],
+            "network": "single_selective_decoder",
+            "output": [
+              {
+                "name": "group1_敌方单位_decoder_output0"
+              },
+              {
+                "name": "group1_敌方单位_decoder_output0_embedding"
+              }
+            ],
+            "params": {
+              "attention_size": 64,
+              "hidden_layer_sizes": [
+                512,
+                256
+              ]
+            },
+            "type": "decoder"
+          },
+          "谓语动作1group1": {
+            "group": "group1",
+            "id": "e12ce588-f9aa-4448-8088-030d4603dbfd",
+            "input": [
+              {
+                "name": "聚合器_output0"
+              }
+            ],
+            "network": "categorical_decoder",
+            "output": [
+              {
+                "name": "group1_谓语动作1_decoder_output0"
+              },
+              {
+                "name": "group1_谓语动作1_decoder_output0_embedding"
+              }
+            ],
+            "params": {
+              "hidden_layer_sizes": [
+                512,
+                256
+              ]
+            },
+            "type": "decoder"
+          }
+        },
+        "encoders": {
+          "全局态势": {
+            "id": "9e0b0b7f-5bca-4065-a7dd-4996e050c891",
+            "input": [
+              {
+                "name": "全局态势"
+              }
+            ],
+            "network": "common_encoder",
+            "output": [
+              {
+                "name": "全局态势_encoder_output0"
+              }
+            ],
+            "params": {
+              "hidden_layer_sizes": [
+                512,
+                256
+              ]
+            },
+            "type": "encoder"
+          },
+          "小地图信息": {
+            "id": "f7102114-cd81-4e65-8c80-1c46d27da9f7",
+            "input": [
+              {
+                "name": "小地图信息"
+              }
+            ],
+            "network": "spatial_encoder",
+            "output": [
+              {
+                "name": "小地图信息_encoder_output0"
+              }
+            ],
+            "params": {
+              "channel_dimension_transformation": 32,
+              "downsample": [],
+              "output_size": 64,
+              "resnet": false
+            },
+            "type": "encoder"
+          },
+          "我方单位": {
+            "id": "e9fcaf55-fe81-4e26-9956-708e8b842a71",
+            "input": [
+              {
+                "name": "我方单位"
+              }
+            ],
+            "network": "entity_encoder",
+            "output": [
+              {
+                "name": "我方单位_encoder_output0"
+              },
+              {
+                "name": "我方单位_encoder_output1"
+              }
+            ],
+            "params": {
+              "hidden_layer_sizes": [
+                512,
+                256
+              ]
+            },
+            "type": "encoder"
+          },
+          "敌方单位": {
+            "id": "2c0fe207-4094-4e56-b9bf-0e7eb16b6759",
+            "input": [
+              {
+                "name": "敌方单位"
+              }
+            ],
+            "network": "entity_encoder",
+            "output": [
+              {
+                "name": "敌方单位_encoder_output0"
+              },
+              {
+                "name": "敌方单位_encoder_output1"
+              }
+            ],
+            "params": {
+              "hidden_layer_sizes": [
+                512,
+                256
+              ]
+            },
+            "type": "encoder"
+          }
+        },
+        "value_function": {
+          "状态价值网络": {
+            "id": "value_function",
+            "input": [
+              {
+                "name": "聚合器_output0"
+              }
+            ],
+            "network": "value",
+            "params": {
+              "hidden_layer_sizes": [
+                64
+              ]
+            },
+            "type": "value_function"
+          }
+        }
+      },
+      "action": {
+        "group1": {
+          "坐标X": {
+            "action_category": "categorical",
+            "action_type": "parameter",
+            "category_num": 64,
+            "id": "0ba71b5e-ddd4-4fa6-8f6f-b59ae1da108b",
+            "input": [
+              {
+                "name": "group1_坐标X_decoder_output0"
+              }
+            ],
+            "reference_objects": [
+              "单位移动任务"
+            ]
+          },
+          "坐标Y": {
+            "action_category": "categorical",
+            "action_type": "parameter",
+            "category_num": 64,
+            "id": "70bc1cc1-825d-41ba-a236-3795cdcc6ba9",
+            "input": [
+              {
+                "name": "group1_坐标Y_decoder_output0"
+              }
+            ],
+            "reference_objects": [
+              "单位移动任务"
+            ]
+          },
+          "我方单位": {
+            "action_category": "single_selective",
+            "action_type": "subject",
+            "entity_selection": "我方单位",
+            "id": "033672bb-b021-415b-a2f3-43394f7bc593",
+            "input": [
+              {
+                "name": "group1_我方单位_decoder_output0"
+              }
+            ]
+          },
+          "敌方单位": {
+            "action_category": "single_selective",
+            "action_type": "object",
+            "entity_selection": "敌方单位",
+            "id": "d4857ee9-223c-4d53-b2fa-8c3d337506ba",
+            "input": [
+              {
+                "name": "group1_敌方单位_decoder_output0"
+              }
+            ]
+          },
+          "谓语动作1": {
+            "action_category": "categorical",
+            "action_type": "predicate",
+            "id": "072fe2da-8ea4-4d68-afac-20df6f098f3b",
+            "input": [
+              {
+                "name": "group1_谓语动作1_decoder_output0"
+              }
+            ],
+            "missions": [
+              {
+                "class": "UnitAttackMission",
+                "index_name": "",
+                "instance_name": "星际-baseline-selfpla_单位攻击任务_攻击",
+                "name": "单位攻击任务",
+                "params": [
+                  {
+                    "is_related": true,
+                    "param": "enemy_unit_index",
+                    "value": "敌方单位"
+                  },
+                  {
+                    "is_related": true,
+                    "param": "self_unit_index_list",
+                    "value": "我方单位"
+                  }
+                ],
+                "path": "unit_attack_mission.py",
+                "repository_url": "http://11.1.0.2:2180/sc2_modules/missions.git",
+                "type": "ground_mission"
+              },
+              {
+                "class": "UnitMoveMission",
+                "index_name": "",
+                "instance_name": "星际-baseline-selfpla_单位移动任务_移动",
+                "name": "单位移动任务",
+                "params": [
+                  {
+                    "is_related": true,
+                    "param": "pos_x",
+                    "value": "坐标X"
+                  },
+                  {
+                    "is_related": true,
+                    "param": "pos_y",
+                    "value": "坐标Y"
+                  },
+                  {
+                    "is_related": true,
+                    "param": "unit_index_list",
+                    "value": "我方单位"
+                  }
+                ],
+                "path": "unit_move_mission.py",
+                "repository_url": "http://11.1.0.2:2180/sc2_modules/missions.git",
+                "type": "ground_mission"
+              },
+              {
+                "class": "NoOpMission",
+                "index_name": "",
+                "instance_name": "星际-baseline-selfpla_空动作任务_空动作",
+                "name": "空动作任务",
+                "params": [],
+                "path": "no_op_mission.py",
+                "repository_url": "http://11.1.0.2:2180/sc2_modules/missions.git",
+                "type": "ground_mission"
+              }
+            ]
+          }
+        }
+      },
+      "reward": {},
+      "statistic": {},
+      "algo": {
+        "algo_type": "ppo",
+        "clip_param": 0.3,
+        "entropy_coef": 0.1,
+        "learning_rate": 0.0002,
+        "vf_clip_param": 10,
+        "vf_loss_coef": 1
+      },
+      "training_coef": {
+        "fragment_size": 1024,
+        "gamma": 1,
+        "lamb": 0.95,
+        "max_data_reuse": 1,
+        "replay_size": 1,
+        "sample_batch_size": 256,
+        "save_interval": 200
+      }
+    }
+  ]
+}

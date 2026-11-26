@@ -1,0 +1,58 @@
+{
+  "action_group1": {
+    "谓语动作1": {
+      "action_type": "Predicate",
+      "action_category": "categorical",
+      "input": {
+        "name": "解码器输出1"
+      },
+      "Decision_making_tasks": [
+        {
+          "name": "空对空打击",
+          "class": "air-to-air",
+          "params": [
+            {"param": "A", "is_related": false, "value": "aaa"},
+            {"param": "B", "is_related": false, "value": "宾语动作1"},
+            {"param": "C", "related_action": false, "value": "参数动作1"}
+          ]
+        },
+        {
+          "name": "空对地打击",
+          "class": "air-to-ground",
+          "params": {
+            "param1": "value1",
+            "param2": "value2",
+            "param3": "参数动作1"
+          }
+        }
+      ]
+    },
+    "主语动作1": {
+      "action_type": "Subject",
+      "action_category": "unordered_multi_selective",
+      "input": {
+        "name": "解码器输出2"
+      },
+      "entity_selection": "二维态势1"
+    },
+    "宾语动作1": {
+      "action_type": "Object",
+      "action_category": "sorted_selective",
+      "input": {
+        "name": "解码器输出3"
+      },
+      "entity_selection": "敌方空中编队"
+    },
+    "打击区域": {
+      "action_type": "Parameter",
+      "action_category": "ordered_multi_selective",
+      "input": {
+        "name": "解码器输出4"
+      },
+      "reference_objects": [
+        "空对空打击",
+        "空对地打击"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bycc/modules/bt_action/bt_actions" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bycc/modules/mission/missions" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bycc/modules/reward/rewards" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/env_interface" vcs="Git" />
+  </component>
+</project>

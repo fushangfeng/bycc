@@ -1,0 +1,120 @@
+{
+    "encoders": {
+        "一维态势编码器1": {
+            "type": "1D_encoder",
+            "network": "dense",
+            "params": {
+                "hidden_layer_sizes": [
+                    32,
+                    64
+                ]
+            },
+            "input": [
+                {
+                    "name": "一维态势1"
+                }
+            ],
+            "output": [
+                {
+                    "name": "一维态势1编码器输出"
+                },
+                {
+                    "name": "一维态势1编码器输出2"
+                }
+            ]
+        },
+        "二维态势编码器1": {
+            "type": "2D_encoder",
+            "network": "transformer",
+            "params": {
+                "hidden_layer_sizes": [
+                    32,
+                    64
+                ],
+                "attention_layers": 2,
+                "attention_heads": 4,
+                "attention_head_size": 16
+            },
+            "input": [
+                {
+                    "name": "二维态势1"
+                }
+            ],
+            "output": [
+                {
+                    "name": "二维态势1编码器输出"
+                },
+                {
+                    "name": "二维态势1编码器输出2"
+                }
+            ]
+        }
+    },
+    "aggregators": {
+        "聚合器1": {
+            "type": "aggregator",
+            "network": "gru",
+            "params": {
+                "hidden_layer": 64,
+                "seq_len": 1
+            },
+            "input": [
+                {
+                    "name": "二维态势1编码器输出"
+                }
+            ],
+            "output": [
+                {
+                    "name": "聚合器1输出"
+                }
+            ]
+        }
+    },
+    "decoders": {
+        "单选动作解码器1": {
+            "type": "single_selective_decoder",
+            "network": "attention",
+            "params": {
+                "hidden_layer_sizes": [
+                    32,
+                    64
+                ],
+                "attention_head_size": 16
+            },
+            "input": [
+                {
+                    "name": "聚合器1输出"
+                },
+                {
+                    "name": "一维态势1编码器输出2"
+                }
+            ],
+            "output": [
+                {
+                    "name": "解码器1输出"
+                }
+            ]
+        }
+    },
+    "value_functions": {
+        "状态价值网络": {
+            "type": "state_value_network",
+            "network": "dense",
+            "params": {
+                "hidden_layer_sizes": [
+                    64
+                ]
+            },
+            "input": [
+                {
+                    "name": "聚合器1输出"
+                }
+            ],
+            "output": [
+                {
+                    "name": "值网络输出"
+                }
+            ]
+        }
+    }
+}

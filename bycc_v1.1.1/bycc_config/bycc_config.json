@@ -1,0 +1,2893 @@
+{
+  "scenarios": [
+    {
+      "scenario_name": "test_29s",
+      "env_interface": {
+        "repository_url": "http://10.0.0.200:2080/29s/env_interface.git",
+        "path": "config_29s.py",
+        "class": "config"
+      },
+      "resource_path": "",
+      "image_repo": "",
+      "duration": 1000000,
+      "probability": 1,
+      "player_config": [
+        {
+          "player_type": "graph",
+          "player_name": "XKU_ZUHE",
+          "is_train": true,
+          "sub_players": [
+            {
+              "player_type": "behavior_tree",
+              "player_name": "5R8Y78HuXj",
+              "is_train": false,
+              "scenario_adaption": {
+                "side": "1",
+                "enemy": [
+                  "2"
+                ],
+                "troop_filter": false,
+                "troop_info": [
+                  {
+                    "enemies": [
+                      {
+                        "name": "蓝方",
+                        "side": "2"
+                      }
+                    ],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "装备类别1",
+                            "entity": {
+                              "num": "99",
+                              "type": "装备型号1"
+                            },
+                            "subcategory": "装备子类别1"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "aaa",
+                        "location": "22.10, 119.50",
+                        "name": "红方单位1",
+                        "type": "单位类型1"
+                      }
+                    ],
+                    "friends": [],
+                    "name": "红方",
+                    "side": "1",
+                    "side_index": "1"
+                  },
+                  {
+                    "enemies": [
+                      {
+                        "name": "红方",
+                        "side": "1"
+                      }
+                    ],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "装备类别2",
+                            "entity": {
+                              "num": "88",
+                              "type": "装备型号2"
+                            },
+                            "subcategory": "装备子类别2"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "bbb",
+                        "location": "32.10, 139.50",
+                        "name": "蓝方单位1",
+                        "type": "单位类型2"
+                      }
+                    ],
+                    "friends": [],
+                    "name": "蓝方",
+                    "side": "2",
+                    "side_index": "2"
+                  }
+                ],
+                "scene_predefined_data": {},
+                "decision_interval": {
+                  "time": 1,
+                  "unit": "秒"
+                },
+                "runtime_period": {
+                  "unit": "秒"
+                },
+                "auxiliary_rules": null,
+                "rule_constraints": null,
+                "reward": null,
+                "statistics": null
+              },
+              "nodes": {
+                "children": [
+                  {
+                    "data": {
+                      "class": "XKUTaskControl",
+                      "instance_name": "XKU任务控制_123123",
+                      "params": [],
+                      "path": "XKUTaskControl.py",
+                      "repository_url": "http://10.0.0.200:2080/29s/bt_actions.git"
+                    },
+                    "id": "DhyB6nDog9",
+                    "positionX": 510,
+                    "type": "behavior"
+                  }
+                ],
+                "data": {
+                  "params": []
+                },
+                "id": "aIFvrRJ6wY",
+                "positionX": 510,
+                "type": "sequence"
+              },
+              "outputs": {
+                "XKUJamAgentInput": "XKUJamAgentInput",
+                "XKUJamAgentNW": "XKUJamAgentNW",
+                "XKUJamAgentSC": "XKUJamAgentSC",
+                "XKUJamRuleInput": "XKUJamRuleInput",
+                "XKUJamRuleSC": "XKUJamRuleSC",
+                "XKUReconAgentInput": "XKUReconAgentInput",
+                "XKUReconAgentNW": "XKUReconAgentNW",
+                "XKUReconAgentSC": "XKUReconAgentSC",
+                "XKUReconRuleInput": "XKUReconRuleInput",
+                "XKUReconRuleSC": "XKUReconRuleSC"
+              }
+            },
+            {
+              "player_type": "behavior_tree",
+              "player_name": "dash3kdaos",
+              "is_train": false,
+              "scenario_adaption": {
+                "side": "1",
+                "enemy": [
+                  "2"
+                ],
+                "troop_filter": false,
+                "troop_info": [
+                  {
+                    "enemies": [
+                      {
+                        "name": "蓝方",
+                        "side": "2"
+                      }
+                    ],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "装备类别1",
+                            "entity": {
+                              "num": "99",
+                              "type": "装备型号1"
+                            },
+                            "subcategory": "装备子类别1"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "aaa",
+                        "location": "22.10, 119.50",
+                        "name": "红方单位1",
+                        "type": "单位类型1"
+                      }
+                    ],
+                    "friends": [],
+                    "name": "红方",
+                    "side": "1",
+                    "side_index": "1"
+                  },
+                  {
+                    "enemies": [
+                      {
+                        "name": "红方",
+                        "side": "1"
+                      }
+                    ],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "装备类别2",
+                            "entity": {
+                              "num": "88",
+                              "type": "装备型号2"
+                            },
+                            "subcategory": "装备子类别2"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "bbb",
+                        "location": "32.10, 139.50",
+                        "name": "蓝方单位1",
+                        "type": "单位类型2"
+                      }
+                    ],
+                    "friends": [],
+                    "name": "蓝方",
+                    "side": "2",
+                    "side_index": "2"
+                  }
+                ],
+                "scene_predefined_data": {},
+                "decision_interval": {
+                  "time": 1,
+                  "unit": "秒"
+                },
+                "runtime_period": {
+                  "unit": "秒"
+                },
+                "auxiliary_rules": null,
+                "rule_constraints": null,
+                "reward": null,
+                "statistics": null
+              },
+              "nodes": {
+                "children": [
+                  {
+                    "data": {
+                      "class": "XKUReconRule",
+                      "instance_name": "XKU雷达对抗ZC_XKU雷达对抗ZC_123",
+                      "params": [],
+                      "path": "XKU_Recon_Rule.py",
+                      "repository_url": "http://10.0.0.200:2080/29s/bt_actions.git"
+                    },
+                    "id": "yiRCiggOYF",
+                    "positionX": 540,
+                    "type": "behavior"
+                  }
+                ],
+                "data": {
+                  "params": []
+                },
+                "id": "rrfAcEDT4X",
+                "positionX": 540,
+                "type": "sequence"
+              },
+              "inputs": {
+                "XKUReconRuleInput": {
+                  "player_name": "5R8Y78HuXj",
+                  "source_name": "XKUReconRuleInput"
+                },
+                "XKUReconRuleSC": {
+                  "player_name": "5R8Y78HuXj",
+                  "source_name": "XKUReconRuleSC"
+                }
+              }
+            },
+            {
+              "player_type": "behavior_tree",
+              "player_name": "cxliihu3hd2",
+              "is_train": false,
+              "scenario_adaption": {
+                "side": "1",
+                "enemy": [
+                  "2"
+                ],
+                "troop_filter": false,
+                "troop_info": [
+                  {
+                    "enemies": [
+                      {
+                        "name": "蓝方",
+                        "side": "2"
+                      }
+                    ],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "装备类别1",
+                            "entity": {
+                              "num": "99",
+                              "type": "装备型号1"
+                            },
+                            "subcategory": "装备子类别1"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "aaa",
+                        "location": "22.10, 119.50",
+                        "name": "红方单位1",
+                        "type": "单位类型1"
+                      }
+                    ],
+                    "friends": [],
+                    "name": "红方",
+                    "side": "1",
+                    "side_index": "1"
+                  },
+                  {
+                    "enemies": [
+                      {
+                        "name": "红方",
+                        "side": "1"
+                      }
+                    ],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "装备类别2",
+                            "entity": {
+                              "num": "88",
+                              "type": "装备型号2"
+                            },
+                            "subcategory": "装备子类别2"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "bbb",
+                        "location": "32.10, 139.50",
+                        "name": "蓝方单位1",
+                        "type": "单位类型2"
+                      }
+                    ],
+                    "friends": [],
+                    "name": "蓝方",
+                    "side": "2",
+                    "side_index": "2"
+                  }
+                ],
+                "scene_predefined_data": {},
+                "decision_interval": {
+                  "time": 1,
+                  "unit": "秒"
+                },
+                "runtime_period": {
+                  "unit": "秒"
+                },
+                "auxiliary_rules": null,
+                "rule_constraints": null,
+                "reward": null,
+                "statistics": null
+              },
+              "nodes": {
+                "children": [
+                  {
+                    "data": {
+                      "class": "XKUJamRule",
+                      "instance_name": "XKU雷达对抗GR_XKUJamRule",
+                      "params": [],
+                      "path": "XKU_Jam_Rule.py",
+                      "repository_url": "http://10.0.0.200:2080/29s/bt_actions.git"
+                    },
+                    "id": "Gx7iQz4lGk",
+                    "positionX": 825,
+                    "type": "behavior"
+                  }
+                ],
+                "data": {
+                  "params": []
+                },
+                "id": "cGqTXItdFY",
+                "positionX": 840,
+                "type": "sequence"
+              },
+              "inputs": {
+                "XKUJamRuleInput": {
+                  "player_name": "5R8Y78HuXj",
+                  "source_name": "XKUJamRuleInput"
+                },
+                "XKUJamRuleSC": {
+                  "player_name": "5R8Y78HuXj",
+                  "source_name": "XKUJamRuleSC"
+                }
+              }
+            },
+            {
+              "player_type": "rl",
+              "player_name": "dshkfka3662",
+              "model_name": "dshkfka3662_model",
+              "is_train": true,
+              "save_path": "HgZR0LhPtR",
+              "scenario_adaption": {
+                "side": "1",
+                "enemy": [
+                  "2"
+                ],
+                "troop_filter": false,
+                "troop_info": [
+                  {
+                    "enemies": [
+                      {
+                        "name": "蓝方",
+                        "side": "2"
+                      }
+                    ],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "装备类别1",
+                            "entity": {
+                              "num": "99",
+                              "type": "装备型号1"
+                            },
+                            "subcategory": "装备子类别1"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "aaa",
+                        "location": "22.10, 119.50",
+                        "name": "红方单位1",
+                        "type": "单位类型1"
+                      }
+                    ],
+                    "friends": [],
+                    "name": "红方",
+                    "side": "1",
+                    "side_index": "1"
+                  },
+                  {
+                    "enemies": [
+                      {
+                        "name": "红方",
+                        "side": "1"
+                      }
+                    ],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "装备类别2",
+                            "entity": {
+                              "num": "88",
+                              "type": "装备型号2"
+                            },
+                            "subcategory": "装备子类别2"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "bbb",
+                        "location": "32.10, 139.50",
+                        "name": "蓝方单位1",
+                        "type": "单位类型2"
+                      }
+                    ],
+                    "friends": [],
+                    "name": "蓝方",
+                    "side": "2",
+                    "side_index": "2"
+                  }
+                ],
+                "scene_predefined_data": {},
+                "decision_interval": {
+                  "time": 1,
+                  "unit": "秒"
+                },
+                "runtime_period": {
+                  "unit": "秒"
+                },
+                "auxiliary_rules": null,
+                "rule_constraints": null,
+                "reward": [
+                  {
+                    "class": "XKUJamRewards_F35",
+                    "description": "XKUGRF35每一步的奖励",
+                    "id": 31,
+                    "name": "XKUGRF35每步奖励",
+                    "parameters_template": "{\"instance_name\":\"reward_step\",\"weight\":1,\"params\":{}}",
+                    "path": "xku_jam_reward_step_f35.py",
+                    "repo_id": 18,
+                    "repository_url": "http://10.0.0.200:2080/29s/rewards.git"
+                  },
+                  {
+                    "class": "XKUJamRewards_F35",
+                    "description": "XKUGRF35每一步中的GR相关奖励",
+                    "id": 32,
+                    "name": "XKUGRF35每步GR奖励",
+                    "parameters_template": "{\"instance_name\":\"reward_jam\",\"weight\":1,\"params\":{}}",
+                    "path": "xku_jam_reward_jam_f35.py",
+                    "repo_id": 18,
+                    "repository_url": "http://10.0.0.200:2080/29s/rewards.git"
+                  },
+                  {
+                    "class": "XKUJamReward_Final_F35",
+                    "description": "XKUGRF35每步最终奖励",
+                    "id": 33,
+                    "name": "XKUGRF35每步最终奖励",
+                    "parameters_template": "{\"instance_name\":\"reward_final\",\"weight\":1,\"params\":{}}",
+                    "path": "xku_jam_reward_final_f35.py",
+                    "repo_id": 18,
+                    "repository_url": "http://10.0.0.200:2080/29s/rewards.git"
+                  }
+                ],
+                "statistics": []
+              },
+              "state": {
+                "FvvJrmeHkO": {
+                  "type": "input",
+                  "name": "XKUJamAgentSC",
+                  "output_type": "scheduler"
+                },
+                "ReSFvAtlq0": {
+                  "type": "input",
+                  "name": "XKUJamAgentNW",
+                  "length": 96,
+                  "output_type": "network"
+                }
+              },
+              "network": {
+                "aggregators": {
+                  "JdLQeZ1rAO": {
+                    "input": [
+                      {
+                        "name": "S7Kv5hA1Tp_feature"
+                      }
+                    ],
+                    "network": "dense_aggregator",
+                    "output": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": [
+                        128,
+                        128
+                      ],
+                      "output_layer_neuron": 128
+                    },
+                    "type": "aggregator"
+                  }
+                },
+                "decoders": {
+                  "2hwDngM8Re": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "2hwDngM8Re_gaussian"
+                      },
+                      {
+                        "name": "2hwDngM8Re_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "5umf0WetO6": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "5umf0WetO6_category"
+                      },
+                      {
+                        "name": "5umf0WetO6_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "5x33NYrpDM": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "5x33NYrpDM_category"
+                      },
+                      {
+                        "name": "5x33NYrpDM_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "68pIzA92D0": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "68pIzA92D0_category"
+                      },
+                      {
+                        "name": "68pIzA92D0_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "7Pv02xKCgY": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "7Pv02xKCgY_gaussian"
+                      },
+                      {
+                        "name": "7Pv02xKCgY_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "7o1BVVPTlq": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "7o1BVVPTlq_category"
+                      },
+                      {
+                        "name": "7o1BVVPTlq_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "9h07Qhhfs5": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "9h07Qhhfs5_category"
+                      },
+                      {
+                        "name": "9h07Qhhfs5_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "CXKoTtF106": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "CXKoTtF106_gaussian"
+                      },
+                      {
+                        "name": "CXKoTtF106_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "Cl86rTMCKE": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "Cl86rTMCKE_category"
+                      },
+                      {
+                        "name": "Cl86rTMCKE_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "CmHsKo9ax1": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "CmHsKo9ax1_gaussian"
+                      },
+                      {
+                        "name": "CmHsKo9ax1_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "DL3eoPY44Y": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "DL3eoPY44Y_gaussian"
+                      },
+                      {
+                        "name": "DL3eoPY44Y_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "Ecfw9RubVO": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "Ecfw9RubVO_category"
+                      },
+                      {
+                        "name": "Ecfw9RubVO_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "HY9TMV8Tpl": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "HY9TMV8Tpl_category"
+                      },
+                      {
+                        "name": "HY9TMV8Tpl_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "HoQf1kQvUB": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "HoQf1kQvUB_category"
+                      },
+                      {
+                        "name": "HoQf1kQvUB_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "JUtVFMBfKZ": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "JUtVFMBfKZ_gaussian"
+                      },
+                      {
+                        "name": "JUtVFMBfKZ_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "KgUBjuhurr": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "KgUBjuhurr_gaussian"
+                      },
+                      {
+                        "name": "KgUBjuhurr_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "LZ8lfGNaK3": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "LZ8lfGNaK3_gaussian"
+                      },
+                      {
+                        "name": "LZ8lfGNaK3_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "LjaNlR7v8E": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "LjaNlR7v8E_gaussian"
+                      },
+                      {
+                        "name": "LjaNlR7v8E_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "MXxhWXyimy": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "MXxhWXyimy_gaussian"
+                      },
+                      {
+                        "name": "MXxhWXyimy_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "NKi72Y4Zvk": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "NKi72Y4Zvk_gaussian"
+                      },
+                      {
+                        "name": "NKi72Y4Zvk_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "PT0EO1oZdi": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "PT0EO1oZdi_category"
+                      },
+                      {
+                        "name": "PT0EO1oZdi_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "QpPtizbPg9": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "QpPtizbPg9_category"
+                      },
+                      {
+                        "name": "QpPtizbPg9_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "RAGj9dmv6o": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "RAGj9dmv6o_category"
+                      },
+                      {
+                        "name": "RAGj9dmv6o_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "RHCptv76Cr": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "RHCptv76Cr_gaussian"
+                      },
+                      {
+                        "name": "RHCptv76Cr_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "RpHINXwDCC": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "RpHINXwDCC_category"
+                      },
+                      {
+                        "name": "RpHINXwDCC_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "VFBPtGV2Ee": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "VFBPtGV2Ee_category"
+                      },
+                      {
+                        "name": "VFBPtGV2Ee_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "VHlc4VTs2G": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "VHlc4VTs2G_category"
+                      },
+                      {
+                        "name": "VHlc4VTs2G_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "XoZeOOYsAg": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "XoZeOOYsAg_gaussian"
+                      },
+                      {
+                        "name": "XoZeOOYsAg_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "bd2k64zWvC": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "bd2k64zWvC_gaussian"
+                      },
+                      {
+                        "name": "bd2k64zWvC_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "bkkseqY6Qn": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "bkkseqY6Qn_category"
+                      },
+                      {
+                        "name": "bkkseqY6Qn_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "eQTzjjmBsK": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "eQTzjjmBsK_gaussian"
+                      },
+                      {
+                        "name": "eQTzjjmBsK_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "iyzklgXDVU": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "iyzklgXDVU_gaussian"
+                      },
+                      {
+                        "name": "iyzklgXDVU_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "jY06MFnlhY": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "jY06MFnlhY_gaussian"
+                      },
+                      {
+                        "name": "jY06MFnlhY_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "jyyu7kix58": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "jyyu7kix58_category"
+                      },
+                      {
+                        "name": "jyyu7kix58_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "kxHAddbdhJ": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "kxHAddbdhJ_category"
+                      },
+                      {
+                        "name": "kxHAddbdhJ_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "mb97vjTEsC": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "mb97vjTEsC_gaussian"
+                      },
+                      {
+                        "name": "mb97vjTEsC_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "mt7BCFUk3Y": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "mt7BCFUk3Y_category"
+                      },
+                      {
+                        "name": "mt7BCFUk3Y_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "pAqRzeVUWh": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "pAqRzeVUWh_category"
+                      },
+                      {
+                        "name": "pAqRzeVUWh_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "qOHUNKw6UP": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "qOHUNKw6UP_gaussian"
+                      },
+                      {
+                        "name": "qOHUNKw6UP_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "qlVNkCgip9": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "qlVNkCgip9_category"
+                      },
+                      {
+                        "name": "qlVNkCgip9_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "uZnDQHyr9A": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "uZnDQHyr9A_category"
+                      },
+                      {
+                        "name": "uZnDQHyr9A_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "vsvl03aGoq": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "vsvl03aGoq_category"
+                      },
+                      {
+                        "name": "vsvl03aGoq_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "wWSNmVxmEF": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "wWSNmVxmEF_gaussian"
+                      },
+                      {
+                        "name": "wWSNmVxmEF_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "wdJ1tlBrLf": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "wdJ1tlBrLf_gaussian"
+                      },
+                      {
+                        "name": "wdJ1tlBrLf_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "wqBPDU3CjG": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "wqBPDU3CjG_gaussian"
+                      },
+                      {
+                        "name": "wqBPDU3CjG_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "xTAqIJYqPD": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "xTAqIJYqPD_category"
+                      },
+                      {
+                        "name": "xTAqIJYqPD_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "xsGCxyjClJ": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "xsGCxyjClJ_category"
+                      },
+                      {
+                        "name": "xsGCxyjClJ_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "y8C996rCkg": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "y8C996rCkg_gaussian"
+                      },
+                      {
+                        "name": "y8C996rCkg_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "yrblZK54T0": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "gaussian_decoder",
+                    "output": [
+                      {
+                        "name": "yrblZK54T0_gaussian"
+                      },
+                      {
+                        "name": "yrblZK54T0_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  }
+                },
+                "encoders": {
+                  "S7Kv5hA1Tp": {
+                    "input": [
+                      {
+                        "name": "ReSFvAtlq0"
+                      }
+                    ],
+                    "network": "common_encoder",
+                    "output": [
+                      {
+                        "name": "S7Kv5hA1Tp_feature"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": [
+                        128,
+                        128
+                      ]
+                    },
+                    "type": "encoder"
+                  }
+                },
+                "value_function": {
+                  "p3hgs8Usaw": {
+                    "input": [
+                      {
+                        "name": "JdLQeZ1rAO_feature"
+                      }
+                    ],
+                    "network": "value",
+                    "params": {
+                      "hidden_layer_sizes": [
+                        64
+                      ]
+                    },
+                    "type": "value_function"
+                  }
+                }
+              },
+              "action": {
+                "N1YwlwfgxS": {
+                  "3VC7Qihx2W": {
+                    "action_category": "gaussian",
+                    "name": "接收窗通道3",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "JUtVFMBfKZ_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "3eNV8QMb7H": {
+                    "action_category": "categorical",
+                    "name": "GR样式通道6",
+                    "action_type": "parameter",
+                    "category_num": 3,
+                    "input": [
+                      {
+                        "name": "jyyu7kix58_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "88ujnKG1o0": {
+                    "action_category": "categorical",
+                    "name": "宽带噪声GR带宽通道3",
+                    "action_type": "parameter",
+                    "category_num": 8,
+                    "input": [
+                      {
+                        "name": "HY9TMV8Tpl_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "8NyLO45YoB": {
+                    "action_category": "categorical",
+                    "name": "宽带噪声GR带宽通道8",
+                    "action_type": "parameter",
+                    "category_num": 8,
+                    "input": [
+                      {
+                        "name": "kxHAddbdhJ_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "BddnnqNafr": {
+                    "action_category": "gaussian",
+                    "name": "发射窗通道3",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "DL3eoPY44Y_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "CcGFW67nnk": {
+                    "action_category": "gaussian",
+                    "name": "发射窗通道8",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "XoZeOOYsAg_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "FmxeR9ikOq": {
+                    "action_category": "gaussian",
+                    "name": "发射窗通道7",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "RHCptv76Cr_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "G75B9eyQwu": {
+                    "action_category": "gaussian",
+                    "name": "发射窗通道1",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "eQTzjjmBsK_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "Hvk6sUwc8U": {
+                    "action_category": "categorical",
+                    "name": "样本确认通道6",
+                    "action_type": "parameter",
+                    "category_num": 4,
+                    "input": [
+                      {
+                        "name": "bkkseqY6Qn_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "KRVUJmwFOv": {
+                    "action_category": "gaussian",
+                    "name": "发射窗通道6",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "NKi72Y4Zvk_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "MjYAmf43BJ": {
+                    "action_category": "gaussian",
+                    "name": "接收窗通道8",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "KgUBjuhurr_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "NibOI7wYrq": {
+                    "action_category": "gaussian",
+                    "name": "梳状谱GR带宽通道1",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "MXxhWXyimy_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 11,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "QjXModxDkV": {
+                    "action_category": "categorical",
+                    "name": "样本确认通道7",
+                    "action_type": "parameter",
+                    "category_num": 4,
+                    "input": [
+                      {
+                        "name": "qlVNkCgip9_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "Qx2JjkFUX9": {
+                    "action_category": "categorical",
+                    "name": "宽带噪声GR带宽通道7",
+                    "action_type": "parameter",
+                    "category_num": 8,
+                    "input": [
+                      {
+                        "name": "uZnDQHyr9A_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "ShogBLf1FP": {
+                    "action_category": "gaussian",
+                    "name": "发射窗通道5",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "7Pv02xKCgY_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "Vo2pgQmOgl": {
+                    "action_category": "categorical",
+                    "name": "宽带噪声GR带宽通道5",
+                    "action_type": "parameter",
+                    "category_num": 8,
+                    "input": [
+                      {
+                        "name": "QpPtizbPg9_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "XtsUGiXZBL": {
+                    "action_category": "categorical",
+                    "name": "宽带噪声GR带宽通道2",
+                    "action_type": "parameter",
+                    "category_num": 8,
+                    "input": [
+                      {
+                        "name": "VFBPtGV2Ee_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "Z4EZasWf57": {
+                    "action_category": "gaussian",
+                    "name": "接收窗通道6",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "y8C996rCkg_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "Zv8uYI3L66": {
+                    "action_category": "categorical",
+                    "name": "样本确认通道4",
+                    "action_type": "parameter",
+                    "category_num": 4,
+                    "input": [
+                      {
+                        "name": "xTAqIJYqPD_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "a6o5NT5Kdn": {
+                    "action_category": "gaussian",
+                    "name": "梳状谱GR带宽通道7",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "yrblZK54T0_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "aEmf5pi6Jh": {
+                    "action_category": "gaussian",
+                    "name": "发射窗通道2",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "qOHUNKw6UP_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "b7hoLNFr1d": {
+                    "action_category": "categorical",
+                    "name": "样本确认通道1",
+                    "action_type": "parameter",
+                    "category_num": 4,
+                    "input": [
+                      {
+                        "name": "RpHINXwDCC_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "bNBEFFnavj": {
+                    "action_category": "categorical",
+                    "name": "样本确认通道3",
+                    "action_type": "parameter",
+                    "category_num": 4,
+                    "input": [
+                      {
+                        "name": "9h07Qhhfs5_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "cSzjCEpHsJ": {
+                    "action_category": "gaussian",
+                    "name": "梳状谱GR带宽通道3",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "LjaNlR7v8E_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "ccOPHhkflS": {
+                    "action_category": "categorical",
+                    "name": "宽带噪声GR带宽通道1",
+                    "action_type": "parameter",
+                    "category_num": 8,
+                    "input": [
+                      {
+                        "name": "Cl86rTMCKE_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "cftceJn9Nn": {
+                    "action_category": "categorical",
+                    "name": "GR样式通道3",
+                    "action_type": "parameter",
+                    "category_num": 3,
+                    "input": [
+                      {
+                        "name": "mt7BCFUk3Y_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "d4K2WU0R5f": {
+                    "action_category": "categorical",
+                    "action_type": "predicate",
+                    "input": [
+                      {
+                        "name": "Ecfw9RubVO_category"
+                      }
+                    ],
+                    "missions": [
+                      {
+                        "class": "XKUJamParamMission",
+                        "index_name": "",
+                        "instance_name": "XKU雷达GR参数控制_XKU_JAM_AGENT",
+                        "name": "XKU雷达GR参数控制",
+                        "params": [
+                          {
+                            "is_related": true,
+                            "param": "JamType_Ch1_idx",
+                            "value": "GR样式通道1"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamBandWidthSZP_Ch1_idx",
+                            "value": "梳状谱GR带宽通道1"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamBandWidth_Ch1_idx",
+                            "value": "宽带噪声GR带宽通道1"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "SampleCheck_Ch1_idx",
+                            "value": "样本确认通道1"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "ReceiveTime_Ch1_idx",
+                            "value": "接收窗通道1"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "EmissionTime_Ch1_idx",
+                            "value": "发射窗通道1"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamType_Ch2_idx",
+                            "value": "GR样式通道2"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamBandWidthSZP_Ch2_idx",
+                            "value": "梳状谱GR带宽通道2"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamBandWidth_Ch2_idx",
+                            "value": "宽带噪声GR带宽通道2"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "SampleCheck_Ch2_idx",
+                            "value": "样本确认通道2"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "ReceiveTime_Ch2_idx",
+                            "value": "接收窗通道2"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "EmissionTime_Ch2_idx",
+                            "value": "发射窗通道2"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamType_Ch3_idx",
+                            "value": "GR样式通道3"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamBandWidthSZP_Ch3_idx",
+                            "value": "梳状谱GR带宽通道3"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamBandWidth_Ch3_idx",
+                            "value": "宽带噪声GR带宽通道3"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "SampleCheck_Ch3_idx",
+                            "value": "样本确认通道3"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "ReceiveTime_Ch3_idx",
+                            "value": "接收窗通道3"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "EmissionTime_Ch3_idx",
+                            "value": "发射窗通道3"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamType_Ch4_idx",
+                            "value": "GR样式通道4"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamBandWidthSZP_Ch4_idx",
+                            "value": "梳状谱GR带宽通道4"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamBandWidth_Ch4_idx",
+                            "value": "宽带噪声GR带宽通道4"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "SampleCheck_Ch4_idx",
+                            "value": "样本确认通道4"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "ReceiveTime_Ch4_idx",
+                            "value": "接收窗通道4"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "EmissionTime_Ch4_idx",
+                            "value": "接收窗通道4"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamType_Ch5_idx",
+                            "value": "GR样式通道5"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamBandWidthSZP_Ch5_idx",
+                            "value": "梳状谱GR带宽通道5"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamBandWidth_Ch5_idx",
+                            "value": "宽带噪声GR带宽通道5"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "SampleCheck_Ch5_idx",
+                            "value": "样本确认通道5"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "ReceiveTime_Ch5_idx",
+                            "value": "接收窗通道5"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "EmissionTime_Ch5_idx",
+                            "value": "发射窗通道5"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamType_Ch6_idx",
+                            "value": "GR样式通道6"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamBandWidthSZP_Ch6_idx",
+                            "value": "梳状谱GR带宽通道6"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamBandWidth_Ch6_idx",
+                            "value": "宽带噪声GR带宽通道6"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "SampleCheck_Ch6_idx",
+                            "value": "样本确认通道6"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "ReceiveTime_Ch6_idx",
+                            "value": "接收窗通道6"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "EmissionTime_Ch6_idx",
+                            "value": "发射窗通道6"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamType_Ch7_idx",
+                            "value": "GR样式通道7"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamBandWidthSZP_Ch7_idx",
+                            "value": "梳状谱GR带宽通道7"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamBandWidth_Ch7_idx",
+                            "value": "宽带噪声GR带宽通道7"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "SampleCheck_Ch7_idx",
+                            "value": "样本确认通道7"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "ReceiveTime_Ch7_idx",
+                            "value": "发射窗通道7"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "EmissionTime_Ch7_idx",
+                            "value": "发射窗通道7"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamType_Ch8_idx",
+                            "value": "GR样式通道8"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamBandWidthSZP_Ch8_idx",
+                            "value": "梳状谱GR带宽通道8"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "JamBandWidth_Ch8_idx",
+                            "value": "宽带噪声GR带宽通道8"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "SampleCheck_Ch8_idx",
+                            "value": "样本确认通道8"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "ReceiveTime_Ch8_idx",
+                            "value": "接收窗通道8"
+                          },
+                          {
+                            "is_related": true,
+                            "param": "EmissionTime_Ch8_idx",
+                            "value": "发射窗通道8"
+                          }
+                        ],
+                        "path": "XKU_Jam_Param_Mission.py",
+                        "repository_url": "http://10.0.0.200:2080/29s/missions.git",
+                        "type": ""
+                      }
+                    ]
+                  },
+                  "hwb8EkOYti": {
+                    "action_category": "gaussian",
+                    "name": "梳状谱GR带宽通道5",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "2hwDngM8Re_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "jQWlaSJI4p": {
+                    "action_category": "gaussian",
+                    "name": "梳状谱GR带宽通道6",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "CXKoTtF106_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "jsvBFVJKM2": {
+                    "action_category": "categorical",
+                    "name": "GR样式通道1",
+                    "action_type": "parameter",
+                    "category_num": 3,
+                    "input": [
+                      {
+                        "name": "7o1BVVPTlq_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "kXWpzJcaoU": {
+                    "action_category": "categorical",
+                    "name": "GR样式通道4",
+                    "action_type": "parameter",
+                    "category_num": 3,
+                    "input": [
+                      {
+                        "name": "pAqRzeVUWh_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "luHh7NayTk": {
+                    "action_category": "categorical",
+                    "name": "宽带噪声GR带宽通道4",
+                    "action_type": "parameter",
+                    "category_num": 8,
+                    "input": [
+                      {
+                        "name": "5x33NYrpDM_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "ntyb7vsVOQ": {
+                    "action_category": "categorical",
+                    "name": "样本确认通道8",
+                    "action_type": "parameter",
+                    "category_num": 4,
+                    "input": [
+                      {
+                        "name": "VHlc4VTs2G_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "oXnP3GVmQj": {
+                    "action_category": "categorical",
+                    "name": "GR样式通道8",
+                    "action_type": "parameter",
+                    "category_num": 3,
+                    "input": [
+                      {
+                        "name": "68pIzA92D0_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "othEAENXLb": {
+                    "action_category": "gaussian",
+                    "name": "梳状谱GR带宽通道2",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "CmHsKo9ax1_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "pYx3Pg1b0m": {
+                    "action_category": "gaussian",
+                    "name": "梳状谱GR带宽通道4",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "jY06MFnlhY_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "pi6HihLhQL": {
+                    "action_category": "gaussian",
+                    "name": "接收窗通道2",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "LZ8lfGNaK3_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "q02wfzZe9y": {
+                    "action_category": "gaussian",
+                    "name": "接收窗通道7",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "iyzklgXDVU_gaussian"
+                      }
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "qeRM2szpNx": {
+                    "action_category": "gaussian",
+                    "name": "接收窗通道1",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "wdJ1tlBrLf_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "qrSIMfSnmJ": {
+                    "action_category": "categorical",
+                    "name": "样本确认通道2",
+                    "action_type": "parameter",
+                    "category_num": 4,
+                    "input": [
+                      {
+                        "name": "HoQf1kQvUB_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "tH89zP0ljk": {
+                    "action_category": "gaussian",
+                    "name": "梳状谱GR带宽通道8",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "wWSNmVxmEF_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "tW4bwJtTOC": {
+                    "action_category": "gaussian",
+                    "name": "接收窗通道5",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "mb97vjTEsC_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "ufFkNWxdgE": {
+                    "action_category": "gaussian",
+                    "name": "接收窗通道4",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "bd2k64zWvC_gaussian"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "un8W1zWwJr": {
+                    "action_category": "categorical",
+                    "name": "GR样式通道2",
+                    "action_type": "parameter",
+                    "category_num": 3,
+                    "input": [
+                      {
+                        "name": "vsvl03aGoq_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "v4E22YhTOB": {
+                    "action_category": "categorical",
+                    "name": "GR样式通道5",
+                    "action_type": "parameter",
+                    "category_num": 3,
+                    "input": [
+                      {
+                        "name": "RAGj9dmv6o_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "vXOxqlFt7X": {
+                    "action_category": "categorical",
+                    "name": "GR样式通道7",
+                    "action_type": "parameter",
+                    "category_num": 3,
+                    "input": [
+                      {
+                        "name": "PT0EO1oZdi_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "vjNLz4GWPw": {
+                    "action_category": "gaussian",
+                    "name": "发射窗通道4",
+                    "action_type": "parameter",
+                    "input": [
+                      {
+                        "name": "wqBPDU3CjG_gaussian"
+                      }
+                    ],
+                    "action_max": 1,
+                    "action_min": -1,
+                    "action_num": 1
+                  },
+                  "xdmEYSZbHX": {
+                    "action_category": "categorical",
+                    "name": "宽带噪声GR带宽通道6",
+                    "action_type": "parameter",
+                    "category_num": 8,
+                    "input": [
+                      {
+                        "name": "xsGCxyjClJ_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  },
+                  "yySv60zarP": {
+                    "action_category": "categorical",
+                    "name": "样本确认通道5",
+                    "action_type": "parameter",
+                    "category_num": 4,
+                    "input": [
+                      {
+                        "name": "5umf0WetO6_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达GR参数控制"
+                    ]
+                  }
+                }
+              },
+              "algo": {
+                "algo_type": "ppo",
+                "clip_param": 0.1,
+                "entropy_coef": 0.02,
+                "learning_rate": 0.0005,
+                "vf_clip_param": 10,
+                "vf_loss_coef": 1
+              },
+              "training_coef": {
+                "fragment_size": 129,
+                "gamma": 0.99,
+                "lamb": 0.95,
+                "max_data_reuse": 1,
+                "replay_size": 1,
+                "sample_batch_size": 128,
+                "save_interval": 200
+              },
+              "inputs": {
+                "XKUJamAgentNW": {
+                  "player_name": "5R8Y78HuXj",
+                  "source_name": "XKUJamAgentNW"
+                },
+                "XKUJamAgentSC": {
+                  "player_name": "5R8Y78HuXj",
+                  "source_name": "XKUJamAgentSC"
+                }
+              }
+            },
+            {
+              "player_type": "rl",
+              "player_name": "dsfa3hg482",
+              "model_name": "dsfa3hg482_model",
+              "is_train": true,
+              "save_path": "Hh1CSvW9zN",
+              "scenario_adaption": {
+                "side": "1",
+                "enemy": [
+                  "2"
+                ],
+                "troop_filter": false,
+                "troop_info": [
+                  {
+                    "enemies": [
+                      {
+                        "name": "蓝方",
+                        "side": "2"
+                      }
+                    ],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "装备类别1",
+                            "entity": {
+                              "num": "99",
+                              "type": "装备型号1"
+                            },
+                            "subcategory": "装备子类别1"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "aaa",
+                        "location": "22.10, 119.50",
+                        "name": "红方单位1",
+                        "type": "单位类型1"
+                      }
+                    ],
+                    "friends": [],
+                    "name": "红方",
+                    "side": "1",
+                    "side_index": "1"
+                  },
+                  {
+                    "enemies": [
+                      {
+                        "name": "红方",
+                        "side": "1"
+                      }
+                    ],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "装备类别2",
+                            "entity": {
+                              "num": "88",
+                              "type": "装备型号2"
+                            },
+                            "subcategory": "装备子类别2"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "bbb",
+                        "location": "32.10, 139.50",
+                        "name": "蓝方单位1",
+                        "type": "单位类型2"
+                      }
+                    ],
+                    "friends": [],
+                    "name": "蓝方",
+                    "side": "2",
+                    "side_index": "2"
+                  }
+                ],
+                "scene_predefined_data": {},
+                "decision_interval": {
+                  "time": 1,
+                  "unit": "秒"
+                },
+                "runtime_period": {
+                  "unit": "秒"
+                },
+                "auxiliary_rules": null,
+                "rule_constraints": null,
+                "reward": [
+                  {
+                    "class": "RadarReconReward",
+                    "description": "XKU雷达ZC奖励",
+                    "id": 16,
+                    "name": "XKU雷达ZC奖励",
+                    "parameters_template": "{\"instance_name\":\"reward\",\"weight\":1,\"params\":{}}",
+                    "path": "xku_radar_recon_reward.py",
+                    "repo_id": 18,
+                    "repository_url": "http://10.0.0.200:2080/29s/rewards.git"
+                  }
+                ],
+                "statistics": []
+              },
+              "state": {
+                "ohqnkN58T2": {
+                  "type": "input",
+                  "name": "XKUReconAgentNW",
+                  "length": 96,
+                  "output_type": "network"
+                },
+                "wg2e27SVyl": {
+                  "type": "input",
+                  "name": "XKUReconAgentSC",
+                  "output_type": "scheduler"
+                }
+              },
+              "network": {
+                "aggregators": {
+                  "quirdskOGh": {
+                    "input": [
+                      {
+                        "name": "VW0pf3KSKt_feature"
+                      }
+                    ],
+                    "network": "dense_aggregator",
+                    "output": [
+                      {
+                        "name": "quirdskOGh_feature"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": [
+                        64,
+                        128
+                      ],
+                      "output_layer_neuron": 128
+                    },
+                    "type": "aggregator"
+                  }
+                },
+                "decoders": {
+                  "04JDaTaPDO": {
+                    "input": [
+                      {
+                        "name": "quirdskOGh_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "04JDaTaPDO_category"
+                      },
+                      {
+                        "name": "04JDaTaPDO_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  },
+                  "5D4fxn82be": {
+                    "input": [
+                      {
+                        "name": "quirdskOGh_feature"
+                      }
+                    ],
+                    "network": "categorical_decoder",
+                    "output": [
+                      {
+                        "name": "5D4fxn82be_category"
+                      },
+                      {
+                        "name": "5D4fxn82be_embedding"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": []
+                    },
+                    "type": "decoder"
+                  }
+                },
+                "encoders": {
+                  "VW0pf3KSKt": {
+                    "input": [
+                      {
+                        "name": "ohqnkN58T2"
+                      }
+                    ],
+                    "network": "common_encoder",
+                    "output": [
+                      {
+                        "name": "VW0pf3KSKt_feature"
+                      }
+                    ],
+                    "params": {
+                      "hidden_layer_sizes": [
+                        512,
+                        256
+                      ]
+                    },
+                    "type": "encoder"
+                  }
+                },
+                "value_function": {
+                  "Bic0P9vszY": {
+                    "input": [
+                      {
+                        "name": "quirdskOGh_feature"
+                      }
+                    ],
+                    "network": "value",
+                    "params": {
+                      "hidden_layer_sizes": [
+                        64
+                      ]
+                    },
+                    "type": "value_function"
+                  }
+                }
+              },
+              "action": {
+                "eaRu4xtBSA": {
+                  "LzqZa2iU08": {
+                    "action_category": "categorical",
+                    "action_type": "predicate",
+                    "input": [
+                      {
+                        "name": "5D4fxn82be_category"
+                      }
+                    ],
+                    "missions": [
+                      {
+                        "class": "XKUReconDecayMission",
+                        "index_name": "",
+                        "instance_name": "XKU雷达ZC衰减控制_XKUReconDecayMission",
+                        "name": "XKU雷达ZC衰减控制",
+                        "params": [
+                          {
+                            "is_related": true,
+                            "param": "DecayValue1_idx",
+                            "value": "衰减值索引1"
+                          }
+                        ],
+                        "path": "XKU_Recon_Decay_Mission.py",
+                        "repository_url": "http://10.0.0.200:2080/29s/missions.git",
+                        "type": ""
+                      }
+                    ]
+                  },
+                  "TcbnRrlqBY": {
+                    "action_category": "categorical",
+                    "name": "衰减值索引1",
+                    "action_type": "parameter",
+                    "category_num": 8,
+                    "input": [
+                      {
+                        "name": "04JDaTaPDO_category"
+                      }
+                    ],
+                    "reference_objects": [
+                      "XKU雷达ZC衰减控制"
+                    ]
+                  }
+                }
+              },
+              "algo": {
+                "algo_type": "ppo",
+                "clip_param": 0.1,
+                "entropy_coef": 0.02,
+                "learning_rate": 0.0005,
+                "vf_clip_param": 10,
+                "vf_loss_coef": 1
+              },
+              "training_coef": {
+                "fragment_size": 129,
+                "gamma": 0.99,
+                "lamb": 0.95,
+                "max_data_reuse": 1,
+                "replay_size": 1,
+                "sample_batch_size": 128,
+                "save_interval": 200
+              },
+              "inputs": {
+                "XKUReconAgentNW": {
+                  "player_name": "5R8Y78HuXj",
+                  "source_name": "XKUReconAgentNW"
+                },
+                "XKUReconAgentSC": {
+                  "player_name": "5R8Y78HuXj",
+                  "source_name": "XKUReconAgentSC"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "platform_config": {
+    "database_info": {
+      "db_name": "postgres",
+      "user": "root",
+      "password": "pgsql123",
+      "host": "10.0.0.200",
+      "port": "30432"
+    },
+    "architecture": "GPU"
+  },
+  "train_config": {
+    "train_type": "rl",
+    "train_sub_type": "async",
+    "train_task_id": "",
+    "params": {
+      "env_num": 1
+    },
+    "train_data": {
+      "name": "",
+      "path_url": ""
+    },
+    "train_status_url": "http://10.0.0.200:30061/agent-train/status"
+  },
+  "extend_info": {
+    "scenarios": {
+      "test_29s": {}
+    },
+    "task": null
+  }
+}

@@ -1,0 +1,40 @@
+enemy_unit:
+  action_category: unordered_multi_selective
+  action_type: parameter
+  entity_name: blue_unit
+fighter_patrol_pos:
+  action_category: categorical
+  action_num: 3
+  action_type: parameter
+meta_action:
+  action_category: categorical
+  action_type: meta
+  actions:
+  - class: ty_stand_by
+    name: stand_by
+  - class: ty_unit_area_patrol
+    name: fighter_patrol
+    params:
+      position_idx: fighter_patrol_pos
+      position_list:
+      - - -300000
+        - -200000
+        - 10000
+      - - 0
+        - 0
+        - 10000
+      - - 300000
+        - 200000
+        - 10000
+      unit_id_list: red_fighter
+  - class: ty_unit_air_attack
+    name: air_attack
+    params:
+      target_id_list:
+      - enemy_unit
+      unit_id_list: my_fighter
+  mask: meta_action_mask
+my_fighter:
+  action_category: unordered_multi_selective
+  action_type: parameter
+  entity_name: red_fighter

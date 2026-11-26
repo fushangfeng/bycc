@@ -1,0 +1,44 @@
+{
+    "encoders": {
+        "一维态势编码器1": {
+            "type": "dense",
+            "network": "dense",
+            "params": {
+                "units": 32,
+                "hidden_layer": 32,
+                "activation": "relu"
+            },
+            "input": [
+                {
+                    "name": "一维态势1"
+                }
+            ],
+            "output": [
+                {
+                    "name": "一维态势1编码器输出"
+                }
+            ]
+        }
+    },
+    "decoders": {
+        "单选动作解码器1": {
+            "type": "dense",
+            "network": "dense",
+            "params": {
+                "units": 2,
+                "hidden_layer": 2,
+                "activation": "relu"
+            },
+            "input": [
+                {
+                    "name": "一维态势1"
+                }
+            ],
+            "output": [
+                {
+                    "name": "解码器1输出"
+                }
+            ]
+        }
+    }
+}

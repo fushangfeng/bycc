@@ -1,0 +1,69 @@
+{
+    "一维态势1": {
+      "type": "1D",
+      "class": ["常规数据"],
+      "features": [
+          "time"
+      ]
+    },
+    "二维态势1": {
+      "type": "2D",
+      "class": ["Fighter"],
+      "feature": [
+        "position",
+        "speed",
+        "health",
+        "fuel_capacity",
+        "ammo",
+        "maneuverability"
+      ],
+      "affiliation": "Friendly",
+      "max_num": 10
+    },
+    "二维态势2": {
+      "type": "2D",
+      "class": ["bomber", "reconnaissance"],
+      "feature": [
+        "position",
+        "speed",
+        "health",
+        "fuel_capacity",
+        "bomb_load",
+        "range",
+        "sensor_range",
+        "stealth"
+      ],
+      "max_num": 10,
+      "affiliation": "Enemy",
+      "filters": [
+        {
+          "type": "AND",
+          "conditions": [
+            {"feature": "health", "operation": ">", "value": 50},
+            {"feature": "ammo", "operation": ">", "value": 10}
+          ]
+        },
+        {
+          "type": "OR",
+          "conditions": [
+            {"feature": "position", "operation": "in", "value": ["area1", "area2"]},
+            {"feature": "stealth", "operation": "=", "value": true}
+          ]
+        }
+      ]
+    },
+    "空间态势1":{
+      "type": "spatial",
+      "class": ["2Dspatial"],
+      "features": [
+        "2Dposition"
+      ]
+    },
+    "空间态势2":{
+      "type": "spatial",
+      "class": ["3Dspatial"],
+      "features": [
+        "3Dposition"
+      ]
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "common": {
+        "type": "1D",
+        "class": [
+            "CommonInfo"
+        ],
+        "feature": [
+            "sim_time"
+        ],
+        "side": "Friendly"
+    },
+    "my_fighter": {
+        "type": "2D",
+        "class": [
+            "Fighter"
+        ],
+        "feature": [
+            "position",
+            "speed"
+        ],
+        "side": "Friendly",
+        "max_num": 8,
+        "filters": [
+            {
+                "type": "AND",
+                "conditions": [
+                    {
+                        "feature": "speed",
+                        "operation": ">",
+                        "value": 200
+                    }
+                ]
+            }
+        ]
+    },
+    "my_awacs": {
+        "type": "2D",
+        "class": [
+            "AWACS"
+        ],
+        "feature": [
+            "position",
+            "speed"
+        ],
+        "max_num": 1,
+        "side": "Friendly"
+    },
+    "enemy_units": {
+        "type": "2D",
+        "class": [
+            "Fighter",
+            "AWACS"
+        ],
+        "feature": [
+            "position",
+            "speed"
+        ],
+        "side": "Enemy",
+        "max_num": 8
+    }
+}

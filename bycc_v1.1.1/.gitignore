@@ -1,0 +1,24 @@
+.vscode/
+*.pyc
+*.log
+scheduler*
+__pycache__/
+*.cpp
+
+models/
+drill/
+.idea/
+
+replays/
+
+# mac ignore
+*.xml
+*.iml
+.DS_Store
+*/.ipynb_checkpoints
+.ipynb_checkpoints
+
+*/bak/
+/bycc/extend/dev/
+/bycc/bak/
+/data/

@@ -1,0 +1,262 @@
+{
+    "encoders": {
+        "一维态势编码器1": {
+            "type": "1D_encoder",
+            "network": "common_encoder",
+            "params": {
+                "hidden_layer_sizes": [
+                    256,
+                    128
+                ]
+            },
+            "input": [
+                {
+                    "name": "common"
+                }
+            ],
+            "output": [
+                {
+                    "name": "一维态势1编码器输出"
+                },
+                {
+                    "name": "一维态势1编码器输出2"
+                }
+            ]
+        },
+        "二维态势编码器1": {
+            "type": "2D_encoder",
+            "network": "entity_encoder",
+            "params": {
+                "hidden_layer_sizes": [
+                    256,
+                    128
+                ]
+            },
+            "input": [
+                {
+                    "name": "my_units"
+                }
+            ],
+            "output": [
+                {
+                    "name": "二维态势1编码器输出"
+                },
+                {
+                    "name": "二维态势1编码器输出2"
+                }
+            ]
+        },
+        "二维态势编码器2": {
+            "type": "2D_encoder",
+            "network": "entity_encoder",
+            "params": {
+                "hidden_layer_sizes": [
+                    256,
+                    128
+                ]
+            },
+            "input": [
+                {
+                    "name": "en_units"
+                }
+            ],
+            "output": [
+                {
+                    "name": "二维态势2编码器输出"
+                },
+                {
+                    "name": "二维态势2编码器输出2"
+                }
+            ]
+        },
+        "二维态势编码器3": {
+            "type": "2D_encoder",
+            "network": "spatial_encoder",
+            "params": {
+                "hidden_layer_sizes": [
+                    256,
+                    128
+                ],
+                "projected_channel_num": 32,
+                "output_size": 32
+            },
+            "input": [
+                {
+                    "name": "mini_map"
+                }
+            ],
+            "output": [
+                {
+                    "name": "二维态势3编码器输出"
+                },
+                {
+                    "name": "二维态势3编码器输出2"
+                }
+            ]
+        }
+    },
+    "aggregators": {
+        "聚合器1": {
+            "type": "aggregator",
+            "network": "gru",
+            "params": {
+                "hidden_layer_sizes": [512, 256],
+                "state_size": 256,
+                "output_size": 512,
+                "seq_len": 1
+            },
+            "input": [
+                {
+                    "name": "一维态势1编码器输出"
+                },
+                {
+                    "name": "二维态势1编码器输出"
+                },
+                {
+                    "name": "二维态势2编码器输出"
+                },
+                {
+                    "name": "二维态势3编码器输出"
+                }
+            ],
+            "output": [
+                {
+                    "name": "聚合器1输出"
+                }
+            ]
+        }
+    },
+    "decoders": {
+        "单选解码器1": {
+            "type": "single_selective_decoder",
+            "network": "single_selective_decoder",
+            "params": {
+                "attention_size": 64
+            },
+            "input": [
+                {
+                    "name": "聚合器1输出"
+                },
+                {
+                    "name": "二维态势1编码器输出2"
+                }
+            ],
+            "output": [
+                {
+                    "name": "my_unit"
+                },
+                {
+                    "name": "my_unit_embedding"
+                }
+            ]
+        },
+        "单选解码器2": {
+            "type": "single_selective_decoder",
+            "network": "single_selective_decoder",
+            "params": {
+                "attention_size": 64
+            },
+            "input": [
+                {
+                    "name": "聚合器1输出"
+                },
+                {
+                    "name": "二维态势2编码器输出2"
+                }
+            ],
+            "output": [
+                {
+                    "name": "target_unit"
+                },
+                {
+                    "name": "target_unit_embedding"
+                }
+            ]
+        },
+        "分类解码器1": {
+            "type": "categorical_decoder",
+            "network": "categorical_decoder",
+            "params": {
+                "n": 2,
+                "hidden_layer_sizes": [512, 256]
+            },
+            "input": [
+                {
+                    "name": "聚合器1输出"
+                }
+            ],
+            "output": [
+                {
+                    "name": "meta_action"
+                },
+                {
+                    "name": "meta_action_embedding"
+                }
+            ]
+        },
+        "分类解码器2": {
+            "type": "categorical_decoder",
+            "network": "categorical_decoder",
+            "params": {
+                "n": 32,
+                "hidden_layer_sizes": [512, 256]
+            },
+            "input": [
+                {
+                    "name": "聚合器1输出"
+                }
+            ],
+            "output": [
+                {
+                    "name": "pos_x"
+                },
+                {
+                    "name": "pos_x_embedding"
+                }
+            ]
+        },
+        "分类解码器3": {
+            "type": "categorical_decoder",
+            "network": "categorical_decoder",
+            "params": {
+                "n": 32,
+                "hidden_layer_sizes": [512, 256]
+            },
+            "input": [
+                {
+                    "name": "聚合器1输出"
+                }
+            ],
+            "output": [
+                {
+
+                    "name": "pos_y"
+                },
+                {
+                    "name": "pos_y_embedding"
+                }
+            ]
+        }
+    },
+    "value_functions": {
+        "状态价值网络": {
+            "type": "value",
+            "network": "value",
+            "params": {
+                "hidden_layer_sizes": [64, 32]
+            },
+            "input": [
+                {
+                    "name": "聚合器1输出"
+                }
+            ],
+            "output": [
+                {
+                    "name": "value"
+                }
+            ]
+        }
+    }
+}
+
+

@@ -1,0 +1,126 @@
+{
+    "final_reward": {
+        "my_fighter": [
+            {
+                "type": "plus",
+                "class": "Fighter",
+                "side": "Friendly",
+                "attribute": "alive",
+                "base_reward": 0,
+                "coefficient": 3
+            }
+        ],
+        "my_bomber_num_diff": [
+            {
+                "type": "minus",
+                "class": "Bomber",
+                "side": "Friendly",
+                "attribute": "alive",
+                "base_reward": 0,
+                "coefficient": 1
+            }
+        ],
+        "enemy_units": [
+            {
+                "type": "minus",
+                "class": "Fighter",
+                "side": "Enemy",
+                "attribute": "alive",
+                "base_reward": 0,
+                "coefficient": 1
+            }
+        ]
+    },
+    "immediate_reward": {
+        "my_fighter": [
+            {
+                "type": "minus",
+                "class": "Fighter",
+                "side": "Friendly",
+                "attribute": "alive",
+                "base_reward": 0,
+                "coefficient": 0.1
+            }
+        ],
+        "my_fighter_reward_func": [
+            {
+                "reward_function": "fighter_reward_func",
+                "params": {
+                    "xxx": 123,
+                    "xxxx": 456
+                }
+            }
+        ],
+        "my_bomber": [
+            {
+                "type": "minus",
+                "class": "Bomber",
+                "side": "Friendly",
+                "attribute": "alive",
+                "base_reward": 0,
+                "coefficient": 0.1
+            }
+        ],
+        "enemy_fighter": [
+            {
+                "type": "plus",
+                "class": "Fighter",
+                "side": "Enemy",
+                "attribute": "alive",
+                "base_reward": 0,
+                "coefficient": 0.1
+            }
+        ],
+        "enemy_bomber": [
+            {
+                "type": "plus",
+                "class": "Bomber",
+                "side": "Enemy",
+                "attribute": "alive",
+                "base_reward": 0,
+                "coefficient": 0.05
+            }
+        ]
+    },
+    "stage_reward": {
+        "stage1": {
+            "stage": [
+                [
+                    {
+                        "class": "GroundDefense",
+                        "side": "Enemy",
+                        "attribute": "alive",
+                        "condition": "<=",
+                        "value": 0
+                    },
+                    {
+                        "class": "Fighter",
+                        "side": "Friendly",
+                        "attribute": "alive",
+                        "condition": ">",
+                        "value": 0
+                    }
+                ],
+                [
+                    {
+                        "class": "CommonInfo",
+                        "side": "Friendly",
+                        "attribute": "sim_time",
+                        "operator": ">",
+                        "value": 300
+                    }
+                ]
+            ],
+            "reward_items": [
+                {
+                    "type": "plus",
+                    "class": "Fighter",
+                    "side": "Enemy",
+                    "attribute": "alive",
+                    "base_reward": 0,
+                    "coefficient": 2
+                }
+            ]
+        }
+    }
+}

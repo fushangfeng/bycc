@@ -1,0 +1,12 @@
+django
+loguru
+djangorestframework
+mysql-connector-python
+toml
+pytoml
+numpy
+StringGenerator
+requests
+pathlib
+scipy
+dill

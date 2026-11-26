@@ -1,0 +1,10 @@
+blue_airport_num:
+  class: ty_unit_airport
+  filters:
+  - '["blue", "alive"]'
+  type: count
+blue_cmd_center_num:
+  class: ty_unit_command_center
+  filters:
+  - '["blue", "alive"]'
+  type: count

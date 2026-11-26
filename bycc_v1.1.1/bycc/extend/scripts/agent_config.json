@@ -1,0 +1,100 @@
+{
+  "env_config" : {
+    "env_type" : "",
+    "resource_path" : "",
+    "image_repo" : "",
+    "scenario" : "",
+    "env_interface" : {
+      "repository_url" : "",
+      "path" : "",
+      "class" : ""
+    },
+    "git_config" : {
+      "auth" : "",
+      "token" : ""
+    },
+    "database_info" : {
+      "db_name" : "",
+      "user" : "",
+      "password" : "",
+      "host" : "",
+      "port" : ""
+    }
+  },
+  "player_config" : [
+    {
+      "player_type" : "behavior_tree",
+      "scenario" : "{\"enemy\":[\"2\"],\"spacing\":20,\"spacing_unit\":\"秒\",\"start\":0,\"end\":200,\"unit\":\"秒\",\"side\":\"1\",\"duration\":200,\"participants\":[{\"name\":\"player1\",\"side\":\"1\",\"side_index\":\"1\",\"enemies\":[{\"name\":\"player2\",\"side\":\"2\"}],\"friends\":[{\"name\":\"player1\",\"side\":\"1\"}],\"forces\":[{\"name\":\"红方空中指挥所1\",\"id\":\"RFHQ\",\"type\":\"指挥所\",\"location\":\"22.10, 119.50\",\"forces\":[{\"name\":\"第1歼击旅\",\"id\":\"1RFB\",\"type\":\"空中部队\",\"location\":\"23.10, 119.50\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"战斗机\",\"entity\":{\"type\":\"J-10C\",\"num\":\"24\"}},{\"category\":\"弹药\",\"subcategory\":\"导弹\",\"entity\":{\"type\":\"空对空导弹\",\"num\":\"80\"}}],\"forces\":[]},{\"name\":\"第2空中联队\",\"id\":\"2RAW\",\"type\":\"空中部队\",\"location\":\"24.20, 129.60\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"轰炸机\",\"entity\":{\"type\":\"H-6K\",\"num\":\"10\"}},{\"category\":\"弹药\",\"subcategory\":\"炸弹\",\"entity\":{\"type\":\"精确制导炸弹\",\"num\":\"50\"}}],\"forces\":[]}],\"equipments\":[]},{\"name\":\"红方空中指挥所2\",\"id\":\"RFHQ1\",\"type\":\"指挥所\",\"location\":\"24.10, 119.50\",\"forces\":[{\"name\":\"第1歼击旅\",\"id\":\"1RFB1\",\"type\":\"空中部队\",\"location\":\"24.10, 115.50\",\"forces\":[{\"name\":\"歼击旅\",\"id\":\"1RFB11\",\"type\":\"空中部队\",\"location\":\"24.10, 123.50\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"战斗机\",\"entity\":{\"type\":\"J-10C\",\"num\":\"24\"}},{\"category\":\"弹药\",\"subcategory\":\"导弹\",\"entity\":{\"type\":\"空对空导弹\",\"num\":\"80\"}}],\"forces\":[]}],\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"战斗机\",\"entity\":{\"type\":\"J-10C\",\"num\":\"24\"}},{\"category\":\"弹药\",\"subcategory\":\"导弹\",\"entity\":{\"type\":\"空对空导弹\",\"num\":\"80\"}}]},{\"name\":\"第2空中联队\",\"id\":\"2RAW1\",\"type\":\"空中部队\",\"location\":\"19.20, 120.60\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"轰炸机\",\"entity\":{\"type\":\"H-6K\",\"num\":\"10\"}},{\"category\":\"弹药\",\"subcategory\":\"炸弹\",\"entity\":{\"type\":\"精确制导炸弹\",\"num\":\"50\"}}],\"forces\":[]}],\"equipments\":[]}]},{\"name\":\"player2\",\"side\":\"2\",\"side_index\":\"2\",\"enemies\":[{\"name\":\"player1\",\"side\":\"1\"}],\"friends\":[{\"name\":\"player2\",\"side\":\"2\"}],\"forces\":[{\"name\":\"蓝方空中指挥所\",\"id\":\"BFHQ\",\"type\":\"指挥所\",\"location\":\"25.10, 120.50\",\"forces\":[{\"name\":\"第1歼击旅\",\"id\":\"1BFB\",\"type\":\"空中部队\",\"location\":\"25.10, 120.50\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"战斗机\",\"entity\":{\"type\":\"F-16\",\"num\":\"30\"}},{\"category\":\"弹药\",\"subcategory\":\"导弹\",\"entity\":{\"type\":\"空对空导弹\",\"num\":\"100\"}}],\"forces\":[]},{\"name\":\"第2空中联队\",\"id\":\"2BAW\",\"type\":\"空中部队\",\"location\":\"25.20, 120.60\",\"equipments\":[{\"category\":\"飞机\",\"subcategory\":\"轰炸机\",\"entity\":{\"type\":\"B-52\",\"num\":\"8\"}},{\"category\":\"弹药\",\"subcategory\":\"炸弹\",\"entity\":{\"type\":\"精确制导炸弹\",\"num\":\"60\"}}],\"forces\":[]}],\"equipments\":[]},{\"name\":\"蓝方海面指挥所\",\"id\":\"BFHQ-b\",\"type\":\"指挥所\",\"location\":\"25.10, 120.50\",\"forces\":[{\"name\":\"第一舰队\",\"id\":\"1BFB-b\",\"type\":\"海面部队\",\"location\":\"25.10, 120.50\",\"equipments\":[{\"category\":\"核艇\",\"subcategory\":\"核潜艇\",\"entity\":{\"type\":\"B-16\",\"num\":\"100\"}}],\"forces\":[]}],\"equipments\":[]}]}]}",
+      "side_map" : {
+        "self" : "red",
+        "enemy" : [
+          "blue"
+        ]
+      },
+      "player_name" : "hcj_test",
+      "nodes" : {
+        "children" : [
+          {
+            "data" : {
+              "class" : "AirplaneNumNotZero",
+              "description" : "some text",
+              "id" : 89,
+              "params" : {
+                "airport_index" : 0
+              },
+              "path" : "airplane_num_not_zero.py",
+              "repository_url" : "modules/bt_conditions_modify"
+            },
+            "id" : "4ff999d6-2710-4183-9e35-d9b59e6e6691",
+            "name" : "机场飞机数量不为0条件节点",
+            "position" : {
+              "x" : 165,
+              "y" : 450
+            },
+            "type" : "condition"
+          },
+          {
+            "data" : {
+              "class" : "RuleAction",
+              "description" : "",
+              "id" : 100,
+              "instance_name" : "空规则节点_test",
+              "path" : "rule_action.py",
+              "repository_url" : "modules/bt_actions"
+            },
+            "id" : "5c34182c-dd2b-49aa-96b1-4a40c7a38033",
+            "name" : "空规则节点",
+            "position" : {
+              "x" : 360,
+              "y" : 450
+            },
+            "type" : "behavior"
+          }
+        ],
+        "data" : {
+          "class" : "",
+          "description" : "从第一个子节点开始执行，若成功，则结束执行；若失败，则继续执行下一个子节点，直至某个节点成功，则不再执行后续子节点",
+          "id" : 2,
+          "path" : "",
+          "repository_url" : ""
+        },
+        "id" : "b8920f09-1cc2-4f34-8795-cb50f8e5aec8",
+        "name" : "",
+        "position" : {
+          "x" : 345,
+          "y" : 375
+        },
+        "type" : "select"
+      }
+    }
+  ],
+  "train_config" : {
+    "train_player_names" : null,
+    "opponents" : null,
+    "train_type" : "",
+    "train_task_id" : "",
+    "params" : {
+      "env_num" : 0
+    }
+  }
+}

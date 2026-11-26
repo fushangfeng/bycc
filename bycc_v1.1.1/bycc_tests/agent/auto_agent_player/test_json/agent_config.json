@@ -1,0 +1,867 @@
+{
+    "agent_config": [
+        {
+            "agent_type": "rl",
+            "scenario": "xxxx",
+            "side_map": {
+                "self": "red",
+                "enemy": [
+                    "blue"
+                ]
+            },
+            "agent": {
+                "agent_name": "red_agent",
+                "model_name": "red_model",
+                "state": {
+                    "common": {
+                        "type": "1D",
+                        "class": [
+                            "CommonInfo"
+                        ],
+                        "features": [
+                            "sim_time"
+                        ],
+                        "side": "Friendly"
+                    },
+                    "my_fighter": {
+                        "type": "2D",
+                        "class": [
+                            "Fighter"
+                        ],
+                        "feature": [
+                            "position",
+                            "speed"
+                        ],
+                        "side": "Friendly",
+                        "max_num": 8,
+                        "filters": [
+                            {
+                                "type": "AND",
+                                "conditions": [
+                                    {
+                                        "feature": "health",
+                                        "operation": ">",
+                                        "value": 50
+                                    },
+                                    {
+                                        "feature": "ammo",
+                                        "operation": ">",
+                                        "value": 10
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "my_awacs": {
+                        "type": "2D",
+                        "class": [
+                            "AWACS"
+                        ],
+                        "feature": [
+                            "position",
+                            "speed"
+                        ],
+                        "max_num": 1,
+                        "side": "Friendly"
+                    },
+                    "enemy_units": {
+                        "type": "2D",
+                        "class": [
+                            "Fighter",
+                            "AWACS"
+                        ],
+                        "feature": [
+                            "position",
+                            "speed"
+                        ],
+                        "side": "Enemy",
+                        "max_num": 8,
+                        "filters": [
+                            {
+                                "type": "AND",
+                                "conditions": [
+                                    {
+                                        "feature": "health",
+                                        "operation": ">",
+                                        "value": 50
+                                    },
+                                    {
+                                        "feature": "ammo",
+                                        "operation": ">",
+                                        "value": 10
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "network": {
+                    "encoders": {
+                        "一维态势编码器1": {
+                            "type": "1D_encoder",
+                            "network": "common_encoder",
+                            "params": {
+                                "hidden_layer_sizes": [
+                                    256,
+                                    128
+                                ]
+                            },
+                            "input": [
+                                {
+                                    "name": "common"
+                                }
+                            ],
+                            "output": [
+                                {
+                                    "name": "一维态势编码器1输出"
+                                },
+                                {
+                                    "name": "一维态势编码器1输出2"
+                                }
+                            ]
+                        },
+                        "二维态势编码器1": {
+                            "type": "2D_encoder",
+                            "network": "entity_encoder",
+                            "params": {
+                                "hidden_layer_sizes": [
+                                    256,
+                                    128
+                                ]
+                            },
+                            "input": [
+                                {
+                                    "name": "my_fighter"
+                                }
+                            ],
+                            "output": [
+                                {
+                                    "name": "二维态势编码器1输出"
+                                },
+                                {
+                                    "name": "二维态势编码器1输出2"
+                                }
+                            ]
+                        },
+                        "二维态势编码器2": {
+                            "type": "2D_encoder",
+                            "network": "entity_encoder",
+                            "params": {
+                                "hidden_layer_sizes": [
+                                    256,
+                                    128
+                                ]
+                            },
+                            "input": [
+                                {
+                                    "name": "my_awacs"
+                                }
+                            ],
+                            "output": [
+                                {
+                                    "name": "二维态势编码器2输出"
+                                },
+                                {
+                                    "name": "二维态势编码器2输出2"
+                                }
+                            ]
+                        },
+                        "二维态势编码器3": {
+                            "type": "2D_encoder",
+                            "network": "entity_encoder",
+                            "params": {
+                                "hidden_layer_sizes": [
+                                    256,
+                                    128
+                                ]
+                            },
+                            "input": [
+                                {
+                                    "name": "enemy_units"
+                                }
+                            ],
+                            "output": [
+                                {
+                                    "name": "二维态势编码器3输出"
+                                },
+                                {
+                                    "name": "二维态势编码器3输出2"
+                                }
+                            ]
+                        }
+                    },
+                    "aggregators": {
+                        "聚合器1": {
+                            "type": "aggregator",
+                            "network": "gru",
+                            "params": {
+                                "hidden_layer_sizes": [
+                                    512,
+                                    256
+                                ],
+                                "state_size": 256,
+                                "output_size": 512,
+                                "seq_len": 1
+                            },
+                            "input": [
+                                {
+                                    "name": "一维态势编码器1输出"
+                                },
+                                {
+                                    "name": "二维态势编码器1输出"
+                                },
+                                {
+                                    "name": "二维态势编码器2输出"
+                                },
+                                {
+                                    "name": "二维态势编码器3输出"
+                                }
+                            ],
+                            "output": [
+                                {
+                                    "name": "聚合器1输出"
+                                }
+                            ]
+                        }
+                    },
+                    "decoders": {
+                        "单选解码器1": {
+                            "type": "single_selective_decoder",
+                            "network": "single_selective_decoder",
+                            "params": {
+                                "attention_size": 64
+                            },
+                            "input": [
+                                {
+                                    "name": "聚合器1输出"
+                                },
+                                {
+                                    "name": "二维态势编码器1输出2"
+                                }
+                            ],
+                            "output": [
+                                {
+                                    "name": "my_fighter"
+                                },
+                                {
+                                    "name": "my_fighter_embedding"
+                                }
+                            ]
+                        },
+                        "单选解码器2": {
+                            "type": "single_selective_decoder",
+                            "network": "single_selective_decoder",
+                            "params": {
+                                "attention_size": 64
+                            },
+                            "input": [
+                                {
+                                    "name": "聚合器1输出"
+                                },
+                                {
+                                    "name": "二维态势编码器2输出2"
+                                }
+                            ],
+                            "output": [
+                                {
+                                    "name": "my_awacs"
+                                },
+                                {
+                                    "name": "target_unit_embedding"
+                                }
+                            ]
+                        },
+                        "单选解码器3": {
+                            "type": "single_selective_decoder",
+                            "network": "single_selective_decoder",
+                            "params": {
+                                "attention_size": 64
+                            },
+                            "input": [
+                                {
+                                    "name": "聚合器1输出"
+                                },
+                                {
+                                    "name": "二维态势编码器3输出2"
+                                }
+                            ],
+                            "output": [
+                                {
+                                    "name": "target_unit"
+                                },
+                                {
+                                    "name": "target_unit_embedding"
+                                }
+                            ]
+                        },
+                        "分类解码器1": {
+                            "type": "categorical_decoder",
+                            "network": "categorical_decoder",
+                            "params": {
+                                "n": 2,
+                                "hidden_layer_sizes": [
+                                    512,
+                                    256
+                                ]
+                            },
+                            "input": [
+                                {
+                                    "name": "聚合器1输出"
+                                }
+                            ],
+                            "output": [
+                                {
+                                    "name": "meta_action_1"
+                                },
+                                {
+                                    "name": "meta_action_1_embedding"
+                                }
+                            ]
+                        },
+                        "分类解码器2": {
+                            "type": "categorical_decoder",
+                            "network": "categorical_decoder",
+                            "params": {
+                                "n": 32,
+                                "hidden_layer_sizes": [
+                                    512,
+                                    256
+                                ]
+                            },
+                            "input": [
+                                {
+                                    "name": "聚合器1输出"
+                                }
+                            ],
+                            "output": [
+                                {
+                                    "name": "pos_x_1"
+                                },
+                                {
+                                    "name": "pos_x_1_embedding"
+                                }
+                            ]
+                        },
+                        "分类解码器3": {
+                            "type": "categorical_decoder",
+                            "network": "categorical_decoder",
+                            "params": {
+                                "n": 32,
+                                "hidden_layer_sizes": [
+                                    512,
+                                    256
+                                ]
+                            },
+                            "input": [
+                                {
+                                    "name": "聚合器1输出"
+                                }
+                            ],
+                            "output": [
+                                {
+                                    "name": "pos_y_1"
+                                },
+                                {
+                                    "name": "pos_y_1_embedding"
+                                }
+                            ]
+                        },
+                        "分类解码器4": {
+                            "type": "categorical_decoder",
+                            "network": "categorical_decoder",
+                            "params": {
+                                "n": 32,
+                                "hidden_layer_sizes": [
+                                    512,
+                                    256
+                                ]
+                            },
+                            "input": [
+                                {
+                                    "name": "聚合器1输出"
+                                }
+                            ],
+                            "output": [
+                                {
+                                    "name": "meta_action_2"
+                                },
+                                {
+                                    "name": "meta_action_2_embedding"
+                                }
+                            ]
+                        },
+                        "分类解码器5": {
+                            "type": "categorical_decoder",
+                            "network": "categorical_decoder",
+                            "params": {
+                                "n": 32,
+                                "hidden_layer_sizes": [
+                                    512,
+                                    256
+                                ]
+                            },
+                            "input": [
+                                {
+                                    "name": "聚合器1输出"
+                                }
+                            ],
+                            "output": [
+                                {
+                                    "name": "pos_x_2"
+                                },
+                                {
+                                    "name": "pos_x_2_embedding"
+                                }
+                            ]
+                        },
+                        "分类解码器6": {
+                            "type": "categorical_decoder",
+                            "network": "categorical_decoder",
+                            "params": {
+                                "n": 32,
+                                "hidden_layer_sizes": [
+                                    512,
+                                    256
+                                ]
+                            },
+                            "input": [
+                                {
+                                    "name": "聚合器1输出"
+                                }
+                            ],
+                            "output": [
+                                {
+                                    "name": "pos_y_2"
+                                },
+                                {
+                                    "name": "pos_y_2_embedding"
+                                }
+                            ]
+                        }
+                    },
+                    "value_functions": {
+                        "状态价值网络": {
+                            "type": "value",
+                            "network": "value",
+                            "params": {
+                                "hidden_layer_sizes": [
+                                    64,
+                                    32
+                                ]
+                            },
+                            "input": [
+                                {
+                                    "name": "聚合器1输出"
+                                }
+                            ],
+                            "output": [
+                                {
+                                    "name": "value"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "action": {
+                    "group1": {
+                        "meta_action_1": {
+                            "action_type": "predicate",
+                            "action_category": "categorical",
+                            "input": {
+                                "name": "meta_action_1"
+                            },
+                            "missions": [
+                                {
+                                    "name": "空对空打击",
+                                    "type": "A2AAttack",
+                                    "params": [
+                                        {
+                                            "param": "unit_id_list",
+                                            "is_related": true,
+                                            "value": "my_fighter"
+                                        },
+                                        {
+                                            "param": "target_id_list",
+                                            "is_related": true,
+                                            "value": "target_unit"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "空中巡逻",
+                                    "type": "AirPatrol",
+                                    "params": [
+                                        {
+                                            "param": "unit_id_list",
+                                            "is_related": true,
+                                            "value": "my_fighter"
+                                        },
+                                        {
+                                            "param": "position_x",
+                                            "is_related": true,
+                                            "value": "pos_x"
+                                        },
+                                        {
+                                            "param": "position_y",
+                                            "is_related": true,
+                                            "value": "pos_y"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "my_fighter": {
+                            "action_type": "subject",
+                            "action_category": "single_selective",
+                            "input": {
+                                "name": "my_fighter"
+                            },
+                            "entity_selection": "my_fighter"
+                        },
+                        "target_unit": {
+                            "action_type": "object",
+                            "action_category": "single_selective",
+                            "input": {
+                                "name": "target_unit"
+                            },
+                            "entity_selection": "enemy_units"
+                        },
+                        "pos_x_1": {
+                            "action_type": "parameter",
+                            "action_category": "categorical",
+                            "category_num": 10,
+                            "input": {
+                                "name": "pos_x_1"
+                            },
+                            "reference_objects": [
+                                "空中巡逻"
+                            ]
+                        },
+                        "pos_y_1": {
+                            "action_type": "parameter",
+                            "action_category": "categorical",
+                            "category_num": 10,
+                            "input": {
+                                "name": "pos_y_1"
+                            },
+                            "reference_objects": [
+                                "空中巡逻"
+                            ]
+                        }
+                    },
+                    "group2": {
+                        "meta_action_2": {
+                            "action_type": "predicate",
+                            "action_category": "categorical",
+                            "input": {
+                                "name": "meta_action_2"
+                            },
+                            "missions": [
+                                {
+                                    "name": "空中巡逻",
+                                    "type": "AirPatrol",
+                                    "params": [
+                                        {
+                                            "param": "unit_id_list",
+                                            "is_related": true,
+                                            "value": "my_fighter"
+                                        },
+                                        {
+                                            "param": "position_x",
+                                            "is_related": true,
+                                            "value": "pos_x"
+                                        },
+                                        {
+                                            "param": "position_y",
+                                            "is_related": true,
+                                            "value": "pos_y"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "my_awacs": {
+                            "action_type": "subject",
+                            "action_category": "single_selective",
+                            "input": {
+                                "name": "my_awacs"
+                            },
+                            "entity_selection": "my_awacs"
+                        },
+                        "pos_x_2": {
+                            "action_type": "parameter",
+                            "action_category": "categorical",
+                            "category_num": 10,
+                            "input": {
+                                "name": "pos_x_2"
+                            },
+                            "reference_objects": [
+                                "空中巡逻"
+                            ]
+                        },
+                        "pos_y_2": {
+                            "action_type": "parameter",
+                            "action_category": "categorical",
+                            "category_num": 10,
+                            "input": {
+                                "name": "pos_y_2"
+                            },
+                            "reference_objects": [
+                                "空中巡逻"
+                            ]
+                        }
+                    }
+                },
+                "reward": {
+                    "final_reward": {
+                        "my_fighter": [
+                            {
+                                "type": "plus",
+                                "class": "Fighter",
+                                "side": "Friendly",
+                                "attribute": "alive",
+                                "base_reward": 0,
+                                "coefficient": 3
+                            }
+                        ],
+                        "my_bomber_num_diff": [
+                            {
+                                "type": "minus",
+                                "class": "Bomber",
+                                "side": "Friendly",
+                                "attribute": "alive",
+                                "base_reward": 0,
+                                "coefficient": 1
+                            }
+                        ],
+                        "enemy_units": [
+                            {
+                                "type": "minus",
+                                "class": "Fighter",
+                                "side": "Enemy",
+                                "attribute": "alive",
+                                "base_reward": 0,
+                                "coefficient": 1
+                            }
+                        ],
+                        "enemy_cmd_alive": [
+                            {
+                                "type": "minus",
+                                "class": "CommandCenter",
+                                "side": "Enemy",
+                                "attribute": "alive",
+                                "base_reward": 10,
+                                "coefficient": 1
+                            }
+                        ]
+                    },
+                    "immediate_reward": {
+                        "my_fighter": [
+                            {
+                                "type": "minus",
+                                "class": "Fighter",
+                                "side": "Friendly",
+                                "attribute": "alive",
+                                "base_reward": 0,
+                                "coefficient": 0.1
+                            }
+                        ],
+                        "my_bomber": [
+                            {
+                                "type": "minus",
+                                "class": "Bomber",
+                                "side": "Friendly",
+                                "attribute": "alive",
+                                "base_reward": 0,
+                                "coefficient": 0.1
+                            }
+                        ],
+                        "enemy_fighter": [
+                            {
+                                "type": "plus",
+                                "class": "Fighter",
+                                "side": "Enemy",
+                                "attribute": "alive",
+                                "base_reward": 0,
+                                "coefficient": 0.1
+                            }
+                        ],
+                        "enemy_bomber": [
+                            {
+                                "type": "plus",
+                                "class": "Bomber",
+                                "side": "Enemy",
+                                "attribute": "alive",
+                                "base_reward": 0,
+                                "coefficient": 0.05
+                            }
+                        ],
+                        "enemy_command_center": [
+                            {
+                                "type": "plus",
+                                "class": "CommandCenter",
+                                "side": "Enemy",
+                                "attribute": "alive",
+                                "base_reward": 0,
+                                "coefficient": 2
+                            }
+                        ]
+                    },
+                    "stage_reward": {
+                        "stage1": {
+                            "stage": [
+                                [
+                                    {
+                                        "class": "GroundDefense",
+                                        "side": "Enemy",
+                                        "attribute": "alive",
+                                        "condition": "<=",
+                                        "value": 0
+                                    },
+                                    {
+                                        "class": "Fighter",
+                                        "side": "Friendly",
+                                        "attribute": "alive",
+                                        "condition": ">",
+                                        "value": 0
+                                    }
+                                ],
+                                [
+                                    {
+                                        "class": "CommonInfo",
+                                        "side": "Friendly",
+                                        "attribute": "sim_time",
+                                        "operator": ">",
+                                        "value": 300
+                                    }
+                                ]
+                            ],
+                            "reward_items": [
+                                {
+                                    "type": "plus",
+                                    "class": "Fighter",
+                                    "side": "Enemy",
+                                    "attribute": "alive",
+                                    "base_reward": 0,
+                                    "coefficient": 2
+                                }
+                            ]
+                        }
+                    }
+                },
+                "statistic": {
+                    "enemy_destroyed_frigate_num": {
+                        "type": "count",
+                        "class": [
+                            "Frigate"
+                        ],
+                        "side": "enemy",
+                        "filters": [
+                            {
+                                "type": "OR",
+                                "conditions": [
+                                    {
+                                        "feature": "is_destroyed",
+                                        "operation": "=",
+                                        "value": true
+                                    },
+                                    {
+                                        "feature": "weapon_num",
+                                        "operation": "=",
+                                        "value": 0
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "enemy_airport_num": {
+                        "type": "count",
+                        "class": [
+                            "Airport"
+                        ],
+                        "side": "enemy",
+                        "filters": []
+                    },
+                    "self_alive_airs_num": {
+                        "type": "count",
+                        "class": [
+                            "Fighter",
+                            "Bomber"
+                        ],
+                        "side": "self",
+                        "filters": [
+                            {
+                                "type": "AND",
+                                "conditions": [
+                                    {
+                                        "feature": "health",
+                                        "operation": ">",
+                                        "value": 0
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "self_rest_bomber_weapon_num": {
+                        "type": "sum",
+                        "class": [
+                            "Bomber"
+                        ],
+                        "property": "weapon_num",
+                        "side": "self",
+                        "filters": [
+                            {
+                                "type": "AND",
+                                "conditions": [
+                                    {
+                                        "feature": "health",
+                                        "operation": ">",
+                                        "value": 0
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "self_max_bomber_pos_x": {
+                        "type": "max",
+                        "class": [
+                            "Bomber"
+                        ],
+                        "property": "pos.x",
+                        "side": "self",
+                        "filters": [
+                            {
+                                "type": "AND",
+                                "conditions": [
+                                    {
+                                        "feature": "health",
+                                        "operation": ">",
+                                        "value": 0
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "algo": {
+                    "algo_type": "ppo",
+                    "xxx": "xxx"
+                },
+                "training": {}
+            }
+        },
+        {
+            "agent_type": "rule",
+            "scenario": "xxxx",
+            "side_map": {
+                "self": "blue",
+                "enemy": [
+                    "red"
+                ]
+            },
+            "agent": {
+                "rule_type": "behavior_tree"
+            }
+        }
+    ]
+}

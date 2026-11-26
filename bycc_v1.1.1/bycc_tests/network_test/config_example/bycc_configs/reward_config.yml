@@ -1,0 +1,76 @@
+final_reward:
+  enemy_cmd_alive:
+  - attribute: alive
+    base_reward: 10
+    class: ty_unit_command_center
+    coefficient: 1
+    filters:
+    - '["enemy"]'
+    type: minus
+  enemy_units:
+  - attribute: alive
+    base_reward: 0
+    class: ty_unit_fighter
+    coefficient: 1
+    filters:
+    - '["enemy"]'
+    type: minus
+  my_fighter:
+  - attribute: alive
+    base_reward: 0
+    class: ty_unit_fighter
+    coefficient: 3
+    filters:
+    - '["self", "alive", "no_fuel"]'
+    - '["self", "alive", "no_ammo"]'
+    type: plus
+immediate_reward:
+  enemy_bomber:
+  - attribute: alive
+    base_reward: 0
+    class: ty_unit_bomber
+    coefficient: 0.05
+    filters:
+    - '["enemy"]'
+    type: plus
+  enemy_command_center:
+  - attribute: alive
+    base_reward: 0
+    class: ty_unit_command_center
+    coefficient: 2
+    filters:
+    - '["enemy"]'
+    type: plus
+  enemy_fighter:
+  - attribute: alive
+    base_reward: 0
+    class: ty_unit_fighter
+    coefficient: 0.1
+    filters:
+    - '["enemy"]'
+    type: plus
+  my_bomber:
+  - attribute: alive
+    base_reward: 0
+    class: ty_unit_bomber
+    coefficient: 0.1
+    filters:
+    - '["enemy"]'
+    type: minus
+  my_fighter:
+  - attribute: alive
+    base_reward: 0
+    class: ty_unit_fighter
+    coefficient: 0.1
+    filters:
+    - '["self"]'
+    type: minus
+stage_reward:
+  stage1:
+    stage: !!set
+      ? '[{"type": "count", "class": "ground_defense", "attribute": "alive", "operator":
+        "<=", "value": 0, "filters": ["[\"enemy\"]"]}, {"type": "count", "class":
+        "fighter", "attribute": "alive", "operator": ">", "value": 0, "filters": ["[\"self\"]"]}]'
+      : null
+      '[{"type": "time", "operator": ">", "value": 300}]': null
+    type: plus

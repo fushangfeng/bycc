@@ -1,0 +1,369 @@
+{
+  "scenarios": [
+    {
+      "scenario_name": "Atari想定_x86",
+      "env_interface": {
+        "repository_url": "http://11.1.0.2:2180/atari/env_interface_atari_x86.git",
+        "path": "config.py",
+        "class": "config"
+      },
+      "resource_path": "",
+      "image_repo": "123",
+      "extend": {
+        "extend_id": "731",
+        "extend_info": {
+          "extend_sub_info": {
+            "name": "扩展字段子信息名称",
+            "sub_info": "子信息"
+          },
+          "name": "扩展字段信息"
+        },
+        "extend_name": "想定-扩展字段名称"
+      },
+      "duration": 1000000,
+      "probability": 1,
+      "player_config": [
+        {
+          "player_type": "rl",
+          "current_seat": "",
+          "player_name": "Atari_agent3",
+          "model_name": "Atari_agent3_model",
+          "is_train": "True",
+          "save_path": "EwnUjAUuBv",
+          "scenario_adaption": {
+            "side": "atari",
+            "enemy": [
+              "blue_side"
+            ],
+            "troop_info": [
+              {
+                "enemies": [
+                  {
+                    "name": "蓝方",
+                    "side": "blue_side"
+                  }
+                ],
+                "forces": [],
+                "friends": [],
+                "name": "Atari",
+                "side": "atari",
+                "side_index": "1"
+              },
+              {
+                "enemies": [
+                  {
+                    "name": "Atari",
+                    "side": "atari"
+                  }
+                ],
+                "forces": [],
+                "friends": [],
+                "name": "蓝方",
+                "side": "blue_side",
+                "side_index": "2"
+              }
+            ],
+            "scene_predefined_data": null,
+            "decision_interval": {
+              "time": 0.1,
+              "unit": "秒"
+            },
+            "runtime_period": {
+              "unit": "秒"
+            },
+            "auxiliary_rules": null,
+            "reward": [
+              {
+                "class": "AtariSignReward",
+                "description": "",
+                "id": 88,
+                "name": "Atari Sign奖励",
+                "parameters_template": "{\"instance_name\":\"sign\",\"weight\":1,\"entity\":\"Fighter1\",\"feature\":\"速度\",\"params\":{}}",
+                "path": "AtariSignReward.py",
+                "repo_id": 42,
+                "repository_url": "http://11.1.0.2:2180/atari/atari_rewards.git"
+              }
+            ],
+            "statistics": []
+          },
+          "state": {
+            "5cdocTBpiO": {
+              "features": [
+                "chennel1",
+                "chennel2",
+                "chennel3",
+                "chennel4"
+              ],
+              "index_name": [
+                "AtariSpatialInfo"
+              ],
+              "type": "spatial"
+            }
+          },
+          "network": {
+            "aggregators": {
+              "x4xCdVKiuv": {
+                "input": [
+                  {
+                    "name": "DZPeVwo8OZ_feature"
+                  }
+                ],
+                "network": "dense_aggregator",
+                "output": [
+                  {
+                    "name": "x4xCdVKiuv_feature"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ],
+                  "output_layer_neuron": 256
+                },
+                "type": "aggregator"
+              }
+            },
+            "decoders": {
+              "JX6ZBYrZjY": {
+                "input": [
+                  {
+                    "name": "x4xCdVKiuv_feature"
+                  }
+                ],
+                "network": "categorical_decoder",
+                "output": [
+                  {
+                    "name": "JX6ZBYrZjY_category"
+                  },
+                  {
+                    "name": "JX6ZBYrZjY_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              },
+              "dL3OMEn41e": {
+                "input": [
+                  {
+                    "name": "x4xCdVKiuv_feature"
+                  }
+                ],
+                "network": "categorical_decoder",
+                "output": [
+                  {
+                    "name": "dL3OMEn41e_category"
+                  },
+                  {
+                    "name": "dL3OMEn41e_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              }
+            },
+            "encoders": {
+              "DZPeVwo8OZ": {
+                "input": [
+                  {
+                    "name": "5cdocTBpiO"
+                  }
+                ],
+                "network": "spatial_encoder",
+                "output": [
+                  {
+                    "name": "DZPeVwo8OZ_feature"
+                  }
+                ],
+                "params": {
+                  "channel_dimension_transformation": 32,
+                  "output_size": 64
+                },
+                "type": "encoder"
+              }
+            },
+            "value_function": {
+              "K3PGqGA1Uq": {
+                "input": [
+                  {
+                    "name": "x4xCdVKiuv_feature"
+                  }
+                ],
+                "network": "value",
+                "params": {
+                  "hidden_layer_sizes": [
+                    64
+                  ]
+                },
+                "type": "value_function"
+              }
+            }
+          },
+          "action": {
+            "k07fAmKQyd": {
+              "YG2J3cep62": {
+                "action_category": "categorical",
+                "name": "move and attack",
+                "action_type": "parameter",
+                "category_num": 9,
+                "input": [
+                  {
+                    "name": "JX6ZBYrZjY_category"
+                  }
+                ],
+                "reference_objects": [
+                  "Atari攻击移动"
+                ]
+              },
+              "ZsjdUycLJe": {
+                "action_category": "categorical",
+                "action_type": "predicate",
+                "input": [
+                  {
+                    "name": "dL3OMEn41e_category"
+                  }
+                ],
+                "missions": [
+                  {
+                    "class": "AtariMoveAndAttack",
+                    "index_name": "",
+                    "instance_name": "Atari攻击移动_moveattack",
+                    "name": "Atari攻击移动",
+                    "params": [
+                      {
+                        "is_related": true,
+                        "param": "action_param",
+                        "value": "move and attack"
+                      }
+                    ],
+                    "path": "move_and_attack.py",
+                    "repository_url": "http://11.1.0.2:2180/atari/atari_missions.git",
+                    "type": "air_mission"
+                  }
+                ]
+              }
+            }
+          },
+          "algo": {
+            "algo_type": "ddpg",
+            "learning_rate": 0.0005,
+            "learning_starts": 10000,
+            "batch_size": 32,
+            "buffer_size": 100000,
+            "tau":0.001
+              
+          },
+          "training_coef": {
+            "fragment_size": 129,
+            "gamma": 0.99,
+            "lamb": 0.95,
+            "max_data_reuse": 0,
+            "replay_size": 1,
+            "sample_batch_size": 32,
+            "save_interval": 2000
+          }
+        },
+        {
+          "player_type": "behavior_tree",
+          "current_seat": "",
+          "player_name": "Atari空规则2",
+          "scenario_adaption": {
+            "side": "blue_side",
+            "enemy": [
+              "atari"
+            ],
+            "troop_info": [
+              {
+                "enemies": [
+                  {
+                    "name": "蓝方",
+                    "side": "blue_side"
+                  }
+                ],
+                "forces": [],
+                "friends": [],
+                "name": "Atari",
+                "side": "atari",
+                "side_index": "1"
+              },
+              {
+                "enemies": [
+                  {
+                    "name": "Atari",
+                    "side": "atari"
+                  }
+                ],
+                "forces": [],
+                "friends": [],
+                "name": "蓝方",
+                "side": "blue_side",
+                "side_index": "2"
+              }
+            ],
+            "scene_predefined_data": null,
+            "decision_interval": {
+              "time": 1,
+              "unit": "秒"
+            },
+            "runtime_period": {
+              "unit": "秒"
+            },
+            "auxiliary_rules": null,
+            "reward": [],
+            "statistics": []
+          },
+          "nodes": {
+            "data": {
+              "class": "AtariRuleAction",
+              "instance_name": "Atari空规则节点_",
+              "params": [],
+              "path": "empty_node.py",
+              "repository_url": "http://11.1.0.2:2180/atari/atari_bt_actions.git"
+            },
+            "id": "clemvBHdBc",
+            "positionX": 510,
+            "type": "behavior"
+          }
+        }
+      ]
+    }
+  ],
+  "platform_config": {
+    "database_info": {
+      "db_name": "postgres",
+      "user": "postgres",
+      "password": "pgsql123",
+      "host": "11.1.1.144",
+      "port": "30135"
+    },
+    "architecture": "GPU"
+  },
+  "train_config": {
+    "train_type": "rl",
+    "train_sub_type": "async",
+    "train_task_id": "q4acvzztqfz6dpd",
+    "params": {
+      "env_num": 50
+    }
+  },
+  "extend_info": {
+    "scenarios": {
+      "Atari想定_x86": {
+      }
+    },
+    "task": {
+      "key": "aaa",
+      "value": "bbb"
+    }
+  }
+}

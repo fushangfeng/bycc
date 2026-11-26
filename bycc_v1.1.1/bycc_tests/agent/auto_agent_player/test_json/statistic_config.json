@@ -1,0 +1,94 @@
+{
+    "enemy_destroyed_frigate_num": {
+        "type": "count",
+        "class": [
+            "Frigate"
+        ],
+        "side": "enemy",
+        "filters": [
+            {
+                "type": "OR",
+                "conditions": [
+                    {
+                        "feature": "is_destroyed",
+                        "operation": "=",
+                        "value": true
+                    },
+                    {
+                        "feature": "weapon_num",
+                        "operation": "=",
+                        "value": 0
+                    }
+                ]
+            }
+        ]
+    },
+    "enemy_airport_num": {
+        "type": "count",
+        "class": [
+            "Airport"
+        ],
+        "side": "enemy",
+        "filters": []
+    },
+    "self_alive_airs_num": {
+        "type": "count",
+        "class": [
+            "Fighter",
+            "Bomber"
+        ],
+        "side": "self",
+        "filters": [
+            {
+                "type": "AND",
+                "conditions": [
+                    {
+                        "feature": "health",
+                        "operation": ">",
+                        "value": 0
+                    }
+                ]
+            }
+        ]
+    },
+    "self_rest_bomber_weapon_num": {
+        "type": "sum",
+        "class": [
+            "Bomber"
+        ],
+        "property": "weapon_num",
+        "side": "self",
+        "filters": [
+            {
+                "type": "AND",
+                "conditions": [
+                    {
+                        "feature": "health",
+                        "operation": ">",
+                        "value": 0
+                    }
+                ]
+            }
+        ]
+    },
+    "self_max_bomber_pos_x": {
+        "type": "max",
+        "class": [
+            "Bomber"
+        ],
+        "property": "pos.x",
+        "side": "self",
+        "filters": [
+            {
+                "type": "AND",
+                "conditions": [
+                    {
+                        "feature": "health",
+                        "operation": ">",
+                        "value": 0
+                    }
+                ]
+            }
+        ]
+    }
+}

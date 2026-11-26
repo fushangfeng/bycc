@@ -1,0 +1,15 @@
+rpyc==5.3.1
+psycopg2-binary==2.9.9
+typing_extensions==4.7.1
+pydantic==2.5.3
+minio==7.2.7
+watchdog==3.0.0
+websockets==11.0.3
+pyproj==3.2.1
+gitpython==3.1.44
+urllib3==1.26.15
+networkx==2.6.3
+matplotlib==3.5.3
+tensorboard==2.11.2
+numpy==1.21.6
+protobuf==3.20.0

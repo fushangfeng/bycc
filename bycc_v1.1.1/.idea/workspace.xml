@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="539d1f11-2d3f-4da6-a167-ac0a5004d860" name="更改" comment="update Mission time:20250924 11:57">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/constant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/bt_action/bt_actions" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/bt_action/bt_actions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/bt_action/bt_actions/L_Jam_Rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/bt_action/bt_actions/L_Jam_Rule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/bt_action/bt_actions/L_Recon_Rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/bt_action/bt_actions/L_Recon_Rule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/bt_action/bt_actions/L_Task_Control.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/bt_action/bt_actions/L_Task_Control.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/bt_action/bt_actions/XKUTaskControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/bt_action/bt_actions/XKUTaskControl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/bt_action/bt_actions/XKU_Jam_Rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/bt_action/bt_actions/XKU_Jam_Rule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/bt_action/bt_actions/XKU_Recon_Rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/bt_action/bt_actions/XKU_Recon_Rule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/L_Jam_Param_Mission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/L_Jam_Param_Mission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/L_Recon_Decay_Mission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/L_Recon_Decay_Mission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/XKU_Jam_Param_Mission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/XKU_Jam_Param_Mission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/XKU_Recon_Decay_Mission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/XKU_Recon_Decay_Mission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/jam_fregrng_mission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/jam_fregrng_mission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/jam_trg_mission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/jam_trg_mission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/jam_work_on_mission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/jam_work_on_mission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/CommJam/CommJamTrgCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/CommJam/CommJamTrgCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/CommJam/CommJamWorkAglRngCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/CommJam/CommJamWorkAglRngCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/CommJam/CommJamWorkFreqRngCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/CommJam/CommJamWorkFreqRngCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/CommJam/CommJamWorkOnCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/CommJam/CommJamWorkOnCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/CommRecon/CommReconWorkAglRngCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/CommRecon/CommReconWorkAglRngCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/CommRecon/CommReconWorkFreqRngCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/CommRecon/CommReconWorkFreqRngCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/CommRecon/CommReconWorkOnCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/CommRecon/CommReconWorkOnCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/EquipForm/EquipFormCoorFreqCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/EquipForm/EquipFormCoorFreqCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/EquipForm/EquipFormCoorTaskZoneCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/EquipForm/EquipFormCoorTaskZoneCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/EquipForm/EquipFormCoorTgtCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/EquipForm/EquipFormCoorTgtCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/EquipForm/EquipFormFormCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/EquipForm/EquipFormFormCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/EquipForm/EquipFormSelfCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/EquipForm/EquipFormSelfCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/GroundForm/GroundFormCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/GroundForm/GroundFormCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/GroundForm/GroundFormDeploymentCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/GroundForm/GroundFormDeploymentCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/GroundForm/GroundFormDirCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/GroundForm/GroundFormDirCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/Radar/RadarAntiJamModeCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/Radar/RadarAntiJamModeCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/RadarJam/RadarJamTrgCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/RadarJam/RadarJamTrgCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/RadarJam/RadarJamWorkAglRngCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/RadarJam/RadarJamWorkAglRngCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/RadarJam/RadarJamWorkFreqRngCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/RadarJam/RadarJamWorkFreqRngCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/RadarJam/RadarJamWorkOnCtlMission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/RadarJam/RadarJamWorkOnCtlMission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/RadarRecon/RadarReconWorkAglRngCtl_mission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/RadarRecon/RadarReconWorkAglRngCtl_mission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/RadarRecon/RadarReconWorkFreqRngCtl_mission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/RadarRecon/RadarReconWorkFreqRngCtl_mission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/RadarRecon/RadarReconWorkOnCtl_mission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/mission/RadarRecon/RadarReconWorkOnCtl_mission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/radar_jam_mission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/radar_jam_mission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/mission/missions/radar_jam_target_mission.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/mission/missions/radar_jam_target_mission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/reward/rewards" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/reward/rewards" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/reward/rewards/L_jam_rewards.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/reward/rewards/L_jam_rewards.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/reward/rewards/L_radar_recon_reward.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/reward/rewards/L_radar_recon_reward.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/reward/rewards/jam/blue_detect_loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/reward/rewards/jam/blue_detect_loss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/reward/rewards/jam/jam_final_reward.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/reward/rewards/jam/jam_final_reward.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/reward/rewards/jam/jam_final_reward1.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/reward/rewards/jam/jam_final_reward1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/reward/rewards/jam/jam_tar_num_reward.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/reward/rewards/jam/jam_tar_num_reward.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/reward/rewards/jam/jam_trg_reward.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/reward/rewards/jam/jam_trg_reward.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/reward/rewards/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/reward/rewards/note.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/reward/rewards/radar_detect_reward.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/reward/rewards/radar_detect_reward.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/reward/rewards/radar_jam_reward.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/reward/rewards/radar_jam_reward.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/reward/rewards/xku_jam_reward_final_f35.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/reward/rewards/xku_jam_reward_final_f35.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/reward/rewards/xku_jam_reward_jam_f35.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/reward/rewards/xku_jam_reward_jam_f35.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/reward/rewards/xku_jam_reward_step_f35.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/reward/rewards/xku_jam_reward_step_f35.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/reward/rewards/xku_jam_rewards_f35.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/reward/rewards/xku_jam_rewards_f35.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc/modules/reward/rewards/xku_radar_recon_reward.py" beforeDir="false" afterPath="$PROJECT_DIR$/bycc/modules/reward/rewards/xku_radar_recon_reward.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc_config/bycc_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/bycc_config/bycc_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc_log.log" beforeDir="false" afterPath="$PROJECT_DIR$/bycc_log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bycc_tests/bycc_config/test_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/bycc_tests/bycc_config/test_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/const.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/const.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/data_types/aircraft.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/data_types/aircraft.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/data_types/gps_jammer.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/data_types/gps_jammer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/data_types/jammer/com_jammer.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/data_types/jammer/com_jammer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/data_types/jammer/radar_jammer.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/data_types/jammer/radar_jammer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/data_types/radar/radar_detect.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/data_types/radar/radar_detect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/data_types/radar/radar_detect_track.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/data_types/radar/radar_detect_track.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/data_types/radar/radar_para.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/data_types/radar/radar_para.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/data_types/rcl670_jammer.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/data_types/rcl670_jammer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/data_types/rcz901_jammer.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/data_types/rcz901_jammer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/data_types/recon/com_recon.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/data_types/recon/com_recon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/data_types/recon/com_recon_detect.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/data_types/recon/com_recon_detect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/data_types/recon/rad_recon.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/data_types/recon/rad_recon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/data_types/recon/rad_recon_detect.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/data_types/recon/rad_recon_detect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/data_types/waring_radar.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/data_types/waring_radar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/data_types/xku_jammer.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/data_types/xku_jammer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/env/env_clinet_EWX.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/env/env_clinet_EWX.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/env/env_def.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/env/env_def.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/env/ewx_cmds/ecm_cmds.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/env/ewx_cmds/ecm_cmds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/env/ewx_cmds/electron_cmds.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/env/ewx_cmds/electron_cmds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/env/ewx_cmds/ewx_cmds.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/env/ewx_cmds/ewx_cmds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/env/ewx_cmds/formation_cmds.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/env/ewx_cmds/formation_cmds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/env/ewx_cmds/kcg_cmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/env/ewx_cmds/kcg_cmd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/env/ewx_cmds/plat_cmds.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/env/ewx_cmds/plat_cmds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/env/raw_obs.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/env/raw_obs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/game_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/game_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/kcg_cmd_translator.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/kcg_cmd_translator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/obs_translator.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/obs_translator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/EOCM.proto" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/EOCM.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/EnumDefine.proto" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/EnumDefine.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/MEnStruct_Macros.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/MEnStruct_Macros.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/MEnStruct_RadarJam.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/MEnStruct_RadarJam.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/SimuModelDataOut.proto" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/SimuModelDataOut.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/ai.proto" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/ai.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/Check_RadarJam.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/Check_RadarJam.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/ComJamInterface.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/ComJamInterface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/ComRadioInterface-14.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/ComRadioInterface-14.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/DealControlStruct.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/DealControlStruct.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/IGuidRadar - 23.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/IGuidRadar - 23.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/IKCG - V0.1.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/IKCG - V0.1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/IKCG_L.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/IKCG_L.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/IKCG_UHF.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/IKCG_UHF.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/IKCG_XKu.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/IKCG_XKu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/IRadar-14.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/IRadar-14.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/IRadarJam.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/IRadarJam.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/IRadarRecon.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/IRadarRecon.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_Action.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_Action.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_Comm.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_Comm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_Common.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_Common.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_EO.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_EO.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_EOCM.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_EOCM.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_FC.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_FC.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_KCG.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_KCG.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_Macros.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_Macros.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_MacrosOLD.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_MacrosOLD.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_Missile.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_Missile.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_RadarJam (2).h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_RadarJam (2).h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_RadarJam.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_RadarJam.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_RadarJamOLD.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_RadarJamOLD.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_SatJam.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_SatJam.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_Spectr.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/MEnStruct_Spectr.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/si_main.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/si_main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/include/si_out.h" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/include/si_out.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/output/EOCM_pb2.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/output/EOCM_pb2.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/output/EnumDefine_pb2.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/output/EnumDefine_pb2.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/output/SimuModelDataOut_pb2.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/output/SimuModelDataOut_pb2.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/protos/output/ai_pb2.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/protos/output/ai_pb2.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_interface/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_interface/utils/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/air_8v8/config/bycc_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/air_8v8/config/bycc_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/air_8v8/config/bycc_config_bak.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/air_8v8/config/bycc_config_bak.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/atari/ddpg/atari_gpu_ddpg.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/atari/ddpg/atari_gpu_ddpg.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/env_interface" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitLabMergeRequestFiltersHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPENED&quot;,
+    &quot;assignee&quot;: {
+      &quot;type&quot;: &quot;org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue&quot;,
+      &quot;username&quot;: &quot;cetc29&quot;,
+      &quot;fullname&quot;: &quot;cetc29 cetc29&quot;
+    }
+  }
+}</component>
+  <component name="GitLabMergeRequestsSettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;first&quot;: &quot;http://10.0.0.200:2080/bycc/bycc.git&quot;,
+    &quot;second&quot;: &quot;33528d4f-ff01-4757-a883-838a89138bdd&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="335ATgUPmy2P5mwj9KgUmEtMGqb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.train_debug.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/yj/bycc/bycc_config"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\yj\bycc\bycc_config" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="train_debug" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="bycc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_debug.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.train_debug" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-53e2683a6804-9cdd278e9d02-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.26094.141" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="539d1f11-2d3f-4da6-a167-ac0a5004d860" name="更改" comment="" />
+      <created>1758596568627</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1758596568627</updated>
+    </task>
+    <task id="LOCAL-00001" summary="update Mission time:20250924 11:57">
+      <option name="closed" value="true" />
+      <created>1758694598392</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758694598392</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update Mission time:20250924 11:57">
+      <option name="closed" value="true" />
+      <created>1758694657457</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1758694657457</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update Mission time:20250924 11:57">
+      <option name="closed" value="true" />
+      <created>1758695374877</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758695374877</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update Mission time:20250924 11:57">
+      <option name="closed" value="true" />
+      <created>1758696651024</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1758696651024</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update Mission time:20250924 11:57">
+      <option name="closed" value="true" />
+      <created>1758701320489</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1758701320489</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update Mission time:20250924 11:57">
+      <option name="closed" value="true" />
+      <created>1758715334208</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1758715334208</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update Mission time:20250924 11:57">
+      <option name="closed" value="true" />
+      <created>1758715344729</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1758715344729</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update Mission time:20250924 11:57">
+      <option name="closed" value="true" />
+      <created>1758715584675</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1758715584675</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update Mission time:20250924 11:57" />
+    <option name="LAST_COMMIT_MESSAGE" value="update Mission time:20250924 11:57" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bycc/modules/mission/missions/XKU_Jam_Param_Mission.py</url>
+          <line>324</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,118 @@
+aggregator:
+  input:
+    inputs:
+    - global_out
+    - my_fighter_encoder_out
+    - enemy_unit_encoder_out
+  output:
+  - name: aggregator_out
+    size: 64
+  params:
+    hidden_layer: 64
+    seq_len: 1
+  type: lstm_aggregator
+enemy_unit_decoder:
+  input:
+    inputs:
+    - meta_action_autoregressive_embedding
+    - enemy_unit_embeddings
+  output:
+  - name: enemy_unit_logits
+    size: 10
+  - name: enemy_unit
+    size: 10
+  - name: my_units_autoregressive_embedding
+    size: 128
+  params:
+    hidden_layer_sizes:
+    - 32
+    - 64
+  type: multi_selective_decoder
+enemy_unit_encoder:
+  input:
+    inputs: enemy_unit
+  output:
+  - name: enemy_unit_encoder_out
+    size: 64
+  - name: enemy_unit_embeddings
+    size: 32
+  params:
+    hidden_layer_sizes:
+    - 32
+    - 64
+  type: entity_encoder
+fighter_patrol_pos_decoder:
+  input:
+    inputs:
+    - my_fighter_autoregressive_embedding
+  output:
+  - name: fighter_patrol_pos_logits
+    size: 3
+  - name: fighter_patrol_pos
+    size: 3
+  - name: fighter_patrol_pos_autoregressive_embedding
+    size: 128
+  params:
+    hidden_layer_sizes:
+    - 32
+    - 64
+  type: categorical_decoder
+global_encoder:
+  input:
+    inputs: global
+  output:
+  - name: global_out
+    size: 64
+  params:
+    hidden_layer_sizes:
+    - 32
+    - 64
+  type: common_encoder
+meta_action:
+  input:
+#    action_mask: meta_action_mask
+    inputs:
+    - aggregator_out
+  output:
+  - name: meta_action_logits
+    size: 64
+  - name: meta_action
+    size: 64
+  - name: meta_action_autoregressive_embedding
+    size: 128
+  params:
+    hidden_layer_sizes:
+    - 32
+    - 64
+  type: categorical_decoder
+my_fighter_decoder:
+  input:
+#    action_mask: my_fighter_mask
+    inputs:
+    - meta_action_autoregressive_embedding
+    - my_fighter_embeddings
+  output:
+  - name: my_fighter_logits
+    size: 10
+  - name: my_fighter
+    size: 10
+  - name: my_fighter_autoregressive_embedding
+    size: 128
+  params:
+    hidden_layer_sizes:
+    - 32
+    - 64
+  type: single_selective_decoder
+my_fighter_encoder:
+  input:
+    inputs: my_fighter
+  output:
+  - name: my_fighter_encoder_out
+    size: 64
+  - name: my_fighter_embeddings
+    size: 32
+  params:
+    hidden_layer_sizes:
+    - 32
+    - 64
+  type: entity_encoder

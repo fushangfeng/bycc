@@ -1,0 +1,150 @@
+{
+    "group1": {
+        "meta_action": {
+            "action_type": "predicate",
+            "action_category": "categorical",
+            "input": {
+                "name": "meta_action_1"
+            },
+            "missions": [
+                {
+                    "name": "空对空打击",
+                    "type": "A2AAttack",
+                    "params": [
+                        {
+                            "param": "unit_id_list",
+                            "is_related": true,
+                            "value": "my_fighter"
+                        },
+                        {
+                            "param": "target_id_list",
+                            "is_related": true,
+                            "value": "target_unit"
+                        }
+                    ]
+                },
+                {
+                    "name": "空中巡逻",
+                    "type": "AirPatrol",
+                    "params": [
+                        {
+                            "param": "unit_id_list",
+                            "is_related": true,
+                            "value": "my_fighter"
+                        },
+                        {
+                            "param": "position_x",
+                            "is_related": true,
+                            "value": "pos_x_1"
+                        },
+                        {
+                            "param": "position_y",
+                            "is_related": true,
+                            "value": "pos_y_1"
+                        }
+                    ]
+                }
+            ]
+        },
+        "my_fighter": {
+            "action_type": "subject",
+            "action_category": "single_selective",
+            "input": {
+                "name": "my_fighter"
+            },
+            "entity_selection": "my_fighter"
+        },
+        "target_unit": {
+            "action_type": "object",
+            "action_category": "single_selective",
+            "input": {
+                "name": "target_unit"
+            },
+            "entity_selection": "enemy_units"
+        },
+        "pos_x": {
+            "action_type": "parameter",
+            "action_category": "categorical",
+            "category_num": 10,
+            "input": {
+                "name": "pos_x_1"
+            },
+            "reference_objects": [
+                "空中巡逻"
+            ]
+        },
+        "pos_y": {
+            "action_type": "parameter",
+            "action_category": "categorical",
+            "category_num": 10,
+            "input": {
+                "name": "pos_y_1"
+            },
+            "reference_objects": [
+                "空中巡逻"
+            ]
+        }
+    },
+    "group2": {
+        "meta_action": {
+            "action_type": "predicate",
+            "action_category": "categorical",
+            "input": {
+                "name": "meta_action_2"
+            },
+            "missions": [
+                {
+                    "name": "空中巡逻",
+                    "type": "AirPatrol",
+                    "params": [
+                        {
+                            "param": "unit_id_list",
+                            "is_related": true,
+                            "value": "my_awacs"
+                        },
+                        {
+                            "param": "position_x",
+                            "is_related": true,
+                            "value": "pos_x_2"
+                        },
+                        {
+                            "param": "position_y",
+                            "is_related": true,
+                            "value": "pos_y_2"
+                        }
+                    ]
+                }
+            ]
+        },
+        "my_awacs": {
+            "action_type": "subject",
+            "action_category": "single_selective",
+            "input": {
+                "name": "my_awacs"
+            },
+            "entity_selection": "my_awacs"
+        },
+        "pos_x": {
+            "action_type": "parameter",
+            "action_category": "categorical",
+            "category_num": 10,
+            "input": {
+                "name": "pos_x_2"
+            },
+            "reference_objects": [
+                "空中巡逻"
+            ]
+        },
+        "pos_y": {
+            "action_type": "parameter",
+            "action_category": "categorical",
+            "category_num": 10,
+            "input": {
+                "name": "pos_y_2"
+            },
+            "reference_objects": [
+                "空中巡逻"
+            ]
+        }
+    }
+}

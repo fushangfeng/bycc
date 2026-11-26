@@ -1,0 +1,2811 @@
+{
+  "scenarios": [
+    {
+      "scenario_name": "sim_fast",
+      "env_interface": {
+        "repository_url": "http://11.1.0.2:2180/air_8v8/env_interface.git",
+        "path": "config.py",
+        "class": "config"
+      },
+      "resource_path": "",
+      "image_repo": "registry.inspir.ai:5000/sim_fast:v3.2",
+      "extend": {},
+      "duration": 1000000,
+      "probability": 1,
+      "player_config": [
+        {
+          "player_type": "rl",
+          "player_name": "air_8v8_ai_aux",
+          "model_name": "air_8v8_ai_aux_model1",
+          "is_train": "True",
+          "save_path": "F7B3DfxIpw",
+          "scenario_adaption": {
+            "side": "red_side",
+            "enemy": [
+              "blue_side"
+            ],
+            "troop_filter": true,
+            "troop_info": [
+              {
+                "enemies": [
+                  {
+                    "name": "蓝方",
+                    "side": "blue_side"
+                  }
+                ],
+                "forces": [
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "24",
+                              "type": "J-10C"
+                            },
+                            "subcategory": "战斗机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "80",
+                              "type": "空对空导弹"
+                            },
+                            "subcategory": "导弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1RFB",
+                        "location": "23.10, 119.50",
+                        "name": "第1歼击旅",
+                        "type": "空中部队"
+                      },
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "10",
+                              "type": "H-6K"
+                            },
+                            "subcategory": "轰炸机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "50",
+                              "type": "精确制导炸弹"
+                            },
+                            "subcategory": "炸弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "2RAW",
+                        "location": "24.20, 129.60",
+                        "name": "第2空中联队",
+                        "type": "空中部队"
+                      }
+                    ],
+                    "id": "RFHQ",
+                    "location": "22.10, 119.50",
+                    "name": "红方空中指挥所1",
+                    "type": "指挥所"
+                  },
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "24",
+                              "type": "J-10C"
+                            },
+                            "subcategory": "战斗机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "80",
+                              "type": "空对空导弹"
+                            },
+                            "subcategory": "导弹"
+                          }
+                        ],
+                        "forces": [
+                          {
+                            "equipments": [
+                              {
+                                "category": "飞机",
+                                "entity": {
+                                  "num": "24",
+                                  "type": "J-10C"
+                                },
+                                "subcategory": "战斗机"
+                              },
+                              {
+                                "category": "弹药",
+                                "entity": {
+                                  "num": "80",
+                                  "type": "空对空导弹"
+                                },
+                                "subcategory": "导弹"
+                              }
+                            ],
+                            "forces": [],
+                            "id": "1RFB11",
+                            "location": "24.10, 123.50",
+                            "name": "歼击旅",
+                            "type": "空中部队"
+                          }
+                        ],
+                        "id": "1RFB1",
+                        "location": "24.10, 115.50",
+                        "name": "第1歼击旅",
+                        "type": "空中部队"
+                      },
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "10",
+                              "type": "H-6K"
+                            },
+                            "subcategory": "轰炸机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "50",
+                              "type": "精确制导炸弹"
+                            },
+                            "subcategory": "炸弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "2RAW1",
+                        "location": "19.20, 120.60",
+                        "name": "第2空中联队",
+                        "type": "空中部队"
+                      }
+                    ],
+                    "id": "RFHQ1",
+                    "location": "24.10, 119.50",
+                    "name": "红方空中指挥所2",
+                    "type": "指挥所"
+                  }
+                ],
+                "friends": [
+                  {
+                    "name": "红方",
+                    "side": "red_side"
+                  }
+                ],
+                "name": "红方",
+                "side": "red_side",
+                "side_index": "1"
+              },
+              {
+                "enemies": [
+                  {
+                    "name": "红方",
+                    "side": "red_side"
+                  }
+                ],
+                "forces": [
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "30",
+                              "type": "F-16"
+                            },
+                            "subcategory": "战斗机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "100",
+                              "type": "空对空导弹"
+                            },
+                            "subcategory": "导弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1BFB",
+                        "location": "25.10, 120.50",
+                        "name": "第1歼击旅",
+                        "type": "空中部队"
+                      },
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "8",
+                              "type": "B-52"
+                            },
+                            "subcategory": "轰炸机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "60",
+                              "type": "精确制导炸弹"
+                            },
+                            "subcategory": "炸弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "2BAW",
+                        "location": "25.20, 120.60",
+                        "name": "第2空中联队",
+                        "type": "空中部队"
+                      }
+                    ],
+                    "id": "BFHQ",
+                    "location": "25.10, 120.50",
+                    "name": "蓝方空中指挥所",
+                    "type": "指挥所"
+                  },
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "核艇",
+                            "entity": {
+                              "num": "100",
+                              "type": "B-16"
+                            },
+                            "subcategory": "核潜艇"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1BFB-b",
+                        "location": "25.10, 120.50",
+                        "name": "第一舰队",
+                        "type": "海面部队"
+                      }
+                    ],
+                    "id": "BFHQ-b",
+                    "location": "25.10, 120.50",
+                    "name": "蓝方海面指挥所",
+                    "type": "指挥所"
+                  }
+                ],
+                "friends": [
+                  {
+                    "name": "蓝方",
+                    "side": "blue_side"
+                  }
+                ],
+                "name": "蓝方",
+                "side": "blue_side",
+                "side_index": "2"
+              },
+              {
+                "enemies": [
+                  {
+                    "name": "红方",
+                    "side": "red_side"
+                  }
+                ],
+                "forces": [
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "30",
+                              "type": "F-16"
+                            },
+                            "subcategory": "战斗机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "100",
+                              "type": "空对空导弹"
+                            },
+                            "subcategory": "导弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1GFB",
+                        "location": "25.10, 120.50",
+                        "name": "第1歼击旅",
+                        "type": "空中部队"
+                      },
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "8",
+                              "type": "B-52"
+                            },
+                            "subcategory": "轰炸机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "60",
+                              "type": "精确制导炸弹"
+                            },
+                            "subcategory": "炸弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "2GAW",
+                        "location": "25.20, 120.60",
+                        "name": "第2空中联队",
+                        "type": "空中部队"
+                      }
+                    ],
+                    "id": "GFHQ",
+                    "location": "25.10, 120.50",
+                    "name": "绿方空中指挥所",
+                    "type": "指挥所"
+                  },
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "核艇",
+                            "entity": {
+                              "num": "100",
+                              "type": "G-16"
+                            },
+                            "subcategory": "核潜艇"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1GFB-b",
+                        "location": "25.10, 120.50",
+                        "name": "第一舰队",
+                        "type": "海面部队"
+                      }
+                    ],
+                    "id": "GFHQ-b",
+                    "location": "25.10, 120.50",
+                    "name": "绿方海面指挥所",
+                    "type": "指挥所"
+                  }
+                ],
+                "friends": [
+                  {
+                    "name": "蓝方",
+                    "side": "blue_side"
+                  },
+                  {
+                    "name": "绿方",
+                    "side": "green_side"
+                  }
+                ],
+                "name": "绿方",
+                "side": "green_side",
+                "side_index": "3"
+              },
+              {
+                "enemies": [
+                  {
+                    "name": "红方",
+                    "side": "red_side"
+                  }
+                ],
+                "forces": [
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "30",
+                              "type": "F-16"
+                            },
+                            "subcategory": "战斗机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "100",
+                              "type": "空对空导弹"
+                            },
+                            "subcategory": "导弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1GFB",
+                        "location": "25.10, 120.50",
+                        "name": "第1歼击旅",
+                        "type": "空中部队"
+                      },
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "8",
+                              "type": "B-52"
+                            },
+                            "subcategory": "轰炸机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "60",
+                              "type": "精确制导炸弹"
+                            },
+                            "subcategory": "炸弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "2GAW",
+                        "location": "25.20, 120.60",
+                        "name": "第2空中联队",
+                        "type": "空中部队"
+                      }
+                    ],
+                    "id": "GFHQ",
+                    "location": "25.10, 120.50",
+                    "name": "绿方空中指挥所",
+                    "type": "指挥所"
+                  },
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "核艇",
+                            "entity": {
+                              "num": "100",
+                              "type": "G-16"
+                            },
+                            "subcategory": "核潜艇"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1GFB-b",
+                        "location": "25.10, 120.50",
+                        "name": "第一舰队",
+                        "type": "海面部队"
+                      }
+                    ],
+                    "id": "GFHQ-b",
+                    "location": "25.10, 120.50",
+                    "name": "绿方海面指挥所",
+                    "type": "指挥所"
+                  }
+                ],
+                "friends": [
+                  {
+                    "name": "蓝方",
+                    "side": "blue_side"
+                  },
+                  {
+                    "name": "绿方",
+                    "side": "green_side"
+                  }
+                ],
+                "name": "橙方",
+                "side": "orange_side",
+                "side_index": "4"
+              },
+              {
+                "enemies": [
+                  {
+                    "name": "红方",
+                    "side": "red_side"
+                  }
+                ],
+                "forces": [
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "30",
+                              "type": "F-16"
+                            },
+                            "subcategory": "战斗机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "100",
+                              "type": "空对空导弹"
+                            },
+                            "subcategory": "导弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1GFB",
+                        "location": "25.10, 120.50",
+                        "name": "第1歼击旅",
+                        "type": "空中部队"
+                      },
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "8",
+                              "type": "B-52"
+                            },
+                            "subcategory": "轰炸机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "60",
+                              "type": "精确制导炸弹"
+                            },
+                            "subcategory": "炸弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "2GAW",
+                        "location": "25.20, 120.60",
+                        "name": "第2空中联队",
+                        "type": "空中部队"
+                      }
+                    ],
+                    "id": "GFHQ",
+                    "location": "25.10, 120.50",
+                    "name": "绿方空中指挥所",
+                    "type": "指挥所"
+                  },
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "核艇",
+                            "entity": {
+                              "num": "100",
+                              "type": "G-16"
+                            },
+                            "subcategory": "核潜艇"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1GFB-b",
+                        "location": "25.10, 120.50",
+                        "name": "第一舰队",
+                        "type": "海面部队"
+                      }
+                    ],
+                    "id": "GFHQ-b",
+                    "location": "25.10, 120.50",
+                    "name": "绿方海面指挥所",
+                    "type": "指挥所"
+                  }
+                ],
+                "friends": [
+                  {
+                    "name": "蓝方",
+                    "side": "blue_side"
+                  },
+                  {
+                    "name": "绿方",
+                    "side": "green_side"
+                  }
+                ],
+                "name": "黄方",
+                "side": "yellow_side",
+                "side_index": "5"
+              },
+              {
+                "enemies": [
+                  {
+                    "name": "红方",
+                    "side": "red_side"
+                  }
+                ],
+                "forces": [
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "30",
+                              "type": "F-16"
+                            },
+                            "subcategory": "战斗机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "100",
+                              "type": "空对空导弹"
+                            },
+                            "subcategory": "导弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1GFB",
+                        "location": "25.10, 120.50",
+                        "name": "第1歼击旅",
+                        "type": "空中部队"
+                      },
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "8",
+                              "type": "B-52"
+                            },
+                            "subcategory": "轰炸机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "60",
+                              "type": "精确制导炸弹"
+                            },
+                            "subcategory": "炸弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "2GAW",
+                        "location": "25.20, 120.60",
+                        "name": "第2空中联队",
+                        "type": "空中部队"
+                      }
+                    ],
+                    "id": "GFHQ",
+                    "location": "25.10, 120.50",
+                    "name": "绿方空中指挥所",
+                    "type": "指挥所"
+                  },
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "核艇",
+                            "entity": {
+                              "num": "100",
+                              "type": "G-16"
+                            },
+                            "subcategory": "核潜艇"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1GFB-b",
+                        "location": "25.10, 120.50",
+                        "name": "第一舰队",
+                        "type": "海面部队"
+                      }
+                    ],
+                    "id": "GFHQ-b",
+                    "location": "25.10, 120.50",
+                    "name": "绿方海面指挥所",
+                    "type": "指挥所"
+                  }
+                ],
+                "friends": [
+                  {
+                    "name": "蓝方",
+                    "side": "blue_side"
+                  },
+                  {
+                    "name": "绿方",
+                    "side": "green_side"
+                  }
+                ],
+                "name": "紫方",
+                "side": "purple_side",
+                "side_index": "6"
+              }
+            ],
+            "scene_predefined_data": {},
+            "decision_interval": {
+              "time": 0,
+              "unit": "秒"
+            },
+            "runtime_period": {
+              "end": 10000,
+              "start": 0,
+              "unit": "秒"
+            },
+            "auxiliary_rules": {
+              "children": [
+                {
+                  "data": {
+                    "class": "AirplaneNumNotZero",
+                    "params": [
+                      {
+                        "key": "airport_index",
+                        "value": 0
+                      }
+                    ],
+                    "path": "airplane_num_not_zero.py",
+                    "repository_url": "http://11.1.0.2:2180/air_8v8/bt_conditions.git"
+                  },
+                  "id": "96qTTY7pXv",
+                  "positionX": 810,
+                  "type": "condition"
+                },
+                {
+                  "data": {
+                    "class": "TakeOffPatrolAction",
+                    "instance_name": "起飞巡逻行动节点_0205_123",
+                    "params": [
+                      {
+                        "key": "airport_index",
+                        "value": 0
+                      }
+                    ],
+                    "path": "take_off_patrol_action.py",
+                    "repository_url": "http://11.1.0.2:2180/air_8v8/bt_actions.git"
+                  },
+                  "id": "YWsWoYKovH",
+                  "positionX": 1200,
+                  "type": "behavior"
+                }
+              ],
+              "data": {
+                "params": []
+              },
+              "id": "12ZkbQbnui",
+              "positionX": 990,
+              "type": "sequence"
+            },
+            "reward": [
+              {
+                "class": "SelfImmediateLoss",
+                "description": "some text",
+                "id": 91,
+                "name": "我方毁伤即时奖励",
+                "parameters_template": "{\"instance_name\":\"我方毁伤即时奖励\",\"weight\":-0.1,\"params\":{\"entity\":\"Fighter\",\"feature\":\"alive\"}}",
+                "path": "self_immediate_loss.py",
+                "repo_id": 49,
+                "repository_url": "http://11.1.0.2:2180/air_8v8/rewards.git"
+              },
+              {
+                "class": "EnemyImmediateLoss",
+                "description": "some text",
+                "id": 92,
+                "name": "敌方毁伤即时奖励",
+                "parameters_template": "{\"instance_name\":\"敌方毁伤即时奖励\",\"weight\":-0.1,\"params\":{\"entity\":\"Fighter\",\"feature\":\"alive\"}}",
+                "path": "enemy_immediate_loss.py",
+                "repo_id": 49,
+                "repository_url": "http://11.1.0.2:2180/air_8v8/rewards.git"
+              }
+            ],
+            "statistics": []
+          },
+          "state": {
+            "LJUsVtx29q": {
+              "features": [
+                "position",
+                "speed",
+                "alive",
+                "angle"
+              ],
+              "index_name": [
+                "Fighter",
+                "AWACS"
+              ],
+              "max_num": 10,
+              "side": "Enemy",
+              "type": "2D"
+            },
+            "PTtHd5Q2E6": {
+              "features": [
+                "position",
+                "speed",
+                "alive",
+                "angle"
+              ],
+              "index_name": [
+                "AWACS"
+              ],
+              "max_num": 1,
+              "side": "Friendly",
+              "type": "2D"
+            },
+            "UbVCWSEO2z": {
+              "features": [
+                "position",
+                "speed",
+                "alive",
+                "angle"
+              ],
+              "index_name": [
+                "Fighter"
+              ],
+              "max_num": 10,
+              "side": "Friendly",
+              "type": "2D"
+            }
+          },
+          "network": {
+            "aggregators": {
+              "JYPihsmLTS": {
+                "input": [
+                  {
+                    "name": "UhbWAkGHgt_feature"
+                  },
+                  {
+                    "name": "RzL0zxY3Yy_feature"
+                  },
+                  {
+                    "name": "lMJ0RNvV35_feature"
+                  }
+                ],
+                "network": "gru_aggregator",
+                "output": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ],
+                  "output_layer_neuron": 256,
+                  "seq_len": 1,
+                  "state_size": 256
+                },
+                "type": "aggregator"
+              }
+            },
+            "decoders": {
+              "2yHUe0gPna": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  }
+                ],
+                "network": "categorical_decoder",
+                "output": [
+                  {
+                    "name": "2yHUe0gPna_category"
+                  },
+                  {
+                    "name": "2yHUe0gPna_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              },
+              "Bv2JhYRcUy": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  }
+                ],
+                "network": "categorical_decoder",
+                "output": [
+                  {
+                    "name": "Bv2JhYRcUy_category"
+                  },
+                  {
+                    "name": "Bv2JhYRcUy_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              },
+              "I8qBOdvQdM": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  },
+                  {
+                    "name": "UhbWAkGHgt_embedding"
+                  }
+                ],
+                "network": "single_selective_decoder",
+                "output": [
+                  {
+                    "name": "I8qBOdvQdM_entity_selected"
+                  },
+                  {
+                    "name": "I8qBOdvQdM_embedding"
+                  }
+                ],
+                "params": {
+                  "attention_size": 64,
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              },
+              "buhAaKU6J5": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  }
+                ],
+                "network": "categorical_decoder",
+                "output": [
+                  {
+                    "name": "buhAaKU6J5_category"
+                  },
+                  {
+                    "name": "buhAaKU6J5_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              },
+              "gKz27R4b2M": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  }
+                ],
+                "network": "categorical_decoder",
+                "output": [
+                  {
+                    "name": "gKz27R4b2M_category"
+                  },
+                  {
+                    "name": "gKz27R4b2M_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              },
+              "ovoGrzbL7l": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  },
+                  {
+                    "name": "RzL0zxY3Yy_embedding"
+                  }
+                ],
+                "network": "single_selective_decoder",
+                "output": [
+                  {
+                    "name": "ovoGrzbL7l_entity_selected"
+                  },
+                  {
+                    "name": "ovoGrzbL7l_embedding"
+                  }
+                ],
+                "params": {
+                  "attention_size": 64,
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              },
+              "r1XTYnbuvb": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  }
+                ],
+                "network": "categorical_decoder",
+                "output": [
+                  {
+                    "name": "r1XTYnbuvb_category"
+                  },
+                  {
+                    "name": "r1XTYnbuvb_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              },
+              "t556jFBD6v": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  },
+                  {
+                    "name": "lMJ0RNvV35_embedding"
+                  }
+                ],
+                "network": "single_selective_decoder",
+                "output": [
+                  {
+                    "name": "t556jFBD6v_entity_selected"
+                  },
+                  {
+                    "name": "t556jFBD6v_embedding"
+                  }
+                ],
+                "params": {
+                  "attention_size": 64,
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              },
+              "x3l3GAMc55": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  }
+                ],
+                "network": "categorical_decoder",
+                "output": [
+                  {
+                    "name": "x3l3GAMc55_category"
+                  },
+                  {
+                    "name": "x3l3GAMc55_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              }
+            },
+            "encoders": {
+              "RzL0zxY3Yy": {
+                "input": [
+                  {
+                    "name": "PTtHd5Q2E6"
+                  }
+                ],
+                "network": "entity_encoder",
+                "output": [
+                  {
+                    "name": "RzL0zxY3Yy_feature"
+                  },
+                  {
+                    "name": "RzL0zxY3Yy_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "encoder"
+              },
+              "UhbWAkGHgt": {
+                "input": [
+                  {
+                    "name": "UbVCWSEO2z"
+                  }
+                ],
+                "network": "entity_encoder",
+                "output": [
+                  {
+                    "name": "UhbWAkGHgt_feature"
+                  },
+                  {
+                    "name": "UhbWAkGHgt_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "encoder"
+              },
+              "lMJ0RNvV35": {
+                "input": [
+                  {
+                    "name": "LJUsVtx29q"
+                  }
+                ],
+                "network": "entity_encoder",
+                "output": [
+                  {
+                    "name": "lMJ0RNvV35_feature"
+                  },
+                  {
+                    "name": "lMJ0RNvV35_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "encoder"
+              }
+            },
+            "value_function": {
+              "0udGQAe6Bc": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  }
+                ],
+                "network": "value",
+                "params": {
+                  "hidden_layer_sizes": [
+                    64
+                  ]
+                },
+                "type": "value_function"
+              }
+            }
+          },
+          "action": {
+            "Vn8HJAA1wX": {
+              "7XG8WMUXE5": {
+                "action_category": "categorical",
+                "name": "Y",
+                "action_type": "parameter",
+                "category_num": 10,
+                "input": [
+                  {
+                    "name": "buhAaKU6J5_category"
+                  }
+                ],
+                "reference_objects": [
+                  "空中巡逻任务_0205"
+                ]
+              },
+              "HyvngC2mny": {
+                "action_category": "single_selective",
+                "name": "敌方歼击机选择",
+                "action_type": "object",
+                "input": [
+                  {
+                    "name": "t556jFBD6v_entity_selected"
+                  }
+                ],
+                "entity_selection": "敌方飞机",
+                "state_id": "LJUsVtx29q"
+              },
+              "i0V63BNY90": {
+                "action_category": "categorical",
+                "name": "X",
+                "action_type": "parameter",
+                "category_num": 10,
+                "input": [
+                  {
+                    "name": "gKz27R4b2M_category"
+                  }
+                ],
+                "reference_objects": [
+                  "空中巡逻任务_0205"
+                ]
+              },
+              "rV4jdCVlD1": {
+                "action_category": "categorical",
+                "action_type": "predicate",
+                "input": [
+                  {
+                    "name": "2yHUe0gPna_category"
+                  }
+                ],
+                "missions": [
+                  {
+                    "class": "A2AAttackMission",
+                    "index_name": "",
+                    "instance_name": "空对空打击任务_0205_111",
+                    "name": "空对空打击任务_0205",
+                    "params": [
+                      {
+                        "is_related": true,
+                        "param": "target_id_list",
+                        "value": "敌方飞机"
+                      },
+                      {
+                        "is_related": true,
+                        "param": "unit_id_list",
+                        "value": "我方歼击机"
+                      }
+                    ],
+                    "path": "a2a_attack_mission.py",
+                    "repository_url": "http://11.1.0.2:2180/air_8v8/missions.git",
+                    "type": "air_mission"
+                  },
+                  {
+                    "class": "AirPatrolMission",
+                    "index_name": "",
+                    "instance_name": "空中巡逻任务_0205_222",
+                    "name": "空中巡逻任务_0205",
+                    "params": [
+                      {
+                        "is_related": true,
+                        "param": "position_x",
+                        "value": "X"
+                      },
+                      {
+                        "is_related": true,
+                        "param": "position_y",
+                        "value": "Y"
+                      },
+                      {
+                        "is_related": true,
+                        "param": "unit_id_list",
+                        "value": "我方歼击机"
+                      }
+                    ],
+                    "path": "air_patrol_mission.py",
+                    "repository_url": "http://11.1.0.2:2180/air_8v8/missions.git",
+                    "type": "air_mission"
+                  }
+                ]
+              },
+              "rZBUaQN4Gn": {
+                "action_category": "single_selective",
+                "name": "我方歼击机选择",
+                "action_type": "subject",
+                "input": [
+                  {
+                    "name": "I8qBOdvQdM_entity_selected"
+                  }
+                ],
+                "entity_selection": "我方歼击机",
+                "state_id": "UbVCWSEO2z"
+              }
+            },
+            "amzGDpNDzj": {
+              "ROw83LQM4N": {
+                "action_category": "categorical",
+                "name": "Y",
+                "action_type": "parameter",
+                "category_num": 10,
+                "input": [
+                  {
+                    "name": "Bv2JhYRcUy_category"
+                  }
+                ],
+                "reference_objects": [
+                  "空中巡逻任务_0205"
+                ]
+              },
+              "U3aOHN2xPF": {
+                "action_category": "categorical",
+                "name": "X",
+                "action_type": "parameter",
+                "category_num": 10,
+                "input": [
+                  {
+                    "name": "x3l3GAMc55_category"
+                  }
+                ],
+                "reference_objects": [
+                  "空中巡逻任务_0205"
+                ]
+              },
+              "YJy5Fsfq1O": {
+                "action_category": "single_selective",
+                "name": "我方预警机选择",
+                "action_type": "subject",
+                "input": [
+                  {
+                    "name": "ovoGrzbL7l_entity_selected"
+                  }
+                ],
+                "entity_selection": "我方预警机",
+                "state_id": "PTtHd5Q2E6"
+              },
+              "gU8RnERABx": {
+                "action_category": "categorical",
+                "action_type": "predicate",
+                "input": [
+                  {
+                    "name": "r1XTYnbuvb_category"
+                  }
+                ],
+                "missions": [
+                  {
+                    "class": "AirPatrolMission",
+                    "index_name": "",
+                    "instance_name": "空中巡逻任务_0205_333",
+                    "name": "空中巡逻任务_0205",
+                    "params": [
+                      {
+                        "is_related": true,
+                        "param": "position_x",
+                        "value": "X"
+                      },
+                      {
+                        "is_related": true,
+                        "param": "position_y",
+                        "value": "Y"
+                      },
+                      {
+                        "is_related": true,
+                        "param": "unit_id_list",
+                        "value": "我方预警机"
+                      }
+                    ],
+                    "path": "air_patrol_mission.py",
+                    "repository_url": "http://11.1.0.2:2180/air_8v8/missions.git",
+                    "type": "air_mission"
+                  }
+                ]
+              }
+            }
+          },
+          "algo": {
+            "algo_type": "ppo",
+            "clip_param": 0.1,
+            "entropy_coef": 0.02,
+            "learning_rate": 0.0005,
+            "vf_clip_param": 10,
+            "vf_loss_coef": 1
+          },
+          "training_coef": {
+            "fragment_size": 129,
+            "gamma": 0.99,
+            "lamb": 0.95,
+            "max_data_reuse": 1,
+            "replay_size": 1,
+            "sample_batch_size": 128,
+            "save_interval": 200
+          }
+        },
+        {
+          "player_type": "rl",
+          "player_name": "air_8v8_ai_aux_blue_side",
+          "model_name": "air_8v8_ai_aux_model",
+          "is_train": "True",
+          "save_path": "F7B3DfxIpw",
+          "scenario_adaption": {
+            "side": "blue_side",
+            "enemy": [
+              "red_side"
+            ],
+            "troop_info": [
+              {
+                "enemies": [
+                  {
+                    "name": "蓝方",
+                    "side": "blue_side"
+                  }
+                ],
+                "forces": [
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "24",
+                              "type": "J-10C"
+                            },
+                            "subcategory": "战斗机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "80",
+                              "type": "空对空导弹"
+                            },
+                            "subcategory": "导弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1RFB",
+                        "location": "23.10, 119.50",
+                        "name": "第1歼击旅",
+                        "type": "空中部队"
+                      },
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "10",
+                              "type": "H-6K"
+                            },
+                            "subcategory": "轰炸机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "50",
+                              "type": "精确制导炸弹"
+                            },
+                            "subcategory": "炸弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "2RAW",
+                        "location": "24.20, 129.60",
+                        "name": "第2空中联队",
+                        "type": "空中部队"
+                      }
+                    ],
+                    "id": "RFHQ",
+                    "location": "22.10, 119.50",
+                    "name": "红方空中指挥所1",
+                    "type": "指挥所"
+                  },
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "24",
+                              "type": "J-10C"
+                            },
+                            "subcategory": "战斗机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "80",
+                              "type": "空对空导弹"
+                            },
+                            "subcategory": "导弹"
+                          }
+                        ],
+                        "forces": [
+                          {
+                            "equipments": [
+                              {
+                                "category": "飞机",
+                                "entity": {
+                                  "num": "24",
+                                  "type": "J-10C"
+                                },
+                                "subcategory": "战斗机"
+                              },
+                              {
+                                "category": "弹药",
+                                "entity": {
+                                  "num": "80",
+                                  "type": "空对空导弹"
+                                },
+                                "subcategory": "导弹"
+                              }
+                            ],
+                            "forces": [],
+                            "id": "1RFB11",
+                            "location": "24.10, 123.50",
+                            "name": "歼击旅",
+                            "type": "空中部队"
+                          }
+                        ],
+                        "id": "1RFB1",
+                        "location": "24.10, 115.50",
+                        "name": "第1歼击旅",
+                        "type": "空中部队"
+                      },
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "10",
+                              "type": "H-6K"
+                            },
+                            "subcategory": "轰炸机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "50",
+                              "type": "精确制导炸弹"
+                            },
+                            "subcategory": "炸弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "2RAW1",
+                        "location": "19.20, 120.60",
+                        "name": "第2空中联队",
+                        "type": "空中部队"
+                      }
+                    ],
+                    "id": "RFHQ1",
+                    "location": "24.10, 119.50",
+                    "name": "红方空中指挥所2",
+                    "type": "指挥所"
+                  }
+                ],
+                "friends": [
+                  {
+                    "name": "红方",
+                    "side": "red_side"
+                  }
+                ],
+                "name": "红方",
+                "side": "red_side",
+                "side_index": "1"
+              },
+              {
+                "enemies": [
+                  {
+                    "name": "红方",
+                    "side": "red_side"
+                  }
+                ],
+                "forces": [
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "30",
+                              "type": "F-16"
+                            },
+                            "subcategory": "战斗机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "100",
+                              "type": "空对空导弹"
+                            },
+                            "subcategory": "导弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1BFB",
+                        "location": "25.10, 120.50",
+                        "name": "第1歼击旅",
+                        "type": "空中部队"
+                      },
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "8",
+                              "type": "B-52"
+                            },
+                            "subcategory": "轰炸机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "60",
+                              "type": "精确制导炸弹"
+                            },
+                            "subcategory": "炸弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "2BAW",
+                        "location": "25.20, 120.60",
+                        "name": "第2空中联队",
+                        "type": "空中部队"
+                      }
+                    ],
+                    "id": "BFHQ",
+                    "location": "25.10, 120.50",
+                    "name": "蓝方空中指挥所",
+                    "type": "指挥所"
+                  },
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "核艇",
+                            "entity": {
+                              "num": "100",
+                              "type": "B-16"
+                            },
+                            "subcategory": "核潜艇"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1BFB-b",
+                        "location": "25.10, 120.50",
+                        "name": "第一舰队",
+                        "type": "海面部队"
+                      }
+                    ],
+                    "id": "BFHQ-b",
+                    "location": "25.10, 120.50",
+                    "name": "蓝方海面指挥所",
+                    "type": "指挥所"
+                  }
+                ],
+                "friends": [
+                  {
+                    "name": "蓝方",
+                    "side": "blue_side"
+                  }
+                ],
+                "name": "蓝方",
+                "side": "blue_side",
+                "side_index": "2"
+              },
+              {
+                "enemies": [
+                  {
+                    "name": "红方",
+                    "side": "red_side"
+                  }
+                ],
+                "forces": [
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "30",
+                              "type": "F-16"
+                            },
+                            "subcategory": "战斗机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "100",
+                              "type": "空对空导弹"
+                            },
+                            "subcategory": "导弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1GFB",
+                        "location": "25.10, 120.50",
+                        "name": "第1歼击旅",
+                        "type": "空中部队"
+                      },
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "8",
+                              "type": "B-52"
+                            },
+                            "subcategory": "轰炸机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "60",
+                              "type": "精确制导炸弹"
+                            },
+                            "subcategory": "炸弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "2GAW",
+                        "location": "25.20, 120.60",
+                        "name": "第2空中联队",
+                        "type": "空中部队"
+                      }
+                    ],
+                    "id": "GFHQ",
+                    "location": "25.10, 120.50",
+                    "name": "绿方空中指挥所",
+                    "type": "指挥所"
+                  },
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "核艇",
+                            "entity": {
+                              "num": "100",
+                              "type": "G-16"
+                            },
+                            "subcategory": "核潜艇"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1GFB-b",
+                        "location": "25.10, 120.50",
+                        "name": "第一舰队",
+                        "type": "海面部队"
+                      }
+                    ],
+                    "id": "GFHQ-b",
+                    "location": "25.10, 120.50",
+                    "name": "绿方海面指挥所",
+                    "type": "指挥所"
+                  }
+                ],
+                "friends": [
+                  {
+                    "name": "蓝方",
+                    "side": "blue_side"
+                  },
+                  {
+                    "name": "绿方",
+                    "side": "green_side"
+                  }
+                ],
+                "name": "绿方",
+                "side": "green_side",
+                "side_index": "3"
+              },
+              {
+                "enemies": [
+                  {
+                    "name": "红方",
+                    "side": "red_side"
+                  }
+                ],
+                "forces": [
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "30",
+                              "type": "F-16"
+                            },
+                            "subcategory": "战斗机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "100",
+                              "type": "空对空导弹"
+                            },
+                            "subcategory": "导弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1GFB",
+                        "location": "25.10, 120.50",
+                        "name": "第1歼击旅",
+                        "type": "空中部队"
+                      },
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "8",
+                              "type": "B-52"
+                            },
+                            "subcategory": "轰炸机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "60",
+                              "type": "精确制导炸弹"
+                            },
+                            "subcategory": "炸弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "2GAW",
+                        "location": "25.20, 120.60",
+                        "name": "第2空中联队",
+                        "type": "空中部队"
+                      }
+                    ],
+                    "id": "GFHQ",
+                    "location": "25.10, 120.50",
+                    "name": "绿方空中指挥所",
+                    "type": "指挥所"
+                  },
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "核艇",
+                            "entity": {
+                              "num": "100",
+                              "type": "G-16"
+                            },
+                            "subcategory": "核潜艇"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1GFB-b",
+                        "location": "25.10, 120.50",
+                        "name": "第一舰队",
+                        "type": "海面部队"
+                      }
+                    ],
+                    "id": "GFHQ-b",
+                    "location": "25.10, 120.50",
+                    "name": "绿方海面指挥所",
+                    "type": "指挥所"
+                  }
+                ],
+                "friends": [
+                  {
+                    "name": "蓝方",
+                    "side": "blue_side"
+                  },
+                  {
+                    "name": "绿方",
+                    "side": "green_side"
+                  }
+                ],
+                "name": "橙方",
+                "side": "orange_side",
+                "side_index": "4"
+              },
+              {
+                "enemies": [
+                  {
+                    "name": "红方",
+                    "side": "red_side"
+                  }
+                ],
+                "forces": [
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "30",
+                              "type": "F-16"
+                            },
+                            "subcategory": "战斗机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "100",
+                              "type": "空对空导弹"
+                            },
+                            "subcategory": "导弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1GFB",
+                        "location": "25.10, 120.50",
+                        "name": "第1歼击旅",
+                        "type": "空中部队"
+                      },
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "8",
+                              "type": "B-52"
+                            },
+                            "subcategory": "轰炸机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "60",
+                              "type": "精确制导炸弹"
+                            },
+                            "subcategory": "炸弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "2GAW",
+                        "location": "25.20, 120.60",
+                        "name": "第2空中联队",
+                        "type": "空中部队"
+                      }
+                    ],
+                    "id": "GFHQ",
+                    "location": "25.10, 120.50",
+                    "name": "绿方空中指挥所",
+                    "type": "指挥所"
+                  },
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "核艇",
+                            "entity": {
+                              "num": "100",
+                              "type": "G-16"
+                            },
+                            "subcategory": "核潜艇"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1GFB-b",
+                        "location": "25.10, 120.50",
+                        "name": "第一舰队",
+                        "type": "海面部队"
+                      }
+                    ],
+                    "id": "GFHQ-b",
+                    "location": "25.10, 120.50",
+                    "name": "绿方海面指挥所",
+                    "type": "指挥所"
+                  }
+                ],
+                "friends": [
+                  {
+                    "name": "蓝方",
+                    "side": "blue_side"
+                  },
+                  {
+                    "name": "绿方",
+                    "side": "green_side"
+                  }
+                ],
+                "name": "黄方",
+                "side": "yellow_side",
+                "side_index": "5"
+              },
+              {
+                "enemies": [
+                  {
+                    "name": "红方",
+                    "side": "red_side"
+                  }
+                ],
+                "forces": [
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "30",
+                              "type": "F-16"
+                            },
+                            "subcategory": "战斗机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "100",
+                              "type": "空对空导弹"
+                            },
+                            "subcategory": "导弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1GFB",
+                        "location": "25.10, 120.50",
+                        "name": "第1歼击旅",
+                        "type": "空中部队"
+                      },
+                      {
+                        "equipments": [
+                          {
+                            "category": "飞机",
+                            "entity": {
+                              "num": "8",
+                              "type": "B-52"
+                            },
+                            "subcategory": "轰炸机"
+                          },
+                          {
+                            "category": "弹药",
+                            "entity": {
+                              "num": "60",
+                              "type": "精确制导炸弹"
+                            },
+                            "subcategory": "炸弹"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "2GAW",
+                        "location": "25.20, 120.60",
+                        "name": "第2空中联队",
+                        "type": "空中部队"
+                      }
+                    ],
+                    "id": "GFHQ",
+                    "location": "25.10, 120.50",
+                    "name": "绿方空中指挥所",
+                    "type": "指挥所"
+                  },
+                  {
+                    "equipments": [],
+                    "forces": [
+                      {
+                        "equipments": [
+                          {
+                            "category": "核艇",
+                            "entity": {
+                              "num": "100",
+                              "type": "G-16"
+                            },
+                            "subcategory": "核潜艇"
+                          }
+                        ],
+                        "forces": [],
+                        "id": "1GFB-b",
+                        "location": "25.10, 120.50",
+                        "name": "第一舰队",
+                        "type": "海面部队"
+                      }
+                    ],
+                    "id": "GFHQ-b",
+                    "location": "25.10, 120.50",
+                    "name": "绿方海面指挥所",
+                    "type": "指挥所"
+                  }
+                ],
+                "friends": [
+                  {
+                    "name": "蓝方",
+                    "side": "blue_side"
+                  },
+                  {
+                    "name": "绿方",
+                    "side": "green_side"
+                  }
+                ],
+                "name": "紫方",
+                "side": "purple_side",
+                "side_index": "6"
+              }
+            ],
+            "scene_predefined_data": {},
+            "decision_interval": {
+              "time": 0,
+              "unit": "秒"
+            },
+            "runtime_period": {
+              "end": 10000,
+              "start": 0,
+              "unit": "秒"
+            },
+            "auxiliary_rules": {
+              "children": [
+                {
+                  "data": {
+                    "class": "AirplaneNumNotZero",
+                    "params": [
+                      {
+                        "key": "airport_index",
+                        "value": 0
+                      }
+                    ],
+                    "path": "airplane_num_not_zero.py",
+                    "repository_url": "http://11.1.0.2:2180/air_8v8/bt_conditions.git"
+                  },
+                  "id": "96qTTY7pXv",
+                  "positionX": 810,
+                  "type": "condition"
+                },
+                {
+                  "data": {
+                    "class": "TakeOffPatrolAction",
+                    "instance_name": "起飞巡逻行动节点_0205_123",
+                    "params": [
+                      {
+                        "key": "airport_index",
+                        "value": 0
+                      }
+                    ],
+                    "path": "take_off_patrol_action.py",
+                    "repository_url": "http://11.1.0.2:2180/air_8v8/bt_actions.git"
+                  },
+                  "id": "YWsWoYKovH",
+                  "positionX": 1200,
+                  "type": "behavior"
+                }
+              ],
+              "data": {
+                "params": []
+              },
+              "id": "12ZkbQbnui",
+              "positionX": 990,
+              "type": "sequence"
+            },
+            "reward": [
+              {
+                "class": "SelfImmediateLoss",
+                "description": "some text",
+                "id": 91,
+                "name": "我方毁伤即时奖励",
+                "parameters_template": "{\"instance_name\":\"我方毁伤即时奖励\",\"weight\":-0.1,\"params\":{\"entity\":\"Fighter\",\"feature\":\"alive\"}}",
+                "path": "self_immediate_loss.py",
+                "repo_id": 49,
+                "repository_url": "http://11.1.0.2:2180/air_8v8/rewards.git"
+              },
+              {
+                "class": "EnemyImmediateLoss",
+                "description": "some text",
+                "id": 92,
+                "name": "敌方毁伤即时奖励",
+                "parameters_template": "{\"instance_name\":\"敌方毁伤即时奖励\",\"weight\":-0.1,\"params\":{\"entity\":\"Fighter\",\"feature\":\"alive\"}}",
+                "path": "enemy_immediate_loss.py",
+                "repo_id": 49,
+                "repository_url": "http://11.1.0.2:2180/air_8v8/rewards.git"
+              }
+            ],
+            "statistics": []
+          },
+          "state": {
+            "LJUsVtx29q": {
+              "features": [
+                "position",
+                "speed",
+                "alive",
+                "angle"
+              ],
+              "index_name": [
+                "Fighter",
+                "AWACS"
+              ],
+              "max_num": 10,
+              "side": "Enemy",
+              "type": "2D"
+            },
+            "PTtHd5Q2E6": {
+              "features": [
+                "position",
+                "speed",
+                "alive",
+                "angle"
+              ],
+              "index_name": [
+                "AWACS"
+              ],
+              "max_num": 1,
+              "side": "Friendly",
+              "type": "2D"
+            },
+            "UbVCWSEO2z": {
+              "features": [
+                "position",
+                "speed",
+                "alive",
+                "angle"
+              ],
+              "index_name": [
+                "Fighter"
+              ],
+              "max_num": 10,
+              "side": "Friendly",
+              "type": "2D"
+            }
+          },
+          "network": {
+            "aggregators": {
+              "JYPihsmLTS": {
+                "input": [
+                  {
+                    "name": "UhbWAkGHgt_feature"
+                  },
+                  {
+                    "name": "RzL0zxY3Yy_feature"
+                  },
+                  {
+                    "name": "lMJ0RNvV35_feature"
+                  }
+                ],
+                "network": "gru_aggregator",
+                "output": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ],
+                  "output_layer_neuron": 256,
+                  "seq_len": 1,
+                  "state_size": 256
+                },
+                "type": "aggregator"
+              }
+            },
+            "decoders": {
+              "2yHUe0gPna": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  }
+                ],
+                "network": "categorical_decoder",
+                "output": [
+                  {
+                    "name": "2yHUe0gPna_category"
+                  },
+                  {
+                    "name": "2yHUe0gPna_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              },
+              "Bv2JhYRcUy": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  }
+                ],
+                "network": "categorical_decoder",
+                "output": [
+                  {
+                    "name": "Bv2JhYRcUy_category"
+                  },
+                  {
+                    "name": "Bv2JhYRcUy_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              },
+              "I8qBOdvQdM": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  },
+                  {
+                    "name": "UhbWAkGHgt_embedding"
+                  }
+                ],
+                "network": "single_selective_decoder",
+                "output": [
+                  {
+                    "name": "I8qBOdvQdM_entity_selected"
+                  },
+                  {
+                    "name": "I8qBOdvQdM_embedding"
+                  }
+                ],
+                "params": {
+                  "attention_size": 64,
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              },
+              "buhAaKU6J5": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  }
+                ],
+                "network": "categorical_decoder",
+                "output": [
+                  {
+                    "name": "buhAaKU6J5_category"
+                  },
+                  {
+                    "name": "buhAaKU6J5_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              },
+              "gKz27R4b2M": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  }
+                ],
+                "network": "categorical_decoder",
+                "output": [
+                  {
+                    "name": "gKz27R4b2M_category"
+                  },
+                  {
+                    "name": "gKz27R4b2M_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              },
+              "ovoGrzbL7l": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  },
+                  {
+                    "name": "RzL0zxY3Yy_embedding"
+                  }
+                ],
+                "network": "single_selective_decoder",
+                "output": [
+                  {
+                    "name": "ovoGrzbL7l_entity_selected"
+                  },
+                  {
+                    "name": "ovoGrzbL7l_embedding"
+                  }
+                ],
+                "params": {
+                  "attention_size": 64,
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              },
+              "r1XTYnbuvb": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  }
+                ],
+                "network": "categorical_decoder",
+                "output": [
+                  {
+                    "name": "r1XTYnbuvb_category"
+                  },
+                  {
+                    "name": "r1XTYnbuvb_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              },
+              "t556jFBD6v": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  },
+                  {
+                    "name": "lMJ0RNvV35_embedding"
+                  }
+                ],
+                "network": "single_selective_decoder",
+                "output": [
+                  {
+                    "name": "t556jFBD6v_entity_selected"
+                  },
+                  {
+                    "name": "t556jFBD6v_embedding"
+                  }
+                ],
+                "params": {
+                  "attention_size": 64,
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              },
+              "x3l3GAMc55": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  }
+                ],
+                "network": "categorical_decoder",
+                "output": [
+                  {
+                    "name": "x3l3GAMc55_category"
+                  },
+                  {
+                    "name": "x3l3GAMc55_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "decoder"
+              }
+            },
+            "encoders": {
+              "RzL0zxY3Yy": {
+                "input": [
+                  {
+                    "name": "PTtHd5Q2E6"
+                  }
+                ],
+                "network": "entity_encoder",
+                "output": [
+                  {
+                    "name": "RzL0zxY3Yy_feature"
+                  },
+                  {
+                    "name": "RzL0zxY3Yy_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "encoder"
+              },
+              "UhbWAkGHgt": {
+                "input": [
+                  {
+                    "name": "UbVCWSEO2z"
+                  }
+                ],
+                "network": "entity_encoder",
+                "output": [
+                  {
+                    "name": "UhbWAkGHgt_feature"
+                  },
+                  {
+                    "name": "UhbWAkGHgt_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "encoder"
+              },
+              "lMJ0RNvV35": {
+                "input": [
+                  {
+                    "name": "LJUsVtx29q"
+                  }
+                ],
+                "network": "entity_encoder",
+                "output": [
+                  {
+                    "name": "lMJ0RNvV35_feature"
+                  },
+                  {
+                    "name": "lMJ0RNvV35_embedding"
+                  }
+                ],
+                "params": {
+                  "hidden_layer_sizes": [
+                    512,
+                    256
+                  ]
+                },
+                "type": "encoder"
+              }
+            },
+            "value_function": {
+              "0udGQAe6Bc": {
+                "input": [
+                  {
+                    "name": "JYPihsmLTS_feature"
+                  }
+                ],
+                "network": "value",
+                "params": {
+                  "hidden_layer_sizes": [
+                    64
+                  ]
+                },
+                "type": "value_function"
+              }
+            }
+          },
+          "action": {
+            "Vn8HJAA1wX": {
+              "7XG8WMUXE5": {
+                "action_category": "categorical",
+                "name": "Y",
+                "action_type": "parameter",
+                "category_num": 10,
+                "input": [
+                  {
+                    "name": "buhAaKU6J5_category"
+                  }
+                ],
+                "reference_objects": [
+                  "空中巡逻任务_0205"
+                ]
+              },
+              "HyvngC2mny": {
+                "action_category": "single_selective",
+                "name": "敌方歼击机选择",
+                "action_type": "object",
+                "input": [
+                  {
+                    "name": "t556jFBD6v_entity_selected"
+                  }
+                ],
+                "entity_selection": "敌方飞机",
+                "state_id": "LJUsVtx29q"
+              },
+              "i0V63BNY90": {
+                "action_category": "categorical",
+                "name": "X",
+                "action_type": "parameter",
+                "category_num": 10,
+                "input": [
+                  {
+                    "name": "gKz27R4b2M_category"
+                  }
+                ],
+                "reference_objects": [
+                  "空中巡逻任务_0205"
+                ]
+              },
+              "rV4jdCVlD1": {
+                "action_category": "categorical",
+                "action_type": "predicate",
+                "input": [
+                  {
+                    "name": "2yHUe0gPna_category"
+                  }
+                ],
+                "missions": [
+                  {
+                    "class": "A2AAttackMission",
+                    "index_name": "",
+                    "instance_name": "空对空打击任务_0205_111",
+                    "name": "空对空打击任务_0205",
+                    "params": [
+                      {
+                        "is_related": true,
+                        "param": "target_id_list",
+                        "value": "敌方飞机"
+                      },
+                      {
+                        "is_related": true,
+                        "param": "unit_id_list",
+                        "value": "我方歼击机"
+                      }
+                    ],
+                    "path": "a2a_attack_mission.py",
+                    "repository_url": "http://11.1.0.2:2180/air_8v8/missions.git",
+                    "type": "air_mission"
+                  },
+                  {
+                    "class": "AirPatrolMission",
+                    "index_name": "",
+                    "instance_name": "空中巡逻任务_0205_222",
+                    "name": "空中巡逻任务_0205",
+                    "params": [
+                      {
+                        "is_related": true,
+                        "param": "position_x",
+                        "value": "X"
+                      },
+                      {
+                        "is_related": true,
+                        "param": "position_y",
+                        "value": "Y"
+                      },
+                      {
+                        "is_related": true,
+                        "param": "unit_id_list",
+                        "value": "我方歼击机"
+                      }
+                    ],
+                    "path": "air_patrol_mission.py",
+                    "repository_url": "http://11.1.0.2:2180/air_8v8/missions.git",
+                    "type": "air_mission"
+                  }
+                ]
+              },
+              "rZBUaQN4Gn": {
+                "action_category": "single_selective",
+                "name": "我方歼击机选择",
+                "action_type": "subject",
+                "input": [
+                  {
+                    "name": "I8qBOdvQdM_entity_selected"
+                  }
+                ],
+                "entity_selection": "我方歼击机",
+                "state_id": "UbVCWSEO2z"
+              }
+            },
+            "amzGDpNDzj": {
+              "ROw83LQM4N": {
+                "action_category": "categorical",
+                "name": "Y",
+                "action_type": "parameter",
+                "category_num": 10,
+                "input": [
+                  {
+                    "name": "Bv2JhYRcUy_category"
+                  }
+                ],
+                "reference_objects": [
+                  "空中巡逻任务_0205"
+                ]
+              },
+              "U3aOHN2xPF": {
+                "action_category": "categorical",
+                "name": "X",
+                "action_type": "parameter",
+                "category_num": 10,
+                "input": [
+                  {
+                    "name": "x3l3GAMc55_category"
+                  }
+                ],
+                "reference_objects": [
+                  "空中巡逻任务_0205"
+                ]
+              },
+              "YJy5Fsfq1O": {
+                "action_category": "single_selective",
+                "name": "我方预警机选择",
+                "action_type": "subject",
+                "input": [
+                  {
+                    "name": "ovoGrzbL7l_entity_selected"
+                  }
+                ],
+                "entity_selection": "我方预警机",
+                "state_id": "PTtHd5Q2E6"
+              },
+              "gU8RnERABx": {
+                "action_category": "categorical",
+                "action_type": "predicate",
+                "input": [
+                  {
+                    "name": "r1XTYnbuvb_category"
+                  }
+                ],
+                "missions": [
+                  {
+                    "class": "AirPatrolMission",
+                    "index_name": "",
+                    "instance_name": "空中巡逻任务_0205_333",
+                    "name": "空中巡逻任务_0205",
+                    "params": [
+                      {
+                        "is_related": true,
+                        "param": "position_x",
+                        "value": "X"
+                      },
+                      {
+                        "is_related": true,
+                        "param": "position_y",
+                        "value": "Y"
+                      },
+                      {
+                        "is_related": true,
+                        "param": "unit_id_list",
+                        "value": "我方预警机"
+                      }
+                    ],
+                    "path": "air_patrol_mission.py",
+                    "repository_url": "http://11.1.0.2:2180/air_8v8/missions.git",
+                    "type": "air_mission"
+                  }
+                ]
+              }
+            }
+          },
+          "algo": {
+            "algo_type": "ppo",
+            "clip_param": 0.1,
+            "entropy_coef": 0.02,
+            "learning_rate": 0.0005,
+            "vf_clip_param": 10,
+            "vf_loss_coef": 1
+          },
+          "training_coef": {
+            "fragment_size": 129,
+            "gamma": 0.99,
+            "lamb": 0.95,
+            "max_data_reuse": 1,
+            "replay_size": 1,
+            "sample_batch_size": 128,
+            "save_interval": 200
+          },
+          "probability": 1
+        }
+      ]
+    }
+  ],
+  "platform_config": {
+    "database_info": {
+      "db_name": "postgres",
+      "user": "postgres",
+      "password": "pgsql123",
+      "host": "11.1.1.144",
+      "port": "30135"
+    },
+    "architecture": "GPU"
+  },
+  "train_config": {
+    "train_type": "rl",
+    "train_sub_type": "self_play",
+    "train_task_id": "ktfp2zcjt63py",
+    "params": {
+      "env_num": 2
+    }
+  }
+}

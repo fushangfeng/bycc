@@ -1,0 +1,1517 @@
+{
+    "aircrafts": [
+        {
+            "dp": 10,
+            "maxSpeed": 473.28884800000003,
+            "name": "EA-18G型“咆哮者”电子攻击机",
+            "sensors": [
+                "RCT195型超短波通信GR器",
+                "AN/APG-79型机载有源相控阵雷达",
+                "AN/ALQ-214(V)2型综合防御电子对抗系统",
+                "机载雷达告警系统",
+                "AN/USQ-113(V)3型通信GR系统",
+                "AN/ALQ-218型宽带接收机"
+            ]
+        },
+        {
+            "dp": 10,
+            "maxSpeed": 473.28884800000003,
+            "name": "歼-15S战斗机",
+            "sensors": [
+                "国产BM/KJ-8602C电子支援/测量系统[SPS-1000]",
+                "通用红外搜索及跟踪系统",
+                "通用综合防御电子对抗系统",
+                "歼-15机载有源相控阵雷达",
+                "通用导弹逼近告警系统",
+                "通用激光测距仪"
+            ]
+        },
+        {
+            "dp": 5,
+            "maxSpeed": 79.738882,
+            "name": "MH-60R型“海鹰”反潜作战机",
+            "sensors": [
+                "AN/ALQ-144A(V)5型红外GR吊舱",
+                "AN/APS-147型多模雷达",
+                "AN/AQS-22 型机载低频声呐",
+                "AN/AAR-47A(V)2型导弹告警系统",
+                "AN/ALQ-210型电子支援系统",
+                "AN/APN-217型多普勒导航雷达",
+                "AN/AAS-52型多光谱瞄准系统[红外/光电]",
+                "通用激光指示器"
+            ]
+        },
+        {
+            "dp": 10,
+            "maxSpeed": 473.28884800000003,
+            "name": "歼-15型战斗机",
+            "sensors": [
+                "国产BM/KJ-8602C电子支援/测量系统[SPS-1000]",
+                "通用红外搜索及跟踪系统",
+                "通用综合防御电子对抗系统",
+                "歼-15机载有源相控阵雷达",
+                "通用导弹逼近告警系统",
+                "通用激光测距仪"
+            ]
+        },
+        {
+            "dp": 5,
+            "maxSpeed": 172.338874,
+            "name": "E-2D型“先进鹰眼”舰载预警机",
+            "sensors": [
+                "红外搜索和跟踪传感器[鹰眼]",
+                "AN/APY-9型先进超高频相控阵雷达",
+                "AN/ALQ-217型电子支援测量系统"
+            ]
+        },
+        {
+            "dp": 5,
+            "maxSpeed": 473.28884800000003,
+            "name": "F-16C型 Blk 70“战隼”战斗机",
+            "sensors": [
+                "AN/APG-68型多功能数字化火控雷达",
+                "AN/ALR-66(VH)型雷达告警接收机",
+                "AN/ALQ-187 I-DIAS型电子对抗系统"
+            ]
+        },
+        {
+            "dp": 20,
+            "maxSpeed": 210.92220400000002,
+            "name": "空警-500型预警机",
+            "sensors": [
+                "88型雷达",
+                "电子支援/测量系统[高级]",
+                "通用综合防御电子对抗系统"
+            ]
+        },
+        {
+            "dp": 5,
+            "maxSpeed": 79.738882,
+            "name": "Z-20F",
+            "sensors": [
+                "通用导航雷达",
+                "通用前视红外TC系统",
+                "通用雷达告警接收机"
+            ]
+        },
+        {
+            "dp": 5,
+            "maxSpeed": 79.738882,
+            "name": "SH-60B型“海鹰”直升机",
+            "sensors": [
+                "AN/APS-124型反潜搜索雷达",
+                "AN/ALQ-142型电子支援测量系统",
+                "AN/AAS-44型前视红外线侦搜仪",
+                "AN/APN-217型多普勒导航雷达",
+                "通用激光指示器",
+                "AN/ASQ-81(V)4型磁异TC器"
+            ]
+        },
+        {
+            "dp": 3,
+            "maxSpeed": 79.738882,
+            "name": "直-9D型反潜作战机",
+            "sensors": [
+                "AN/AQS-13B型可投放式声呐",
+                "国产KLC-1型机载搜索雷达",
+                "通用前视红外TC系统"
+            ]
+        },
+        {
+            "dp": 10,
+            "maxSpeed": 473.28884800000003,
+            "name": "F/A-18F型“超级大黄蜂”战斗机",
+            "sensors": [
+                "AN/APG-79型机载有源相控阵雷达",
+                "AN/ALQ-214(V)4型综合防御电子对抗系统",
+                "机载雷达告警系统",
+                "AN/AAS-42(V)型红外搜索与跟踪系统"
+            ]
+        },
+        {
+            "dp": 5,
+            "maxSpeed": 462.99996000000004,
+            "name": "歼-31型战斗机",
+            "sensors": [
+                "国产BM/KJ-8602C电子支援/测量系统[SPS-1000]",
+                "通用综合防御电子对抗系统",
+                "通用激光测距仪",
+                "通用红外搜索及跟踪系统",
+                "J-31 机载有源相控阵雷达",
+                "通用导弹逼近告警系统",
+                "通用激光指示器"
+            ]
+        },
+        {
+            "dp": 10,
+            "maxSpeed": 473.28884800000003,
+            "name": "歼-16D型电子战飞机",
+            "sensors": [
+                "歼-16机载有源相控阵雷达",
+                "通用综合防御电子对抗系统",
+                "JD-16型电子支援测量设备",
+                "通用导弹逼近告警系统",
+                "通用通信GR机 [高级]",
+                "通用通讯监视器 [高级]",
+                "国产BM/KJ-8602C电子支援/测量系统[SPS-1000]"
+            ]
+        },
+        {
+            "dp": 5,
+            "maxSpeed": 473.28884800000003,
+            "name": "F-35C型“闪电II”战斗机",
+            "sensors": [
+                "AN/ASQ-239型“梭鱼”综合电子战系统",
+                "AN/APG-81型机载有源相控阵雷达",
+                "AN/AAQ-37型光电分布式孔径系统（EO-DAS）",
+                "光电跟踪瞄准系统 [激光指示器]",
+                "光电跟踪瞄准系统 [机载红外搜索跟踪系统]",
+                "AN/AAQ-37型导弹逼近告警系统(光电分布式孔径)",
+                "AN/APG-81进攻型电子对抗系统"
+            ]
+        },
+        {
+            "dp": 10,
+            "maxSpeed": 66.87777200000001,
+            "name": "直-18FQ型反潜作战机",
+            "sensors": [
+                "通用前视红外TC系统",
+                "通用对海搜索雷达",
+                "通用电视摄像机",
+                "通用激光测距仪",
+                "通用雷达告警接收机",
+                "通用导弹逼近告警系统",
+                "通用吊放声呐[主动/被动]"
+            ]
+        }
+    ],
+    "sensors": [
+        {
+            "name": "米幕381三坐标中远程搜索雷达",
+            "range": 398180
+        },
+        {
+            "name": "国产型SQC-1主/被动搜索和攻击声呐",
+            "range": 74080
+        },
+        {
+            "name": "DSQS-21C型主/被动舰壳声呐",
+            "range": 29632
+        },
+        {
+            "name": "JD-16型电子支援测量设备",
+            "range": 926000
+        },
+        {
+            "name": "国产SJG-206型拖曳式阵列声呐",
+            "range": 129640
+        },
+        {
+            "name": "AN/BQQ-10型整合式声呐系统",
+            "range": 129640
+        },
+        {
+            "name": "光电跟踪瞄准系统 [激光指示器]",
+            "range": 27780
+        },
+        {
+            "name": "TSM 2633型主被动舰壳声呐",
+            "range": 14816
+        },
+        {
+            "name": "通用前视红外TC系统",
+            "range": 83340
+        },
+        {
+            "name": "国产382型雷达",
+            "range": 296320
+        },
+        {
+            "name": "AN/SRS-1A型战术定向系统天线",
+            "range": 926000
+        },
+        {
+            "name": "通用潜艇潜望器，光学",
+            "range": 41670
+        },
+        {
+            "name": "AN/SPY-1D(V)型多功能相控阵雷达[反导模式]",
+            "range": 324100
+        },
+        {
+            "name": "AN/SQS-53A型舰壳主/被动声呐",
+            "range": 74080
+        },
+        {
+            "name": "AN/BVS-1光电桅杆",
+            "range": 0
+        },
+        {
+            "name": "通用潜艇潜望器，微光电视",
+            "range": 41670
+        },
+        {
+            "name": "MR-331型火控雷达",
+            "range": 0
+        },
+        {
+            "name": "MK95跟踪照射雷达[MK91照射火控雷达]",
+            "range": 0
+        },
+        {
+            "name": "红外导引头（线扫式）",
+            "range": 18520
+        },
+        {
+            "name": "AN/WLR-1H(V)7型电子支援系统",
+            "range": 926000
+        },
+        {
+            "name": "AN/ASQ-81(V)4型磁异TC器",
+            "range": 1852
+        },
+        {
+            "name": "通用导弹逼近告警系统",
+            "range": 9260
+        },
+        {
+            "name": "国产347G型火控雷达",
+            "range": 37040
+        },
+        {
+            "name": "NRJ-6A雷达ZCGR设备",
+            "range": 0
+        },
+        {
+            "name": "国产981型电子战系统",
+            "range": 0
+        },
+        {
+            "name": "1290型导航雷达",
+            "range": 37040
+        },
+        {
+            "name": "国产366型雷达",
+            "range": 148160
+        },
+        {
+            "name": "被动雷达导引头",
+            "range": 18520
+        },
+        {
+            "name": "国产517H-1型“刀架”远程两坐标对空搜索雷达",
+            "range": 333360
+        },
+        {
+            "name": "TB-37/U被动式多功能拖曳阵列声呐[AN/SQR-20声呐]",
+            "range": 129640
+        },
+        {
+            "name": "舰桥主人E型雷达",
+            "range": 46300
+        },
+        {
+            "name": "主动雷达导引头",
+            "range": 9260
+        },
+        {
+            "name": "通用红外搜索及跟踪系统",
+            "range": 185200
+        },
+        {
+            "name": "国产KLC-1型机载搜索雷达",
+            "range": 333360
+        },
+        {
+            "name": "鱼雷警告系统",
+            "range": 27780
+        },
+        {
+            "name": "AN/SPG-60型导弹/舰炮射控雷达[MK86型火控雷达]",
+            "range": 88896
+        },
+        {
+            "name": "MR-710型“顶板”搜索雷达",
+            "range": 296320
+        },
+        {
+            "name": "被动雷达导引头",
+            "range": 18520
+        },
+        {
+            "name": "国产364型搜索雷达",
+            "range": 129640
+        },
+        {
+            "name": "AN/SQS-53D型舰壳主/被动声呐",
+            "range": 74080
+        },
+        {
+            "name": "AN/SPS-48C型三坐标雷达",
+            "range": 407440
+        },
+        {
+            "name": "AN/AAQ-37型光电分布式孔径系统（EO-DAS）",
+            "range": 111120
+        },
+        {
+            "name": "AN/SLQ-32(V)6型电子战系统[SEWIP BLock 2]",
+            "range": 0
+        },
+        {
+            "name": "光电跟踪瞄准系统 [机载红外搜索跟踪系统]",
+            "range": 185200
+        },
+        {
+            "name": "通用电视摄像机",
+            "range": 55560
+        },
+        {
+            "name": "TRS 3204 Castor IIC型传感器组",
+            "range": 0
+        },
+        {
+            "name": "鱼-10型主被动声呐",
+            "range": 3704
+        },
+        {
+            "name": "CM010光电桅杆",
+            "range": 0
+        },
+        {
+            "name": "国产SJD-X型可变深度声呐",
+            "range": 14816
+        },
+        {
+            "name": "AN/AAS-44型前视红外线侦搜仪",
+            "range": 55560
+        },
+        {
+            "name": "ATAS(V)2型主被动拖曳式阵列声呐",
+            "range": 74080
+        },
+        {
+            "name": "AN/AAQ-37型导弹逼近告警系统(光电分布式孔径)",
+            "range": 9260
+        },
+        {
+            "name": "Decca 20V90型导航雷达",
+            "range": 46300
+        },
+        {
+            "name": "Mk92 Mod 6型火控雷达",
+            "range": 237056
+        },
+        {
+            "name": "半主动雷达制导导引头",
+            "range": 296320
+        },
+        {
+            "name": "红外搜索和跟踪传感器[鹰眼]",
+            "range": 185200
+        },
+        {
+            "name": "AN/AAR-47A(V)2型导弹告警系统",
+            "range": 9260
+        },
+        {
+            "name": "AN/ALQ-144A(V)5型红外GR吊舱",
+            "range": 0
+        },
+        {
+            "name": "AN/SPY-1B型多功能雷达",
+            "range": 324100
+        },
+        {
+            "name": "Mk46 Mod 1光学观察系统[红外/电视摄像/激光测距仪，MK34火炮武器系统/MK160火炮雷达]",
+            "range": 0
+        },
+        {
+            "name": "半主动雷达制导导引头",
+            "range": 148160
+        },
+        {
+            "name": "通用吊放声呐[主动/被动]",
+            "range": 5556
+        },
+        {
+            "name": "红外导引头（线扫式）",
+            "range": 18520
+        },
+        {
+            "name": "主动雷达导引头",
+            "range": 9260
+        },
+        {
+            "name": "AN/APS-124型反潜搜索雷达",
+            "range": 296320
+        },
+        {
+            "name": "AN/SLQ-32(V)4型电子战系统",
+            "range": 0
+        },
+        {
+            "name": "J-31 机载有源相控阵雷达",
+            "range": 333360
+        },
+        {
+            "name": "ARBR 21型电子支援系统",
+            "range": 926000
+        },
+        {
+            "name": "RCT195型超短波通信GR器",
+            "range": 0
+        },
+        {
+            "name": "国产346A型有源相控阵雷达",
+            "range": 324100
+        },
+        {
+            "name": "国产826型电子支援系统",
+            "range": 222240
+        },
+        {
+            "name": "国产825电子战系统",
+            "range": 222240
+        },
+        {
+            "name": "国产984型电子GR系统",
+            "range": 0
+        },
+        {
+            "name": "通用激光测距仪",
+            "range": 7408
+        },
+        {
+            "name": "通用对海搜索雷达",
+            "range": 370400
+        },
+        {
+            "name": "国产760型雷达",
+            "range": 46300
+        },
+        {
+            "name": "半主动雷达制导导引头",
+            "range": 296320
+        },
+        {
+            "name": "AN/ALQ-214(V)2型综合防御电子对抗系统",
+            "range": 0
+        },
+        {
+            "name": "国产349A型雷达",
+            "range": 37040
+        },
+        {
+            "name": "AN/SLQ-32(V)5型电子战系统",
+            "range": 0
+        },
+        {
+            "name": "主动雷达搜寻",
+            "range": 27780
+        },
+        {
+            "name": "“前顶”火控雷达[仿俄制MR-90]",
+            "range": 74080
+        },
+        {
+            "name": "主动声呐告警声音拦截",
+            "range": 66672
+        },
+        {
+            "name": "主动雷达导引头",
+            "range": 9260
+        },
+        {
+            "name": "鱼雷导引头",
+            "range": 3704
+        },
+        {
+            "name": "AN/ALQ-142型电子支援测量系统",
+            "range": 926000
+        },
+        {
+            "name": "国产SJD-4型可变深度主动声呐",
+            "range": 3704
+        },
+        {
+            "name": "Mk 1 Mod2武器指引仪",
+            "range": 185200
+        },
+        {
+            "name": "AN/AAS-52型多光谱瞄准系统[红外/光电]",
+            "range": 185200
+        },
+        {
+            "name": "AN/SPS-64(V)9型导航/搜索雷达[RM 1220 6X]",
+            "range": 37040
+        },
+        {
+            "name": "AN/BQG-5A型宽孔径被动舷侧基阵声呐[BSY-2]",
+            "range": 129640
+        },
+        {
+            "name": "AN/SPQ-9B型火控雷达",
+            "range": 46300
+        },
+        {
+            "name": "通用综合防御电子对抗系统",
+            "range": 0
+        },
+        {
+            "name": "国产BM/KJ-8602C电子支援/测量系统[SPS-1000]",
+            "range": 222240
+        },
+        {
+            "name": "AN/SPG-60型传感器组[MK86火控雷达]",
+            "range": 0
+        },
+        {
+            "name": "AN/SPG-62型目标照射雷达",
+            "range": 305580
+        },
+        {
+            "name": "电子支援/测量系统[高级]",
+            "range": 926000
+        },
+        {
+            "name": "DRBV 26D型“朱庇特”远程对空警戒雷达",
+            "range": 333360
+        },
+        {
+            "name": "国产921-A型电子支援系统",
+            "range": 222240
+        },
+        {
+            "name": "AN/SPY-1D型多功能雷达",
+            "range": 324100
+        },
+        {
+            "name": "国产345型雷达",
+            "range": 0
+        },
+        {
+            "name": "国产517型“刀架”远程两坐标对空搜索雷达",
+            "range": 203720
+        },
+        {
+            "name": "AN/SLQ-32(V)3型舰载电子战系统",
+            "range": 0
+        },
+        {
+            "name": "I-波段主动水面搜索雷达[MRK-50E]",
+            "range": 37040
+        },
+        {
+            "name": "AN/ALR-66(VH)型雷达告警接收机",
+            "range": 222240
+        },
+        {
+            "name": "TRS 3033型搜索雷达",
+            "range": 46300
+        },
+        {
+            "name": "国产347型雷达",
+            "range": 37040
+        },
+        {
+            "name": "AN/APG-81型机载有源相控阵雷达",
+            "range": 370400
+        },
+        {
+            "name": "88型雷达",
+            "range": 648200
+        },
+        {
+            "name": "AN/ALQ-218型宽带接收机",
+            "range": 926000
+        },
+        {
+            "name": "Najir Mk2光电只会系统[红外/光电/激光]",
+            "range": 0
+        },
+        {
+            "name": "鱼雷导引头",
+            "range": 2778
+        },
+        {
+            "name": "AN/SLQ-59 [SEWIP Blk 3T]",
+            "range": 0
+        },
+        {
+            "name": "AN/AAS-42(V)型红外搜索与跟踪系统",
+            "range": 185200
+        },
+        {
+            "name": "AN/ALQ-214(V)4型综合防御电子对抗系统",
+            "range": 0
+        },
+        {
+            "name": "AN/TB-29型轻型拖曳声呐系统",
+            "range": 185200
+        },
+        {
+            "name": "国产346B型有源相控阵雷达",
+            "range": 324100
+        },
+        {
+            "name": "J/ZQQ-7 TASS被动拖曳式声呐",
+            "range": 129640
+        },
+        {
+            "name": "J/ZQQ-7 Flank Array舷侧阵被动声呐",
+            "range": 74080
+        },
+        {
+            "name": "AN/SPQ-9型火控雷达",
+            "range": 37040
+        },
+        {
+            "name": "AN/SPS-67(V)1型对海搜索雷达",
+            "range": 64820
+        },
+        {
+            "name": "国产346型有源相控阵雷达",
+            "range": 277800
+        },
+        {
+            "name": "红外导引头（凝视成像）",
+            "range": 18520
+        },
+        {
+            "name": "国产363型雷达",
+            "range": 129640
+        },
+        {
+            "name": "主动雷达导引头",
+            "range": 27780
+        },
+        {
+            "name": "AN/SPS-49(V)7型超远程对空警戒雷达",
+            "range": 463000
+        },
+        {
+            "name": "AN/AQS-22 型机载低频声呐",
+            "range": 14816
+        },
+        {
+            "name": "AN/APS-147型多模雷达",
+            "range": 370400
+        },
+        {
+            "name": "AN/ALQ-210型电子支援系统",
+            "range": 926000
+        },
+        {
+            "name": "AN/BLQ-10(V)1型全综合雷达和通讯ESM",
+            "range": 926000
+        },
+        {
+            "name": "国产BM/HZ8610型电子支援系统",
+            "range": 926000
+        },
+        {
+            "name": "AN/ALQ-217型电子支援测量系统",
+            "range": 926000
+        },
+        {
+            "name": "J/ZQQ-7 Bow舷艏主/被动声呐 ",
+            "range": 74080
+        },
+        {
+            "name": "AN/SPN-43C型空中监视雷达",
+            "range": 129640
+        },
+        {
+            "name": "J/ZPS-6F型平面搜索雷达",
+            "range": 111120
+        },
+        {
+            "name": "通用导航雷达",
+            "range": 37040
+        },
+        {
+            "name": "通用前视红外TC系统",
+            "range": 55560
+        },
+        {
+            "name": "歼-16机载有源相控阵雷达",
+            "range": 222240
+        },
+        {
+            "name": "AN/BQS-15型探雷导航声呐",
+            "range": 740.8000000000001
+        },
+        {
+            "name": "AN/APN-217型多普勒导航雷达",
+            "range": 64820
+        },
+        {
+            "name": "歼-15机载有源相控阵雷达",
+            "range": 222240
+        },
+        {
+            "name": "AN/SPS-67(V)5型对海搜索雷达",
+            "range": 64820
+        },
+        {
+            "name": "AN/AQS-13B型可投放式声呐",
+            "range": 5556
+        },
+        {
+            "name": "AN/SQS-53C型舰壳主/被动声呐",
+            "range": 74080
+        },
+        {
+            "name": "国产SQG-2B型低频被动测距和侦听声呐",
+            "range": 74080
+        },
+        {
+            "name": "AN/TB-34型轻型拖曳声呐系统",
+            "range": 148160
+        },
+        {
+            "name": "AN/SPS-64(V)1型导航和搜索雷达",
+            "range": 37040
+        },
+        {
+            "name": "AN/ASQ-239型“梭鱼”综合电子战系统",
+            "range": 926000
+        },
+        {
+            "name": "AN/SPY-1A型多功能雷达",
+            "range": 324100
+        },
+        {
+            "name": "通用雷达告警接收机",
+            "range": 222240
+        },
+        {
+            "name": "AN/SPG-51D型传感器组[Mk74 Mod 13火控系统]",
+            "range": 0
+        },
+        {
+            "name": "AN/APG-79型机载有源相控阵雷达",
+            "range": 222240
+        },
+        {
+            "name": "AN/SPS-48E型三坐标对空搜索雷达",
+            "range": 407440
+        },
+        {
+            "name": "AN/SPS-49(V)5两坐标雷达",
+            "range": 463000
+        },
+        {
+            "name": "机载雷达告警系统",
+            "range": 222240
+        },
+        {
+            "name": "AN/SPG-62型目标照射雷达",
+            "range": 305580
+        },
+        {
+            "name": "通用激光指示器",
+            "range": 18520
+        },
+        {
+            "name": "AN/BPS-16型I频平面搜索雷达",
+            "range": 166680
+        },
+        {
+            "name": "国产SQC-207型舷侧线列阵拖曳线阵声呐",
+            "range": 74080
+        },
+        {
+            "name": "AN/SPS-55型搜索/导航雷达",
+            "range": 64820
+        },
+        {
+            "name": "AN/APG-81进攻型电子对抗系统",
+            "range": 0
+        },
+        {
+            "name": "被动雷达导引头",
+            "range": 203720
+        },
+        {
+            "name": "AN/APG-68型多功能数字化火控雷达",
+            "range": 111120
+        },
+        {
+            "name": "AN/WLY-1型水下警告/反制系统",
+            "range": 27780
+        },
+        {
+            "name": "J/ZLR-7型雷达预警设备",
+            "range": 926000
+        },
+        {
+            "name": "国产360型雷达",
+            "range": 166680
+        },
+        {
+            "name": "通用通讯监视器 [高级]",
+            "range": 926000
+        },
+        {
+            "name": "AN/USQ-113(V)3型通信GR系统",
+            "range": 926000
+        },
+        {
+            "name": "MGK-335型“公牛鼻”舰壳声呐",
+            "range": 27780
+        },
+        {
+            "name": "通用通信GR机 [高级]",
+            "range": 0
+        },
+        {
+            "name": "红外导引头（凝视成像）",
+            "range": 18520
+        },
+        {
+            "name": "国产SID-7主被动声呐",
+            "range": 2778
+        },
+        {
+            "name": "国产SJG-206型拖曳式阵列声呐",
+            "range": 129640
+        },
+        {
+            "name": "AN/ALQ-187 I-DIAS型电子对抗系统",
+            "range": 0
+        },
+        {
+            "name": "AN/APY-9型先进超高频相控阵雷达",
+            "range": 648200
+        }
+    ],
+    "ships": [
+        {
+            "dp": 1210,
+            "maxSpeed": 16.4622208,
+            "name": "“基隆”号导弹驱逐舰",
+            "sensors": [
+                "AN/SLQ-32(V)5型电子战系统",
+                "AN/SLQ-32(V)5型电子战系统",
+                "AN/SPQ-9型火控雷达",
+                "AN/SPS-64(V)1型导航和搜索雷达",
+                "AN/SPS-55型搜索/导航雷达",
+                "AN/SPS-49(V)5两坐标雷达",
+                "AN/SPS-48E型三坐标对空搜索雷达",
+                "AN/SQS-53D型舰壳主/被动声呐",
+                "AN/SPG-60型传感器组[MK86火控雷达]",
+                "AN/SPG-51D型传感器组[Mk74 Mod 13火控系统]",
+                "AN/SPG-51D型传感器组[Mk74 Mod 13火控系统]"
+            ]
+        },
+        {
+            "dp": 640,
+            "maxSpeed": 15.433332,
+            "name": "FFG530 “徐州”号054A型导弹护卫舰",
+            "sensors": [
+                "MR-331型火控雷达",
+                "国产SJD-X型可变深度声呐",
+                "“前顶”火控雷达[仿俄制MR-90]",
+                "“前顶”火控雷达[仿俄制MR-90]",
+                "“前顶”火控雷达[仿俄制MR-90]",
+                "“前顶”火控雷达[仿俄制MR-90]",
+                "国产363型雷达",
+                "国产347G型火控雷达",
+                "MR-710型“顶板”搜索雷达",
+                "国产826型电子支援系统",
+                "国产SJG-206型拖曳式阵列声呐",
+                "国产984型电子GR系统",
+                "国产984型电子GR系统",
+                "MGK-335型“公牛鼻”舰壳声呐"
+            ]
+        },
+        {
+            "dp": 1380,
+            "maxSpeed": 15.433332,
+            "name": "DDG 郑和号055型导弹驱逐舰",
+            "sensors": [
+                "国产349A型雷达",
+                "国产BM/HZ8610型电子支援系统",
+                "国产364型搜索雷达",
+                "MGK-335型“公牛鼻”舰壳声呐",
+                "国产517H-1型“刀架”远程两坐标对空搜索雷达",
+                "国产760型雷达",
+                "国产SJG-206型拖曳式阵列声呐",
+                "NRJ-6A雷达ZCGR设备",
+                "NRJ-6A雷达ZCGR设备",
+                "国产SJD-X型可变深度声呐",
+                "MR-331型火控雷达",
+                "国产346B型有源相控阵雷达",
+                "国产346B型有源相控阵雷达",
+                "国产346B型有源相控阵雷达",
+                "国产346B型有源相控阵雷达",
+                "国产346A型有源相控阵雷达",
+                "国产346A型有源相控阵雷达",
+                "国产346A型有源相控阵雷达",
+                "国产346A型有源相控阵雷达"
+            ]
+        },
+        {
+            "dp": 3770,
+            "maxSpeed": 12.86111,
+            "name": "965“呼伦湖”号901型综合补给舰",
+            "sensors": [
+                "通用导航雷达"
+            ]
+        },
+        {
+            "dp": 360,
+            "maxSpeed": 14.918887600000001,
+            "name": "FFG564 “宜昌”号053H3型导弹护卫舰",
+            "sensors": [
+                "国产345型雷达",
+                "国产SID-7主被动声呐",
+                "国产347型雷达",
+                "1290型导航雷达",
+                "1290型导航雷达",
+                "国产981型电子战系统",
+                "国产981型电子战系统",
+                "国产517型“刀架”远程两坐标对空搜索雷达",
+                "国产363型雷达",
+                "国产360型雷达",
+                "国产825电子战系统",
+                "国产SJD-4型可变深度主动声呐"
+            ]
+        },
+        {
+            "dp": 590,
+            "maxSpeed": 12.86111,
+            "name": "1208“承德”号康定级护卫舰",
+            "sensors": [
+                "TRS 3033型搜索雷达",
+                "ATAS(V)2型主被动拖曳式阵列声呐",
+                "Decca 20V90型导航雷达",
+                "Decca 20V90型导航雷达",
+                "DRBV 26D型“朱庇特”远程对空警戒雷达",
+                "ARBR 21型电子支援系统",
+                "Najir Mk2光电只会系统[红外/光电/激光]",
+                "TRS 3204 Castor IIC型传感器组",
+                "TRS 3204 Castor IIC型传感器组",
+                "TSM 2633型主被动舰壳声呐"
+            ]
+        },
+        {
+            "dp": 1270,
+            "maxSpeed": 18.005554,
+            "name": "CG 47 “提康德罗加号”提康德罗加级巡航舰 ",
+            "sensors": [
+                "AN/SLQ-32(V)3型舰载电子战系统",
+                "AN/SLQ-32(V)3型舰载电子战系统",
+                "AN/SPG-62型目标照射雷达",
+                "AN/SPG-62型目标照射雷达",
+                "AN/SPG-62型目标照射雷达",
+                "AN/SPG-62型目标照射雷达",
+                "AN/SPQ-9型火控雷达",
+                "AN/SPS-49(V)7型超远程对空警戒雷达",
+                "AN/SPY-1A型多功能雷达",
+                "AN/SPY-1A型多功能雷达",
+                "AN/SPY-1A型多功能雷达",
+                "AN/SPY-1A型多功能雷达",
+                "AN/SPS-55型搜索/导航雷达",
+                "AN/SQS-53A型舰壳主/被动声呐",
+                "AN/SPS-64(V)9型导航/搜索雷达[RM 1220 6X]",
+                "Mk 1 Mod2武器指引仪",
+                "Mk 1 Mod2武器指引仪"
+            ]
+        },
+        {
+            "dp": 630,
+            "maxSpeed": 16.9766652,
+            "name": "\"成功\"号导弹护卫舰",
+            "sensors": [
+                "AN/SPG-60型导弹/舰炮射控雷达[MK86型火控雷达]",
+                "AN/SLQ-32(V)4型电子战系统",
+                "AN/SLQ-32(V)4型电子战系统",
+                "AN/SPS-55型搜索/导航雷达",
+                "AN/SPS-49(V)5两坐标雷达",
+                "DSQS-21C型主/被动舰壳声呐",
+                "Mk92 Mod 6型火控雷达"
+            ]
+        },
+        {
+            "dp": 5560,
+            "maxSpeed": 15.433332,
+            "name": "CV16 “辽宁”号001型航空母舰",
+            "sensors": [
+                "国产346型有源相控阵雷达",
+                "国产346型有源相控阵雷达",
+                "国产346型有源相控阵雷达",
+                "国产346型有源相控阵雷达",
+                "米幕381三坐标中远程搜索雷达",
+                "电子支援/测量系统[高级]",
+                "通用综合防御电子对抗系统",
+                "通用导航雷达",
+                "通用导航雷达"
+            ]
+        },
+        {
+            "dp": 7590,
+            "maxSpeed": 18.005554,
+            "name": "CVN 68“尼米兹号”尼米兹级核动力航空母舰",
+            "sensors": [
+                "AN/WLR-1H(V)7型电子支援系统",
+                "AN/SLQ-32(V)4型电子战系统",
+                "AN/SLQ-32(V)4型电子战系统",
+                "AN/SPS-67(V)1型对海搜索雷达",
+                "AN/SPS-49(V)5两坐标雷达",
+                "AN/SPS-48E型三坐标对空搜索雷达",
+                "AN/SPQ-9B型火控雷达",
+                "AN/SPS-64(V)9型导航/搜索雷达[RM 1220 6X]",
+                "AN/SPN-43C型空中监视雷达",
+                "MK95跟踪照射雷达[MK91照射火控雷达]",
+                "MK95跟踪照射雷达[MK91照射火控雷达]",
+                "MK95跟踪照射雷达[MK91照射火控雷达]",
+                "MK95跟踪照射雷达[MK91照射火控雷达]",
+                "鱼雷警告系统"
+            ]
+        },
+        {
+            "dp": 1080,
+            "maxSpeed": 14.918887600000001,
+            "name": "DDG173 “长沙”号052D型导弹驱逐舰",
+            "sensors": [
+                "国产349A型雷达",
+                "国产346A型有源相控阵雷达",
+                "国产346A型有源相控阵雷达",
+                "国产346A型有源相控阵雷达",
+                "国产346A型有源相控阵雷达",
+                "国产BM/HZ8610型电子支援系统",
+                "国产364型搜索雷达",
+                "MGK-335型“公牛鼻”舰壳声呐",
+                "国产517H-1型“刀架”远程两坐标对空搜索雷达",
+                "国产760型雷达",
+                "国产SJG-206型拖曳式阵列声呐",
+                "NRJ-6A雷达ZCGR设备",
+                "NRJ-6A雷达ZCGR设备",
+                "国产SJD-X型可变深度声呐",
+                "MR-331型火控雷达"
+            ]
+        },
+        {
+            "dp": 1270,
+            "maxSpeed": 18.005554,
+            "name": "DDG 104“斯特瑞特”导弹护卫舰[阿利伯克级IIA]",
+            "sensors": [
+                "AN/SPY-1D(V)型多功能相控阵雷达[反导模式]",
+                "AN/SPY-1D(V)型多功能相控阵雷达[反导模式]",
+                "AN/SPY-1D(V)型多功能相控阵雷达[反导模式]",
+                "AN/SPY-1D(V)型多功能相控阵雷达[反导模式]",
+                "AN/SRS-1A型战术定向系统天线",
+                "AN/SQS-53C型舰壳主/被动声呐",
+                "AN/SLQ-32(V)6型电子战系统[SEWIP BLock 2]",
+                "AN/SLQ-32(V)6型电子战系统[SEWIP BLock 2]",
+                "AN/SPG-62型目标照射雷达",
+                "AN/SPG-62型目标照射雷达",
+                "AN/SPG-62型目标照射雷达",
+                "Mk46 Mod 1光学观察系统[红外/电视摄像/激光测距仪，MK34火炮武器系统/MK160火炮雷达]",
+                "AN/SPS-67(V)5型对海搜索雷达",
+                "舰桥主人E型雷达",
+                "TB-37/U被动式多功能拖曳阵列声呐[AN/SQR-20声呐]",
+                "AN/SLQ-59 [SEWIP Blk 3T]",
+                "AN/SLQ-59 [SEWIP Blk 3T]"
+            ]
+        }
+    ],
+    "submarines": [
+        {
+            "dp": 40,
+            "maxSpeed": 16.4622208,
+            "name": "弗吉尼亚级核动力攻击型潜艇",
+            "sensors": [
+                "AN/BLQ-10(V)1型全综合雷达和通讯ESM",
+                "AN/WLY-1型水下警告/反制系统",
+                "AN/BQQ-10型整合式声呐系统",
+                "AN/BPS-16型I频平面搜索雷达",
+                "AN/TB-29型轻型拖曳声呐系统",
+                "AN/TB-34型轻型拖曳声呐系统",
+                "AN/BQG-5A型宽孔径被动舷侧基阵声呐[BSY-2]",
+                "AN/BQS-15型探雷导航声呐",
+                "AN/BVS-1光电桅杆"
+            ]
+        },
+        {
+            "dp": 39,
+            "maxSpeed": 15.433332,
+            "name": "SSN 093B型核动力攻击型潜艇",
+            "sensors": [
+                "国产921-A型电子支援系统",
+                "国产SQC-207型舷侧线列阵拖曳线阵声呐",
+                "国产SQG-2B型低频被动测距和侦听声呐",
+                "国产型SQC-1主/被动搜索和攻击声呐",
+                "I-波段主动水面搜索雷达[MRK-50E]",
+                "主动声呐告警声音拦截",
+                "国产SJG-206型拖曳式阵列声呐",
+                "通用潜艇潜望器，微光电视",
+                "通用潜艇潜望器，光学"
+            ]
+        },
+        {
+            "dp": 28,
+            "maxSpeed": 10.288888,
+            "name": "苍龙级潜艇",
+            "sensors": [
+                "J/ZLR-7型雷达预警设备",
+                "J/ZQQ-7 TASS被动拖曳式声呐",
+                "J/ZQQ-7 Bow舷艏主/被动声呐 ",
+                "J/ZPS-6F型平面搜索雷达",
+                "J/ZQQ-7 Flank Array舷侧阵被动声呐",
+                "主动声呐告警声音拦截",
+                "CM010光电桅杆"
+            ]
+        }
+    ],
+    "weapons": [
+        {
+            "airPoK": 0,
+            "airRangeMax": 0,
+            "airRangeMin": 0,
+            "damage": 190,
+            "landPoK": 0,
+            "landRangeMax": 0,
+            "landRangeMin": 0,
+            "maxSpeed": 267.51108800000003,
+            "name": "鹰击-83型反舰导弹",
+            "sensors": [
+                "被动雷达导引头",
+                "主动雷达导引头"
+            ],
+            "subsurfPoK": 0,
+            "subsurfaceRangeMax": 0,
+            "subsurfaceRangeMin": 0,
+            "surfPoK": 85,
+            "surfaceRangeMax": 185200,
+            "surfaceRangeMin": 3704,
+            "targets": [
+                2001
+            ]
+        },
+        {
+            "airPoK": 90,
+            "airRangeMax": 166680,
+            "airRangeMin": 3704,
+            "damage": 21.7,
+            "landPoK": 0,
+            "landRangeMax": 0,
+            "landRangeMin": 0,
+            "maxSpeed": 1157.4999,
+            "name": "RIM-66M-6 Blk IIIC标准二型导弹",
+            "sensors": [
+                "红外导引头（线扫式）",
+                "半主动雷达制导导引头",
+                "主动雷达搜寻"
+            ],
+            "subsurfPoK": 0,
+            "subsurfaceRangeMax": 0,
+            "subsurfaceRangeMin": 0,
+            "surfPoK": 90,
+            "surfaceRangeMax": 46300,
+            "surfaceRangeMin": 3704,
+            "targets": [
+                1001,
+                1003,
+                1002,
+                2001
+            ]
+        },
+        {
+            "airPoK": 80,
+            "airRangeMax": 38892,
+            "airRangeMin": 3704,
+            "damage": 24.5,
+            "landPoK": 0,
+            "landRangeMax": 0,
+            "landRangeMin": 0,
+            "maxSpeed": 1080.3332400000002,
+            "name": "红旗-16A型防空导弹",
+            "sensors": [
+                "半主动雷达制导导引头"
+            ],
+            "subsurfPoK": 0,
+            "subsurfaceRangeMax": 0,
+            "subsurfaceRangeMin": 0,
+            "surfPoK": 0,
+            "surfaceRangeMax": 0,
+            "surfaceRangeMin": 0,
+            "targets": [
+                1001,
+                1003,
+                1002
+            ]
+        },
+        {
+            "airPoK": 0,
+            "airRangeMax": 0,
+            "airRangeMin": 0,
+            "damage": 400,
+            "landPoK": 0,
+            "landRangeMax": 0,
+            "landRangeMin": 0,
+            "maxSpeed": 33.438886000000004,
+            "name": "鱼-6型重型鱼雷",
+            "sensors": [
+                "鱼雷导引头"
+            ],
+            "subsurfPoK": 75,
+            "subsurfaceRangeMax": 11112,
+            "subsurfaceRangeMin": 0,
+            "surfPoK": 75,
+            "surfaceRangeMax": 11112,
+            "surfaceRangeMin": 0,
+            "targets": [
+                2001,
+                2002
+            ]
+        },
+        {
+            "airPoK": 0,
+            "airRangeMax": 0,
+            "airRangeMin": 0,
+            "damage": 270,
+            "landPoK": 0,
+            "landRangeMax": 0,
+            "landRangeMin": 0,
+            "maxSpeed": 33.438886000000004,
+            "name": "Mk48 Mod 6先进型重型鱼雷",
+            "sensors": [
+                "鱼雷导引头"
+            ],
+            "subsurfPoK": 85,
+            "subsurfaceRangeMax": 11112,
+            "subsurfaceRangeMin": 0,
+            "surfPoK": 85,
+            "surfaceRangeMax": 11112,
+            "surfaceRangeMin": 0,
+            "targets": [
+                2001,
+                2002
+            ]
+        },
+        {
+            "airPoK": 0,
+            "airRangeMax": 0,
+            "airRangeMin": 0,
+            "damage": 31.5,
+            "landPoK": 85,
+            "landRangeMax": 111120,
+            "landRangeMin": 1852,
+            "maxSpeed": 1028.8888,
+            "name": "鹰击-91型反辐射导弹",
+            "sensors": [
+                "被动雷达导引头"
+            ],
+            "subsurfPoK": 0,
+            "subsurfaceRangeMax": 0,
+            "subsurfaceRangeMin": 0,
+            "surfPoK": 85,
+            "surfaceRangeMax": 111120,
+            "surfaceRangeMin": 1852,
+            "targets": [
+                3004
+            ]
+        },
+        {
+            "airPoK": 419430425,
+            "airRangeMax": 2.49e-321,
+            "airRangeMin": 1.006109027822e-311,
+            "damage": 0,
+            "landPoK": 0,
+            "landRangeMax": 1.006067002456e-311,
+            "landRangeMin": 0,
+            "maxSpeed": 0,
+            "name": "",
+            "sensors": [
+            ],
+            "subsurfPoK": 0,
+            "subsurfaceRangeMax": 0,
+            "subsurfaceRangeMin": 6.9528053787297e-310,
+            "surfPoK": 474,
+            "surfaceRangeMax": 0,
+            "surfaceRangeMin": 1.006108118156e-311,
+            "targets": [
+            ]
+        },
+        {
+            "airPoK": 95,
+            "airRangeMax": 18520,
+            "airRangeMin": 370.40000000000003,
+            "damage": 3.29,
+            "landPoK": 0,
+            "landRangeMax": 0,
+            "landRangeMin": 0,
+            "maxSpeed": 758.8054900000001,
+            "name": "AIM-9X-2型“响尾蛇”空空导弹",
+            "sensors": [
+                "红外导引头（凝视成像）"
+            ],
+            "subsurfPoK": 0,
+            "subsurfaceRangeMax": 0,
+            "subsurfaceRangeMin": 0,
+            "surfPoK": 0,
+            "surfaceRangeMax": 0,
+            "surfaceRangeMin": 0,
+            "targets": [
+                1001,
+                1003,
+                1002
+            ]
+        },
+        {
+            "airPoK": 80,
+            "airRangeMax": 148160,
+            "airRangeMin": 3704,
+            "damage": 63,
+            "landPoK": 0,
+            "landRangeMax": 0,
+            "landRangeMin": 0,
+            "maxSpeed": 1774.83318,
+            "name": "海红旗-9B型防空导弹",
+            "sensors": [
+                "半主动雷达制导导引头",
+                "红外导引头（线扫式）"
+            ],
+            "subsurfPoK": 0,
+            "subsurfaceRangeMax": 0,
+            "subsurfaceRangeMin": 0,
+            "surfPoK": 85,
+            "surfaceRangeMax": 46300,
+            "surfaceRangeMin": 3704,
+            "targets": [
+                1001,
+                1003,
+                2001
+            ]
+        },
+        {
+            "airPoK": 90,
+            "airRangeMax": 74080,
+            "airRangeMin": 3704,
+            "damage": 8.05,
+            "landPoK": 0,
+            "landRangeMax": 0,
+            "landRangeMin": 0,
+            "maxSpeed": 1221.80545,
+            "name": "AIM-120A型先进中程空空导弹",
+            "sensors": [
+                "主动雷达导引头"
+            ],
+            "subsurfPoK": 0,
+            "subsurfaceRangeMax": 0,
+            "subsurfaceRangeMin": 0,
+            "surfPoK": 0,
+            "surfaceRangeMax": 0,
+            "surfaceRangeMin": 0,
+            "targets": [
+                1001,
+                1003
+            ]
+        },
+        {
+            "airPoK": 0,
+            "airRangeMax": 0,
+            "airRangeMin": 0,
+            "damage": 2867,
+            "landPoK": 0,
+            "landRangeMax": 0,
+            "landRangeMin": 0,
+            "maxSpeed": 272.655532,
+            "name": "鹰击-18 型反舰导弹",
+            "sensors": [
+            ],
+            "subsurfPoK": 0,
+            "subsurfaceRangeMax": 0,
+            "subsurfaceRangeMin": 0,
+            "surfPoK": 85,
+            "surfaceRangeMax": 537080,
+            "surfaceRangeMin": 3704,
+            "targets": [
+                2001
+            ]
+        },
+        {
+            "airPoK": 0,
+            "airRangeMax": 0,
+            "airRangeMin": 0,
+            "damage": 300,
+            "landPoK": 0,
+            "landRangeMax": 0,
+            "landRangeMin": 0,
+            "maxSpeed": 33.438886000000004,
+            "name": "鱼-10鱼雷",
+            "sensors": [
+                "鱼-10型主被动声呐"
+            ],
+            "subsurfPoK": 85,
+            "subsurfaceRangeMax": 11112,
+            "subsurfaceRangeMin": 0,
+            "surfPoK": 85,
+            "surfaceRangeMax": 11112,
+            "surfaceRangeMin": 0,
+            "targets": [
+                2001,
+                2002
+            ]
+        },
+        {
+            "airPoK": 90,
+            "airRangeMax": 240760,
+            "airRangeMin": 7408,
+            "damage": 62,
+            "landPoK": 0,
+            "landRangeMax": 0,
+            "landRangeMin": 0,
+            "maxSpeed": 1363.27766,
+            "name": "RIM-174标准增程主动导弹",
+            "sensors": [
+                "主动雷达导引头"
+            ],
+            "subsurfPoK": 0,
+            "subsurfaceRangeMax": 0,
+            "subsurfaceRangeMin": 0,
+            "surfPoK": 0,
+            "surfaceRangeMax": 0,
+            "surfaceRangeMin": 0,
+            "targets": [
+                1001,
+                1003
+            ]
+        },
+        {
+            "airPoK": 0,
+            "airRangeMax": 0,
+            "airRangeMin": 0,
+            "damage": 311,
+            "landPoK": 95,
+            "landRangeMax": 2963200,
+            "landRangeMin": 9260,
+            "maxSpeed": 257.2222,
+            "name": "RGM-109I 战斧式巡航导弹 Blk IV MMT [多任务型]",
+            "sensors": [
+                "红外导引头（凝视成像）",
+                "主动雷达导引头",
+                "被动雷达导引头",
+                "通用综合防御电子对抗系统"
+            ],
+            "subsurfPoK": 0,
+            "subsurfaceRangeMax": 0,
+            "subsurfaceRangeMin": 0,
+            "surfPoK": 95,
+            "surfaceRangeMax": 2963200,
+            "surfaceRangeMin": 9260,
+            "targets": [
+                3003,
+                3002,
+                4001,
+                4002,
+                2001,
+                3001
+            ]
+        }
+    ]
+}

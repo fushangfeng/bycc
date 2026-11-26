@@ -1,0 +1,91 @@
+{
+  "group1": {
+    "谓语动作": {
+      "action_type": "predicate",
+      "action_category": "classification_decoder",
+      "input": {
+        "name": "谓语动作_decoder_output0"
+      },
+      "missions": [
+        {
+          "name": "空对空打击",
+          "type": "air-to-air",
+          "params": [
+            {
+              "param": "A", "is_related": false, "value": "aaa"
+            },
+            {
+              "param": "B", "is_related": true, "value": "宾语动作"
+            },
+            {
+              "param": "C", "is_related": true, "value": "区域"
+            },
+            {
+              "param": "D", "is_related": true, "value": "主语动作"
+            }
+          ]
+        },
+        {
+          "name": "空对地打击",
+          "type": "air-to-ground",
+          "params": [
+            {
+              "param": "A", "is_related": false, "value": "aaa"
+            },
+            {
+              "param": "B", "is_related": true, "value": "宾语动作"
+            },
+            {
+              "param": "C", "is_related": true, "value": "区域"
+            },
+            {
+              "param": "D", "is_related": true, "value": "坐标"
+            },
+            {
+              "param": "E", "is_related": true, "value": "主语动作"
+            }
+          ]
+        }
+      ]
+    },
+    "主语动作": {
+      "action_type": "subject",
+      "action_category": "single_selective_decoder",
+      "input": {
+        "name": "主语动作_decoder_output0"
+      },
+      "entity_selection": "态势3"
+    },
+    "宾语动作": {
+      "action_type": "object",
+      "action_category": "single_selective_decoder",
+      "input": {
+        "name": "宾语动作_decoder_output0"
+      },
+      "entity_selection": "态势4"
+    },
+    "区域": {
+      "action_type": "parameter",
+      "action_category": "ordered_multi_selective",
+      "category_num": 1,
+      "input": {
+        "name": "解码器index0输出"
+      },
+      "reference_objects": [
+        "空对空打击",
+        "空对地打击"
+      ]
+    },
+    "坐标": {
+      "action_type": "parameter",
+      "action_category": "ordered_multi_selective",
+      "category_num": 1,
+      "input": {
+        "name": "解码器index0输出"
+      },
+      "reference_objects": [
+        "空对地打击"
+      ]
+    }
+  }
+}

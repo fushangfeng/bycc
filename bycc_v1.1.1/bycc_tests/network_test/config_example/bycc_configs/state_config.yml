@@ -1,0 +1,33 @@
+enemy_unit:
+  class:
+  - fighter
+  - bomber
+  - frigate
+  - command_center
+  feature:
+  - type
+  - position
+  - state
+  - damage
+  - fuel
+  filters: !!set
+    '["enemy"]': null
+  max_num: 30
+global:
+  class:
+  - global
+  feature:
+  - time
+  - self_units_num
+  - enemy_units_num
+my_fighter:
+  class:
+  - fighter
+  feature:
+  - type
+  - position
+  - state
+  filters: !!set
+    '["self", "alive", "no_ammo"]': null
+    '["self", "alive", "no_fuel"]': null
+  max_num: 10
